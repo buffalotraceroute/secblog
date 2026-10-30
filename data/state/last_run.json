@@ -27,6 +27,7 @@
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
+  "ijustwannared-team": "https://ijustwannared.team/feed/: HTTP 429",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -52,6 +53,7 @@
   "ropgadget-sections-html": "no feeds configured",
   "ryan-framinan": "https://ryan.framinan.net/index.xml: HTTP 404",
   "scannell": "no feeds configured",
+  "schneier": "https://www.schneier.com/feed/: HTTP 429",
   "secarma": "no feeds configured",
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
@@ -65,13 +67,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T12:24:43Z",
+ "finished": "2026-10-30T14:07:14Z",
  "summary": {
-  "failed": 64,
-  "posts_new": 178,
-  "posts_seen": 2332,
+  "failed": 66,
+  "posts_new": 33,
+  "posts_seen": 2371,
   "skipped_dead": 51,
   "sources": 462,
-  "succeeded": 347
+  "succeeded": 345
  }
 }
