@@ -9,7 +9,7 @@
   "Evasion (EDR/AV/AMSI/ETW)": 150,
   "Lateral Movement": 58,
   "Loaders & Injection": 160,
-  "Other": 1718,
+  "Other": 1719,
   "Persistence": 52,
   "Privilege Escalation": 29,
   "Recon & Scanning": 170
@@ -20,14 +20,12 @@
   "cs-community-kit": 152
  },
  "discovery_changed": 32,
- "errors": [
-  "/repos/outflanknl/HelpColor/releases/latest: Server disconnected without sending a response."
- ],
- "finished": "2026-10-30T04:25:58Z",
+ "errors": [],
+ "finished": "2026-10-30T12:39:02Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-10-30T04:18:56Z",
- "tools_total": 3279,
+ "started": "2026-10-30T12:24:43Z",
+ "tools_total": 3280,
  "watched_accounts": 439,
  "watchlist_changed": 723
 }
