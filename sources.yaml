@@ -97,10 +97,10 @@ sources:
     feeds: []
     status: active
   - id: posts-specterops
-    name: "Know Your Adversary"
-    homepage: https://posts.specterops.io/
+    name: "SpecterOps Blog"
+    homepage: https://specterops.io/blog/
     feeds:
-      - https://specterops.io/feed/podcast/the-state-of-apm/
+      - https://specterops.io/feed/
     status: active
     default_category: "Red Team/Offensive"
   - id: unit42-paloaltonetworks
@@ -529,8 +529,9 @@ sources:
     name: "blog.cobaltstrike.com"
     homepage: https://blog.cobaltstrike.com/
     feeds:
-      - https://www.cobaltstrike.com/blog/feed
+      - https://www.cobaltstrike.com/feed
     status: blocked
+    notes: "feed URL updated 2026-10 (old /blog/feed 404s); site returns 403 to the httpx collector"
   - id: optiv-feed
     name: "optiv.com"
     homepage: https://www.optiv.com/feed
@@ -784,8 +785,9 @@ sources:
   - id: synacktiv-en-publications-html
     name: "Publications"
     homepage: https://www.synacktiv.com/en/publications.html
-    feeds: []
-    status: unknown
+    feeds:
+      - https://www.synacktiv.com/en/feed/lastblog.xml
+    status: active
   - id: bytecode77
     name: "bytecode77"
     homepage: https://bytecode77.com/
@@ -2681,3 +2683,157 @@ sources:
     feeds:
       - https://brmk.me/posts/index.xml
     status: active
+  - id: xpn
+    name: "XPN InfoSec Blog"
+    homepage: https://blog.xpnsec.com/
+    feeds:
+      - https://blog.xpnsec.com/rss.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: netspi-technical-blog
+    name: "NetSPI Technical Blog"
+    homepage: https://www.netspi.com/blog/technical-blog/
+    feeds:
+      - https://www.netspi.com/blog/technical-blog/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: sensepost
+    name: "SensePost | Orange Cyberdefense"
+    homepage: https://sensepost.com/blog/
+    feeds:
+      - https://sensepost.com/rss.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: bruteratel
+    name: "Brute Ratel C4 Blog"
+    homepage: https://bruteratel.com/blog/
+    feeds:
+      - https://bruteratel.com/feed.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: pentestpartners
+    name: "Pen Test Partners"
+    homepage: https://www.pentestpartners.com/security-blog/
+    feeds:
+      - https://www.pentestpartners.com/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: adepts-of0x
+    name: "Adepts of 0xCC"
+    homepage: https://adepts.of0x.cc/
+    feeds:
+      - https://adepts.of0x.cc/feed.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: zerosalarium
+    name: "Zero Salarium"
+    homepage: https://www.zerosalarium.com/
+    feeds:
+      - https://www.zerosalarium.com/feeds/posts/default
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: compass-security
+    name: "Compass Security Blog"
+    homepage: https://blog.compass-security.com/
+    feeds:
+      - https://blog.compass-security.com/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: bordergate
+    name: "BorderGate"
+    homepage: https://www.bordergate.co.uk/
+    feeds:
+      - https://www.bordergate.co.uk/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: hackingarticles
+    name: "Hacking Articles"
+    homepage: https://www.hackingarticles.in/
+    feeds:
+      - https://www.hackingarticles.in/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: alteredsecurity
+    name: "Altered Security Blog"
+    homepage: https://alteredsecurity.com/blog
+    feeds:
+      - https://alteredsecurity.com/blog-feed.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: rhinosecuritylabs
+    name: "Rhino Security Labs"
+    homepage: https://rhinosecuritylabs.com/blog/
+    feeds:
+      - https://rhinosecuritylabs.com/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: datadog-securitylabs
+    name: "Datadog Security Labs"
+    homepage: https://securitylabs.datadoghq.com/
+    feeds:
+      - https://securitylabs.datadoghq.com/rss/feed.xml
+    status: active
+    default_category: "Cloud & Identity"
+  - id: 0xdf-gitlab
+    name: "0xdf hacks stuff"
+    homepage: https://0xdf.gitlab.io/
+    feeds:
+      - https://0xdf.gitlab.io/feed.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: tcm-security
+    name: "TCM Security Blog"
+    homepage: https://tcm-sec.com/blog/
+    feeds:
+      - https://tcm-sec.com/feed/
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: levelblue-spiderlabs
+    name: "LevelBlue SpiderLabs Blog"
+    homepage: https://www.levelblue.com/blogs/spiderlabs-blog/
+    feeds:
+      - https://www.levelblue.com/blogs/spiderlabs-blog/rss.xml
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: inthecyber
+    name: "InTheCyber Posts"
+    homepage: https://posts.inthecyber.com/
+    feeds:
+      - https://posts.inthecyber.com/feed
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: cicada8
+    name: "CICADA8"
+    homepage: https://cicada-8.medium.com/
+    feeds:
+      - https://cicada-8.medium.com/feed
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: ifcr
+    name: "IFCR Research"
+    homepage: https://research.ifcr.dk/
+    feeds:
+      - https://research.ifcr.dk/feed
+    status: active
+    default_category: "Red Team/Offensive"
+  - id: zerodayinitiative
+    name: "Zero Day Initiative Blog"
+    homepage: https://www.zerodayinitiative.com/blog
+    feeds:
+      - https://www.zerodayinitiative.com/blog?format=rss
+    status: active
+    default_category: "Exploit Development"
+  - id: googleprojectzero
+    name: "Google Project Zero"
+    homepage: https://googleprojectzero.blogspot.com/
+    feeds:
+      - https://googleprojectzero.blogspot.com/feeds/posts/default
+    status: active
+    default_category: "Exploit Development"
+  - id: mandiant-gti
+    name: "Google Threat Intelligence (Mandiant)"
+    homepage: https://cloud.google.com/blog/topics/threat-intelligence
+    feeds:
+      - https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+    status: active
+    default_category: "Threat Intel & DFIR"
