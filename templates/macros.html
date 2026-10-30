@@ -1,23 +1,104 @@
+{% macro icon(name) -%}
+{%- if name == 'search' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+{%- elif name == 'filter' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+{%- elif name == 'close' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+{%- elif name == 'star' -%}<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>
+{%- endif -%}
+{%- endmacro %}
+
+{% macro filters_button(badge=0) -%}
+<button type="button" class="filters-btn" id="filters-open" aria-controls="sidebar" aria-expanded="false">{{ icon('filter') }} Filters{% if badge %} <span class="badge" id="filters-badge">{{ badge }}</span>{% else %} <span class="badge" id="filters-badge" hidden></span>{% endif %}</button>
+{%- endmacro %}
+
+{% macro drawer_head() -%}
+<div class="sb-head"><span>Filters</span><button type="button" class="icon-btn" data-close-drawer aria-label="Close filters">{{ icon('close') }}</button></div>
+{%- endmacro %}
+
 {% macro post_card(p, sources) -%}
-<article class="post" data-category="{{ p.category or '' }}" data-blog="{{ p.blog }}" data-year="{{ p.published|year }}">
-  <h2 class="post-title"><a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">{{ p.title }}</a></h2>
-  <div class="meta">
-    <a class="blog" href="{{ base }}/blog/{{ p.blog }}/">{% if sources.get(p.blog) %}{{ sources[p.blog].name }}{% else %}{{ p.blog }}{% endif %}</a>
-    {% if p.published %}<time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
-    {% if p.author %}<span class="author">{{ p.author }}</span>{% endif %}
-    {% if p.category %}<a class="cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a>{% endif %}
+<article class="card post">
+  <p class="card-meta">
+    <a href="{{ base }}/blog/{{ p.blog }}/">{% if sources.get(p.blog) %}{{ sources[p.blog].name }}{% else %}{{ p.blog }}{% endif %}</a>
+    {%- if p.published %}<span class="dot"></span><time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
+  </p>
+  <h2 class="card-title"><a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">{{ p.title }}</a></h2>
+  {% if p.excerpt %}<p class="card-text">{{ p.excerpt }}</p>{% endif %}
+  <div class="card-foot">
+    <ul class="chips">
+      {% if p.category %}<li><a class="chip cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a></li>{% endif %}
+      {% for t in (p.tags or [])[:3] %}<li>{% if t in tag_pages %}<a class="chip" href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a>{% else %}<span class="chip">{{ t }}</span>{% endif %}</li>{% endfor %}
+      {% if (p.tags or [])|length > 3 %}<li><span class="chip more" title="{{ p.tags[3:]|join(', ') }}">+{{ p.tags|length - 3 }}</span></li>{% endif %}
+    </ul>
+    {% if p.archive_url %}<div class="card-links"><a href="{{ p.archive_url }}" rel="noopener noreferrer" target="_blank">Wayback</a></div>{% endif %}
   </div>
-  {% if p.excerpt %}<p class="excerpt">{{ p.excerpt }}</p>{% endif %}
-  <div class="links">
-    <a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">Original</a>
-    {% if p.archive_url %}<a href="{{ p.archive_url }}" rel="noopener noreferrer" target="_blank">Wayback</a>{% endif %}
-  </div>
-  {% if p.tags %}
-  <ul class="tags">
-    {% for t in p.tags[:12] %}
-    <li><a href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a></li>
-    {% endfor %}
-  </ul>
-  {% endif %}
 </article>
+{%- endmacro %}
+
+{% macro post_sidebar(kind, heading, source=None) -%}
+<aside class="sidebar" id="sidebar" aria-label="Filters">
+  {{ drawer_head() }}
+  <form class="sb-section" action="{{ base }}/search/" method="get" role="search">
+    <label class="sb-label" for="sb-q">Search archive</label>
+    <div class="search-field">{{ icon('search') }}<input class="field" id="sb-q" name="q" type="search" placeholder="Search all posts…" autocomplete="off"/></div>
+  </form>
+  <div class="sb-section">
+    <label class="sb-label" for="page-filter">Filter this page</label>
+    <input class="field" id="page-filter" type="search" placeholder="Title, source, excerpt…" autocomplete="off" data-target="post-list"/>
+  </div>
+  <div class="sb-section">
+    <h2 class="sb-label">Category</h2>
+    <ul class="sb-list">
+      <li><a href="{{ base }}/" {% if kind == 'latest' %}class="active" aria-current="page"{% endif %}>All posts <span class="n">{{ post_total|num }}</span></a></li>
+      {% for c, n in post_categories %}
+      <li><a href="{{ base }}/category/{{ slugify(c) }}/" {% if kind == 'category' and heading == c %}class="active" aria-current="page"{% endif %}>{{ c }} <span class="n">{{ n|num }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="sb-section">
+    <label class="sb-label" for="sb-year">Year</label>
+    <select class="field" id="sb-year" data-nav>
+      <option value="{{ base }}/">All years</option>
+      {% for y in post_years %}<option value="{{ base }}/year/{{ y }}/" {% if kind == 'year' and heading == y %}selected{% endif %}>{{ y }}</option>{% endfor %}
+    </select>
+  </div>
+  <div class="sb-section">
+    <label class="sb-label" for="sb-blog">Source</label>
+    <select class="field" id="sb-blog" data-nav data-src="{{ base }}/blogs.json" data-base="{{ base }}" data-current="{{ source.id if source else '' }}">
+      <option value="{{ base }}/">All sources</option>
+      {% if source %}<option value="{{ base }}/blog/{{ source.id }}/" selected>{{ source.name }}</option>{% endif %}
+    </select>
+    <a class="sb-more" href="{{ base }}/blogs/">Browse all blogs →</a>
+  </div>
+  <div class="sb-section">
+    <h2 class="sb-label">Popular tags</h2>
+    <ul class="chips">
+      {% for t in top_tags %}<li><a class="chip{% if kind == 'tag' and heading == '#' ~ t %} cat{% endif %}" href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a></li>{% endfor %}
+    </ul>
+    <a class="sb-more" href="{{ base }}/tags/">All tags →</a>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+{%- endmacro %}
+
+{% macro pager(page, pages, list_base) -%}
+{% if pages > 1 %}
+<nav class="pager" aria-label="Pagination">
+  {% if page > 1 %}<a href="{% if page == 2 %}{{ list_base }}/{% else %}{{ list_base }}/page/{{ page - 1 }}/{% endif %}" rel="prev">← Newer</a>{% else %}<span class="btn disabled">← Newer</span>{% endif %}
+  <span>Page {{ page }} of {{ pages|num }}</span>
+  {% if page < pages %}<a href="{{ list_base }}/page/{{ page + 1 }}/" rel="next">Older →</a>{% else %}<span class="btn disabled">Older →</span>{% endif %}
+</nav>
+{% endif %}
+{%- endmacro %}
+
+{% macro post_listing(posts, sources, total, page, pages, list_base) -%}
+<div class="toolbar">
+  <p class="result-count" id="result-count">{{ total|num }} post{% if total != 1 %}s{% endif %}{% if pages > 1 %} · page {{ page }} of {{ pages|num }}{% endif %}</p>
+  {{ filters_button() }}
+</div>
+<section class="cards" id="post-list">
+  {% for p in posts %}{{ post_card(p, sources) }}{% else %}
+  <p class="empty">No posts yet. Run the collector.</p>
+  {% endfor %}
+  <p class="no-results" id="no-results" hidden>No posts on this page match. Try <a href="{{ base }}/search/">searching the whole archive</a>.</p>
+</section>
+{{ pager(page, pages, list_base) }}
 {%- endmacro %}

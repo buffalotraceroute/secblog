@@ -1,33 +1,24 @@
 {% extends "base.html" %}
-{% from "macros.html" import post_card %}
+{% from "macros.html" import post_sidebar, post_listing %}
 {% block content %}
-<header class="page-head">
-  <p class="eyebrow">Blog</p>
-  <h1>{{ source.name if source else title }}</h1>
-  {% if source %}
-  <p class="meta">
-    <span class="status status-{{ source.status }}">{{ status_labels.get(source.status, source.status) }}</span>
-    · <a href="{{ source.homepage }}" rel="noopener noreferrer" target="_blank">Homepage</a>
-    · {{ total if total is defined else posts|length }} post{% if (total if total is defined else posts|length) != 1 %}s{% endif %}
-  </p>
-  {% if source.notes %}<p class="notes">{{ source.notes }}</p>{% endif %}
-  {% if source.is_dead %}
-  <p class="warn">This blog is marked <strong>dead</strong>. Posts link to Wayback Machine snapshots; the live domain is never fetched or linked.</p>
-  {% endif %}
-  {% endif %}
-</header>
-<section class="post-list">
-  {% for p in posts %}{{ post_card(p, sources) }}{% endfor %}
-</section>
-{% if pages is defined and pages > 1 %}
-<nav class="pager">
-  {% if page > 1 %}
-  <a href="{% if page == 2 %}{{ list_base }}/{% else %}{{ list_base }}/page/{{ page - 1 }}/{% endif %}">← Newer</a>
-  {% endif %}
-  <span>Page {{ page }} / {{ pages }}</span>
-  {% if page < pages %}
-  <a href="{{ list_base }}/page/{{ page + 1 }}/">Older →</a>
-  {% endif %}
-</nav>
-{% endif %}
+<div class="layout">
+  {{ post_sidebar('blog', heading, source) }}
+  <div class="content">
+    <header class="page-head">
+      <p class="eyebrow"><a href="{{ base }}/blogs/">Blog</a></p>
+      <h1>{{ source.name if source else heading }}</h1>
+      {% if source %}
+      <div class="head-meta">
+        <span class="status status-{{ source.status }}">{{ status_labels.get(source.status, source.status) }}</span>
+        {% if not source.is_dead %}<a href="{{ source.homepage }}" rel="noopener noreferrer" target="_blank">Homepage ↗</a>{% endif %}
+      </div>
+      {% if source.notes %}<p class="lede">{{ source.notes }}</p>{% endif %}
+      {% if source.is_dead %}
+      <p class="notice">This blog is marked <strong>dead</strong>. Posts link to Wayback Machine snapshots; the live domain is never fetched or linked.</p>
+      {% endif %}
+      {% endif %}
+    </header>
+    {{ post_listing(posts, sources, total, page, pages, list_base) }}
+  </div>
+</div>
 {% endblock %}

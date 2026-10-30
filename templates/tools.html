@@ -1,139 +1,181 @@
 {% extends "base.html" %}
-{% block head %}
-<link href="{{ base }}/pagefind/pagefind-ui.css" rel="stylesheet"/>
-{% endblock %}
+{% from "macros.html" import icon, filters_button, drawer_head %}
+{% set lang_colors = {'C':'#555555','C#':'#178600','C++':'#f34b7d','Go':'#00ADD8','Python':'#3572A5','PowerShell':'#5391FE','Rust':'#dea584','Nim':'#ffc200','JavaScript':'#f1e05a','TypeScript':'#3178c6','Java':'#b07219','Shell':'#89e051','Assembly':'#6E4C13','Ruby':'#701516','Zig':'#ec915c','Kotlin':'#A97BFF','Swift':'#F05138','Objective-C':'#438eff','HTML':'#e34c26','Lua':'#000080','Visual Basic .NET':'#945db7','Batchfile':'#C1F12E','Dockerfile':'#384d54','HCL':'#844FBA','PHP':'#4F5D95','D':'#BA595E','Jupyter Notebook':'#DA5B0B','YARA':'#220000','Vue':'#41b883'} %}
 {% block content %}
-<header class="page-head">
-  <h1>Tools</h1>
-  <p>{{ total }} GitHub repositories — <strong>metadata and links only</strong>.
-     We never host or mirror tool code or binaries. Each card links to the upstream repo.</p>
-</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar" aria-label="Tool filters">
+    {{ drawer_head() }}
+    <form id="tool-filters" action="#" onsubmit="return false;">
+      <div class="sb-section">
+        <label class="sb-label" for="f-q">Search tools</label>
+        <div class="search-field">{{ icon('search') }}<input class="field" id="f-q" type="search" placeholder="Name, owner, description…" autocomplete="off"/></div>
+      </div>
+      <div class="sb-section">
+        <label class="sb-label" for="f-sort">Sort by</label>
+        <select class="field" id="f-sort">
+          <option value="newest">Newest</option>
+          <option value="stars">Most stars</option>
+          <option value="pushed">Recently updated</option>
+        </select>
+      </div>
+      <fieldset class="sb-section" style="border:0;padding:0;margin-inline:0">
+        <legend class="sb-label">Category</legend>
+        <ul class="sb-list" id="f-cat">
+          <li><label><input type="radio" name="cat" value="" checked/> All tools <span class="n">{{ total|num }}</span></label></li>
+          {% for c in categories %}
+          <li><label><input type="radio" name="cat" value="{{ c }}"/> {{ c }} <span class="n">{{ category_counts[c]|num }}</span></label></li>
+          {% endfor %}
+        </ul>
+      </fieldset>
+      <div class="sb-section">
+        <label class="sb-label" for="f-lang">Language</label>
+        <select class="field" id="f-lang">
+          <option value="">All languages</option>
+          {% for l in languages %}<option value="{{ l }}">{{ l }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="sb-section">
+        <label class="sb-label" for="f-src">Found via</label>
+        <select class="field" id="f-src">
+          <option value="">All sources</option>
+          {% for s in sources_list %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="sb-section"><button type="button" class="sb-reset" id="f-reset">Reset filters</button></div>
+    </form>
+  </aside>
+  <div class="scrim" id="scrim"></div>
 
-<form class="tool-filters" id="tool-filters" action="#" onsubmit="return false;">
-  <label>Category
-    <select id="f-cat">
-      <option value="">All</option>
-      {% for c in categories %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
-    </select>
-  </label>
-  <label>Language
-    <select id="f-lang">
-      <option value="">All</option>
-      {% for l in languages %}<option value="{{ l }}">{{ l }}</option>{% endfor %}
-    </select>
-  </label>
-  <label>Source
-    <select id="f-src">
-      <option value="">All</option>
-      {% for s in sources_list %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
-    </select>
-  </label>
-  <label>Sort
-    <select id="f-sort">
-      <option value="newest">Newest</option>
-      <option value="stars">Stars</option>
-      <option value="pushed">Recently pushed</option>
-    </select>
-  </label>
-  <label class="grow">Filter
-    <input id="f-q" type="search" placeholder="name, owner, description…" autocomplete="off"/>
-  </label>
-</form>
+  <div class="content">
+    <header class="page-head">
+      <h1>Tools</h1>
+      <p class="lede">Offensive-security repositories on GitHub. Metadata and links only — no code or binaries are hosted here.</p>
+    </header>
+    <div class="toolbar">
+      <p class="result-count" id="tool-count" aria-live="polite">{{ total|num }} tools</p>
+      {{ filters_button() }}
+    </div>
 
-<p class="run-meta" id="tool-count"></p>
-
-<section class="post-list" id="tool-list">
-{% for t in tools %}
-<article class="post tool-card"
-  data-name="{{ t.name|e }}"
-  data-owner="{{ t.owner|e }}"
-  data-full="{{ t.full_name|e }}"
-  data-desc="{{ (t.description or '')|e }}"
-  data-lang="{{ t.language or '' }}"
-  data-cats="{{ (t.categories or [])|join('|') }}"
-  data-srcs="{{ (t.sources or [])|join('|') }}"
-  data-stars="{{ t.stars or 0 }}"
-  data-created="{{ t.created_at or '' }}"
-  data-pushed="{{ t.pushed_at or '' }}">
-  <h2 class="post-title"><a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">{{ t.full_name }}</a></h2>
-  <div class="meta">
-    {% if t.language %}<span class="lang">{{ t.language }}</span>{% endif %}
-    <span class="stars">★ {{ t.stars or 0 }}</span>
-    {% if t.created_at %}<time datetime="{{ t.created_at }}">created {{ t.created_at[:10] }}</time>{% endif %}
-    {% if t.pushed_at %}<time datetime="{{ t.pushed_at }}">pushed {{ t.pushed_at[:10] }}</time>{% endif %}
-    {% if t.affiliation %}<span class="aff">{{ t.affiliation }}</span>{% endif %}
-    {% for c in t.categories or [] %}<a class="cat" href="{{ base }}/tools/?cat={{ c|urlencode }}">{{ c }}</a>{% endfor %}
+    <section class="cards" id="tool-list">
+    {% for t in tools %}
+    <article class="card tool-card"
+      data-owner="{{ t.owner }}"
+      data-full="{{ t.full_name }}"
+      data-desc="{{ t.description or '' }}"
+      data-topics="{{ (t.topics or [])|join(' ') }}"
+      data-lang="{{ t.language or '' }}"
+      data-cats="{{ (t.categories or [])|join('|') }}"
+      data-srcs="{{ (t.sources or [])|join('|') }}"
+      data-stars="{{ t.stars or 0 }}"
+      data-created="{{ t.created_at or '' }}"
+      data-pushed="{{ t.pushed_at or '' }}">
+      <h2 class="card-title"><a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">{{ t.name }}</a></h2>
+      <p class="owner">{{ t.owner }}{% if t.affiliation %} · <span class="aff">{{ t.affiliation }}</span>{% endif %}</p>
+      {% if t.description %}<p class="card-text" style="-webkit-line-clamp:2;line-clamp:2">{{ t.description }}</p>{% endif %}
+      <p class="card-meta">
+        <span class="stat" title="GitHub stars"><span class="star">★</span>{{ (t.stars or 0)|num }}</span>
+        {% if t.language %}<span class="dot"></span><span class="stat"><span class="lang-dot" style="background:{{ lang_colors.get(t.language, '#8b8b93') }}"></span>{{ t.language }}</span>{% endif %}
+        {% if t.pushed_at %}<span class="dot"></span><time datetime="{{ t.pushed_at }}" title="Last pushed">Updated {{ t.pushed_at[:10] }}</time>{% endif %}
+      </p>
+      <div class="card-foot">
+        <ul class="chips">{% for c in t.categories or [] %}<li><a class="chip cat" href="{{ base }}/tools/?cat={{ c|urlencode }}" data-cat="{{ c }}">{{ c }}</a></li>{% endfor %}</ul>
+        <div class="card-links"><a href="{{ base }}/tools/e/{{ t.full_name|replace('/','__') }}/">Details</a></div>
+      </div>
+    </article>
+    {% else %}
+    <p class="empty">No tools yet. Run <code>python -m secblog tools --seed</code>.</p>
+    {% endfor %}
+      <p class="no-results" id="no-results" hidden>No tools match these filters.</p>
+    </section>
+    <div class="load-more-wrap"><button type="button" class="btn" id="load-more" hidden>Show more</button></div>
   </div>
-  {% if t.description %}<p class="excerpt">{{ t.description }}</p>{% endif %}
-  <div class="links">
-    <a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">GitHub</a>
-    {% if t.latest_release and t.latest_release.url %}
-    <a href="{{ t.latest_release.url }}" rel="noopener noreferrer" target="_blank">Release {{ t.latest_release.tag }}</a>
-    {% endif %}
-    <a href="{{ base }}/tools/e/{{ t.full_name|replace('/','__') }}/">Permalink</a>
-  </div>
-  <ul class="tags">
-    {% for s in t.sources or [] %}<li><span class="src-tag">{{ s }}</span></li>{% endfor %}
-    {% for top in (t.topics or [])[:8] %}<li><span>{{ top }}</span></li>{% endfor %}
-  </ul>
-</article>
-{% else %}
-<p class="empty">No tools yet. Run <code>python -m secblog tools --seed</code>.</p>
-{% endfor %}
-</section>
-
-<div class="search-ui" style="margin-top:2rem">
-  <h2 class="eyebrow">Pagefind search</h2>
-  <div id="search"></div>
 </div>
 {% endblock %}
 {% block scripts %}
-<script src="{{ base }}/pagefind/pagefind-ui.js"></script>
 <script>
-  try { new PagefindUI({ element: "#search", showImages: false, baseUrl: "{{ base }}/" }); } catch (e) {}
-  (function () {
-    const cards = Array.from(document.querySelectorAll(".tool-card"));
-    const cat = document.getElementById("f-cat");
-    const lang = document.getElementById("f-lang");
-    const src = document.getElementById("f-src");
-    const sort = document.getElementById("f-sort");
-    const q = document.getElementById("f-q");
-    const count = document.getElementById("tool-count");
-    const list = document.getElementById("tool-list");
-    const params = new URLSearchParams(location.search);
-    if (params.get("cat")) cat.value = params.get("cat");
-    if (params.get("lang")) lang.value = params.get("lang");
-    if (params.get("src")) src.value = params.get("src");
-    if (params.get("sort")) sort.value = params.get("sort");
-    if (params.get("q")) q.value = params.get("q");
-    function apply() {
-      const cv = cat.value, lv = lang.value, sv = src.value, qv = (q.value || "").toLowerCase();
-      let shown = cards.filter(c => {
-        if (cv && !(c.dataset.cats || "").split("|").includes(cv)) return false;
-        if (lv && c.dataset.lang !== lv) return false;
-        if (sv && !(c.dataset.srcs || "").split("|").includes(sv)) return false;
-        if (qv) {
-          const blob = (c.dataset.full + " " + c.dataset.desc + " " + c.dataset.owner).toLowerCase();
-          if (!blob.includes(qv)) return false;
-        }
-        return true;
-      });
-      shown.sort((a, b) => {
-        if (sort.value === "stars") return (+b.dataset.stars) - (+a.dataset.stars);
-        if (sort.value === "pushed") return (b.dataset.pushed || "").localeCompare(a.dataset.pushed || "");
-        return (b.dataset.created || "").localeCompare(a.dataset.created || "");
-      });
-      cards.forEach(c => c.hidden = true);
-      shown.forEach(c => { c.hidden = false; list.appendChild(c); });
-      count.textContent = shown.length + " shown / " + cards.length + " total";
-      const usp = new URLSearchParams();
-      if (cv) usp.set("cat", cv); if (lv) usp.set("lang", lv); if (sv) usp.set("src", sv);
-      if (sort.value !== "newest") usp.set("sort", sort.value); if (qv) usp.set("q", q.value);
-      history.replaceState(null, "", location.pathname + (usp.toString() ? "?" + usp : ""));
-    }
-    [cat, lang, src, sort].forEach(el => el.addEventListener("change", apply));
-    q.addEventListener("input", apply);
-    apply();
-  })();
+(function () {
+  "use strict";
+  var PAGE = 60;
+  var list = document.getElementById("tool-list");
+  var cards = Array.prototype.slice.call(list.querySelectorAll(".tool-card"));
+  var catBox = document.getElementById("f-cat");
+  var lang = document.getElementById("f-lang");
+  var src = document.getElementById("f-src");
+  var sort = document.getElementById("f-sort");
+  var q = document.getElementById("f-q");
+  var count = document.getElementById("tool-count");
+  var more = document.getElementById("load-more");
+  var none = document.getElementById("no-results");
+  var badge = document.getElementById("filters-badge");
+  var limit = PAGE, shown = [];
+  var fmt = function (n) { return n.toLocaleString("en-US"); };
+  cards.forEach(function (c) {
+    c._blob = (c.dataset.full + " " + c.dataset.desc + " " + c.dataset.owner + " " + c.dataset.topics).toLowerCase();
+  });
+  function catVal() { var r = catBox.querySelector("input:checked"); return r ? r.value : ""; }
+  function setCat(v) {
+    var r = catBox.querySelector('input[value="' + (window.CSS && CSS.escape ? CSS.escape(v) : v) + '"]') || catBox.querySelector('input[value=""]');
+    r.checked = true;
+  }
+  var params = new URLSearchParams(location.search);
+  if (params.get("cat")) setCat(params.get("cat"));
+  if (params.get("lang")) lang.value = params.get("lang");
+  if (params.get("src")) src.value = params.get("src");
+  if (params.get("sort")) sort.value = params.get("sort");
+  if (params.get("q")) q.value = params.get("q");
+  if (!lang.value) lang.value = ""; if (!src.value) src.value = ""; if (!sort.value) sort.value = "newest";
+
+  function render() {
+    var frag = document.createDocumentFragment();
+    shown.forEach(function (c, i) { c.hidden = i >= limit; frag.appendChild(c); });
+    list.insertBefore(frag, none);
+    var visible = Math.min(limit, shown.length);
+    count.textContent = (visible < shown.length ? "Showing " + fmt(visible) + " of " : "") +
+      fmt(shown.length) + (shown.length === 1 ? " tool" : " tools");
+    var rest = shown.length - visible;
+    more.hidden = rest <= 0;
+    more.textContent = "Show " + fmt(Math.min(PAGE, rest)) + " more";
+    none.hidden = shown.length !== 0;
+  }
+  function apply() {
+    var cv = catVal(), lv = lang.value, sv = src.value, qv = (q.value || "").trim().toLowerCase();
+    shown = cards.filter(function (c) {
+      if (cv && (c.dataset.cats || "").split("|").indexOf(cv) === -1) return false;
+      if (lv && c.dataset.lang !== lv) return false;
+      if (sv && (c.dataset.srcs || "").split("|").indexOf(sv) === -1) return false;
+      if (qv && c._blob.indexOf(qv) === -1) return false;
+      return true;
+    });
+    shown.sort(function (a, b) {
+      if (sort.value === "stars") return (+b.dataset.stars) - (+a.dataset.stars);
+      if (sort.value === "pushed") return (b.dataset.pushed || "").localeCompare(a.dataset.pushed || "");
+      return (b.dataset.created || "").localeCompare(a.dataset.created || "");
+    });
+    cards.forEach(function (c) { c.hidden = true; });
+    limit = PAGE;
+    render();
+    var active = (cv ? 1 : 0) + (lv ? 1 : 0) + (sv ? 1 : 0) + (qv ? 1 : 0);
+    if (badge) { badge.hidden = !active; badge.textContent = active; }
+    var usp = new URLSearchParams();
+    if (cv) usp.set("cat", cv); if (lv) usp.set("lang", lv); if (sv) usp.set("src", sv);
+    if (sort.value !== "newest") usp.set("sort", sort.value); if (qv) usp.set("q", q.value.trim());
+    history.replaceState(null, "", location.pathname + (usp.toString() ? "?" + usp : ""));
+  }
+  more.addEventListener("click", function () { limit += PAGE; render(); });
+  catBox.addEventListener("change", apply);
+  [lang, src, sort].forEach(function (el) { el.addEventListener("change", apply); });
+  var timer; q.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(apply, 120); });
+  document.getElementById("f-reset").addEventListener("click", function () {
+    setCat(""); lang.value = ""; src.value = ""; sort.value = "newest"; q.value = ""; apply();
+  });
+  // Category chips on cards filter in place instead of reloading the page
+  list.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[data-cat]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault(); setCat(a.dataset.cat); apply();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  apply();
+})();
 </script>
 {% endblock %}

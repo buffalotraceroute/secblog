@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 <header class="page-head">
+  <p class="eyebrow"><a href="{{ base }}/blogs/">Blogs</a></p>
   <h1>Sources &amp; status</h1>
-  <p>Hand-edited registry in <code>sources.yaml</code>. Dead blogs are archived via Wayback only.</p>
+  <p class="lede">Hand-edited registry in <code>sources.yaml</code>. Dead blogs are archived via Wayback only.</p>
 </header>
 {% if last_run and last_run.summary %}
-<p class="run-meta">Last collect: {{ last_run.finished }} —
-  {{ last_run.summary.succeeded }} ok /
-  {{ last_run.summary.failed }} failed /
-  {{ last_run.summary.posts_new }} new</p>
+<p class="run-meta">Last collect: {{ last_run.finished }} — {{ last_run.summary.succeeded }} ok · {{ last_run.summary.failed }} failed · {{ last_run.summary.posts_new }} new</p>
 {% endif %}
+<div class="table-wrap">
 <table class="src-table">
   <thead><tr><th>Blog</th><th>Status</th><th>Posts</th><th>Feeds</th></tr></thead>
   <tbody>
   {% for s in sources %}
   <tr>
-    <td><a href="{{ base }}/blog/{{ s.id }}/">{{ s.name }}</a><br/><small><a href="{{ s.homepage }}" rel="noopener">{{ s.homepage }}</a></small></td>
+    <td>{% if counts.get(s.id, 0) %}<a href="{{ base }}/blog/{{ s.id }}/">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}<br/><small>{% if s.is_dead %}{{ s.homepage }}{% else %}<a href="{{ s.homepage }}" rel="noopener">{{ s.homepage }}</a>{% endif %}</small></td>
     <td><span class="status status-{{ s.status }}">{{ status_labels.get(s.status, s.status) }}</span></td>
-    <td>{{ counts.get(s.id, 0) }}</td>
-    <td>{{ s.feeds|length }}</td>
+    <td class="num">{{ counts.get(s.id, 0)|num }}</td>
+    <td class="num">{{ s.feeds|length }}</td>
   </tr>
   {% endfor %}
   </tbody>
 </table>
+</div>
 {% endblock %}

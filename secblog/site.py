@@ -44,8 +44,22 @@ def _env() -> Environment:
     def year(s):
         return (s or "")[:4]
 
+    def num(n):
+        try:
+            return f"{int(n):,}"
+        except (TypeError, ValueError):
+            return n
+
     env.filters["ymd"] = ymd
     env.filters["year"] = year
+    env.filters["num"] = num
+    # Sidebar data (filled in by build() once posts are grouped)
+    env.globals.setdefault("post_categories", [])
+    env.globals.setdefault("post_years", [])
+    env.globals.setdefault("top_tags", [])
+    env.globals.setdefault("tag_pages", frozenset())
+    env.globals.setdefault("post_total", 0)
+    env.globals.setdefault("post_blog_count", 0)
     return env
 
 
@@ -105,6 +119,27 @@ def build(pagefind: bool = True) -> dict:
         for t in p.get("tags") or []:
             by_tag[t].append(p)
 
+    # Tags: write pages for the most common tags only (keeps build tractable)
+    top_tags = sorted(by_tag.items(), key=lambda x: -len(x[1]))[:MAX_TAG_PAGES]
+
+    # Shared sidebar data for every post-listing page
+    env.globals["post_categories"] = sorted(((c, len(v)) for c, v in by_cat.items()), key=lambda x: -x[1])
+    env.globals["post_years"] = sorted(by_year.keys(), reverse=True)
+    env.globals["top_tags"] = [t for t, _ in top_tags[:14]]
+    env.globals["tag_pages"] = frozenset(t for t, _ in top_tags)
+    env.globals["post_total"] = len(posts)
+    env.globals["post_blog_count"] = len(by_blog)
+    (DIST / "blogs.json").write_text(
+        json.dumps(
+            [
+                {"id": b, "name": sources[b].name if b in sources else b}
+                for b in sorted(by_blog, key=lambda b: (sources[b].name if b in sources else b).lower())
+            ],
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
     def write(rel: str, template: str, **ctx):
         path = DIST / rel
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -123,8 +158,6 @@ def build(pagefind: bool = True) -> dict:
             title=cat, heading=cat, kind="category", nav="categories",
         )
 
-    # Tags: write pages for the most common tags only (keeps build tractable)
-    top_tags = sorted(by_tag.items(), key=lambda x: -len(x[1]))[:MAX_TAG_PAGES]
     for tag, plist in top_tags:
         _write_paged(
             env, f"tag/{slugify(tag)}", "list.html", plist, sources,
@@ -201,6 +234,7 @@ def build(pagefind: bool = True) -> dict:
         tools=tools,
         total=len(tools),
         categories=sorted(tools_by_cat.keys(), key=lambda c: (-tools_by_cat[c], c)),
+        category_counts=dict(tools_by_cat),
         languages=sorted(languages),
         sources_list=sorted(sources_set),
         nav="tools",

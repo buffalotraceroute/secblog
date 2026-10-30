@@ -4,27 +4,31 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>{{ title }} · secblog</title>
+  <script>try{var t=localStorage.getItem("secblog-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
   <link rel="stylesheet" href="{{ base }}/assets/style.css"/>
 </head>
 <body>
-  <main class="wrap" style="padding:1.5rem 1.1rem 3rem">
-    <p class="eyebrow"><a href="{{ base }}/">secblog</a> · entry</p>
-    <article class="post" data-pagefind-body>
-      <h1 class="post-title">{{ p.title }}</h1>
-      <div class="meta">
+  <header class="site-header"><div class="wrap"><a class="logo" href="{{ base }}/"><span class="logo-mark" aria-hidden="true">&gt;_</span>secblog</a><nav class="site-nav"><a href="{{ base }}/">Posts</a><a href="{{ base }}/tools/">Tools</a><a href="{{ base }}/search/">Search</a></nav></div></header>
+  <main class="page wrap">
+    <div class="entry">
+    <article class="card" data-pagefind-body>
+      <p class="card-meta">
         <a href="{{ base }}/blog/{{ p.blog }}/">{% if sources.get(p.blog) %}{{ sources[p.blog].name }}{% else %}{{ p.blog }}{% endif %}</a>
-        {% if p.published %}<time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
-        {% if p.category %}<a class="cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a>{% endif %}
-      </div>
-      {% if p.excerpt %}<p class="excerpt">{{ p.excerpt }}</p>{% endif %}
-      <div class="links">
-        <a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">Original</a>
+        {%- if p.published %}<span class="dot"></span><time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
+        {%- if p.author %}<span class="dot"></span><span>{{ p.author }}</span>{% endif %}
+      </p>
+      <h1 class="card-title">{{ p.title }}</h1>
+      {% if p.excerpt %}<p class="card-text">{{ p.excerpt }}</p>{% endif %}
+      <ul class="chips">
+        {% if p.category %}<li><a class="chip cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a></li>{% endif %}
+        {% for t in p.tags or [] %}<li>{% if t in tag_pages %}<a class="chip" href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a>{% else %}<span class="chip">{{ t }}</span>{% endif %}</li>{% endfor %}
+      </ul>
+      <div class="card-links" style="font-size:.9rem;gap:1.2rem">
+        <a href="{{ p.url }}" rel="noopener noreferrer" target="_blank" style="color:var(--accent)">Read original ↗</a>
         {% if p.archive_url %}<a href="{{ p.archive_url }}" rel="noopener noreferrer" target="_blank">Wayback</a>{% endif %}
       </div>
-      {% if p.tags %}
-      <ul class="tags">{% for t in p.tags %}<li><a href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a></li>{% endfor %}</ul>
-      {% endif %}
     </article>
+    </div>
   </main>
 </body>
 </html>

@@ -5,13 +5,17 @@
 {% block content %}
 <header class="page-head">
   <h1>Search</h1>
-  <p>Client-side full-text search over titles, excerpts, tags, and blogs (Pagefind).</p>
+  <p class="lede">Full-text search over post titles, excerpts, tags and blogs, plus GitHub tools.</p>
 </header>
 <div id="search" class="search-ui"></div>
 {% endblock %}
 {% block scripts %}
 <script src="{{ base }}/pagefind/pagefind-ui.js"></script>
 <script>
-  new PagefindUI({ element: "#search", showImages: false, baseUrl: "{{ base }}/" });
+  (function () {
+    var ui = new PagefindUI({ element: "#search", showImages: false, showSubResults: false, baseUrl: "{{ base }}/", autofocus: true });
+    var q = new URLSearchParams(location.search).get("q");
+    if (q) ui.triggerSearch(q);
+  })();
 </script>
 {% endblock %}

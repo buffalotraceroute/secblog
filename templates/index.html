@@ -1,36 +1,14 @@
 {% extends "base.html" %}
-{% from "macros.html" import post_card %}
+{% from "macros.html" import post_sidebar, post_listing %}
 {% block content %}
-<section class="hero">
-  <h1>Security research archive</h1>
-  <p>{{ total }} posts from {{ sources|length }} blogs. Metadata and short excerpts only —
-     <a href="{{ base }}/search/">search</a> or filter by
-     <a href="{{ base }}/categories/">category</a>,
-     <a href="{{ base }}/tags/">tag</a>,
-     <a href="{{ base }}/blogs/">blog</a>, or
-     <a href="{{ base }}/years/">year</a>.</p>
-</section>
-{% if categories %}
-<div class="chip-row" aria-label="Categories">
-  {% for c in categories %}
-  <a class="chip" href="{{ base }}/category/{{ slugify(c) }}/">{{ c }}</a>
-  {% endfor %}
+<div class="layout">
+  {{ post_sidebar('latest', heading) }}
+  <div class="content">
+    <header class="page-head">
+      <h1>Latest research</h1>
+      <p class="lede">Links and short excerpts from {{ post_blog_count|num }} security research blogs.</p>
+    </header>
+    {{ post_listing(posts, sources, total, page, pages, base) }}
+  </div>
 </div>
-{% endif %}
-<section class="post-list">
-  {% for p in posts %}{{ post_card(p, sources) }}{% else %}
-  <p class="empty">No posts yet. Run the collector.</p>
-  {% endfor %}
-</section>
-{% if pages is defined and pages > 1 %}
-<nav class="pager">
-  {% if page > 1 %}
-  <a href="{% if page == 2 %}{{ base }}/{% else %}{{ base }}/page/{{ page - 1 }}/{% endif %}">← Newer</a>
-  {% endif %}
-  <span>Page {{ page }} / {{ pages }}</span>
-  {% if page < pages %}
-  <a href="{{ base }}/page/{{ page + 1 }}/">Older →</a>
-  {% endif %}
-</nav>
-{% endif %}
 {% endblock %}

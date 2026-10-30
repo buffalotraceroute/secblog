@@ -4,29 +4,35 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>{{ t.full_name }} · secblog tools</title>
+  <script>try{var s=localStorage.getItem("secblog-theme");if(s)document.documentElement.setAttribute("data-theme",s)}catch(e){}</script>
   <link rel="stylesheet" href="{{ base }}/assets/style.css"/>
 </head>
 <body>
-  <main class="wrap" style="padding:1.5rem 1.1rem 3rem">
-    <p class="eyebrow"><a href="{{ base }}/">secblog</a> · <a href="{{ base }}/tools/">tools</a></p>
-    <article class="post" data-pagefind-body>
-      <h1 class="post-title">{{ t.full_name }}</h1>
-      <div class="meta">
-        {% if t.language %}<span>{{ t.language }}</span>{% endif %}
+  <header class="site-header"><div class="wrap"><a class="logo" href="{{ base }}/"><span class="logo-mark" aria-hidden="true">&gt;_</span>secblog</a><nav class="site-nav"><a href="{{ base }}/">Posts</a><a href="{{ base }}/tools/" class="active">Tools</a><a href="{{ base }}/search/">Search</a></nav></div></header>
+  <main class="page wrap">
+    <div class="entry">
+    <p class="eyebrow"><a href="{{ base }}/tools/">← All tools</a></p>
+    <article class="card" data-pagefind-body>
+      <h1 class="card-title">{{ t.full_name }}</h1>
+      <p class="card-meta">
         <span>★ {{ t.stars or 0 }}</span>
-        {% if t.created_at %}<time datetime="{{ t.created_at }}">{{ t.created_at[:10] }}</time>{% endif %}
-        {% for c in t.categories or [] %}<span class="cat">{{ c }}</span>{% endfor %}
-        {% if t.affiliation %}<span>{{ t.affiliation }}</span>{% endif %}
-      </div>
-      {% if t.description %}<p class="excerpt">{{ t.description }}</p>{% endif %}
-      <div class="links">
-        <a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">GitHub</a>
-      </div>
-      <ul class="tags">
-        {% for s in t.sources or [] %}<li>{{ s }}</li>{% endfor %}
-        {% for top in t.topics or [] %}<li>{{ top }}</li>{% endfor %}
+        {% if t.language %}<span class="dot"></span><span>{{ t.language }}</span>{% endif %}
+        {% if t.created_at %}<span class="dot"></span><time datetime="{{ t.created_at }}">Created {{ t.created_at[:10] }}</time>{% endif %}
+        {% if t.pushed_at %}<span class="dot"></span><time datetime="{{ t.pushed_at }}">Updated {{ t.pushed_at[:10] }}</time>{% endif %}
+        {% if t.affiliation %}<span class="dot"></span><span>{{ t.affiliation }}</span>{% endif %}
+      </p>
+      {% if t.description %}<p class="card-text">{{ t.description }}</p>{% endif %}
+      <ul class="chips">
+        {% for c in t.categories or [] %}<li><a class="chip cat" href="{{ base }}/tools/?cat={{ c|urlencode }}">{{ c }}</a></li>{% endfor %}
+        {% for top in t.topics or [] %}<li><span class="chip">{{ top }}</span></li>{% endfor %}
+        {% for s in t.sources or [] %}<li><span class="chip">{{ s }}</span></li>{% endfor %}
       </ul>
+      <div class="card-links" style="font-size:.9rem;gap:1.2rem">
+        <a href="{{ t.url }}" rel="noopener noreferrer" target="_blank" style="color:var(--accent)">View on GitHub ↗</a>
+        {% if t.latest_release and t.latest_release.url %}<a href="{{ t.latest_release.url }}" rel="noopener noreferrer" target="_blank">Release {{ t.latest_release.tag }}</a>{% endif %}
+      </div>
     </article>
+    </div>
   </main>
 </body>
 </html>

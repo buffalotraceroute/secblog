@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<header class="page-head"><h1>{{ heading }}</h1></header>
-<ul class="tax-list">
-  {% for name, count in items %}
-  <li><a href="{{ base }}/{{ prefix }}/{{ slugify(name) }}/">{{ name }}</a> <span class="count">{{ count }}</span></li>
+<header class="page-head">
+  <p class="eyebrow"><a href="{{ base }}/">Posts</a></p>
+  <h1>{{ heading }}</h1>
+</header>
+{% if items|length > 30 %}
+<div class="toolbar">
+  <input class="field" id="page-filter" type="search" placeholder="Filter {{ heading|lower }}…" autocomplete="off" data-target="tax-list" data-items="li" style="max-width:320px"/>
+  <p class="result-count" id="result-count">{{ items|length|num }} {{ heading|lower }}</p>
+</div>
+{% endif %}
+<ul class="tile-grid{% if prefix != 'category' %} compact{% endif %}" id="tax-list">
+  {% for name, count in items if prefix != 'tag' or name in tag_pages %}
+  <li><a href="{{ base }}/{{ prefix }}/{{ slugify(name) }}/"><span class="name">{{ name }}</span> <span class="n">{{ count|num }}</span></a></li>
   {% endfor %}
 </ul>
+<p class="no-results" id="no-results" hidden>Nothing matches.</p>
 {% endblock %}

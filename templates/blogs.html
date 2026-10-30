@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<header class="page-head"><h1>Blogs</h1><p>{{ sources|length }} sources</p></header>
-<ul class="blog-list">
-  {% for s in sources %}
-  <li>
-    <a href="{{ base }}/blog/{{ s.id }}/">{{ s.name }}</a>
-    <span class="status status-{{ s.status }}">{{ status_labels.get(s.status, s.status) }}</span>
-    <span class="count">{{ counts.get(s.id, 0) }}</span>
-  </li>
+<header class="page-head">
+  <h1>Blogs</h1>
+  <p class="lede">Every source in the archive. <a href="{{ base }}/sources/">Feed status →</a></p>
+</header>
+<div class="toolbar">
+  <input class="field" id="page-filter" type="search" placeholder="Filter blogs…" autocomplete="off" data-target="blog-list" data-items="li" style="max-width:320px"/>
+  <p class="result-count" id="result-count">{{ counts|length|num }} blogs</p>
+</div>
+<ul class="tile-grid" id="blog-list">
+  {% for s in sources if counts.get(s.id, 0) %}
+  <li><a href="{{ base }}/blog/{{ s.id }}/" title="{{ status_labels.get(s.status, s.status) }}">
+    <span class="name"><span class="status status-{{ s.status }}" aria-label="{{ status_labels.get(s.status, s.status) }}"></span> {{ s.name }}</span>
+    <span class="n">{{ counts.get(s.id, 0)|num }}</span></a></li>
   {% endfor %}
 </ul>
+<p class="no-results" id="no-results" hidden>No blogs match.</p>
 {% endblock %}
