@@ -2,301 +2,301 @@
  "https://0dayfans.com/feed.rss": {
   "entries": 50,
   "etag": "\"b9a2c-65efc1504848b\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 29 Oct 2026 15:10:37 GMT",
   "status": 304
  },
  "https://0x64marsh.com/feed/": {
   "entries": 2,
   "etag": "\"683c0e8d5c16ab75862fb762ddc28881-gzip\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Thu, 06 Aug 2026 15:54:06 GMT",
   "status": 200
  },
  "https://0xboku.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"64b609b9-82d92\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Tue, 18 Jul 2023 03:40:41 GMT",
   "status": 304
  },
  "https://0xdf.gitlab.io/feed.xml": {
   "entries": 50,
   "etag": "\"41c075336182c376bafcac9135d77670f58034b061221568562ce8137d8ee519\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Sat, 24 Oct 2026 14:51:01 GMT",
   "status": 304
  },
  "https://0xeb-bp.com/feed": {
   "entries": 3,
   "etag": "W/\"69d6714b-16137\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Wed, 08 Apr 2026 15:16:27 GMT",
   "status": 304
  },
  "https://0xeb.net/feed/": {
   "entries": 10,
   "etag": "\"62250d4396da28a0c754c8b5a23b7598\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Thu, 12 Jan 2023 10:07:46 GMT",
   "status": 304
  },
  "https://0xpat.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6171bac7-aa07e\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 21 Oct 2021 19:08:55 GMT",
   "status": 304
  },
  "https://0xsapra.github.io/website/atom.xml": {
   "entries": 5,
   "etag": "W/\"6334552e-1172\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Wed, 28 Sep 2022 14:07:42 GMT",
   "status": 304
  },
  "https://0xsp.com/feed/": {
   "entries": 10,
   "etag": "W/\"d2c6d526cf96e69a4a8a79933aa2b248\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Wed, 16 Sep 2026 15:25:26 GMT",
   "status": 200
  },
  "https://0xv1n.github.io/index.xml": {
   "entries": 11,
   "etag": "W/\"699fc416-382b\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Thu, 26 Feb 2026 03:55:02 GMT",
   "status": 304
  },
  "https://3xpl01tc0d3r.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"7a6403bf38ebc45644c490d6c878821ca71b429697a039297c00164eda7c76aa\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Thu, 29 Oct 2026 10:59:35 GMT",
   "status": 304
  },
  "https://5pider.net/feed.xml": {
   "entries": 1,
   "etag": "W/\"fe9e5c6428b7db4e213f2d122ed70808\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": null,
   "status": 304
  },
  "https://adepts.of0x.cc/feed.xml": {
   "entries": 10,
   "etag": "\"5e4232e34043be98b6cc562741662988-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
-  "status": 200
+  "status": 304
  },
  "https://adnanthekhan.com/rss.xml": {
   "entries": 16,
   "etag": "W/\"d7781e885539700c1fa86b125c5d7ea7\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": null,
   "status": 304
  },
  "https://aff-wg.org/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Fri, 30 Oct 2026 00:12:27 GMT",
-  "status": 200
+  "status": 304
  },
  "https://alephsecurity.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6e738671ea32348c8d7e5da4ecdfdb6f-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 304
  },
  "https://alteredsecurity.com/blog-feed.xml": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:14Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": null,
   "status": 200
  },
  "https://amitschendel.github.io/feed.xml": {
   "entries": 3,
   "etag": "W/\"6abb9f18-17bdf\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 29 Sep 2026 11:20:56 GMT",
   "status": 304
  },
  "https://archie-osu.github.io/feed.xml": {
   "entries": 0,
   "etag": "W/\"67fcb6d2-10021\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Mon, 14 Apr 2025 07:18:42 GMT",
   "status": 304
  },
  "https://arielkoren.com/feed.xml": {
   "entries": 13,
   "etag": "\"1ffd-6585fb0418fcd-gzip\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Thu, 06 Aug 2026 12:04:22 GMT",
   "status": 200
  },
  "https://bad-jubies.github.io/feed": {
   "entries": 4,
   "etag": "W/\"6a7cce29-2a6f2\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Wed, 12 Aug 2026 19:48:57 GMT",
   "status": 304
  },
  "https://badoption.eu/feed.xml": {
   "entries": 10,
-  "etag": "W/\"69a537c1-34fda\"",
-  "last_checked": "2026-10-30T14:07:06Z",
-  "last_modified": "Mon, 02 Mar 2026 07:09:53 GMT",
+  "etag": "W/\"69a537c0-34fda\"",
+  "last_checked": "2026-10-30T14:25:39Z",
+  "last_modified": "Mon, 02 Mar 2026 07:09:52 GMT",
   "status": 200
  },
  "https://billdemirkapi.me/rss/": {
   "entries": 15,
-  "etag": "W/\"907d3-IUKaTSwXEX8bIEf4F6FZcGB/Sy0\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "etag": "W/\"907d3-y/S5g8xBLRRs+TwHnq9tNhThcco\"",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": null,
   "status": 200
  },
  "https://blacksnufkin.github.io/feed": {
   "entries": 5,
   "etag": "W/\"6a7587ec-16f0\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Fri, 07 Aug 2026 07:23:24 GMT",
   "status": 304
  },
  "https://blog.amberwolf.com/index.xml": {
   "direct_error": "HTTP 403",
   "entries": 46,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:47Z",
   "status": 200,
   "via": "feedly"
  },
  "https://blog.bitsadmin.com/feed.xml": {
   "entries": 8,
   "etag": "W/\"69de9f46-1ec7\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Tue, 14 Apr 2026 20:10:46 GMT",
   "status": 304
  },
  "https://blog.checkymander.com/feed.xml": {
   "entries": 6,
   "etag": "W/\"65675670-14adc\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Wed, 29 Nov 2023 15:19:12 GMT",
   "status": 304
  },
  "https://blog.christophetd.fr/feed/": {
   "entries": 10,
   "etag": "\"009e46e0be50d997f67a939b5f6563eb\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Tue, 04 Mar 2025 20:47:54 GMT",
   "status": 304
  },
  "https://blog.cloudflare.com/rss/": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://blog.coffinsec.com/feed.xml": {
   "entries": 10,
   "etag": "\"fX7GIQ\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
  "https://blog.compass-security.com/feed/": {
   "entries": 10,
   "etag": "\"9457e0275d073147681ba123c307878d-gzip\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Fri, 02 Oct 2026 10:00:00 GMT",
   "status": 304
  },
  "https://blog.cybershenanigans.space/posts/index.xml": {
   "entries": 5,
   "etag": "W/\"69f8588d90155e5a9b7249cc7670642f\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://blog.dbouman.nl/atom.xml": {
   "entries": 1,
   "etag": "W/\"690e7324-3535e\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Fri, 07 Nov 2025 22:31:00 GMT",
   "status": 304
  },
  "https://blog.deeb.ch/index.xml": {
   "entries": 18,
   "etag": "\"djj9tu31ac1h71d\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Fri, 26 Jun 2026 20:42:07 GMT",
   "status": 304
  },
  "https://blog.didierstevens.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Fri, 30 Oct 2026 13:57:43 GMT",
-  "status": 200
+  "status": 429
  },
  "https://blog.exodusintel.com/feed/": {
   "entries": 10,
   "etag": "W/\"314150945b1d1825e2d3c5c46c3f28b1\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 27 Jul 2026 15:02:33 GMT",
   "status": 304
  },
  "https://blog.fndsec.net/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Mon, 01 Jun 2026 12:42:45 GMT",
-  "status": 200
+  "status": 304
  },
  "https://blog.fox-it.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Mon, 26 Oct 2026 11:45:57 GMT",
-  "status": 200
+  "status": 429
  },
  "https://blog.google/security/rss/": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 200
  },
  "https://blog.harmj0y.net/feed/": {
   "entries": 10,
   "etag": "\"f3bdc1a39d8771e6d35b75ff3f0dbeb2\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Mon, 21 Feb 2022 22:38:16 GMT",
   "status": 304
  },
  "https://blog.impalabs.com/feed.xml": {
   "entries": 32,
   "etag": "W/\"650c6c90-5db0\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Thu, 21 Sep 2023 16:17:20 GMT",
   "status": 304
  },
  "https://blog.includesecurity.com/feed/": {
   "entries": 10,
   "etag": "W/\"c7bcadc7dbe2b50ff128c3a12011d52b\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Fri, 30 Oct 2026 13:18:41 GMT",
-  "status": 200
+  "status": 304
  },
  "https://blog.isosceles.com/rss/": {
   "entries": 10,
   "etag": "W/\"2fa3f-y1nPbo5Az2d7dcwhv2dBoikuCLY\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
@@ -310,1389 +310,1389 @@
  "https://blog.karims.cloud/feed.xml": {
   "entries": 10,
   "etag": "W/\"663091ad-1668a\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Tue, 30 Apr 2024 06:37:33 GMT",
   "status": 304
  },
  "https://blog.nviso.eu/feed/": {
   "entries": 10,
   "etag": "W/\"56673896124ac7e34eb34fd74ae6a24a\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Fri, 30 Oct 2026 12:57:06 GMT",
-  "status": 200
+  "status": 304
  },
  "https://blog.offensive.af/rss.xml": {
   "entries": 3,
   "etag": "W/\"27569d5cb414d4a3acad6b3455c6e967\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
  "https://blog.orange.tw/atom.xml": {
   "entries": 101,
   "etag": "W/\"6ae4340b-11075\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Fri, 30 Oct 2026 06:07:07 GMT",
   "status": 304
  },
  "https://blog.pi3.com.pl/?feed=rss2": {
   "entries": 10,
   "etag": "\"97659ffa4011666ee21d0fc091055de4-gzip\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Tue, 14 Nov 2023 20:59:03 GMT",
   "status": 200
  },
  "https://blog.quarkslab.com/feeds/all.atom.xml": {
   "entries": 15,
   "etag": "\"6ae0bd40-f86b4\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Tue, 27 Oct 2026 15:03:28 GMT",
   "status": 304
  },
  "https://blog.raw.pm/rss.xml": {
   "entries": 30,
   "etag": "\"16800eb69c3315b95546640ec16bc7b2eea6125decabe9cb0df37f87c6beb34d\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Tue, 14 Jul 2026 22:36:35 GMT",
   "status": 304
  },
  "https://blog.reconless.com/atom.xml": {
   "entries": 1,
   "etag": "W/\"5ed53530-3113\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Mon, 01 Jun 2020 17:04:48 GMT",
   "status": 304
  },
  "https://blog.redxorblue.com/feeds/posts/default?alt=rss": {
   "entries": 15,
   "etag": "W/\"c731e461004bd2e04aa72130ed6d7f71cca1d17cc5f940d743290a281cfb0ec9\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 30 Jul 2026 00:15:09 GMT",
   "status": 304
  },
  "https://blog.reigningshells.com/feeds/posts/default?alt=rss": {
   "entries": 4,
   "etag": "W/\"2223d74bdc5f834e1362f245dccfb526b0867b1855dfbbde11e78dfa6f75f61e\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Tue, 18 Aug 2026 05:24:36 GMT",
   "status": 304
  },
  "https://blog.ret2.io/feed.xml": {
   "entries": 10,
   "etag": "\"684ad036-7ba30\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 12 Jun 2025 13:03:50 GMT",
   "status": 304
  },
  "https://blog.ropnop.com/index.xml": {
   "entries": 30,
   "etag": "W/\"fe61f8515ef64863c70722357ac3827b19a0dc9b1fc0fbbf145adce8fd3f96cb\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 29 Oct 2026 23:36:36 GMT",
   "status": 304
  },
  "https://blog.ryotak.net/index.xml": {
   "entries": 21,
   "etag": "W/\"23df539ccdbfdede5adc1a8f9a1e533f\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 304
  },
  "https://blog.scrt.ch/feed/": {
   "entries": 0,
   "etag": "\"3014-65d2fc0521a4c-gzip\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Tue, 06 Oct 2026 17:58:51 GMT",
   "status": 200
  },
  "https://blog.slowerzs.net/posts/index.xml": {
   "entries": 4,
   "etag": "W/\"69825c5b-3ddc0\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 03 Feb 2026 20:36:43 GMT",
   "status": 304
  },
  "https://blog.syss.com/feed": {
   "entries": 43,
   "etag": "W/\"6ae448c0-146552\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Fri, 30 Oct 2026 07:35:28 GMT",
   "status": 304
  },
  "https://blog.teddykatz.com/feed.xml": {
   "entries": 6,
   "etag": "W/\"666be303-1b8ca\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Fri, 14 Jun 2024 06:28:19 GMT",
   "status": 304
  },
  "https://blog.washi.dev/feed.xml": {
   "entries": 5,
   "etag": "\"6a723101-1575\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 04 Aug 2026 18:35:45 GMT",
   "status": 304
  },
  "https://blog.xpnsec.com/rss.xml": {
   "direct_error": "HTTP 403",
   "entries": 42,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:47Z",
   "status": 200,
   "via": "feedly"
  },
  "https://blog.zolutal.io/feed": {
   "entries": 8,
   "etag": "W/\"698cc08c-62134\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Wed, 11 Feb 2026 17:46:52 GMT",
   "status": 304
  },
  "https://blog.zsec.uk/rss/": {
   "entries": 15,
-  "etag": "W/\"78f88-EnWrpmPl7peVWds9Pomyw0oTPg8\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "etag": "W/\"78f88-JZ0KOOgTUkXRqmRnPB8yVKyuvPk\"",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://bohops.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
-  "last_modified": "Sat, 26 Sep 2026 04:13:43 GMT",
+  "last_checked": "2026-10-30T14:25:30Z",
+  "last_modified": "Mon, 10 Aug 2026 09:38:42 GMT",
   "status": 200
  },
  "https://br-sn.github.io/feed.xml": {
   "entries": 3,
   "etag": "W/\"602453b7-28319\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Wed, 10 Feb 2021 21:44:23 GMT",
   "status": 304
  },
  "https://br0k3nlab.com/posts/index.xml": {
   "entries": 7,
   "etag": "W/\"69eadc5d-20ff9\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Fri, 24 Apr 2026 02:58:37 GMT",
   "status": 304
  },
  "https://brmk.me/posts/index.xml": {
   "direct_error": "HTTP 403",
   "entries": 7,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "status": 200,
   "via": "feedly"
  },
  "https://brutecat.com/rss.xml": {
   "entries": 6,
   "etag": "W/\"8a7b987c2ff3ded369d4de4fa4acd478\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://bruteratel.com/feed.xml": {
   "entries": 10,
   "etag": "\"2f8cf-657caabc3a540-gzip\"",
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": "Thu, 30 Jul 2026 02:17:17 GMT",
   "status": 200
  },
  "https://byte.how/index.xml": {
   "entries": 3,
   "etag": "\"2347b7d898db89abf43252ab4d86a338-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 304
  },
  "https://captmeelo.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ab0f4a1-455e6\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 21 Sep 2026 09:10:57 GMT",
   "status": 304
  },
  "https://certitude.consulting/blog/en/feed/": {
   "entries": 10,
   "etag": "\"7d9b348b2670eedb89edc95278380821-gzip\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Thu, 29 Oct 2026 16:05:27 GMT",
   "status": 200
  },
  "https://cicada-8.medium.com/feed": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:45Z",
   "last_modified": null,
   "status": 200
  },
  "https://clearbluejar.github.io/feed": {
   "entries": 5,
   "etag": "W/\"6a965a85-173b\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 01 Sep 2026 04:54:29 GMT",
   "status": 304
  },
  "https://cocomelonc.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ae48cf9-d3562\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Fri, 30 Oct 2026 12:26:33 GMT",
-  "status": 200
+  "status": 304
  },
  "https://code-white.com/index.xml": {
   "entries": 237,
   "etag": "\"6ae1e02a-229a9\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Wed, 28 Oct 2026 11:44:42 GMT",
   "status": 304
  },
  "https://codewhitesec.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"b3f17fb82bd4b12999cb855ae229e67bb6c8caa2dc4b7abf0d778b75fbef9a02\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 05 Sep 2024 06:19:37 GMT",
   "status": 304
  },
  "https://coffeegist.com/feed": {
   "entries": 10,
   "etag": "W/\"68d70ba7-2ca81\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Fri, 26 Sep 2025 21:54:47 GMT",
   "status": 304
  },
  "https://confused.ai/atom.xml": {
   "entries": 3,
   "etag": "\"63727b6c760730fa891c00a1b507f866-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://connormcgarr.github.io/feed.xml": {
   "entries": 0,
   "etag": "W/\"696fd58a-30ce93\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Tue, 20 Jan 2026 19:20:42 GMT",
   "status": 304
  },
  "https://console.substack.com/feed": {
   "direct_error": "HTTP 403",
   "entries": 50,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:47Z",
   "status": 200,
   "via": "feedly"
  },
  "https://content.positive.security/rss.xml": {
   "entries": 12,
   "etag": "\"2959-62dddd5033078\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Tue, 11 Feb 2025 13:30:45 GMT",
   "status": 304
  },
  "https://csandker.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"67f56c3d-4603c\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Tue, 08 Apr 2025 18:34:37 GMT",
   "status": 304
  },
  "https://ctf.re/feed.xml": {
   "entries": 5,
   "etag": "W/\"6605055d-359b7\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 28 Mar 2024 05:51:25 GMT",
   "status": 304
  },
  "https://cyberstoph.org/index.xml": {
   "entries": 10,
   "etag": "W/\"6238e7dd-2529\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 21 Mar 2022 21:02:21 GMT",
   "status": 304
  },
  "https://danrevah.github.io/feed.xml": {
   "entries": 2,
   "etag": "W/\"66af5df6-1174c\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sun, 04 Aug 2024 10:54:46 GMT",
   "status": 304
  },
  "https://dazzyddos.github.io/feed": {
   "entries": 5,
   "etag": "W/\"66b943f1-16fb\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sun, 11 Aug 2024 23:06:25 GMT",
   "status": 304
  },
  "https://decoder.cloud/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:58Z",
-  "last_modified": "Sat, 26 Sep 2026 04:14:31 GMT",
+  "last_checked": "2026-10-30T14:25:30Z",
+  "last_modified": "Wed, 22 Jul 2026 06:49:18 GMT",
   "status": 200
  },
  "https://denniskniep.github.io/index.xml": {
   "entries": 16,
   "etag": "W/\"69713a99-2fba\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Wed, 21 Jan 2026 20:44:09 GMT",
   "status": 304
  },
  "https://devco.re/rss": {
   "entries": 131,
-  "etag": "W/\"6ae20c7e-3d2841\"",
-  "last_checked": "2026-10-30T14:07:08Z",
-  "last_modified": "Wed, 28 Oct 2026 14:53:50 GMT",
-  "status": 304
+  "etag": "W/\"6ae20c7f-3d2841\"",
+  "last_checked": "2026-10-30T14:25:44Z",
+  "last_modified": "Wed, 28 Oct 2026 14:53:51 GMT",
+  "status": 200
  },
  "https://dfir.au/index.xml": {
   "entries": 36,
   "etag": "W/\"6ac636a8-6768\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Wed, 07 Oct 2026 12:10:16 GMT",
   "status": 304
  },
  "https://dfir.ch/posts/index.xml": {
   "entries": 51,
   "etag": "\"10aa8-65e9178104305-gzip\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Sat, 24 Oct 2026 07:58:57 GMT",
   "status": 200
  },
  "https://dirkjanm.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6a86ea1b-3a245\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 20 Aug 2026 11:50:51 GMT",
   "status": 304
  },
  "https://doar-e.github.io/feeds/atom.xml": {
   "entries": 29,
   "etag": "W/\"651adb0d-4851e8\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 02 Oct 2023 15:00:29 GMT",
   "status": 304
  },
  "https://dozer.nz/feed.xml": {
   "entries": 7,
   "etag": "W/\"6a175542-13c2e\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Wed, 27 May 2026 20:34:10 GMT",
   "status": 304
  },
  "https://dr4k0nia.github.io/feed": {
   "entries": 5,
   "etag": "W/\"67c62001-1640\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Mon, 03 Mar 2025 21:32:49 GMT",
   "status": 304
  },
  "https://dtm.uk/rss/": {
   "entries": 12,
   "etag": "W/\"2c82c-WxGQSehaVRS0P7E4lD+zns3KyHI\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
   "status": 304
  },
  "https://eddiez.me/rss/": {
   "entries": 7,
   "etag": "W/\"8453-KYWygNf3BR1MqtpFxOwsxsv96RI\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": null,
   "status": 304
  },
  "https://edermi.github.io/index.xml": {
   "entries": 13,
   "etag": "W/\"6acbb6c3-43c2\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Sun, 11 Oct 2026 16:18:11 GMT",
   "status": 304
  },
  "https://embracethered.com/blog/index.xml": {
   "entries": 233,
   "etag": "W/\"6acec2fd-4c1cd\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 13 Oct 2026 23:47:09 GMT",
   "status": 304
  },
  "https://en.hackndo.com/feed": {
   "entries": 10,
   "etag": "W/\"6a1431b3-6bdd9\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Mon, 25 May 2026 11:25:39 GMT",
-  "status": 200
+  "status": 304
  },
  "https://es3n1n.eu/rss.xml": {
   "entries": 3,
   "etag": "W/\"ecad5ed05375a1f2bfda2e87480010ef\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://etenal.me/feed": {
   "entries": 10,
   "etag": "W/\"3dfc27e952b53be41b20c8da84c0461e\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Fri, 16 Oct 2026 20:06:05 GMT",
   "status": 200
  },
  "https://ethicalchaos.dev/feed/": {
   "entries": 9,
   "etag": "\"ace1f0d1cb0a0dbb33aaa77651ebb3d8-gzip\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Sun, 17 Apr 2022 16:30:26 GMT",
   "status": 304
  },
  "https://eugene.kaspersky.com/feed/": {
   "entries": 10,
   "etag": "W/\"c2a66007266e47e8f233eea521b28d65\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Fri, 30 Oct 2026 07:20:51 GMT",
   "status": 304
  },
  "https://eversinc33.com/index.xml": {
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "status": 404
  },
  "https://feeds.feedburner.com/GynvaelColdwindPL": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Mon, 19 Oct 2026 01:28:36 GMT",
   "status": 200
  },
  "https://feeds.feedburner.com/tenable/qaXL": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Fri, 30 Oct 2026 11:14:30 GMT",
   "status": 200
  },
  "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": "Sat, 24 Oct 2026 10:58:35 GMT",
   "status": 200
  },
  "https://feeds.fortinet.com/fortinet/blog/threat-research": {
   "entries": 10,
   "etag": "\"73c55ced6cc37035ab5b8fd678b77b91\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Thu, 08 Oct 2026 20:36:50 GMT",
   "status": 304
  },
  "https://fin3ss3g0d.net/index.php/feed/": {
   "entries": 8,
   "etag": "\"a280c64f7d9cc7c26ed8d424d9790717\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Fri, 27 Dec 2024 16:00:09 GMT",
   "status": 304
  },
  "https://flatt.tech/research/index.xml": {
   "entries": 22,
   "etag": "W/\"ff98f0a4abdadd9c90465121cfd3d88c\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://fluxsec.red/rss.xml": {
   "entries": 53,
   "etag": "\"6ad3b1e9-40ab\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Sat, 17 Oct 2026 17:35:37 GMT",
   "status": 304
  },
  "https://frycos.github.io/feed.xml": {
   "entries": 0,
   "etag": "W/\"6851d9c8-92544\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Tue, 17 Jun 2025 21:10:32 GMT",
   "status": 304
  },
  "https://geohot.github.io/blog/feed.xml": {
   "entries": 10,
   "etag": "W/\"6acb1acc-950e\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sun, 11 Oct 2026 05:12:44 GMT",
   "status": 304
  },
  "https://gergelykalman.com/feeds/all.atom.xml": {
   "entries": 16,
   "etag": "W/\"5f70d73bc4a48e4f88dbd690fd104363\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Sat, 11 Jul 2026 09:14:03 GMT",
   "status": 304
  },
  "https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/commits.atom": {
   "entries": 20,
   "etag": "\"111c41c9408c20c037251cccaba7596b\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": null,
   "status": 304
  },
  "https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/releases.atom": {
   "entries": 0,
-  "etag": "W/\"fb4bfb26e91318dc7a8534f89dfb9814\"",
-  "last_checked": "2026-10-30T14:07:11Z",
+  "etag": "W/\"b58ce725f5f72bbb3370dc10cfdd18c4\"",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": null,
   "status": 200
  },
  "https://googleprojectzero.blogspot.com/feeds/posts/default": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": "Thu, 29 Oct 2026 06:15:42 GMT",
   "status": 304
  },
  "https://gosecure.ai/blog/feed/": {
   "entries": 0,
-  "etag": "W/\"cd4-aHMQkY2wUTTtxORJaSadwfUMUy8\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "etag": "W/\"cd4-nNCaIA2q5zhSAXJCNRB97yf3sZQ\"",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://grimmie.net/feed/": {
   "entries": 10,
   "etag": "\"b0686e317923116328302ce9e754bf08-gzip\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Fri, 14 Feb 2025 17:18:19 GMT",
   "status": 200
  },
  "https://h0mbre.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"68eee66a-12da1a\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Wed, 15 Oct 2025 00:10:18 GMT",
-  "status": 200
+  "status": 304
  },
  "https://hackcompute.com/rss/": {
   "entries": 2,
   "etag": "W/\"9eb0-fTfGyiROt1oSaEG5yt58lKSNZiQ\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": null,
-  "status": 200
+  "status": 304
  },
  "https://hausec.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Tue, 17 Feb 2026 02:27:40 GMT",
-  "status": 200
+  "status": 304
  },
  "https://hawktrace.com/index.xml": {
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:41Z",
   "status": 404
  },
  "https://haxrob.net/rss.xml": {
   "entries": 18,
   "etag": "W/\"4d7fc74cc9ff970e986bde4beec11b20\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": null,
   "status": 304
  },
  "https://haxx.in/index.xml": {
   "entries": 10,
   "etag": "\"7481-6421cf740cac0-gzip\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Mon, 27 Oct 2025 05:13:55 GMT",
   "status": 200
  },
  "https://heynowyouseeme.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"cfe24d03dd03e565722bf6e6f81a7d32a2af2acd0152508fc0fe655ce6e90b5b\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 13 Aug 2026 13:07:57 GMT",
   "status": 304
  },
  "https://horizon3.ai/feed/": {
   "entries": 10,
   "etag": "W/\"158de769f731b0acb5ffdb458df7285d\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Fri, 30 Oct 2026 14:01:47 GMT",
-  "status": 200
+  "status": 304
  },
  "https://icyguider.github.io/feed.xml": {
   "entries": 5,
   "etag": "W/\"62867408-e78f\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Thu, 19 May 2022 16:44:56 GMT",
   "status": 304
  },
  "https://idov31.github.io/rss.xml": {
   "entries": 13,
   "etag": "W/\"6ac0c727-29af\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sat, 03 Oct 2026 09:13:11 GMT",
   "status": 304
  },
  "https://igor-blue.github.io/feed.xml": {
   "entries": 7,
   "etag": "W/\"605f6913-9b6f1\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Sat, 27 Mar 2021 17:19:15 GMT",
   "status": 304
  },
  "https://ijustwannared.team/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
-  "last_modified": "Sun, 01 Feb 2026 02:19:00 GMT",
-  "status": 429
+  "last_checked": "2026-10-30T14:25:29Z",
+  "last_modified": "Mon, 15 Dec 2025 15:28:27 GMT",
+  "status": 200
  },
  "https://ilankalendarov.github.io/feed": {
   "entries": 1,
   "etag": "W/\"6367e40d-6c2\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Sun, 06 Nov 2022 16:42:53 GMT",
   "status": 304
  },
  "https://jackson-t.com/index.xml": {
   "entries": 22,
   "etag": "\"61e422c654e92f5cbf82f48ddc9533bcab65368acd7aedfab098640c6f9404e0\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Thu, 21 May 2026 15:51:17 GMT",
   "status": 304
  },
  "https://jakewnuk.com/index.xml": {
   "entries": 18,
   "etag": "W/\"6ae235ed-4956\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Wed, 28 Oct 2026 17:50:37 GMT",
   "status": 304
  },
  "https://jakobfriedl.github.io/index.xml": {
   "entries": 10,
   "etag": "W/\"6a97dae6-255f\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Wed, 02 Sep 2026 08:14:30 GMT",
   "status": 304
  },
  "https://james-clee.com/feed/": {
   "entries": 3,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Mon, 15 Dec 2025 15:28:55 GMT",
-  "status": 200
+  "status": 304
  },
  "https://jellevergeer.com/feed/": {
   "entries": 10,
   "etag": "\"52e6b05b00568b604354aa533fe0c914\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Thu, 22 May 2025 10:15:06 GMT",
   "status": 304
  },
  "https://jhalon.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"697c0283-17962c\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Fri, 30 Jan 2026 00:59:47 GMT",
   "status": 304
  },
  "https://jhftss.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ae34dea-45b71\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Thu, 29 Oct 2026 13:45:14 GMT",
   "status": 304
  },
  "https://jlajara.gitlab.io/feed.xml": {
   "entries": 23,
   "etag": "\"51e05cb334650d685a43ffbbbb4650840eb9afe943a74ad440ea42195829c1a0\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 14 Dec 2023 16:34:08 GMT",
   "status": 304
  },
  "https://jub0bs.com/posts/index.xml": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Fri, 30 Oct 2026 09:26:50 GMT",
   "status": 304
  },
  "https://khronokernel.com/feed.xml": {
   "entries": 0,
   "etag": "W/\"68583e61-26c80\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Sun, 22 Jun 2025 17:33:21 GMT",
   "status": 304
  },
  "https://kiddo-pwn.github.io/blog/index.xml": {
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "status": 404
  },
  "https://kitploit.com/rss.xml": {
   "entries": 50,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": null,
   "status": 200
  },
  "https://kqx.io/post/index.xml": {
   "entries": 7,
   "etag": "W/\"6adcc903-af9\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Sat, 24 Oct 2026 15:04:35 GMT",
   "status": 304
  },
  "https://kr0tt.github.io/index.xml": {
   "entries": 2,
   "etag": "W/\"68a354e8-6a5\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Mon, 18 Aug 2025 16:29:28 GMT",
   "status": 304
  },
  "https://krebsonsecurity.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Fri, 30 Oct 2026 03:46:41 GMT",
   "status": 304
  },
  "https://kyleavery.com/index.xml": {
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "status": 404
  },
  "https://labs.detectify.com/feed/": {
   "entries": 10,
   "etag": "W/\"ufl8c5yahc3yql\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": null,
   "status": 304
  },
  "https://labs.infoguard.ch/rss.xml": {
   "entries": 20,
   "etag": "W/\"d7e2510e8e4a11dc9a8a2243d7e5d8f9\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://labs.iximiuz.com/feed.atom": {
   "entries": 58,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Thu, 29 Oct 2026 20:36:54 GMT",
   "status": 304
  },
  "https://labs.jumpsec.com/feed": {
   "entries": 10,
   "etag": "W/\"699d2534-2fa0a\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Tue, 24 Feb 2026 04:12:36 GMT",
   "status": 304
  },
  "https://labs.watchtowr.com/rss/": {
   "entries": 15,
   "etag": "W/\"7dfd4-XAJDcLSsXf+qAzR550SA5EAz5oc\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
  "https://landave.io/post/index.xml": {
   "entries": 8,
   "etag": "\"65608fb2-1de9\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Fri, 24 Nov 2023 11:57:38 GMT",
   "status": 304
  },
  "https://laurencetennant.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ad62855-1288e\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Mon, 19 Oct 2026 14:25:25 GMT",
   "status": 304
  },
  "https://lockboxx.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Fri, 30 Oct 2026 08:43:23 GMT",
   "status": 200
  },
  "https://luemmelsec.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"690f1415-44ac7\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sat, 08 Nov 2025 09:57:41 GMT",
   "status": 304
  },
  "https://lyra.horse/blog/index.xml": {
   "entries": 6,
   "etag": "W/\"6a3fe844-b2a\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Sat, 27 Jun 2026 15:12:04 GMT",
   "status": 304
  },
  "https://m1el.github.io/feed.xml": {
   "entries": 0,
   "etag": "W/\"6aa59cdc-46a69\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Sat, 12 Sep 2026 18:41:32 GMT",
   "status": 304
  },
  "https://m417z.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ab8880e-2b236\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Sun, 27 Sep 2026 03:05:50 GMT",
   "status": 304
  },
  "https://macrosec.tech/index.php/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Mon, 20 May 2024 18:58:30 GMT",
   "status": 304
  },
  "https://malacupa.com/atom.xml": {
   "entries": 10,
   "etag": "W/\"e69cf0ffe0a72475aaaca08fcf1d5e63\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": null,
   "status": 304
  },
  "https://malicious.dev/index.xml": {
   "entries": 3,
   "etag": "W/\"6a46f5f5-f18\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 02 Jul 2026 23:36:21 GMT",
   "status": 304
  },
  "https://malware.pizza/feed/": {
   "entries": 2,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sun, 14 Dec 2025 13:58:26 GMT",
-  "status": 200
+  "status": 304
  },
  "https://mayfly277.github.io/feed": {
   "entries": 5,
   "etag": "W/\"69af0f46-1505\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Mon, 09 Mar 2026 18:19:50 GMT",
   "status": 304
  },
  "https://medium.com/feed/@1ndahous3": {
   "entries": 1,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@_graphx": {
   "entries": 7,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@cedowens": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@debugactiveprocess": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@desi-jarvis": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@eugenelimzw": {
   "entries": 8,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@frycos": {
   "entries": 6,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@mikko-kenttala": {
   "entries": 8,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@securityshenaningans": {
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "status": 404
  },
  "https://medium.com/feed/@skelsec": {
   "entries": 3,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/@straightblast": {
   "entries": 6,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/palantir": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": null,
   "status": 200
  },
  "https://medium.com/feed/red-teaming-with-a-blue-team-mentaility": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
   "status": 200
  },
  "https://micahvandeusen.com/blog/rss.xml": {
   "entries": 7,
   "etag": "W/\"f2de91c167777ab9487844673c5f9dba\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 07 Aug 2025 15:40:12 GMT",
   "status": 200
  },
  "https://mkiesel.ch/feed.xml": {
   "entries": 8,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:45Z",
   "last_modified": "Tue, 13 Oct 2026 21:15:25 GMT",
   "status": 304
  },
  "https://mksben.l0.cm/feeds/posts/default": {
   "entries": 18,
   "etag": "W/\"4373ff5a1f65fc364a689f01d392732eb41e9f8e5f96d04c6c0e19afdc12e7e6\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Fri, 30 Oct 2026 12:35:36 GMT",
-  "status": 200
+  "status": 304
  },
  "https://modexp.wordpress.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 09 Jul 2026 15:11:53 GMT",
-  "status": 200
+  "status": 304
  },
  "https://mrbruh.com/index.xml": {
   "entries": 16,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:08Z",
-  "last_modified": "Fri, 30 Oct 2026 14:00:30 GMT",
+  "last_checked": "2026-10-30T14:25:44Z",
+  "last_modified": "Fri, 30 Oct 2026 14:22:15 GMT",
   "status": 200
  },
  "https://msrc.microsoft.com/blog/feed": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": null,
   "status": 200
  },
  "https://n1ght-w0lf.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"65c01c92-68be0\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Sun, 04 Feb 2024 23:24:02 GMT",
   "status": 304
  },
  "https://n4r1b.com/index.xml": {
   "entries": 10,
   "etag": "\"376dd0936a5a8c3cf62f2036c00d72bc-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 200
  },
  "https://n4r1b.com/posts/index.xml": {
   "entries": 10,
   "etag": "\"14f7bed04af0f686bd1b836c65e43c93-ssl-df\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": null,
   "status": 200
  },
  "https://neodyme.io/rss.xml": {
   "entries": 38,
-  "etag": "\"tnisybk2k\"",
-  "last_checked": "2026-10-30T14:07:06Z",
-  "last_modified": "Mon, 26 Oct 2026 15:13:23 GMT",
-  "status": 304
+  "etag": "\"tnq5d4k2j\"",
+  "last_checked": "2026-10-30T14:25:39Z",
+  "last_modified": "Fri, 30 Oct 2026 14:24:40 GMT",
+  "status": 200
  },
  "https://nickbloor.co.uk/blog/feed/": {
   "entries": 10,
   "etag": "W/\"65e5b1c7eb3e74b4b5e66cf83b59d1eb\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Fri, 30 Oct 2026 02:28:24 GMT",
-  "status": 200
+  "status": 429
  },
  "https://noperator.dev/index.xml": {
   "entries": 15,
   "etag": "W/\"fd266f5ccd194733b5846c469d5b0422\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://oddvar.moe/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Wed, 09 Sep 2026 21:45:07 GMT",
-  "status": 200
+  "status": 304
  },
  "https://offensivedefence.co.uk/index.xml": {
   "entries": 29,
   "etag": "W/\"65bfa7bc-6376\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sun, 04 Feb 2024 15:05:32 GMT",
   "status": 304
  },
  "https://oxis.github.io/feed.xml": {
   "entries": 6,
   "etag": "W/\"6197b02d-6ef61\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Fri, 19 Nov 2021 14:09:49 GMT",
   "status": 304
  },
  "https://p0142.github.io/feed": {
   "entries": 0,
   "etag": "W/\"6937a65a-d5c\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Tue, 09 Dec 2025 04:32:26 GMT",
   "status": 304
  },
  "https://pagedout.institute/rss.xml": {
   "entries": 9,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": null,
   "status": 200
  },
  "https://palant.info/rss.xml": {
   "entries": 10,
   "etag": "\"6ae3a4f8-1a8f3\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 29 Oct 2026 19:56:40 GMT",
   "status": 304
  },
  "https://passthehashbrowns.github.io/feed": {
   "entries": 10,
   "etag": "W/\"64187d1f-9457e\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 20 Mar 2023 15:34:55 GMT",
   "status": 304
  },
  "https://pberba.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ad63cf0-65dad\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Mon, 19 Oct 2026 15:53:20 GMT",
   "status": 304
  },
  "https://pentestlab.blog/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:58Z",
-  "last_modified": "Tue, 14 Jul 2026 03:25:42 GMT",
+  "last_checked": "2026-10-30T14:25:31Z",
+  "last_modified": "Mon, 13 Jul 2026 05:13:06 GMT",
   "status": 200
  },
  "https://pgj11.com/feed": {
   "entries": 5,
   "etag": "W/\"6ae47a7c-180b\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Fri, 30 Oct 2026 11:07:40 GMT",
   "status": 304
  },
  "https://ph3n1x.com/index.xml": {
   "entries": 4,
   "etag": "W/\"117daa66d41e5dac518638eec859e5a7\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sat, 04 May 2024 15:37:09 GMT",
   "status": 304
  },
  "https://philkeeble.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"65a43298-9ad79\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sun, 14 Jan 2024 19:14:32 GMT",
   "status": 304
  },
  "https://portswigger.net/daily-swig/rss": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": null,
   "status": 200
  },
  "https://posts.inthecyber.com/feed": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": null,
   "status": 200
  },
  "https://pre.empt.dev/rss.xml": {
   "entries": 9,
   "etag": "\"13d9-65485fd00649c-gzip\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Thu, 18 Jun 2026 12:05:12 GMT",
   "status": 200
  },
  "https://ptr0x1.com/posts/index.xml": {
   "entries": 5,
   "etag": "\"dec98180f3663d020e671cbf4c8b7f757e50094ba0ea87b589db126d97f3c8ba\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Tue, 03 Oct 2023 13:23:25 GMT",
   "status": 304
  },
  "https://ptswarm.com/blog/feed/": {
   "entries": 10,
   "etag": "\"6d5572c5eb56842807052e18e70e70c4\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Tue, 15 Sep 2026 08:18:30 GMT",
   "status": 304
  },
  "https://pwning.tech/rss/": {
   "entries": 10,
   "etag": "W/\"6606adf8-5a455\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Fri, 29 Mar 2024 12:03:04 GMT",
   "status": 304
  },
  "https://pwnshift.github.io/feed.xml": {
   "entries": 2,
   "etag": "W/\"61155250-11579\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Thu, 12 Aug 2021 16:54:40 GMT",
   "status": 304
  },
  "https://raelize.com/index.xml": {
   "entries": 33,
-  "etag": "W/\"6a5fa001-824c\"",
-  "last_checked": "2026-10-30T14:06:57Z",
-  "last_modified": "Tue, 21 Jul 2026 16:36:17 GMT",
+  "etag": "W/\"6a5fa002-824c\"",
+  "last_checked": "2026-10-30T14:25:30Z",
+  "last_modified": "Tue, 21 Jul 2026 16:36:18 GMT",
   "status": 200
  },
  "https://rastamouse.me/rss/": {
   "entries": 15,
   "etag": "W/\"29710-MrMw3rpNO6RIyT1q0O444ZL4zB8\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 304
  },
  "https://raxis.com/feed.xml": {
   "entries": 30,
-  "etag": "W/\"51f5eeedf8145ce821285eae9d0302b7\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "etag": "W/\"bd3cf2c8ceb9a4e99ca9c1f83cdca630\"",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
-  "status": 304
+  "status": 200
  },
  "https://rce4fun.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"fc6c06e8263a2ce34a8d49e53b5a449e7aaa569e18c93a2123d7e1a024dcf165\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Wed, 21 Oct 2026 07:43:59 GMT",
   "status": 304
  },
  "https://redops.at/rss.xml": {
   "entries": 20,
   "etag": "W/\"4922c4ecc7098230d6e533b56d566849\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": null,
   "status": 200
  },
  "https://redteamer.tips/rss.xml": {
   "entries": 4,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
   "status": 200
  },
  "https://redteaming.co.uk/feed/": {
   "entries": 9,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Sun, 14 Dec 2025 16:12:37 GMT",
-  "status": 200
+  "status": 304
  },
  "https://rekken.github.io/atom.xml": {
   "entries": 7,
   "etag": "W/\"658fd3b9-5de1b\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Sat, 30 Dec 2023 08:24:25 GMT",
   "status": 304
  },
  "https://research.ifcr.dk/feed": {
   "entries": 8,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:12Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": null,
   "status": 200
  },
  "https://research.nccgroup.com/feed/": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": null,
   "status": 200
  },
  "https://retr0.blog/api/rss/feed.xml": {
   "entries": 10,
   "etag": "W/\"5d873bbe714e11c18cae927e8b93bff8\"",
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://revers.engineering/feed/": {
   "entries": 10,
   "etag": "\"c29778668436fb4c2d8843cd6ffac31c\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Thu, 27 Aug 2026 21:42:23 GMT",
   "status": 304
  },
  "https://rhinosecuritylabs.com/feed/": {
   "entries": 10,
   "etag": "W/\"95ef99ed25fd895be68e083cf631899a\"",
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Mon, 28 Sep 2026 23:01:37 GMT",
   "status": 200
  },
  "https://ricardojoserf.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ae30602-1e0e1\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Thu, 29 Oct 2026 08:38:26 GMT",
   "status": 304
  },
  "https://riccardoancarani.github.io/index.xml": {
   "entries": 18,
   "etag": "W/\"6ab95e43-652f\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sun, 27 Sep 2026 18:19:47 GMT",
   "status": 304
  },
  "https://ristbs.github.io/feed.xml": {
   "entries": 3,
   "etag": "W/\"6421f029-1341c\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Mon, 27 Mar 2023 19:36:09 GMT",
   "status": 304
  },
  "https://ryan.framinan.net/index.xml": {
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "status": 404
  },
  "https://s1ckb017.github.io/feed.xml": {
   "entries": 2,
   "etag": "W/\"62e582d1-1e685\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Sat, 30 Jul 2022 19:13:21 GMT",
   "status": 304
  },
  "https://s3cur3th1ssh1t.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6acf2d66-38239\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Wed, 14 Oct 2026 07:21:10 GMT",
   "status": 304
  },
  "https://samcurry.net/api/feed.atom": {
   "entries": 24,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 200
  },
  "https://secjuice.com/rss/": {
   "direct_error": "HTTP 403",
   "entries": 48,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:47Z",
   "status": 200,
   "via": "feedly"
  },
  "https://secret.club/feed.xml": {
   "entries": 10,
   "etag": "W/\"6a0ef71f-3cf712\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 21 May 2026 12:14:23 GMT",
   "status": 304
  },
  "https://securitylabs.datadoghq.com/rss/feed.xml": {
   "entries": 30,
   "etag": "W/\"e48f445d892979c2829032db3caafaf5\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Thu, 29 Oct 2026 14:59:44 GMT",
   "status": 304
  },
  "https://sensepost.com/rss.xml": {
   "entries": 578,
   "etag": "W/\"6b99cba4aac4522ca4944145ea534a05\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Thu, 16 Jul 2026 13:46:22 GMT",
   "status": 304
  },
  "https://sethsec.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"9b6d597a6ea30d24261d663a68c061215ac76f3306647c4111ba9cc0119a88ff\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Fri, 30 Oct 2026 07:47:20 GMT",
   "status": 304
  },
  "https://sevrosecurity.com/feed?gi=80fae2b733d0": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": null,
   "status": 200
  },
  "https://shenaniganslabs.io/feed": {
   "entries": 10,
   "etag": "W/\"6a674cfa-2af50\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Mon, 27 Jul 2026 12:20:10 GMT",
   "status": 304
  },
  "https://sick.codes/feed/": {
   "entries": 10,
   "etag": "\"57e2593ebaced5ce3b7da8d8ce39ff8b-gzip\"",
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Tue, 30 Jul 2024 16:04:11 GMT",
   "status": 200
  },
  "https://simondotsh.com/feed.xml": {
   "entries": 9,
   "etag": "W/\"695a9196-2f5b1\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Sun, 04 Jan 2026 16:13:10 GMT",
   "status": 304
  },
  "https://skylightcyber.com/feed-v1.xml": {
   "entries": 17,
   "etag": "W/\"6660b1794221320c995cbf49043c3ca1-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
  "https://snoolie.gay/blog/rss.xml": {
   "entries": 0,
   "etag": "W/\"867c7d207ba4d28d11ac740cb856c1ef\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Thu, 29 Oct 2026 00:56:35 UTC",
   "status": 304
  },
  "https://specterops.io/feed/": {
   "entries": 50,
   "etag": "W/\"8a0d6892d7165d9b34cd164cb5f58597\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Fri, 30 Oct 2026 01:11:08 GMT",
   "status": 304
  },
@@ -1706,752 +1706,752 @@
  "https://srcincite.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6982d1e3-11d299\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Wed, 04 Feb 2026 04:58:11 GMT",
   "status": 304
  },
  "https://sud0ru.ghost.io/rss/": {
   "entries": 15,
   "etag": "W/\"4f22e-L1Tfb5V0Z7pbLZduAV6z0ISCFfY\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://summoning.team/blog/index.xml": {
   "entries": 0,
   "etag": "W/\"20a829a623ec1629353789da01577605\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 304
  },
  "https://swapcontext.blogspot.com/feeds/posts/default": {
   "entries": 18,
   "etag": "W/\"48f699a09a5d1c59dadbb34185823f05d862940f14c65447136415fd7a51de93\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Thu, 29 Aug 2024 06:51:17 GMT",
   "status": 304
  },
  "https://synzack.github.io/feed.xml": {
   "entries": 6,
   "etag": "W/\"612cdf13-2fdbc\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 30 Aug 2021 13:37:23 GMT",
   "status": 304
  },
  "https://tcm-sec.com/feed/": {
   "entries": 10,
-  "etag": "\"de8c327c1cf63b8ece9447ff9a807cf2\"",
-  "last_checked": "2026-10-30T14:07:11Z",
-  "last_modified": "Fri, 30 Oct 2026 14:06:11 GMT",
+  "etag": "\"c4318eb5d0e559ce3529d77b58a89827\"",
+  "last_checked": "2026-10-30T14:25:46Z",
+  "last_modified": "Fri, 30 Oct 2026 14:19:57 GMT",
   "status": 200
  },
  "https://teamhydra.blog/feed/": {
   "entries": 3,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
-  "last_modified": "Sat, 26 Sep 2026 04:19:59 GMT",
+  "last_checked": "2026-10-30T14:25:32Z",
+  "last_modified": "Mon, 15 Dec 2025 15:27:37 GMT",
   "status": 200
  },
  "https://thalpius.com/feed/": {
   "entries": 5,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Wed, 21 Oct 2026 14:50:46 GMT",
-  "status": 200
+  "status": 304
  },
  "https://the-deniss.github.io/feed.xml": {
   "entries": 5,
   "etag": "W/\"6462010c-4bf73\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Mon, 15 May 2023 09:53:16 GMT",
   "status": 304
  },
  "https://theevilbit.github.io/index.xml": {
   "entries": 30,
   "etag": "W/\"6ad88925-38cd\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Wed, 21 Oct 2026 09:43:01 GMT",
-  "status": 200
+  "status": 304
  },
  "https://therealunicornsecurity.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"67ddf8a3-48be9\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Fri, 21 Mar 2025 23:39:15 GMT",
   "status": 304
  },
  "https://tij.me/feeds/atom.xml": {
   "entries": 0,
   "etag": "W/\"66a6907d-b17c1\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sun, 28 Jul 2024 18:39:57 GMT",
-  "status": 200
+  "status": 304
  },
  "https://trickster0.github.io/feed": {
   "entries": 5,
   "etag": "W/\"68568d33-15f2\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sat, 21 Jun 2025 10:45:07 GMT",
   "status": 304
  },
  "https://truneski.github.io/index.xml": {
   "entries": 6,
   "etag": "W/\"5f6f1383-18d1\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sat, 26 Sep 2020 10:10:11 GMT",
   "status": 304
  },
  "https://trustedsec.com/feed.rss": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": null,
   "status": 200
  },
  "https://ulexec.github.io/index.xml": {
   "entries": 17,
   "etag": "W/\"69b55037-ada7\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sat, 14 Mar 2026 12:10:31 GMT",
   "status": 304
  },
  "https://undev.ninja/rss/": {
   "entries": 6,
   "etag": "W/\"2146e-maVYdpzgArC5hX8xb9Tdybye0Qw\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
-  "status": 200
+  "status": 304
  },
  "https://unit42.paloaltonetworks.com/feed/": {
   "entries": 15,
   "etag": "\"5df6171b6b4c26120951a957e8bd2f6e-gzip\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Thu, 29 Oct 2026 20:13:20 GMT",
   "status": 304
  },
  "https://unsigned-sh0rt.net/index.xml": {
   "entries": 5,
   "etag": "\"0c0f464e4ca20c7d30665a9b29a4ff43-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
-  "status": 304
+  "status": 200
  },
  "https://v3ded.github.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"6491873f-70154\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Tue, 20 Jun 2023 11:02:23 GMT",
   "status": 304
  },
  "https://vanmieghem.io/feed.xml": {
   "entries": 10,
   "etag": "W/\"68c9a03d-293fc\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Tue, 16 Sep 2025 17:37:01 GMT",
   "status": 304
  },
  "https://voidsec.com/feed/": {
   "entries": 10,
   "etag": "W/\"e954b54a698efe958d586491b3776477\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sat, 12 Sep 2026 12:26:21 GMT",
   "status": 304
  },
  "https://vollragm.github.io/feed": {
   "entries": 5,
   "etag": "W/\"68aa5c0a-1969\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Sun, 24 Aug 2025 00:25:46 GMT",
   "status": 304
  },
  "https://waawaa.github.io/feed.xml": {
   "entries": 7,
   "etag": "W/\"62f35ef1-5e60c\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Wed, 10 Aug 2022 07:32:01 GMT",
   "status": 304
  },
  "https://watchfulip.github.io/feed.xml": {
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "status": 404
  },
  "https://whereisk0shl.top/feed.xml": {
   "entries": 50,
   "etag": "W/\"6a3dea3e-4c1a\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Fri, 26 Jun 2026 02:55:58 GMT",
   "status": 304
  },
  "https://whiteknightlabs.com/feed/": {
   "entries": 10,
   "etag": "\"4cd604c12f44e6dc656d52dd6d8648c8-gzip\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Wed, 07 Oct 2026 08:42:11 GMT",
   "status": 200
  },
  "https://whynotsecurity.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6520242a-1c6b8\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Fri, 06 Oct 2023 15:13:46 GMT",
   "status": 304
  },
  "https://williamknowles.io/feed/": {
   "entries": 5,
   "etag": "\"a64728e839c0d292f88329ef84d42df3\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Mon, 28 Apr 2025 00:51:16 GMT",
   "status": 304
  },
  "https://windows-internals.com/feed/": {
   "entries": 10,
   "etag": "\"df30b40be95565e4aef16b9246e56801\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 22 Oct 2026 16:51:23 GMT",
   "status": 304
  },
  "https://winternl.com/feed/": {
   "entries": 10,
   "etag": "\"e07f264cfc05e7288158dd469640e35f-gzip\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Mon, 03 Nov 2025 15:21:03 GMT",
   "status": 200
  },
  "https://www.0ffset.net/feed/": {
   "entries": 4,
-  "etag": "W/\"01d61a5f357783d95979041ba7d7f8b7\"",
-  "last_checked": "2026-10-30T14:06:59Z",
-  "last_modified": "Mon, 05 Oct 2026 16:57:38 GMT",
-  "status": 304
+  "etag": "W/\"ec8145cf1f6c61d8d724b89506f8a04e\"",
+  "last_checked": "2026-10-30T14:25:32Z",
+  "last_modified": "Sun, 24 May 2026 10:25:53 GMT",
+  "status": 200
  },
  "https://www.accidentalrebel.com/feeds/all.atom.xml": {
   "entries": 53,
   "etag": "W/\"6ab966dd-b08fb\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Sun, 27 Sep 2026 18:56:29 GMT",
   "status": 304
  },
  "https://www.allysonomalley.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Thu, 11 Feb 2021 21:31:03 GMT",
   "status": 304
  },
  "https://www.arashparsa.com/rss/": {
   "entries": 15,
   "etag": "W/\"4f6c1-HXn7N/qUNNXUmGr7J3Eg6p8ZDPY\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": null,
   "status": 304
  },
  "https://www.archcloudlabs.com/index.xml": {
   "entries": 0,
   "etag": "W/\"8b664688689700afa48200e2a45b7d55\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Thu, 24 Sep 2026 00:50:34 GMT",
   "status": 304
  },
  "https://www.atredis.com/blog-posts?format=rss": {
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "status": 404
  },
  "https://www.bencteux.fr/index.xml": {
   "entries": 39,
   "etag": "\"6abbbd0e-63e6\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Tue, 29 Sep 2026 13:28:46 GMT",
   "status": 304
  },
  "https://www.blackhillsinfosec.com/feed": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Wed, 28 Oct 2026 20:27:36 GMT",
-  "status": 200
+  "status": 304
  },
  "https://www.bordergate.co.uk/feed/": {
   "entries": 15,
   "etag": "\"c2154aaf8d99d897d25ad7d5af469cff\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Sun, 06 Sep 2026 16:32:39 GMT",
   "status": 304
  },
  "https://www.certego.net/rss.xml": {
   "entries": 171,
   "etag": "W/\"96392635b2c90bf1740e04f084d287e5\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Thu, 22 Oct 2026 08:51:14 GMT",
   "status": 304
  },
  "https://www.chadduffey.com/feed.xml": {
   "entries": 10,
   "etag": "\"27374996\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Mon, 19 Oct 2026 07:43:47 GMT",
   "status": 304
  },
  "https://www.cipherdyne.org/atom.xml": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 29 Feb 2024 21:26:04 GMT",
   "status": 304
  },
  "https://www.cobaltstrike.com/blog/feed": {
   "entries": 11,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:47Z",
   "status": 200,
   "via": "feedly"
  },
  "https://www.cobaltstrike.com/feed": {
   "entries": 36,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "status": 200,
   "via": "feedly"
  },
  "https://www.darknavy.org/blog/index.xml": {
   "entries": 16,
   "etag": "W/\"6a8c0d67-673f\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Mon, 24 Aug 2026 09:22:47 GMT",
   "status": 304
  },
  "https://www.deepinstinct.com/blog/feed.xml": {
   "entries": 10,
   "etag": "\"f8b74f53cccc2c5731028cbeb5d8086b-ssl-df\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
   "status": 304
  },
  "https://www.depthsecurity.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Tue, 06 Oct 2026 17:20:20 GMT",
   "status": 304
  },
  "https://www.ehpus.com/blog-feed.xml": {
   "entries": 2,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Fri, 30 Oct 2026 03:52:12 GMT",
   "status": 304
  },
  "https://www.elttam.com/blog/rss.xml": {
   "entries": 43,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Wed, 28 Oct 2026 11:34:07 GMT",
   "status": 304
  },
  "https://www.enablesecurity.com/blog/index.xml": {
   "entries": 59,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.evilsocket.net/atom.xml": {
   "entries": 20,
   "etag": "W/\"69fb3f9f-81ead\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Wed, 06 May 2026 13:18:23 GMT",
-  "status": 200
+  "status": 304
  },
  "https://www.exandroid.dev/atom.xml": {
   "entries": 5,
   "etag": "W/\"68864cd8-9f1d\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Sun, 27 Jul 2025 15:59:20 GMT",
   "status": 304
  },
  "https://www.ezequiel.tech/feeds/posts/default": {
   "entries": 5,
   "etag": "W/\"93fe16848b7e7e717f459c425715a85cca068d922b7ceeb2159194771eb989c8\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Fri, 04 Oct 2024 16:04:28 GMT",
   "status": 304
  },
  "https://www.fitretech.com/blog?format=rss": {
   "entries": 2,
-  "etag": "W/\"62a98f91a84e7e0cbb287f1de18b9767\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "etag": "W/\"0ba29171e52745a538561ee1cacf2613\"",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
-  "status": 304
+  "status": 200
  },
  "https://www.goichot.fr/posts/index.xml": {
   "entries": 3,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Sat, 30 Aug 2025 23:33:25 GMT",
   "status": 304
  },
  "https://www.gremwell.com/rss.xml": {
   "entries": 10,
   "etag": "W/\"42dcc3f4c83e5de500d80e5f03f380a2\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": null,
   "status": 304
  },
  "https://www.hackingarticles.in/feed/": {
   "entries": 10,
   "etag": "\"154a6109163dc8b69198e22d1361e9e7-gzip\"",
-  "last_checked": "2026-10-30T14:07:10Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": "Thu, 22 Oct 2026 19:55:45 GMT",
   "status": 200
  },
  "https://www.hexacorn.com/blog/feed/": {
   "entries": 5,
   "etag": "\"6b437268121cb4bc7d3f831bc4617200-gzip\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Sun, 25 Oct 2026 01:14:26 GMT",
   "status": 200
  },
  "https://www.hopinfosec.com/atom.xml": {
   "entries": 0,
   "etag": "W/\"63f68d9b-10ba2\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Wed, 22 Feb 2023 21:48:11 GMT",
   "status": 304
  },
  "https://www.hunters.security/en/blog/rss.xml": {
   "entries": 10,
   "etag": "W/\"a6e562d375f405b2aa71185b54c8beea\"",
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Sat, 04 Jul 2026 20:22:38 GMT",
   "status": 200
  },
  "https://www.ihteam.net/feed/": {
   "entries": 10,
   "etag": "\"9234a5a6ee2533e477f7143da6c8981a-gzip\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sun, 21 Sep 2025 13:45:44 GMT",
   "status": 200
  },
  "https://www.infosecnoodle.com/feed": {
   "entries": 4,
   "etag": "W/\"14604-iwWo8YaD6c+Dc3lqF1BQ35o/Nww\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": null,
-  "status": 200
+  "status": 304
  },
  "https://www.legacyy.xyz/feed": {
   "entries": 7,
   "etag": "W/\"67ffe5a2-4691e\"",
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": "Wed, 16 Apr 2025 17:15:14 GMT",
   "status": 304
  },
  "https://www.levelblue.com/blogs/spiderlabs-blog/rss.xml": {
   "entries": 10,
   "etag": "W/\"61c4d916c5335572e4b7571eb1652954\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Fri, 30 Oct 2026 13:57:09 GMT",
   "status": 200
  },
  "https://www.mac4n6.com/blog?format=rss": {
   "entries": 20,
-  "etag": "W/\"93df84dd77f99c286e7dd26815b85aa7\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "etag": "W/\"3b5e486251d22e4d4a03cd04a3840590\"",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
-  "status": 304
+  "status": 200
  },
  "https://www.malwaretech.com/feed": {
   "entries": 10,
   "etag": "W/\"6ad6b1ca-2796\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:35Z",
   "last_modified": "Tue, 20 Oct 2026 00:11:54 GMT",
   "status": 304
  },
  "https://www.matteomalvica.com/blog/index.xml": {
   "entries": 20,
   "etag": "\"2df64cbf29772912860111162a28a40a-ssl-df\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": null,
-  "status": 200
+  "status": 304
  },
  "https://www.mdsec.co.uk/feed/": {
   "entries": 10,
   "etag": "W/\"bd83ea2d9ed290f1f326d76ff9f2b168\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Fri, 28 Aug 2026 08:47:39 GMT",
   "status": 304
  },
  "https://www.mnemonic.io/resources/blog/rss.xml": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:01Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.n00py.io/feed/": {
   "entries": 10,
   "etag": "\"f55a7d77cc778858f636d08023de8278\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Mon, 21 Apr 2025 15:56:09 GMT",
   "status": 304
  },
  "https://www.naksyn.com/atom.xml": {
   "entries": 6,
   "etag": "W/\"6683cc1a-2ade9\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Tue, 02 Jul 2024 09:44:58 GMT",
   "status": 304
  },
  "https://www.netspi.com/blog/technical-blog/feed/": {
   "entries": 10,
   "etag": "W/\"a75bfad97a748638091fdda4c90f18d8\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Mon, 26 Oct 2026 20:26:08 GMT",
   "status": 304
  },
  "https://www.oobs.io/index.xml": {
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "status": 404
  },
  "https://www.outflank.nl/blog/feed/": {
   "direct_error": "HTTP 403",
   "entries": 26,
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:45Z",
   "status": 200,
   "via": "feedly"
  },
  "https://www.pavel.gr/rss.xml": {
   "entries": 5,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:06Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.pentagrid.ch/de/rss.xml": {
   "entries": 25,
   "etag": "W/\"6ab4d2ad-b934c\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Thu, 24 Sep 2026 07:35:09 GMT",
   "status": 304
  },
  "https://www.pentestpartners.com/feed/": {
   "entries": 10,
   "etag": "W/\"a7af30e73d8a3815f04fb5e4c79f863f\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Wed, 28 Oct 2026 12:44:09 GMT",
   "status": 200
  },
  "https://www.pixiepointsecurity.com/blog/index.xml": {
   "entries": 10,
   "etag": "W/\"30503789d40f70940b15211a6990186f\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Mon, 22 Dec 2025 06:31:09 GMT",
   "status": 304
  },
  "https://www.praetorian.com/feed/": {
   "entries": 10,
   "etag": "W/\"67a526eb18e67b0af61aad9ed96024bb\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Tue, 27 Oct 2026 19:56:41 GMT",
   "status": 304
  },
  "https://www.rcesecurity.com/index.xml": {
   "entries": 169,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": "Mon, 26 Oct 2026 11:25:46 GMT",
   "status": 304
  },
  "https://www.reversemode.com/feeds/posts/default": {
   "entries": 24,
   "etag": "W/\"c3b4e24c2af95ee109701d843f8edb948e517ea9d7b8311d3f7fc78cbe250356\"",
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Mon, 26 Oct 2026 12:57:29 GMT",
   "status": 304
  },
  "https://www.romainthomas.fr/index.xml": {
   "entries": 51,
   "etag": "W/\"6aca3537-1c9f31\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Sat, 10 Oct 2026 12:53:11 GMT",
   "status": 304
  },
  "https://www.rythmstick.net/index.xml": {
   "entries": 4,
   "etag": "W/\"6823be8e-f61\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Tue, 13 May 2025 21:50:06 GMT",
   "status": 304
  },
  "https://www.schneier.com/feed/": {
   "entries": 10,
   "etag": "W/\"535c9ab97578a756b05929186a466728\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Thu, 29 Oct 2026 15:53:00 GMT",
-  "status": 429
+  "status": 304
  },
  "https://www.securify.nl/rss/blogs.xml": {
   "entries": 85,
   "etag": "\"5b322ca65c023f38f83ba5be9af2e70df8a161f2db6d58a84988810941c99379\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Wed, 30 Sep 2026 09:49:30 GMT",
   "status": 304
  },
  "https://www.sentinelone.com/labs/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:32Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.shielder.com/blog/index.xml": {
   "entries": 32,
   "etag": "\"6ace2b36-c415\"",
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:38Z",
   "last_modified": "Tue, 13 Oct 2026 12:59:34 GMT",
   "status": 304
  },
  "https://www.solomonsklash.io/feeds/all.atom.xml": {
   "entries": 13,
   "etag": "W/\"63cf7b46-318f3\"",
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Tue, 24 Jan 2023 06:31:34 GMT",
   "status": 304
  },
  "https://www.sonarsource.com/rss/blog.xml": {
   "entries": 20,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "2026-10-29T22:53:49.899Z",
   "status": 200
  },
  "https://www.sprocketsecurity.com/blog/rss.xml": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:03Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Fri, 30 Oct 2026 12:24:34 GMT",
   "status": 304
  },
  "https://www.symbolcrash.com/feed/": {
   "entries": 10,
   "etag": null,
-  "last_checked": "2026-10-30T14:06:58Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Thu, 29 Oct 2026 21:19:46 GMT",
   "status": 304
  },
  "https://www.synacktiv.com/en/feed/lastblog.xml": {
   "entries": 30,
   "etag": "\"6acf3c53-25dc\"",
-  "last_checked": "2026-10-30T14:07:00Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Wed, 14 Oct 2026 08:24:51 GMT",
   "status": 304
  },
  "https://www.tarlogic.com/feed/": {
   "entries": 0,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:33Z",
   "last_modified": "Thu, 29 Oct 2026 02:02:30 GMT",
   "status": 304
  },
  "https://www.thirtythreeforty.net/feed.xml": {
   "entries": 14,
   "etag": "W/\"cc0f907be89b8c0efd46eaaa8195b32a206fde2b0a60792570a0be2a6f0027e9\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Fri, 27 Mar 2026 03:13:55 GMT",
   "status": 304
  },
  "https://www.vulncheck.com/feed/blog/atom.xml": {
   "entries": 198,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:07Z",
+  "last_checked": "2026-10-30T14:25:39Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.wietzebeukema.nl/blog/feed.xml": {
   "entries": 8,
   "etag": "W/\"6a8377db-266d\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Mon, 17 Aug 2026 21:06:35 GMT",
   "status": 304
  },
  "https://www.willsroot.io/feeds/posts/default?alt=rss": {
   "entries": 9,
   "etag": "W/\"a6b50f947a7b4f3ce748a4ffd2e66dcd5a8ef60b445fe3389dcb86b9886f331c\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Wed, 07 Oct 2026 12:07:12 GMT",
   "status": 304
  },
  "https://www.wiz.io/feed/rss.xml": {
   "entries": 713,
   "etag": null,
-  "last_checked": "2026-10-30T14:07:05Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": null,
   "status": 200
  },
  "https://www.zerodayinitiative.com/blog?format=rss": {
   "entries": 20,
   "etag": "W/\"791098780ce4cac72903d7cf753256a2\"",
-  "last_checked": "2026-10-30T14:07:11Z",
+  "last_checked": "2026-10-30T14:25:46Z",
   "last_modified": null,
   "status": 304
  },
  "https://www.zerosalarium.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"7547786872e6db34d148451acff801d46ee641b0a2e17681b438bd3b27a10c5c\"",
-  "last_checked": "2026-10-30T14:07:09Z",
+  "last_checked": "2026-10-30T14:25:44Z",
   "last_modified": "Mon, 19 Oct 2026 00:11:42 GMT",
   "status": 304
  },
  "https://wwws.nightwatchcybersecurity.com/feed/": {
   "entries": 10,
   "etag": "W/\"0c6081d1375c53d9cdc58e282f6a970d\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:37Z",
   "last_modified": "Thu, 22 Oct 2026 11:49:27 GMT",
   "status": 304
  },
  "https://x-c3ll.github.io/rss": {
   "entries": 26,
   "etag": "W/\"6a55e36c-2ec4\"",
-  "last_checked": "2026-10-30T14:06:56Z",
+  "last_checked": "2026-10-30T14:25:29Z",
   "last_modified": "Tue, 14 Jul 2026 07:21:16 GMT",
   "status": 304
  },
  "https://x41-dsec.de/feed.xml": {
   "entries": 0,
   "etag": "\"1da0f-65d6310a65cd9-gzip\"",
-  "last_checked": "2026-10-30T14:07:02Z",
+  "last_checked": "2026-10-30T14:25:34Z",
   "last_modified": "Fri, 09 Oct 2026 07:12:02 GMT",
   "status": 200
  },
  "https://xybytes.com/feed.xml": {
   "entries": 7,
   "etag": "W/\"69d983a9-266aa\"",
-  "last_checked": "2026-10-30T14:07:08Z",
+  "last_checked": "2026-10-30T14:25:40Z",
   "last_modified": "Fri, 10 Apr 2026 23:11:37 GMT",
   "status": 304
  },
  "https://yasoob.me/index.xml": {
   "entries": 191,
   "etag": "W/\"6ae2ab02-d00ab\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Thu, 29 Oct 2026 02:10:10 GMT",
   "status": 304
  },
  "https://zawadidone.nl/feed.xml": {
   "entries": 10,
   "etag": "W/\"6864d1bf-2c816\"",
-  "last_checked": "2026-10-30T14:07:04Z",
+  "last_checked": "2026-10-30T14:25:36Z",
   "last_modified": "Wed, 02 Jul 2025 06:29:19 GMT",
   "status": 304
  },
  "https://zerosum0x0.blogspot.com/feeds/posts/default": {
   "entries": 25,
   "etag": "W/\"785ac4b93d10b0b05da9c2af43f6bf109635976217dfc277246771f6182a1ddc\"",
-  "last_checked": "2026-10-30T14:06:59Z",
+  "last_checked": "2026-10-30T14:25:31Z",
   "last_modified": "Wed, 28 Oct 2026 13:57:27 GMT",
   "status": 304
  },
  "https://zeta-two.com/feed.xml": {
   "entries": 10,
   "etag": "W/\"6ae0d1f1-cdc82\"",
-  "last_checked": "2026-10-30T14:06:57Z",
+  "last_checked": "2026-10-30T14:25:30Z",
   "last_modified": "Tue, 27 Oct 2026 16:31:45 GMT",
   "status": 304
  }

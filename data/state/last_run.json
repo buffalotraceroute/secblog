@@ -7,7 +7,9 @@
   "bitsadm-in": "no feeds configured",
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
+  "blog-didierstevens": "https://blog.didierstevens.com/feed/: HTTP 429",
   "blog-felixm": "no feeds configured",
+  "blog-fox-it": "https://blog.fox-it.com/feed/: HTTP 429",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -27,7 +29,6 @@
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
-  "ijustwannared-team": "https://ijustwannared.team/feed/: HTTP 429",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -35,6 +36,7 @@
   "maxwelldulin": "no feeds configured",
   "medium-securityshenaningans": "https://medium.com/feed/@securityshenaningans: HTTP 404",
   "necromancerlabs-research-papers": "no feeds configured",
+  "nickbloor": "https://nickbloor.co.uk/blog/feed/: HTTP 429",
   "nullsecurity": "no feeds configured",
   "octagon": "no feeds configured",
   "offnotes-notso": "no feeds configured",
@@ -53,7 +55,6 @@
   "ropgadget-sections-html": "no feeds configured",
   "ryan-framinan": "https://ryan.framinan.net/index.xml: HTTP 404",
   "scannell": "no feeds configured",
-  "schneier": "https://www.schneier.com/feed/: HTTP 429",
   "secarma": "no feeds configured",
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
@@ -67,13 +68,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T14:07:14Z",
+ "finished": "2026-10-30T14:25:47Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 33,
-  "posts_seen": 2371,
+  "failed": 67,
+  "posts_new": 69,
+  "posts_seen": 2302,
   "skipped_dead": 51,
   "sources": 462,
-  "succeeded": 345
+  "succeeded": 344
  }
 }
