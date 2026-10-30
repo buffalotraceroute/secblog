@@ -27,6 +27,7 @@
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
+  "james-clee-blog-2": "https://james-clee.com/feed/: HTTP 429",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -64,13 +65,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T02:45:14Z",
+ "finished": "2026-10-30T03:20:39Z",
  "summary": {
-  "failed": 63,
-  "posts_new": 75,
-  "posts_seen": 2195,
+  "failed": 64,
+  "posts_new": 556,
+  "posts_seen": 2174,
   "skipped_dead": 51,
   "sources": 461,
-  "succeeded": 347
+  "succeeded": 346
  }
 }
