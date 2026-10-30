@@ -157,3 +157,14 @@ tag_rules:
       - HTTP Request Smuggling
       - Cache Poisoning
       - DNS Rebinding
+
+# Blogs whose unmatched posts should stay News & Industry
+# (aggregators, daily news, industry commentary).
+news_blogs:
+  - eugene-kaspersky
+  - kitploit
+  - krebsonsecurity
+  - portswigger-daily-swig
+  - schneier
+  - vice-en-topic-hacking
+

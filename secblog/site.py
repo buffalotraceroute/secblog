@@ -195,6 +195,7 @@ def build(pagefind: bool = True) -> dict:
             "excerpt": p.get("excerpt"),
             "tags": p.get("tags") or [],
             "category": p.get("category"),
+            "category_source": p.get("category_source"),
             "archive_url": p.get("archive_url"),
         }
         for p in posts

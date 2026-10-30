@@ -27,6 +27,12 @@ hijack date.
 
 ## Adding a blog
 
+Set `default_category` on a source when unmatched posts should inherit a blog-level
+topic (e.g. research labs). Genuine news/aggregators are listed in
+`config/taxonomy.yaml` → `news_blogs` and stay **News & Industry**. Each post records
+`category_source`: `keyword` or `blog_default`.
+
+
 Edit `sources.yaml`:
 
 ```yaml

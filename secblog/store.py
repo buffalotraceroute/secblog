@@ -16,7 +16,7 @@ STATE_DIR = ROOT / "data" / "state"
 
 FIELDS = [
     "id", "url", "title", "blog", "author", "published", "fetched",
-    "excerpt", "tags", "category", "archive_url", "via",
+    "excerpt", "tags", "category", "category_source", "archive_url", "via",
 ]
 
 

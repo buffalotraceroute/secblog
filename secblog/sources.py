@@ -30,7 +30,8 @@ class Source:
     homepage: str
     feeds: list[str] = field(default_factory=list)
     status: str = "unknown"
-    category: str | None = None
+    category: str | None = None  # legacy alias for default_category
+    default_category: str | None = None
     platform: str | None = None
     sitemap: str | None = None
     wayback_before: str | None = None  # only use Wayback captures older than this (YYYYMMDD)
@@ -80,6 +81,7 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
             feeds=[f for f in feeds if f],
             status=str(item.get("status") or "unknown").lower(),
             category=item.get("category"),
+            default_category=item.get("default_category") or item.get("category"),
             platform=item.get("platform"),
             sitemap=item.get("sitemap"),
             wayback_before=str(item["wayback_before"]) if item.get("wayback_before") else None,

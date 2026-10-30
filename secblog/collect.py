@@ -63,7 +63,7 @@ async def collect_source(client, gate, src: Source, state: dict, errors: dict) -
                 continue
             for p in posts:
                 seen += 1
-                tag_post(p, blog_default=src.category)
+                tag_post(p, blog_default=(src.default_category or src.category))
                 if store.merge_post(posts_map, p):
                     added += 1
         except Exception as e:

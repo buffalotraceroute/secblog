@@ -54,7 +54,7 @@ async def page_blogspot(client, gate, src, state, posts_map, budget) -> int:
         if not posts:
             break
         for p in posts:
-            tag_post(p, blog_default=src.category)
+            tag_post(p, blog_default=(src.default_category or src.category))
             if store.merge_post(posts_map, p):
                 added += 1
         if len(posts) < page_size:
@@ -110,7 +110,7 @@ async def page_wordpress(client, gate, src, state, posts_map, budget) -> int:
                 "archive_url": wayback_url(url),
                 "via": "wp-api",
             }
-            tag_post(p, blog_default=src.category)
+            tag_post(p, blog_default=(src.default_category or src.category))
             if store.merge_post(posts_map, p):
                 added += 1
         if len(data) < 100:
@@ -135,7 +135,7 @@ async def page_wordpress(client, gate, src, state, posts_map, budget) -> int:
                 break
             new_here = 0
             for p in posts:
-                tag_post(p, blog_default=src.category)
+                tag_post(p, blog_default=(src.default_category or src.category))
                 if store.merge_post(posts_map, p):
                     added += 1
                     new_here += 1
@@ -220,7 +220,7 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
             "archive_url": wayback_url(url),
             "via": "sitemap",
         }
-        tag_post(p, blog_default=src.category)
+        tag_post(p, blog_default=(src.default_category or src.category))
         if store.merge_post(posts_map, p):
             added += 1
     return added
@@ -297,7 +297,7 @@ async def from_wayback(client, gate, src, state, posts_map, budget) -> int:
             "via": "wayback-cdx",
         }
         # Also keep original URL in tags for searchability
-        tag_post(p, blog_default=src.category or "News & Industry")
+        tag_post(p, blog_default=(src.default_category or src.category) or "News & Industry")
         if store.merge_post(posts_map, p):
             added += 1
 
@@ -340,7 +340,7 @@ async def wayback_feed_snapshot(client, gate, src, state, posts_map, budget) -> 
             live = p["url"]
             p["archive_url"] = wayback_url(live)
             p["url"] = p["archive_url"]
-            tag_post(p, blog_default=src.category)
+            tag_post(p, blog_default=(src.default_category or src.category))
             if store.merge_post(posts_map, p):
                 added += 1
     return added

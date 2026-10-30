@@ -1,6 +1,7 @@
 # secblog source registry. Hand-edit freely; see README.
 # status: active|slowing|dormant|unknown|blocked|dead
 # dead blogs: never fetch live; use wayback_domain / wayback_before
+# default_category: used when a post has no keyword match (see config/taxonomy.yaml news_blogs)
 sources:
   - id: phrack
     name: "Phrack Magazine"
@@ -20,7 +21,7 @@ sources:
       - https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/commits.atom
       - https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/releases.atom
     status: active
-    category: "Red Team/Offensive"
+    default_category: "Red Team/Offensive"
   - id: blog-reconless
     name: "Reconless"
     homepage: https://blog.reconless.com/
@@ -39,12 +40,14 @@ sources:
     feeds:
       - https://kitploit.com/rss.xml
     status: active
+    default_category: "News & Industry"
   - id: krebsonsecurity
     name: "Krebs on Security"
     homepage: https://krebsonsecurity.com/
     feeds:
       - https://krebsonsecurity.com/feed/
     status: active
+    default_category: "News & Industry"
   - id: pentagrid
     name: "Pentagrid AG"
     homepage: https://www.pentagrid.ch/en/blog/
@@ -57,6 +60,7 @@ sources:
     feeds:
       - https://portswigger.net/daily-swig/rss
     status: active
+    default_category: "News & Industry"
   - id: swapcontext
     name: "The Vault"
     homepage: https://swapcontext.blogspot.com/
@@ -98,6 +102,7 @@ sources:
     feeds:
       - https://specterops.io/feed/podcast/the-state-of-apm/
     status: active
+    default_category: "Red Team/Offensive"
   - id: unit42-paloaltonetworks
     name: "Unit 42"
     homepage: https://unit42.paloaltonetworks.com/
@@ -203,6 +208,7 @@ sources:
     feeds:
       - https://feeds.feedburner.com/tenable/qaXL
     status: active
+    default_category: "Exploit Development"
   - id: raelize
     name: "Raelize - Embedded Device Security Testing, Consultancy & Training"
     homepage: https://raelize.com/
@@ -430,6 +436,7 @@ sources:
     feeds:
       - https://eugene.kaspersky.com/feed/
     status: active
+    default_category: "News & Industry"
   - id: allysonomalley
     name: "allysonomalley.com"
     homepage: https://www.allysonomalley.com/
@@ -1171,12 +1178,14 @@ sources:
     feeds:
       - https://blog.google/security/rss/
     status: active
+    default_category: "Threat Intel & DFIR"
   - id: schneier
     name: "Schneier on Security"
     homepage: https://www.schneier.com/
     feeds:
       - https://www.schneier.com/feed/
     status: active
+    default_category: "News & Industry"
   - id: labs-bishopfox
     name: "labs.bishopfox.com"
     homepage: https://labs.bishopfox.com/tech-blog
@@ -1241,12 +1250,13 @@ sources:
     homepage: https://www.vice.com/en/tag/hacking/
     feeds: []
     status: active
+    default_category: "News & Industry"
   - id: securitylab-github
     name: "Redirecting…"
     homepage: https://securitylab.github.com/research/
     feeds: []
     status: active
-    category: "Tools & Releases"
+    default_category: "Tools & Releases"
   - id: security-googleblog
     name: "Security"
     homepage: https://security.googleblog.com/
