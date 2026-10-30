@@ -1,0 +1,159 @@
+# Free, deterministic tagging rules for secblog.
+# Evaluation order: first matching primary category wins.
+# Tags are additive (CVE, ATT&CK, tools, platforms, vuln classes).
+#
+# Optional LLM tagger: set SECBLOG_LLM_TAGGER=1 and implement
+# secblog.tagger.llm_tag(post) -> {category, tags}. Off by default.
+
+categories:
+  - Red Team/Offensive
+  - Malware Analysis & RE
+  - Exploit Development
+  - Web & AppSec
+  - Cloud & Identity
+  - Windows Internals
+  - Linux/macOS
+  - Mobile
+  - Hardware/IoT/Firmware
+  - Threat Intel & DFIR
+  - Detection Engineering/Blue Team
+  - Crypto
+  - Tools & Releases
+  - News & Industry
+
+# Primary category: first rule whose any-of patterns match title+excerpt+tags wins.
+# Patterns are case-insensitive regexes.
+primary_rules:
+  - category: News & Industry
+    any: ["\\bCVE-\\d{4}-\\d+\\b.*(advisory|patch tuesday|zero.?day)", "\\b(patch tuesday|security bulletin|vendor advisory)\\b"]
+  - category: Exploit Development
+    any: ["\\b(0day|0-day|exploit devel|write.?up|ROP chain|heap spray|use.after.free|UAF|integer overflow|buffer overflow|kernel exploit|LPE|privilege escalation exploit)\\b", "\\b(CVE-\\d{4}-\\d+).{0,40}(exploit|PoC|proof.of.concept)\\b"]
+  - category: Malware Analysis & RE
+    any: ["\\b(malware analysis|reverse.?engineer|unpacking|deobfuscat|IDA Pro|Ghidra|Binary Ninja|r2\\b|radare|yara rule|ransomware|trojan|botnet|c2 (server|beacon)|loader|shellcode analysis)\\b"]
+  - category: Detection Engineering/Blue Team
+    any: ["\\b(detection (rule|engineering|engineering)|sigma rule|yara|elastic detection|splunk|sentinel|EDR|XDR|threat hunting|blue team|defensive)\\b"]
+  - category: Threat Intel & DFIR
+    any: ["\\b(threat intel|threat intelligence|APT\\d*|attribution|incident response|forensic|DFIR|IOC|TTP|campaign analysis)\\b"]
+  - category: Cloud & Identity
+    any: ["\\b(AWS|Azure|GCP|Entra ID|Active Directory|Kerberos|NTLM|OIDC|SAML|IAM|Okta|Kubernetes|container escape|cloud security)\\b"]
+  - category: Web & AppSec
+    any: ["\\b(XSS|CSRF|SSRF|SQLi|SQL injection|RCE via|path traversal|IDOR|JWT|OAuth|GraphQL|Burp|web application|HTTP smuggling|deserialization)\\b"]
+  - category: Mobile
+    any: ["\\b(Android|iOS|IPA\\b|APK\\b|Frida|mobile (app|security)|jailbreak|root detection)\\b"]
+  - category: Hardware/IoT/Firmware
+    any: ["\\b(firmware|IoT|hardware hack|chip.?off|JTAG|UART|SPI flash|embedded|UEFI|BIOS)\\b"]
+  - category: Crypto
+    any: ["\\b(cryptograph|cryptanaly|TLS|certificate|elliptic curve|RSA|AES|side.?channel|padding oracle)\\b"]
+  - category: Windows Internals
+    any: ["\\b(Windows Internals|NTFS|Win32|ntdll|kernel driver|BYOVD|LSASS|token impersonation|WMI|COM hijack|DLL (side|hijack)|AMSI|ETW)\\b"]
+  - category: Linux/macOS
+    any: ["\\b(Linux kernel|eBPF|SELinux|AppArmor|macOS|XNU|SIP\\b|launchd|dylib)\\b"]
+  - category: Red Team/Offensive
+    any: ["\\b(red team|adversary emulation|initial access|lateral movement|persistence|Cobalt Strike|Sliver|Mythic|C2|beacon|opsec|phishing)\\b"]
+  - category: Tools & Releases
+    any: ["\\b(release|announcing|introducing|open.?source tool|new tool|v\\d+\\.\\d+)\\b"]
+
+# Blog-id → default category when no rule matched.
+blog_defaults: {}
+
+# Tag extractors. Each matched group (or the whole match) becomes a tag.
+tag_rules:
+  - name: cve
+    pattern: "\\b(CVE-\\d{4}-\\d{4,7})\\b"
+    normalize: upper
+  - name: attack
+    pattern: "\\b(T\\d{4}(?:\\.\\d{3})?)\\b"
+    normalize: upper
+  - name: tools
+    any_of:
+      - Cobalt Strike
+      - Mimikatz
+      - BloodHound
+      - Sliver
+      - Mythic
+      - Havoc
+      - Impacket
+      - CrackMapExec
+      - NetExec
+      - Rubeus
+      - Certipy
+      - Burp
+      - Ghidra
+      - IDA
+      - Binary Ninja
+      - Frida
+      - Wireshark
+      - Metasploit
+      - Nmap
+      - YARA
+      - Sigma
+      - Volatility
+      - Velociraptor
+      - OSQuery
+      - Sysmon
+      - ProcDump
+      - Process Hacker
+      - WinDbg
+      - x64dbg
+      - CyberChef
+      - Hashcat
+      - John the Ripper
+      - Responder
+      - Evil-WinRM
+      - Ligolo
+      - Chisel
+      - Proxychains
+      - Tor
+      - WireGuard
+      - Docker
+      - Kubernetes
+      - Terraform
+      - Ansible
+  - name: platforms
+    any_of:
+      - Windows
+      - Linux
+      - macOS
+      - Android
+      - iOS
+      - AWS
+      - Azure
+      - GCP
+      - Kubernetes
+      - Active Directory
+      - Entra ID
+      - Office 365
+      - Exchange
+      - SharePoint
+      - Safari
+      - Chrome
+      - Firefox
+      - Edge
+  - name: vuln_classes
+    any_of:
+      - XSS
+      - CSRF
+      - SSRF
+      - SQLi
+      - RCE
+      - LPE
+      - UAF
+      - Buffer Overflow
+      - Heap Overflow
+      - Integer Overflow
+      - Path Traversal
+      - IDOR
+      - XXE
+      - Deserialization
+      - Race Condition
+      - TOCTOU
+      - Auth Bypass
+      - Privilege Escalation
+      - Information Disclosure
+      - Denial of Service
+      - Command Injection
+      - Template Injection
+      - Prototype Pollution
+      - HTTP Request Smuggling
+      - Cache Poisoning
+      - DNS Rebinding

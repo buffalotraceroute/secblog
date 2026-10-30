@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="{{ base }}/pagefind/pagefind-ui.css" rel="stylesheet"/>
+{% endblock %}
+{% block content %}
+<header class="page-head">
+  <h1>Search</h1>
+  <p>Client-side full-text search over titles, excerpts, tags, and blogs (Pagefind).</p>
+</header>
+<div id="search" class="search-ui"></div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ base }}/pagefind/pagefind-ui.js"></script>
+<script>
+  new PagefindUI({ element: "#search", showImages: false, baseUrl: "{{ base }}/" });
+</script>
+{% endblock %}

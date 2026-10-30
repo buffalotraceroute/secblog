@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{% block title %}{{ title }} · {{ site_name }}{% endblock %}</title>
+  <meta name="description" content="Searchable archive of security research blog posts — metadata and short excerpts only."/>
+  <link rel="stylesheet" href="{{ base }}/assets/style.css"/>
+  <link rel="alternate" type="application/atom+xml" href="{{ base }}/feed.xml" title="secblog Atom"/>
+  <link rel="icon" href="{{ base }}/assets/favicon.svg" type="image/svg+xml"/>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="{{ base }}/">secblog</a>
+      <nav>
+        <a href="{{ base }}/" class="{% if nav=='home' %}active{% endif %}">Latest</a>
+        <a href="{{ base }}/search/" class="{% if nav=='search' %}active{% endif %}">Search</a>
+        <a href="{{ base }}/categories/" class="{% if nav=='categories' %}active{% endif %}">Categories</a>
+        <a href="{{ base }}/tags/" class="{% if nav=='tags' %}active{% endif %}">Tags</a>
+        <a href="{{ base }}/blogs/" class="{% if nav=='blogs' %}active{% endif %}">Blogs</a>
+        <a href="{{ base }}/years/" class="{% if nav=='years' %}active{% endif %}">Years</a>
+        <a href="{{ base }}/sources/" class="{% if nav=='sources' %}active{% endif %}">Sources</a>
+        <a href="{{ base }}/about/" class="{% if nav=='about' %}active{% endif %}">About</a>
+      </nav>
+      <button type="button" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">◐</button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer wrap">
+    <p>Metadata + ~300-char excerpts only. Full posts stay at their origin (or Wayback for dead blogs).
+       <a href="{{ base }}/about/">Content policy</a> ·
+       <a href="{{ base }}/feed.xml">Atom</a> ·
+       <a href="{{ base }}/export.json">JSON</a>
+    </p>
+  </footer>
+  <script src="{{ base }}/assets/theme.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

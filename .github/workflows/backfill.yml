@@ -1,0 +1,52 @@
+name: Backfill history
+
+on:
+  schedule:
+    - cron: "30 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Seconds to spend this run"
+        required: false
+        default: "2100"
+      prefer_dead:
+        description: "Prioritize Wayback for dead blogs (true/false)"
+        required: false
+        default: "false"
+
+concurrency:
+  group: backfill
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resumable backfill
+        run: |
+          EXTRA=""
+          if [ "${{ github.event.inputs.prefer_dead }}" = "true" ]; then
+            EXTRA="--prefer-dead"
+          fi
+          BUDGET="${{ github.event.inputs.budget }}"
+          BUDGET="${BUDGET:-2100}"
+          python -m secblog backfill --budget "$BUDGET" --concurrency 8 $EXTRA
+
+      - name: Persist data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: backfill"
+          file_pattern: data/

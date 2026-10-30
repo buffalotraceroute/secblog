@@ -1,1 +1,100 @@
 # secblog
+
+A public, searchable archive of **security research blog posts**, hosted on GitHub Pages at
+[buffalotraceroute.github.io/secblog](https://buffalotraceroute.github.io/secblog/).
+
+The site stores and shows **metadata + a short excerpt (~300 characters)** only, with links to
+the original post and a [Wayback Machine](https://web.archive.org/) snapshot. Full post text is
+never stored or republished.
+
+Blog list seeded from [Bad Sector Labs' security blog list](https://github.com/BadSectorLabs/bad-sector-labs-blog-list) — thank you.
+
+## How it works
+
+1. **`sources.yaml`** — hand-editable registry of blogs (name, homepage, feed URLs, status).
+2. **Collector** (`python -m secblog collect`) — polls RSS/Atom feeds with conditional requests
+   (ETag / Last-Modified cached in `data/state/etag.json`). One bad feed never fails a run.
+3. **Backfill** (`python -m secblog backfill`) — resumable history via Blogspot `start-index`,
+   WordPress `?paged=` / REST API, sitemaps, and the Wayback CDX API for **dead** blogs.
+4. **Tagging** — deterministic rules in `config/taxonomy.yaml` (categories, CVEs, ATT&CK, tools…).
+   Optional LLM hook behind `SECBLOG_LLM_TAGGER=1` (off by default).
+5. **Site** — Jinja2 static generator + [Pagefind](https://pagefind.app/) client-side search.
+6. **GitHub Actions** — collect every 6 hours + deploy Pages; weekly resumable backfill.
+
+Dead / hijacked domains (parking, spam redirects) are **never fetched or linked live**; only
+Wayback snapshots are ingested. Set `wayback_before` on a source to ignore captures after a
+hijack date.
+
+## Adding a blog
+
+Edit `sources.yaml`:
+
+```yaml
+  - id: example-blog          # stable slug → data/posts/example-blog.jsonl
+    name: "Example Blog"
+    homepage: https://example.com/blog/
+    feeds:
+      - https://example.com/blog/feed/
+    status: active            # active|slowing|dormant|unknown|blocked|dead
+    category: "Web & AppSec"  # optional default primary category
+    platform: wordpress       # optional: blogspot|wordpress|medium|github|generic
+```
+
+Tips:
+
+- Medium: `https://medium.com/feed/<@user-or-publication>`
+- Blogspot: `https://<name>.blogspot.com/feeds/posts/default`
+- GitHub repo: `https://github.com/<org>/<repo>/commits.atom` (and/or `releases.atom`)
+- Dead blog: `status: dead`, set `wayback_domain`, optional `wayback_before: "YYYYMMDD"`, leave `feeds` empty or pointing at a historical feed URL (fetched only via Wayback)
+
+## Local development
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Poll all live feeds (incremental)
+python -m secblog collect
+
+# Historical backfill (~35 min budget by default)
+python -m secblog backfill --budget 2100
+
+# Build static site into dist/ (includes Pagefind index)
+python -m secblog build
+
+# Serve locally with the /secblog/ base path
+python -m secblog serve --port 8080
+# → http://127.0.0.1:8080/secblog/
+```
+
+Or all three: `python -m secblog all --budget 2100`.
+
+Data layout: one JSONL file per blog under `data/posts/<id>.jsonl` (git-friendly, scales to
+tens of thousands of posts). State/cursors live in `data/state/`.
+
+## Enabling GitHub Pages
+
+After pushing this repo to `github.com/buffalotraceroute/secblog`:
+
+1. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. Ensure Actions are allowed to write (Settings → Actions → General → Workflow permissions:
+   Read and write).
+3. Run the **Collect and deploy** workflow (`workflow_dispatch`) once, or push to `main`.
+4. Site URL: `https://buffalotraceroute.github.io/secblog/`
+
+The workflow builds `dist/` and deploys with `actions/upload-pages-artifact` +
+`actions/deploy-pages`. Collected data is committed back via
+`stefanzweifel/git-auto-commit-action`.
+
+## Content policy
+
+- Public pages show title, author, date, blog, category, tags, and a short feed excerpt
+  (HTML stripped, ≤ ~300 chars).
+- Every card links to the **original URL** and a **Wayback** snapshot.
+- Full article bodies are never stored in this repository or published on the site.
+- Dead / spam-hijacked domains are archived via Wayback only.
+- Excerpts and titles remain copyright of their authors; this is a discovery index.
+
+## License
+
+Code and configuration: MIT. Aggregated metadata/excerpts remain copyright of original authors.

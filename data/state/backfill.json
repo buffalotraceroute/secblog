@@ -1,0 +1,1648 @@
+{
+ "0dayfans": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "0reg": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "0x64marsh": {
+  "feed_page": 2,
+  "sitemap_urls": 42
+ },
+ "0xboku": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "0xeb-bp": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "0xhop-posts": {
+  "sitemap_urls": 0
+ },
+ "0xpat": {
+  "feed_page": 3,
+  "sitemap_urls": 24
+ },
+ "0xsapra-website": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "0xsp": {
+  "done": true,
+  "sitemap_urls": 120,
+  "wp_done": true
+ },
+ "0xv1n": {
+  "feed_page": 3,
+  "sitemap_urls": 94
+ },
+ "235": {
+  "done": true,
+  "sitemap_urls": 276,
+  "wp_done": true
+ },
+ "3nailsinfosec-knowledge": {
+  "sitemap_urls": 0
+ },
+ "3xpl01tc0d3r": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "5pider": {
+  "feed_page": 3,
+  "sitemap_urls": 8
+ },
+ "a2nkf": {
+  "cdx_error": "HTTP 404"
+ },
+ "accidentalrebel": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "ad-995-group": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "adnanthekhan": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "aff-wg": {
+  "feed_page": 4,
+  "sitemap_urls": 48
+ },
+ "akamai-blog-security-research": {
+  "sitemap_urls": 2500
+ },
+ "alephsecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "allysonomalley": {
+  "done": true,
+  "sitemap_urls": 354,
+  "wp_done": true
+ },
+ "amitschendel": {
+  "feed_page": 3,
+  "sitemap_urls": 10
+ },
+ "aptw": {
+  "sitemap_urls": 0
+ },
+ "arashparsa": {
+  "feed_page": 3,
+  "sitemap_urls": 38
+ },
+ "archcloudlabs": {
+  "sitemap_urls": 168
+ },
+ "archie-osu": {
+  "sitemap_urls": 0
+ },
+ "arielkoren": {
+  "feed_page": 3,
+  "sitemap_urls": 40
+ },
+ "atredis": {
+  "sitemap_urls": 0
+ },
+ "babligan": {
+  "cdx_error": "HTTP 404"
+ },
+ "bad-jubies": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "badoption-eu": {
+  "feed_page": 3,
+  "sitemap_urls": 66
+ },
+ "bencteux": {
+  "feed_page": 3,
+  "sitemap_urls": 174
+ },
+ "billdemirkapi": {
+  "feed_page": 3,
+  "sitemap_urls": 36
+ },
+ "birb007-blog": {
+  "cdx_error": "HTTP 404"
+ },
+ "bitsadm-in": {
+  "sitemap_urls": 0
+ },
+ "blackarrow-blackarrow-blog": {
+  "sitemap_urls": 0
+ },
+ "blackhillsinfosec": {
+  "feed_page": 3,
+  "sitemap_urls": 2244
+ },
+ "blacksnufkin": {
+  "feed_page": 3,
+  "sitemap_urls": 42
+ },
+ "blog-2h0ng": {
+  "sitemap_urls": 0
+ },
+ "blog-amberwolf": {
+  "feed_page": 3,
+  "sitemap_urls": 158
+ },
+ "blog-assetnote": {
+  "sitemap_urls": 142
+ },
+ "blog-bitsadmin": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-chebuya": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-checkymander": {
+  "feed_page": 3,
+  "sitemap_urls": 20
+ },
+ "blog-christophetd": {
+  "done": true,
+  "sitemap_urls": 62,
+  "wp_done": true
+ },
+ "blog-cloudflare": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "blog-cobaltstrike": {
+  "sitemap_urls": 0
+ },
+ "blog-coffinsec": {
+  "feed_page": 3,
+  "sitemap_urls": 42
+ },
+ "blog-cybershenanigans-space": {
+  "feed_page": 3,
+  "sitemap_urls": 30
+ },
+ "blog-dbouman": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-deeb": {
+  "feed_page": 3,
+  "sitemap_urls": 58
+ },
+ "blog-didierstevens": {
+  "feed_page": 101,
+  "sitemap_urls": 2000
+ },
+ "blog-dylan": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-es3n1n-eu": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-exodusintel": {
+  "done": true,
+  "sitemap_urls": 344,
+  "wp_done": true,
+  "wp_page": 2
+ },
+ "blog-felixm": {
+  "sitemap_urls": 0
+ },
+ "blog-fndsec": {
+  "feed_page": 3,
+  "sitemap_urls": 24
+ },
+ "blog-fox-it": {
+  "feed_page": 14,
+  "sitemap_urls": 262
+ },
+ "blog-google-threat-analysis-group": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "blog-grimm-co": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-harmj0y": {
+  "done": true,
+  "sitemap_urls": 174,
+  "wp_done": true
+ },
+ "blog-impalabs": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-includesecurity": {
+  "done": true,
+  "sitemap_urls": 570,
+  "wp_done": true
+ },
+ "blog-isosceles": {
+  "feed_page": 3,
+  "sitemap_urls": 20
+ },
+ "blog-k3170makan": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "blog-karims-cloud": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-kyleavery": {
+  "sitemap_urls": 0
+ },
+ "blog-lexfo": {
+  "sitemap_urls": 0
+ },
+ "blog-notso": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-nviso-eu": {
+  "done": true,
+  "sitemap_urls": 2500,
+  "wp_done": true,
+  "wp_page": 4
+ },
+ "blog-offensive-af": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-orange-tw": {
+  "feed_page": 3,
+  "sitemap_urls": 200
+ },
+ "blog-oxagast": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-pi3-com-pl": {
+  "feed_page": 8,
+  "sitemap_urls": 0
+ },
+ "blog-qsecure-com": {
+  "sitemap_urls": 0
+ },
+ "blog-quarkslab": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-quickbreach": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-raw-pm": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-reconless": {
+  "feed_page": 3,
+  "sitemap_urls": 4
+ },
+ "blog-redbluepurple": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-redxorblue": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "blog-reigningshells": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "blog-ret2": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-ropnop": {
+  "feed_page": 3,
+  "sitemap_urls": 188
+ },
+ "blog-ryotak": {
+  "feed_page": 3,
+  "sitemap_urls": 116
+ },
+ "blog-scrt": {
+  "sitemap_urls": 0
+ },
+ "blog-slowerzs": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-sonarsource": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-stratumsecurity": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-syscall": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-syss": {
+  "feed_page": 3,
+  "sitemap_urls": 342
+ },
+ "blog-teddykatz": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "blog-thecybersecuritytutor": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-two06": {
+  "cdx_error": "HTTP 404"
+ },
+ "blog-viettelcybersecurity": {
+  "sitemap_urls": 0
+ },
+ "blog-washi": {
+  "feed_page": 3,
+  "sitemap_urls": 90
+ },
+ "blog-zsec": {
+  "feed_page": 3,
+  "sitemap_urls": 330
+ },
+ "bohops": {
+  "feed_page": 4,
+  "sitemap_urls": 62
+ },
+ "br-sn": {
+  "feed_page": 3,
+  "sitemap_urls": 10
+ },
+ "br0k3nlab": {
+  "feed_page": 3,
+  "sitemap_urls": 90
+ },
+ "brmk": {
+  "feed_page": 3,
+  "sitemap_urls": 50
+ },
+ "brutecat": {
+  "feed_page": 3,
+  "sitemap_urls": 12
+ },
+ "brycx": {
+  "cdx_error": "HTTP 404"
+ },
+ "byte-how": {
+  "feed_page": 3,
+  "sitemap_urls": 18
+ },
+ "bytecode77": {
+  "sitemap_urls": 0
+ },
+ "captmeelo": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "cedowens-medium": {
+  "feed_page": 3
+ },
+ "certego-en-news": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "certitude-blog-en": {
+  "feed_page": 20,
+  "sitemap_urls": 0
+ },
+ "chadduffey": {
+  "feed_page": 3,
+  "sitemap_urls": 138
+ },
+ "cipherdyne-blog-index-html": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "clearbluejar": {
+  "feed_page": 3,
+  "sitemap_urls": 180
+ },
+ "cocomelonc": {
+  "feed_page": 3,
+  "sitemap_urls": 564
+ },
+ "code-white": {
+  "feed_page": 101,
+  "sitemap_urls": 702
+ },
+ "codewhitesec": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "coffeegist": {
+  "feed_page": 3,
+  "sitemap_urls": 54
+ },
+ "confused": {
+  "feed_page": 3,
+  "sitemap_urls": 12
+ },
+ "connormcgarr": {
+  "sitemap_urls": 0
+ },
+ "console-feed": {
+  "feed_page": 3
+ },
+ "contextis-us-blog": {
+  "sitemap_urls": 0
+ },
+ "crummie5": {
+  "cdx_error": "HTTP 404"
+ },
+ "csandker": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "ctf": {
+  "feed_page": 3,
+  "sitemap_urls": 20
+ },
+ "cyberstoph": {
+  "feed_page": 3,
+  "sitemap_urls": 26
+ },
+ "danrevah": {
+  "feed_page": 3,
+  "sitemap_urls": 4
+ },
+ "darknavy": {
+  "feed_page": 3,
+  "sitemap_urls": 292
+ },
+ "darkrelay": {
+  "sitemap_urls": 384
+ },
+ "darungrim": {
+  "cdx_error": "HTTP 404"
+ },
+ "dazzyddos": {
+  "feed_page": 3,
+  "sitemap_urls": 80
+ },
+ "debugactiveprocess-medium": {
+  "feed_page": 3
+ },
+ "decoder-cloud": {
+  "feed_page": 9,
+  "sitemap_urls": 144
+ },
+ "deepinstinct": {
+  "feed_page": 3,
+  "sitemap_urls": 1292
+ },
+ "denniskniep": {
+  "feed_page": 3,
+  "sitemap_urls": 58
+ },
+ "depthsecurity": {
+  "done": true,
+  "sitemap_urls": 172,
+  "wp_done": true
+ },
+ "desi-jarvis-medium": {
+  "feed_page": 3
+ },
+ "devco": {
+  "feed_page": 3,
+  "sitemap_urls": 338
+ },
+ "devilinside-categories-resources": {
+  "sitemap_urls": 154
+ },
+ "dfir": {
+  "feed_page": 3,
+  "sitemap_urls": 174
+ },
+ "digeex": {
+  "cdx_error": "HTTP 404"
+ },
+ "dirkjanm": {
+  "feed_page": 3,
+  "sitemap_urls": 120
+ },
+ "disrel": {
+  "sitemap_urls": 0
+ },
+ "doar-e": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "dolosgroup": {
+  "cdx_error": "HTTP 404"
+ },
+ "doubleagent": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "dozer-nz": {
+  "feed_page": 3,
+  "sitemap_urls": 22
+ },
+ "dr4k0nia": {
+  "feed_page": 3,
+  "sitemap_urls": 32
+ },
+ "dronesec": {
+  "cdx_error": "HTTP 404"
+ },
+ "dtm": {
+  "feed_page": 3,
+  "sitemap_urls": 28
+ },
+ "dumpco": {
+  "sitemap_urls": 0
+ },
+ "eddiez": {
+  "feed_page": 3,
+  "sitemap_urls": 16
+ },
+ "edermi": {
+  "feed_page": 3,
+  "sitemap_urls": 94
+ },
+ "ehpus": {
+  "feed_page": 3,
+  "sitemap_urls": 12
+ },
+ "elastic-security-research": {
+  "cdx_error": "HTTP 404"
+ },
+ "elttam": {
+  "feed_page": 3,
+  "sitemap_urls": 84
+ },
+ "embracethered": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "en-hackndo": {
+  "feed_page": 3,
+  "sitemap_urls": 110
+ },
+ "etenal-archives-category-blog": {
+  "done": true,
+  "sitemap_urls": 28,
+  "wp_done": true
+ },
+ "ethicalchaos": {
+  "done": true,
+  "sitemap_urls": 20,
+  "wp_done": true
+ },
+ "eugene-kaspersky": {
+  "done": true,
+  "sitemap_urls": 2500,
+  "wp_done": true,
+  "wp_page": 19
+ },
+ "eversinc33": {
+  "sitemap_urls": 0
+ },
+ "evilsocket": {
+  "feed_page": 3,
+  "sitemap_urls": 1390
+ },
+ "exandroid": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "exploit": {
+  "sitemap_urls": 0
+ },
+ "exploits-forsale": {
+  "sitemap_urls": 6
+ },
+ "ezequiel": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "ezrabuckingham": {
+  "cdx_error": "HTTP 404"
+ },
+ "fb-p-disclosures-issues-list": {
+  "cdx_error": "HTTP 404"
+ },
+ "fhlipzero": {
+  "sitemap_urls": 0
+ },
+ "fin3ss3g0d": {
+  "done": true,
+  "sitemap_urls": 18,
+  "wp_done": true
+ },
+ "fitretech": {
+  "feed_page": 3,
+  "sitemap_urls": 4
+ },
+ "flatt": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "fluxsec-red": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "fortinet-blog-threat-research": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "fourcore": {
+  "sitemap_urls": 232
+ },
+ "frycos": {
+  "sitemap_urls": 0
+ },
+ "fuzzysecurity": {
+  "sitemap_urls": 0
+ },
+ "geohot-blog": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "gergelykalman": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "github-mantvydasb-redteam-tactics-and-techniques": {
+  "feed_page": 3
+ },
+ "godiego": {
+  "cdx_error": "HTTP 404"
+ },
+ "goichot": {
+  "feed_page": 3,
+  "sitemap_urls": 28
+ },
+ "gosecure": {
+  "sitemap_urls": 12
+ },
+ "gremwell": {
+  "feed_page": 3,
+  "sitemap_urls": 226
+ },
+ "grimmie": {
+  "done": true,
+  "sitemap_urls": 54,
+  "wp_done": true
+ },
+ "gynvael-coldwind-pl": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "h0mbre": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "hackcompute": {
+  "feed_page": 3,
+  "sitemap_urls": 6
+ },
+ "halove23": {
+  "cdx_error": "HTTP 404"
+ },
+ "hausec": {
+  "feed_page": 4,
+  "sitemap_urls": 112
+ },
+ "hawktrace": {
+  "sitemap_urls": 30
+ },
+ "haxx-in": {
+  "feed_page": 3,
+  "sitemap_urls": 26
+ },
+ "hexacorn": {
+  "feed_page": 101,
+  "sitemap_urls": 0
+ },
+ "heynowyouseeme": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "horizon3-red-team-blog": {
+  "done": true,
+  "sitemap_urls": 682,
+  "wp_done": true,
+  "wp_page": 9
+ },
+ "hulkops-blog": {
+  "sitemap_urls": 6
+ },
+ "hunters-en-blog-tag-research": {
+  "feed_page": 3,
+  "sitemap_urls": 294
+ },
+ "icyguider": {
+  "feed_page": 3,
+  "sitemap_urls": 10
+ },
+ "idov31": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "igor-blue": {
+  "feed_page": 3,
+  "sitemap_urls": 16
+ },
+ "ihteam": {
+  "done": true,
+  "sitemap_urls": 562,
+  "wp_done": true,
+  "wp_page": 3
+ },
+ "ijustwannared-team": {
+  "feed_page": 4,
+  "sitemap_urls": 64
+ },
+ "ilankalendarov": {
+  "feed_page": 3,
+  "sitemap_urls": 12
+ },
+ "infosec-tirol": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "infosecnoodle": {
+  "feed_page": 3,
+  "sitemap_urls": 8
+ },
+ "insomniasec": {
+  "cdx_error": "HTTP 404"
+ },
+ "its-a-feature": {
+  "cdx_error": "HTTP 404"
+ },
+ "iximiuz-en": {
+  "feed_page": 3,
+  "sitemap_urls": 530
+ },
+ "jackson-t": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "jakewnuk": {
+  "feed_page": 3,
+  "sitemap_urls": 66
+ },
+ "jakobfriedl": {
+  "feed_page": 3,
+  "sitemap_urls": 22
+ },
+ "james-clee-blog-2": {
+  "feed_page": 2,
+  "sitemap_urls": 8
+ },
+ "jellevergeer": {
+  "feed_page": 3,
+  "sitemap_urls": 44
+ },
+ "jhalon-posts-html": {
+  "feed_page": 3,
+  "sitemap_urls": 156
+ },
+ "jhftss": {
+  "feed_page": 3,
+  "sitemap_urls": 66
+ },
+ "jlajara-gitlab": {
+  "feed_page": 3,
+  "sitemap_urls": 44
+ },
+ "jmpesp": {
+  "cdx_error": "HTTP 404"
+ },
+ "jprx": {
+  "sitemap_urls": 0
+ },
+ "jub0bs": {
+  "sitemap_urls": 212
+ },
+ "khast3x": {
+  "cdx_error": "HTTP 404"
+ },
+ "khronokernel": {
+  "sitemap_urls": 0
+ },
+ "kiddo-pwn-blog": {
+  "sitemap_urls": 0
+ },
+ "kitploit": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "kqx-post": {
+  "feed_page": 3,
+  "sitemap_urls": 92
+ },
+ "kr0tt": {
+  "feed_page": 3,
+  "sitemap_urls": 8
+ },
+ "krabsonsecurity": {
+  "cdx_error": "HTTP 404"
+ },
+ "krebsonsecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "labs-bishopfox": {
+  "cdx_error": "HTTP 404"
+ },
+ "labs-detectify": {
+  "feed_page": 3,
+  "sitemap_urls": 224
+ },
+ "labs-f-secure": {
+  "sitemap_urls": 0
+ },
+ "labs-infoguard": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "labs-jumpsec": {
+  "feed_page": 3,
+  "sitemap_urls": 184
+ },
+ "labs-nettitude-new": {
+  "done": true,
+  "sitemap_urls": 376,
+  "wp_done": true,
+  "wp_page": 2
+ },
+ "labs-redyops": {
+  "cdx_error": "HTTP 404"
+ },
+ "labs-sentinelone": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "labs-watchtowr": {
+  "feed_page": 3,
+  "sitemap_urls": 212
+ },
+ "landave": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "laurencetennant": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "legacyy-xyz": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "lockboxx": {},
+ "luemmelsec": {
+  "feed_page": 3,
+  "sitemap_urls": 32
+ },
+ "luker983": {
+  "cdx_error": "HTTP 404"
+ },
+ "lyra-horse": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "m1el": {
+  "sitemap_urls": 58
+ },
+ "m365internals": {
+  "cdx_error": "HTTP 404"
+ },
+ "m417z": {
+  "feed_page": 3,
+  "sitemap_urls": 54
+ },
+ "mac4n6": {
+  "feed_page": 3,
+  "sitemap_urls": 322
+ },
+ "macrosec-index-php-blog": {
+  "done": true,
+  "sitemap_urls": 74,
+  "wp_done": true
+ },
+ "malacupa": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "malicious-blog-html": {
+  "feed_page": 3,
+  "sitemap_urls": 10
+ },
+ "malware-pizza": {
+  "feed_page": 2,
+  "sitemap_urls": 6
+ },
+ "malwaretech": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "matteomalvica": {
+  "feed_page": 3,
+  "sitemap_urls": 144
+ },
+ "maxwelldulin": {
+  "sitemap_urls": 0
+ },
+ "mayfly277": {
+  "feed_page": 3,
+  "sitemap_urls": 182
+ },
+ "mdsec": {
+  "done": true,
+  "sitemap_urls": 464,
+  "wp_done": true,
+  "wp_page": 2
+ },
+ "medium-1ndahous3": {
+  "feed_page": 3
+ },
+ "medium-eugenelimzw": {
+  "feed_page": 3
+ },
+ "medium-frycos": {
+  "feed_page": 3
+ },
+ "medium-graphx": {
+  "feed_page": 3
+ },
+ "medium-palantir": {
+  "feed_page": 3
+ },
+ "medium-red-teaming-with-a-blue-team-mentaility": {
+  "feed_page": 3
+ },
+ "medium-securityshenaningans": {},
+ "mgreen27": {
+  "feed_page": 3,
+  "sitemap_urls": 116
+ },
+ "micahvandeusen": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "mikko-kenttala-medium": {
+  "feed_page": 3
+ },
+ "mkiesel": {
+  "feed_page": 3,
+  "sitemap_urls": 18
+ },
+ "mksben-l0-cm": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "mnemonic": {
+  "sitemap_urls": 1380
+ },
+ "modexp": {
+  "feed_page": 3,
+  "sitemap_urls": 26
+ },
+ "mrbruh": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "msrc-blog-microsoft": {
+  "sitemap_urls": 0
+ },
+ "msrc-microsoft": {
+  "sitemap_urls": 6
+ },
+ "n00py": {
+  "feed_page": 7,
+  "sitemap_urls": 128
+ },
+ "n1ght-w0lf": {
+  "feed_page": 3,
+  "sitemap_urls": 134
+ },
+ "n4r1b": {
+  "feed_page": 3,
+  "sitemap_urls": 110
+ },
+ "n4r1b-2": {
+  "feed_page": 3,
+  "sitemap_urls": 110
+ },
+ "naksyn": {
+  "feed_page": 3,
+  "sitemap_urls": 28
+ },
+ "necromancerlabs-research-papers": {
+  "sitemap_urls": 4
+ },
+ "neodyme": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "nickbloor": {
+  "feed_page": 3,
+  "sitemap_urls": 36
+ },
+ "noperator": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "nullsecurity": {
+  "sitemap_urls": 0
+ },
+ "octagon": {
+  "sitemap_urls": 0
+ },
+ "oddvar-moe": {
+  "feed_page": 5,
+  "sitemap_urls": 72
+ },
+ "offensivedefence": {
+  "feed_page": 3,
+  "sitemap_urls": 106
+ },
+ "offnotes-notso": {
+  "sitemap_urls": 0
+ },
+ "offsec-almond": {
+  "sitemap_urls": 0
+ },
+ "oobs": {
+  "sitemap_urls": 36
+ },
+ "opaque": {
+  "cdx_error": "HTTP 404"
+ },
+ "optiv-feed": {
+  "cdx_error": "HTTP 404"
+ },
+ "outflank": {
+  "feed_page": 7,
+  "sitemap_urls": 0
+ },
+ "oxis": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "p0142": {
+  "sitemap_urls": 110
+ },
+ "pagedout-institute": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "palant-articles": {
+  "feed_page": 3,
+  "sitemap_urls": 494
+ },
+ "passthehashbrowns": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "paulosyibelo": {
+  "sitemap_urls": 48
+ },
+ "pavel-gr": {
+  "feed_page": 3,
+  "sitemap_urls": 10
+ },
+ "pberba-security": {
+  "feed_page": 3,
+  "sitemap_urls": 58
+ },
+ "pentagrid": {
+  "feed_page": 3,
+  "sitemap_urls": 244
+ },
+ "pentestlab": {
+  "feed_page": 28,
+  "sitemap_urls": 564
+ },
+ "pgj11": {
+  "feed_page": 3,
+  "sitemap_urls": 96
+ },
+ "ph3n1x": {
+  "feed_page": 3,
+  "sitemap_urls": 18
+ },
+ "philkeeble": {
+  "feed_page": 3,
+  "sitemap_urls": 52
+ },
+ "phoenix-sec": {
+  "cdx_error": "HTTP 404"
+ },
+ "phrack": {
+  "sitemap_urls": 0
+ },
+ "phrozen": {
+  "sitemap_urls": 0
+ },
+ "pixiepointsecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "portswigger-daily-swig": {
+  "sitemap_urls": 2500
+ },
+ "positive": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "positronsecurity": {
+  "sitemap_urls": 0
+ },
+ "posts-specterops": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "praetorian": {
+  "done": true,
+  "sitemap_urls": 1680,
+  "wp_done": true,
+  "wp_page": 4
+ },
+ "pre-empt": {
+  "feed_page": 3,
+  "sitemap_urls": 20
+ },
+ "print3m": {
+  "sitemap_urls": 140
+ },
+ "ptr0x1": {
+  "feed_page": 3,
+  "sitemap_urls": 26
+ },
+ "public-cnotools": {
+  "cdx_error": "HTTP 404"
+ },
+ "pwning": {
+  "feed_page": 3,
+  "sitemap_urls": 24
+ },
+ "pwnshift": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "r-tec": {
+  "sitemap_urls": 4
+ },
+ "rack911labs": {
+  "sitemap_urls": 0
+ },
+ "raelize": {
+  "feed_page": 3,
+  "sitemap_urls": 102
+ },
+ "rastamouse": {
+  "feed_page": 3,
+  "sitemap_urls": 70
+ },
+ "raxis": {
+  "feed_page": 3,
+  "sitemap_urls": 728
+ },
+ "rce4fun": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "rcesecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 392
+ },
+ "red-0xbad53c": {
+  "sitemap_urls": 44
+ },
+ "redteamer-tips": {
+  "feed_page": 3,
+  "sitemap_urls": 2
+ },
+ "redteaming": {
+  "feed_page": 2,
+  "sitemap_urls": 22
+ },
+ "rekken": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "research-nccgroup": {
+  "sitemap_urls": 0
+ },
+ "research-securitum": {
+  "sitemap_urls": 0
+ },
+ "retr0": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "revers-engineering": {
+  "sitemap_urls": 0
+ },
+ "reversemode": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "ricardojoserf": {
+  "feed_page": 3,
+  "sitemap_urls": 224
+ },
+ "riccardoancarani": {
+  "feed_page": 3,
+  "sitemap_urls": 46
+ },
+ "ristbs-posts": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "romainthomas": {
+  "feed_page": 3,
+  "sitemap_urls": 114
+ },
+ "ropgadget-sections-html": {
+  "sitemap_urls": 0
+ },
+ "rtcsec": {
+  "feed_page": 3,
+  "sitemap_urls": 230
+ },
+ "ryan-framinan": {
+  "sitemap_urls": 0
+ },
+ "rythmstick": {
+  "feed_page": 3,
+  "sitemap_urls": 18
+ },
+ "s1ckb017": {
+  "feed_page": 3,
+  "sitemap_urls": 4
+ },
+ "s3cur3th1ssh1t": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "samcurry": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "scannell": {
+  "sitemap_urls": 20
+ },
+ "schneier": {
+  "done": true,
+  "sitemap_urls": 2500,
+  "wp_done": true,
+  "wp_page": 96
+ },
+ "sec-eng": {
+  "cdx_error": "HTTP 404"
+ },
+ "secarma": {
+  "sitemap_urls": 158
+ },
+ "secbytes": {
+  "cdx_error": "HTTP 404"
+ },
+ "secjuice": {
+  "feed_page": 3,
+  "sitemap_urls": 1794
+ },
+ "secret": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "secureyourit-wp-blog": {
+  "cdx_error": "HTTP 404"
+ },
+ "securify-en-articles": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "security-googleblog": {
+  "feed_page": 3,
+  "sitemap_urls": 1308
+ },
+ "securitylab-github": {
+  "sitemap_urls": 1970
+ },
+ "sethsec": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "sevrosecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "shells": {
+  "cdx_error": "HTTP 404"
+ },
+ "shenaniganslabs": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "shielder": {
+  "feed_page": 3,
+  "sitemap_urls": 864
+ },
+ "sick": {
+  "done": true,
+  "sitemap_urls": 356,
+  "wp_done": true,
+  "wp_page": 2
+ },
+ "silentwarble": {
+  "cdx_error": "HTTP 404"
+ },
+ "sillywa": {
+  "cdx_error": "HTTP 404"
+ },
+ "simondotsh": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "skelsec-medium": {
+  "feed_page": 3
+ },
+ "skylightcyber": {
+  "feed_page": 3,
+  "sitemap_urls": 152
+ },
+ "slaeryan": {
+  "cdx_error": "HTTP 404"
+ },
+ "smelly": {
+  "cdx_error": "HTTP 404"
+ },
+ "snoolie-gay": {
+  "sitemap_urls": 0
+ },
+ "solomonsklash": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "sprocketsecurity": {
+  "sitemap_urls": 808
+ },
+ "srcincite-exploits": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "stmxcsr": {
+  "sitemap_urls": 104
+ },
+ "straightblast-medium": {
+  "feed_page": 3
+ },
+ "stygiansecurity": {
+  "cdx_error": "HTTP 404"
+ },
+ "sud0ru-ghost": {
+  "feed_page": 3,
+  "sitemap_urls": 40
+ },
+ "suid-research-html": {
+  "sitemap_urls": 0
+ },
+ "summoning-team": {
+  "sitemap_urls": 72
+ },
+ "suspicious-actor": {
+  "cdx_error": "HTTP 404"
+ },
+ "swapcontext": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "swarm-ptsecurity": {
+  "feed_page": 7,
+  "sitemap_urls": 124
+ },
+ "symbolcrash": {
+  "feed_page": 3,
+  "sitemap_urls": 102
+ },
+ "synacktiv-en-publications-html": {
+  "sitemap_urls": 850
+ },
+ "synzack": {
+  "feed_page": 3,
+  "sitemap_urls": 14
+ },
+ "teamhydra": {
+  "feed_page": 2,
+  "sitemap_urls": 8
+ },
+ "tenable-security-research": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "thalpius": {
+  "feed_page": 17,
+  "sitemap_urls": 162
+ },
+ "the-deniss": {
+  "feed_page": 3,
+  "sitemap_urls": 16
+ },
+ "theevilbit": {
+  "feed_page": 3,
+  "sitemap_urls": 182
+ },
+ "theevilbit-posts": {
+  "feed_page": 3,
+  "sitemap_urls": 182
+ },
+ "themittenmac": {
+  "sitemap_urls": 0
+ },
+ "therealunicornsecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 34
+ },
+ "thespanner": {
+  "sitemap_urls": 0
+ },
+ "thirtythreeforty": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "tij": {
+  "sitemap_urls": 30
+ },
+ "trendmicro-en-us-research-html": {
+  "sitemap_urls": 2500
+ },
+ "trickster0": {
+  "feed_page": 3,
+  "sitemap_urls": 146
+ },
+ "truneski": {
+  "feed_page": 3,
+  "sitemap_urls": 16
+ },
+ "trustedsec": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "ulexec": {
+  "feed_page": 3,
+  "sitemap_urls": 56
+ },
+ "undev-ninja": {
+  "feed_page": 3,
+  "sitemap_urls": 14
+ },
+ "unit42-paloaltonetworks": {
+  "done": true,
+  "sitemap_urls": 2500,
+  "wp_done": true,
+  "wp_page": 13
+ },
+ "unsigned-sh0rt": {
+  "feed_page": 3,
+  "sitemap_urls": 16
+ },
+ "v3ded": {
+  "feed_page": 3,
+  "sitemap_urls": 68
+ },
+ "vanmieghem": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "vice-en-topic-hacking": {
+  "sitemap_urls": 2500,
+  "wp_page": 101
+ },
+ "voidsec-category-blog": {
+  "feed_page": 13,
+  "sitemap_urls": 392
+ },
+ "vollragm": {
+  "feed_page": 3,
+  "sitemap_urls": 44
+ },
+ "vulncheck": {
+  "feed_page": 3,
+  "sitemap_urls": 382
+ },
+ "waawaa": {
+  "feed_page": 3,
+  "sitemap_urls": 18
+ },
+ "watchfulip": {
+  "sitemap_urls": 0
+ },
+ "whereisk0shl-top": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "whiteknightlabs": {
+  "done": true,
+  "sitemap_urls": 374,
+  "wp_done": true
+ },
+ "whynotsecurity": {
+  "feed_page": 3,
+  "sitemap_urls": 36
+ },
+ "wietzebeukema": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "williamknowles": {
+  "done": true,
+  "sitemap_urls": 10,
+  "wp_done": true
+ },
+ "willsroot": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "windows-internals-pages-internals-blog": {
+  "done": true,
+  "sitemap_urls": 98,
+  "wp_done": true
+ },
+ "winternl": {
+  "done": true,
+  "sitemap_urls": 30,
+  "wp_done": true
+ },
+ "wiz": {
+  "feed_page": 3,
+  "sitemap_urls": 2500
+ },
+ "wwws-nightwatchcybersecurity": {
+  "done": true,
+  "sitemap_urls": 666,
+  "wp_done": true,
+  "wp_page": 2
+ },
+ "x-c3ll": {
+  "feed_page": 3,
+  "sitemap_urls": 0
+ },
+ "x41-dsec-lab-advisories": {
+  "sitemap_urls": 394
+ },
+ "x64sec": {
+  "cdx_error": "HTTP 404"
+ },
+ "x86matthew": {
+  "cdx_error": "HTTP 404"
+ },
+ "xybytes": {
+  "feed_page": 3,
+  "sitemap_urls": 20
+ },
+ "yasoob": {
+  "feed_page": 3,
+  "sitemap_urls": 420
+ },
+ "zawadidone": {
+  "feed_page": 3,
+  "sitemap_urls": 54
+ },
+ "zer0-day": {
+  "cdx_error": "HTTP 404"
+ },
+ "zero2auto": {
+  "feed_page": 13,
+  "sitemap_urls": 0
+ },
+ "zerosum0x0": {
+  "blogspot_done": true,
+  "done": true,
+  "feed_page": 3
+ },
+ "zeta-two": {
+  "feed_page": 3,
+  "sitemap_urls": 128
+ },
+ "zolutal": {
+  "feed_page": 3,
+  "sitemap_urls": 22
+ }
+}

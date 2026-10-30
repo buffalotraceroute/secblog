@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="prose">
+  <h1>About secblog</h1>
+  <p>secblog is a public, searchable archive of <strong>security research blog posts</strong>.
+     It collects feed metadata from hundreds of blogs, tags them with a free security taxonomy,
+     and publishes a static site (GitHub Pages) that is updated by GitHub Actions.</p>
+
+  <h2>Content policy</h2>
+  <ul>
+    <li>The public site shows <strong>metadata only</strong>: title, author, date, blog, category, tags, and a short excerpt (≤ ~300 characters) taken from the feed description with HTML stripped.</li>
+    <li><strong>Full post text is never stored or published</strong> in this repository.</li>
+    <li>Every card links to the <strong>original URL</strong> and to a <strong>Wayback Machine</strong> snapshot (<code>https://web.archive.org/web/&lt;url&gt;</code>).</li>
+    <li>Blogs marked <strong>dead</strong> (including domains hijacked by spam or parking) are never fetched or linked live; only Wayback snapshots are ingested and shown.</li>
+    <li>Excerpts and titles remain copyright of their respective authors; this archive is a discovery index, not a republication.</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li><code>sources.yaml</code> — hand-editable registry of blogs and feed URLs.</li>
+    <li>Python collector polls RSS/Atom (with ETag / Last-Modified), with a separate resumable backfill for history (Blogspot / WordPress paging, sitemaps, Wayback CDX for dead blogs).</li>
+    <li>Deterministic tagging from <code>config/taxonomy.yaml</code> (optional LLM hook behind <code>SECBLOG_LLM_TAGGER</code>, off by default).</li>
+    <li>Static site (Jinja2) + <a href="https://pagefind.app/">Pagefind</a> client-side search.</li>
+    <li>GitHub Actions collects every 6 hours, backfills weekly, and deploys to Pages.</li>
+  </ol>
+
+  <h2>Credits</h2>
+  <p>Blog list seeded from <a href="https://github.com/BadSectorLabs/bad-sector-labs-blog-list">Bad Sector Labs' security blog list</a>. Thank you.</p>
+  <p>Source: <a href="https://github.com/buffalotraceroute/secblog">github.com/buffalotraceroute/secblog</a></p>
+</article>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ title }} · secblog</title>
+  <link rel="stylesheet" href="{{ base }}/assets/style.css"/>
+</head>
+<body>
+  <main class="wrap" style="padding:1.5rem 1.1rem 3rem">
+    <p class="eyebrow"><a href="{{ base }}/">secblog</a> · entry</p>
+    <article class="post" data-pagefind-body>
+      <h1 class="post-title">{{ p.title }}</h1>
+      <div class="meta">
+        <a href="{{ base }}/blog/{{ p.blog }}/">{% if sources.get(p.blog) %}{{ sources[p.blog].name }}{% else %}{{ p.blog }}{% endif %}</a>
+        {% if p.published %}<time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
+        {% if p.category %}<a class="cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a>{% endif %}
+      </div>
+      {% if p.excerpt %}<p class="excerpt">{{ p.excerpt }}</p>{% endif %}
+      <div class="links">
+        <a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">Original</a>
+        {% if p.archive_url %}<a href="{{ p.archive_url }}" rel="noopener noreferrer" target="_blank">Wayback</a>{% endif %}
+      </div>
+      {% if p.tags %}
+      <ul class="tags">{% for t in p.tags %}<li><a href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a></li>{% endfor %}</ul>
+      {% endif %}
+    </article>
+  </main>
+</body>
+</html>

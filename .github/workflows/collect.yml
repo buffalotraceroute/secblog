@@ -1,0 +1,63 @@
+name: Collect and deploy
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "sources.yaml"
+      - "config/**"
+      - "secblog/**"
+      - "templates/**"
+      - "static/**"
+      - "requirements.txt"
+      - ".github/workflows/collect.yml"
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  collect-build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect feeds
+        run: python -m secblog collect --concurrency 16
+
+      - name: Persist data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: collect feeds"
+          file_pattern: data/
+
+      - name: Build site
+        run: python -m secblog build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

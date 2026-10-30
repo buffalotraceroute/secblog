@@ -1,0 +1,2673 @@
+# secblog source registry. Hand-edit freely; see README.
+# status: active|slowing|dormant|unknown|blocked|dead
+# dead blogs: never fetch live; use wayback_domain / wayback_before
+sources:
+  - id: phrack
+    name: "Phrack Magazine"
+    homepage: https://www.phrack.org/
+    feeds: []
+    status: unknown
+  - id: 3xpl01tc0d3r
+    name: "3xpl01tc0d3r"
+    homepage: https://3xpl01tc0d3r.blogspot.com/
+    feeds:
+      - https://3xpl01tc0d3r.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: github-mantvydasb-redteam-tactics-and-techniques
+    name: "mantvydasb/RedTeaming-Tactics-and-Techniques"
+    homepage: https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques
+    feeds:
+      - https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/commits.atom
+      - https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/releases.atom
+    status: active
+    category: "Red Team/Offensive"
+  - id: blog-reconless
+    name: "Reconless"
+    homepage: https://blog.reconless.com/
+    feeds:
+      - https://blog.reconless.com/atom.xml
+    status: dormant
+  - id: blog-k3170makan
+    name: "k3170"
+    homepage: https://blog.k3170makan.com/
+    feeds:
+      - https://blog.k3170makan.com/feeds/posts/default
+    status: dormant
+  - id: kitploit
+    name: "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!"
+    homepage: https://www.kitploit.com/
+    feeds:
+      - https://kitploit.com/rss.xml
+    status: active
+  - id: krebsonsecurity
+    name: "Krebs on Security"
+    homepage: https://krebsonsecurity.com/
+    feeds:
+      - https://krebsonsecurity.com/feed/
+    status: active
+  - id: pentagrid
+    name: "Pentagrid AG"
+    homepage: https://www.pentagrid.ch/en/blog/
+    feeds:
+      - https://www.pentagrid.ch/de/rss.xml
+    status: active
+  - id: portswigger-daily-swig
+    name: "PortSwigger — Web security tools, training and research"
+    homepage: https://portswigger.net/
+    feeds:
+      - https://portswigger.net/daily-swig/rss
+    status: active
+  - id: swapcontext
+    name: "The Vault"
+    homepage: https://swapcontext.blogspot.com/
+    feeds:
+      - https://swapcontext.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: hexacorn
+    name: "Hexacorn"
+    homepage: https://www.hexacorn.com/blog/
+    feeds:
+      - https://www.hexacorn.com/blog/feed/
+    status: active
+  - id: x-c3ll
+    name: "- Articles"
+    homepage: https://x-c3ll.github.io/
+    feeds:
+      - https://x-c3ll.github.io/rss
+    status: active
+  - id: ijustwannared-team
+    name: "ijustwannaredteam"
+    homepage: https://ijustwannared.team/
+    feeds:
+      - https://ijustwannared.team/feed/
+    status: dormant
+  - id: mdsec
+    name: "MDSec"
+    homepage: https://www.mdsec.co.uk/knowledge-centre/insights/
+    feeds:
+      - https://www.mdsec.co.uk/feed/
+    status: active
+  - id: labs-f-secure
+    name: "Useful online security tips and articles | F‑Secure"
+    homepage: https://labs.f-secure.com/
+    feeds: []
+    status: active
+  - id: posts-specterops
+    name: "Know Your Adversary"
+    homepage: https://posts.specterops.io/
+    feeds:
+      - https://specterops.io/feed/podcast/the-state-of-apm/
+    status: active
+  - id: unit42-paloaltonetworks
+    name: "Unit 42"
+    homepage: https://unit42.paloaltonetworks.com/
+    feeds:
+      - https://unit42.paloaltonetworks.com/feed/
+    status: active
+  - id: opaque
+    name: "opaque.link"
+    homepage: https://opaque.link/
+    feeds: []
+    status: dead
+    wayback_domain: opaque.link
+    notes: "fetch error: ClientConnectorError: Cannot connect to host opaque.link:443; DNS(dns.google): resolves to 185.193.126.167; DNS resolves but server not reachable o"
+  - id: oddvar-moe
+    name: "Oddvar Moe's Blog"
+    homepage: https://oddvar.moe/
+    feeds:
+      - https://oddvar.moe/feed/
+    status: slowing
+  - id: shenaniganslabs
+    name: "Shenanigans Labs"
+    homepage: https://shenaniganslabs.io/
+    feeds:
+      - https://shenaniganslabs.io/feed
+    status: dormant
+  - id: lockboxx
+    name: "LockBoxx"
+    homepage: https://lockboxx.blogspot.com/
+    feeds:
+      - https://lockboxx.blogspot.com/feeds/posts/default
+    status: active
+    notes: "fetched via https (sandbox blocks plain-http egress); redirected cross-domain to lockboxx.org; sitemap lastmod is ~today; may reflect regeneration, not a post"
+  - id: outflank
+    name: "Outflank Blog | Outflank"
+    homepage: https://outflank.nl/blog/
+    feeds:
+      - https://www.outflank.nl/blog/feed/
+    status: active
+  - id: blog-ropnop
+    name: "ropnop blog"
+    homepage: https://blog.ropnop.com/
+    feeds:
+      - https://blog.ropnop.com/index.xml
+    status: dormant
+  - id: heynowyouseeme
+    name: "abcdef"
+    homepage: https://heynowyouseeme.blogspot.com/
+    feeds:
+      - https://heynowyouseeme.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: its-a-feature
+    name: "its-a-feature.github.io"
+    homepage: https://its-a-feature.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: its-a-feature.github.io
+    notes: "HTTP 404"
+  - id: blog-fox-it
+    name: "Fox-IT International blog"
+    homepage: https://blog.fox-it.com/
+    feeds:
+      - https://blog.fox-it.com/feed/
+    status: active
+  - id: research-nccgroup
+    name: "Cyber Security Research | NCC Group"
+    homepage: https://research.nccgroup.com/
+    feeds:
+      - https://research.nccgroup.com/feed/
+    status: active
+  - id: thespanner
+    name: "thespanner.co.uk"
+    homepage: https://www.thespanner.co.uk/
+    feeds: []
+    status: blocked
+    notes: "fetched via https (sandbox blocks plain-http egress)"
+  - id: n00py
+    name: "n00py Blog"
+    homepage: https://www.n00py.io/
+    feeds:
+      - https://www.n00py.io/feed/
+    status: slowing
+  - id: rce4fun
+    name: "Reverse Engineering 0x4 Fun"
+    homepage: https://rce4fun.blogspot.com/
+    feeds:
+      - https://rce4fun.blogspot.com/feeds/posts/default
+    status: active
+  - id: blog-pi3-com-pl
+    name: "pi3 blog"
+    homepage: https://blog.pi3.com.pl/
+    feeds:
+      - https://blog.pi3.com.pl/?feed=rss2
+    status: slowing
+  - id: coffeegist
+    name: "CoffeeGist"
+    homepage: https://coffeegist.com/
+    feeds:
+      - https://coffeegist.com/feed
+    status: dormant
+  - id: tenable-security-research
+    name: "Tenable Blog"
+    homepage: https://www.tenable.com/security/research
+    feeds:
+      - https://feeds.feedburner.com/tenable/qaXL
+    status: active
+  - id: raelize
+    name: "Raelize - Embedded Device Security Testing, Consultancy & Training"
+    homepage: https://raelize.com/
+    feeds:
+      - https://raelize.com/index.xml
+    status: active
+  - id: zeta-two
+    name: "Zeta-Two.com"
+    homepage: https://zeta-two.com/
+    feeds:
+      - https://zeta-two.com/feed.xml
+    status: dormant
+  - id: pagedout-institute
+    name: "Paged Out! Magazine"
+    homepage: https://pagedout.institute/
+    feeds:
+      - https://pagedout.institute/rss.xml
+    status: active
+  - id: gynvael-coldwind-pl
+    name: "gynvael.coldwind//vx.log (pl)"
+    homepage: https://gynvael.coldwind.pl/
+    feeds:
+      - https://feeds.feedburner.com/GynvaelColdwindPL
+    status: active
+  - id: cipherdyne-blog-index-html
+    name: "cipherdyne.org | System and Network Security"
+    homepage: https://www.cipherdyne.org/blog/index.html/
+    feeds:
+      - https://www.cipherdyne.org/atom.xml
+    status: slowing
+  - id: en-hackndo
+    name: "hackndo"
+    homepage: https://en.hackndo.com/
+    feeds:
+      - https://en.hackndo.com/feed
+    status: slowing
+  - id: bohops
+    name: "bohops"
+    homepage: https://bohops.com/
+    feeds:
+      - https://bohops.com/feed/
+    status: slowing
+  - id: m1el
+    name: "m1el"
+    homepage: https://m1el.github.io/
+    feeds:
+      - https://m1el.github.io/feed.xml
+    status: dormant
+  - id: eddiez
+    name: "eddiez.me"
+    homepage: https://eddiez.me/
+    feeds:
+      - https://eddiez.me/rss/
+    status: slowing
+  - id: laurencetennant
+    name: "Laurence Tennant"
+    homepage: https://laurencetennant.com/
+    feeds:
+      - https://laurencetennant.com/feed.xml
+    status: active
+  - id: secret
+    name: "secret club"
+    homepage: https://secret.club/
+    feeds:
+      - https://secret.club/feed.xml
+    status: active
+  - id: blog-dylan
+    name: "blog.dylan.codes"
+    homepage: https://blog.dylan.codes/
+    feeds: []
+    status: dead
+    wayback_domain: blog.dylan.codes
+    notes: "fetch error: TooManyRedirects: 0, message='', url='https://blog.dylan.codes/'; DNS(dns.google): resolves to 172.67.205.179,104.21.93.60; self-redirect loop (sit"
+  - id: jackson-t
+    name: "Jackson T."
+    homepage: https://www.jackson-t.ca/
+    feeds:
+      - https://jackson-t.com/index.xml
+    status: active
+  - id: n4r1b
+    name: "Posts on Up is Down and Black is White"
+    homepage: https://www.n4r1b.com/posts/
+    feeds:
+      - https://n4r1b.com/posts/index.xml
+    status: dormant
+  - id: jhalon-posts-html
+    name: "Jack Hacks"
+    homepage: https://jhalon.github.io/posts.html
+    feeds:
+      - https://jhalon.github.io/feed.xml
+    status: active
+  - id: rack911labs
+    name: "RACK911 Labs – Penetration Testing | IOT Security | Tech Security | Server"
+    homepage: https://www.rack911labs.com/research
+    feeds: []
+    status: unknown
+    notes: "redirected cross-domain to rack911labs.ca; redirected to different domain (moved/rebranded/acquired?) - verify; no post dates parsed; newest year mentioned on p"
+  - id: nullsecurity
+    name: "nullsecurity"
+    homepage: https://nullsecurity.net/
+    feeds: []
+    status: active
+  - id: 0xpat
+    name: "0xPat blog"
+    homepage: https://0xpat.github.io/
+    feeds:
+      - https://0xpat.github.io/feed.xml
+    status: dormant
+  - id: h0mbre
+    name: "The Human Machine Interface"
+    homepage: https://h0mbre.github.io/
+    feeds:
+      - https://h0mbre.github.io/feed.xml
+    status: slowing
+  - id: shells
+    name: "shells.systems"
+    homepage: https://shells.systems/
+    feeds: []
+    status: dead
+    wayback_domain: shells.systems
+    notes: "HTTP 521"
+  - id: decoder-cloud
+    name: "Decoder's Blog"
+    homepage: https://decoder.cloud/
+    feeds:
+      - https://decoder.cloud/feed/
+    status: active
+  - id: rekken
+    name: "Yuebin Sun's Blog"
+    homepage: https://rekken.github.io/
+    feeds:
+      - https://rekken.github.io/atom.xml
+    status: dormant
+  - id: thirtythreeforty
+    name: "&>/dev/null"
+    homepage: https://www.thirtythreeforty.net/
+    feeds:
+      - https://www.thirtythreeforty.net/feed.xml
+    status: active
+  - id: matteomalvica
+    name: "Blog on"
+    homepage: https://www.matteomalvica.com/blog/
+    feeds:
+      - https://www.matteomalvica.com/blog/index.xml
+    status: slowing
+  - id: khast3x
+    name: "khast3x.club"
+    homepage: https://khast3x.club/
+    feeds: []
+    status: dead
+    wayback_domain: khast3x.club
+    wayback_before: 20220101
+    notes: "fetch error: TooManyRedirects: 0, message='', url='https://khast3x.club/'; DNS(dns.google): resolves to 54.215.31.113; redirect loop via qarfinatrade.com (domai"
+  - id: rythmstick
+    name: "RythmStick"
+    homepage: https://www.rythmstick.net/
+    feeds:
+      - https://www.rythmstick.net/index.xml
+    status: dormant
+  - id: symbolcrash
+    name: "Symbol Crash"
+    homepage: https://www.symbolcrash.com/
+    feeds:
+      - https://www.symbolcrash.com/feed/
+    status: active
+  - id: zer0-day
+    name: "zer0-day.pw"
+    homepage: https://zer0-day.pw/
+    feeds: []
+    status: dead
+    wayback_domain: zer0-day.pw
+    notes: "fetch error: ClientConnectorError: Cannot connect to host zer0-day.pw:443; DNS(dns.google): no A record"
+  - id: solomonsklash
+    name: "SolomonSklash.io"
+    homepage: https://www.solomonsklash.io/
+    feeds:
+      - https://www.solomonsklash.io/feeds/all.atom.xml
+    status: dormant
+  - id: labs-jumpsec
+    name: "JUMPSEC Labs"
+    homepage: https://labs.jumpsec.com/
+    feeds:
+      - https://labs.jumpsec.com/feed
+    status: active
+  - id: n1ght-w0lf
+    name: "n1ghtw0lf"
+    homepage: https://n1ght-w0lf.github.io/
+    feeds:
+      - https://n1ght-w0lf.github.io/feed.xml
+    status: dormant
+  - id: suspicious-actor
+    name: "suspicious.actor"
+    homepage: https://suspicious.actor/
+    feeds: []
+    status: dead
+    wayback_domain: suspicious.actor
+    notes: "HTTP 404"
+  - id: medium-red-teaming-with-a-blue-team-mentaility
+    name: "Red Teaming with a Blue Team Mentality - Medium"
+    homepage: https://medium.com/red-teaming-with-a-blue-team-mentaility
+    feeds:
+      - https://medium.com/feed/red-teaming-with-a-blue-team-mentaility
+    status: dormant
+  - id: undev-ninja
+    name: "undev.ninja"
+    homepage: https://undev.ninja/
+    feeds:
+      - https://undev.ninja/rss/
+    status: slowing
+  - id: gremwell
+    name: "Gremwell"
+    homepage: https://www.gremwell.com/blog/
+    feeds:
+      - https://www.gremwell.com/rss.xml
+    status: dormant
+  - id: blog-harmj0y
+    name: "harmj0y"
+    homepage: https://blog.harmj0y.net/
+    feeds:
+      - https://blog.harmj0y.net/feed/
+    status: unknown
+  - id: eugene-kaspersky
+    name: "Nota Bene: Eugene Kaspersky’s Official Blog"
+    homepage: https://eugene.kaspersky.com/
+    feeds:
+      - https://eugene.kaspersky.com/feed/
+    status: active
+  - id: allysonomalley
+    name: "allysonomalley.com"
+    homepage: https://www.allysonomalley.com/
+    feeds:
+      - https://www.allysonomalley.com/feed/
+    status: dormant
+  - id: zerosum0x0
+    name: "zerosum0x0"
+    homepage: https://zerosum0x0.blogspot.com/
+    feeds:
+      - https://zerosum0x0.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: research-securitum
+    name: "Securitum. Leading european penetration testing company"
+    homepage: https://research.securitum.com/
+    feeds: []
+    status: unknown
+  - id: pentestlab
+    name: "Penetration Testing Lab"
+    homepage: https://pentestlab.blog/
+    feeds:
+      - https://pentestlab.blog/feed/
+    status: slowing
+  - id: ehpus
+    name: "ehpus.com"
+    homepage: https://www.ehpus.com/
+    feeds:
+      - https://www.ehpus.com/blog-feed.xml
+    status: dormant
+  - id: ethicalchaos
+    name: "Ethical Chaos"
+    homepage: https://ethicalchaos.dev/
+    feeds:
+      - https://ethicalchaos.dev/feed/
+    status: dormant
+  - id: dtm
+    name: "@dtmsecurity"
+    homepage: https://dtm.uk/
+    feeds:
+      - https://dtm.uk/rss/
+    status: slowing
+  - id: blog-quickbreach
+    name: "blog.quickbreach.io"
+    homepage: https://blog.quickbreach.io/
+    feeds: []
+    status: dead
+    wayback_domain: blog.quickbreach.io
+    notes: "redirected cross-domain to caffeinatedsecurity.com; HTTP 404"
+  - id: labs-redyops
+    name: "labs.redyops.com"
+    homepage: https://labs.redyops.com/
+    feeds: []
+    status: dead
+    wayback_domain: labs.redyops.com
+    notes: "HTTP 500"
+  - id: contextis-us-blog
+    name: "Reinvented with Accenture"
+    homepage: https://www.contextis.com/us/blog
+    feeds: []
+    status: active
+    notes: "redirected cross-domain to accenture.com"
+  - id: darungrim
+    name: "darungrim.com"
+    homepage: https://darungrim.com/research/
+    feeds: []
+    status: dead
+    wayback_domain: darungrim.com
+    wayback_before: 20220101
+    notes: "redirected cross-domain to hugedomains.com; parked/placeholder signal: 'HugeDomains'"
+  - id: trustedsec
+    name: "TrustedSec"
+    homepage: https://www.trustedsec.com/blog
+    feeds:
+      - https://trustedsec.com/feed.rss
+    status: active
+  - id: birb007-blog
+    name: "birb007.github.io"
+    homepage: https://birb007.github.io/blog/
+    feeds: []
+    status: dead
+    wayback_domain: birb007.github.io
+    notes: "HTTP 404"
+  - id: labs-sentinelone
+    name: "SentinelLABS | The Latest Threat Research and Intelligence"
+    homepage: https://labs.sentinelone.com/
+    feeds:
+      - https://www.sentinelone.com/labs/feed/
+    status: active
+  - id: blog-cobaltstrike
+    name: "blog.cobaltstrike.com"
+    homepage: https://blog.cobaltstrike.com/
+    feeds:
+      - https://www.cobaltstrike.com/blog/feed
+    status: blocked
+  - id: optiv-feed
+    name: "optiv.com"
+    homepage: https://www.optiv.com/feed
+    feeds: []
+    status: dead
+    wayback_domain: optiv.com
+    notes: "HTTP 503"
+  - id: blog-scrt
+    name: "SCRT Team Blog"
+    homepage: https://blog.scrt.ch/
+    feeds:
+      - https://blog.scrt.ch/feed/
+    status: active
+  - id: wietzebeukema
+    name: "@Wietze - Blog"
+    homepage: https://www.wietzebeukema.nl/blog/
+    feeds:
+      - https://www.wietzebeukema.nl/blog/feed.xml
+    status: active
+  - id: yasoob
+    name: "Yasoob Khalid"
+    homepage: https://yasoob.me/
+    feeds:
+      - https://yasoob.me/index.xml
+    status: active
+  - id: blog-christophetd
+    name: "Christophe Tafani-Dereeper"
+    homepage: https://blog.christophetd.fr/
+    feeds:
+      - https://blog.christophetd.fr/feed/
+    status: slowing
+  - id: palant-articles
+    name: "Almost Secure"
+    homepage: https://palant.info/articles/
+    feeds:
+      - https://palant.info/rss.xml
+    status: active
+  - id: x64sec
+    name: "x64sec.sh"
+    homepage: https://x64sec.sh/
+    feeds: []
+    status: dead
+    wayback_domain: x64sec.sh
+    notes: "fetch error: ClientConnectorError: Cannot connect to host x64sec.sh:443; DNS(dns.google): NXDOMAIN"
+  - id: zero2auto
+    name: "0ffset Training Solutions"
+    homepage: https://zero2auto.com/
+    feeds:
+      - https://www.0ffset.net/feed/
+    status: slowing
+    notes: "redirected cross-domain to 0ffset.net"
+  - id: fuzzysecurity
+    name: "FuzzySecurity | Home"
+    homepage: https://www.fuzzysecurity.com/
+    feeds: []
+    status: unknown
+  - id: whynotsecurity
+    name: "WhyNotSecurity"
+    homepage: https://whynotsecurity.com/
+    feeds:
+      - https://whynotsecurity.com/feed.xml
+    status: dormant
+  - id: redteamer-tips
+    name: "RedTeamer.Tips"
+    homepage: https://redteamer.tips/
+    feeds:
+      - https://redteamer.tips/rss.xml
+    status: slowing
+  - id: 0xeb-bp
+    name: "0xeb_bp"
+    homepage: https://0xeb-bp.github.io/
+    feeds:
+      - https://0xeb-bp.com/feed
+    status: dormant
+    notes: "redirected cross-domain to 0xeb-bp.com"
+  - id: blog-two06
+    name: "blog.two06.info"
+    homepage: https://blog.two06.info/
+    feeds: []
+    status: dead
+    wayback_domain: blog.two06.info
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.two06.info:443; DNS(dns.google): NXDOMAIN"
+  - id: certego-en-news
+    name: "Certego's RSS Feed"
+    homepage: https://www.certego.net/
+    feeds:
+      - https://www.certego.net/rss.xml
+    status: active
+  - id: themittenmac
+    name: "Blog – The Mitten Mac"
+    homepage: https://themittenmac.com/blog
+    feeds: []
+    status: unknown
+  - id: modexp
+    name: "modexp"
+    homepage: https://modexp.wordpress.com/
+    feeds:
+      - https://modexp.wordpress.com/feed/
+    status: slowing
+  - id: medium-palantir
+    name: "Palantir Blog - Medium"
+    homepage: https://medium.com/palantir
+    feeds:
+      - https://medium.com/feed/palantir
+    status: active
+  - id: praetorian
+    name: "Praetorian"
+    homepage: https://www.praetorian.com/blog
+    feeds:
+      - https://www.praetorian.com/feed/
+    status: active
+  - id: connormcgarr
+    name: "Connor McGarr’s Blog"
+    homepage: https://connormcgarr.github.io/
+    feeds:
+      - https://connormcgarr.github.io/feed.xml
+    status: active
+  - id: redteaming
+    name: "Red Teaming"
+    homepage: https://redteaming.co.uk/
+    feeds:
+      - https://redteaming.co.uk/feed/
+    status: dormant
+  - id: m417z
+    name: "m417z / blog"
+    homepage: https://m417z.com/
+    feeds:
+      - https://m417z.com/feed.xml
+    status: slowing
+  - id: codewhitesec
+    name: "CODE WHITE | Blog"
+    homepage: https://codewhitesec.blogspot.com/
+    feeds:
+      - https://codewhitesec.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: 235
+    name: "Shortjump!"
+    homepage: https://0xeb.net/
+    feeds:
+      - https://0xeb.net/feed/
+    status: dormant
+  - id: rcesecurity
+    name: "RCE Security GmbH - Your European Partner for Offensive Security"
+    homepage: https://www.rcesecurity.com/
+    feeds:
+      - https://www.rcesecurity.com/index.xml
+    status: active
+  - id: dirkjanm
+    name: "dirkjanm.io"
+    homepage: https://dirkjanm.io/
+    feeds:
+      - https://dirkjanm.io/feed.xml
+    status: active
+  - id: xanthus
+    name: "Blog | Xanthus Security"
+    homepage: https://www.xanthus.io/blog
+    feeds: []
+    status: active
+  - id: a2nkf
+    name: "a2nkf.github.io"
+    homepage: https://a2nkf.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: a2nkf.github.io
+    notes: "HTTP 404"
+  - id: br-sn
+    name: "bs"
+    homepage: https://br-sn.github.io/
+    feeds:
+      - https://br-sn.github.io/feed.xml
+    status: dormant
+  - id: mgreen27
+    name: "Home on Matthew Green | DFIR, Threat Intelligence & Research"
+    homepage: https://mgreen27.github.io/
+    feeds:
+      - https://dfir.au/index.xml
+    status: active
+    notes: "redirected cross-domain to dfir.au"
+  - id: blog-redxorblue
+    name: "Red XOR Blue"
+    homepage: https://blog.redxorblue.com/
+    feeds:
+      - https://blog.redxorblue.com/feeds/posts/default?alt=rss
+    status: dormant
+  - id: blog-qsecure-com
+    name: "blog.qsecure.com.cy"
+    homepage: https://blog.qsecure.com.cy/
+    feeds: []
+    status: unknown
+  - id: insomniasec
+    name: "insomniasec.com"
+    homepage: https://insomniasec.com/blog
+    feeds: []
+    status: dead
+    wayback_domain: insomniasec.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host insomniasec.com:443; DNS(dns.google): no A record"
+  - id: mnemonic
+    name: "Blog"
+    homepage: https://www.mnemonic.no/blog/
+    feeds:
+      - https://www.mnemonic.io/resources/blog/rss.xml
+    status: active
+    notes: "redirected cross-domain to mnemonic.io"
+  - id: swarm-ptsecurity
+    name: "PT SWARM"
+    homepage: https://swarm.ptsecurity.com/
+    feeds:
+      - https://ptswarm.com/blog/feed/
+    status: active
+    notes: "redirected cross-domain to ptswarm.com"
+  - id: ezequiel
+    name: "Ezequiel Pereira"
+    homepage: https://www.ezequiel.tech/
+    feeds:
+      - https://www.ezequiel.tech/feeds/posts/default
+    status: dormant
+  - id: krabsonsecurity
+    name: "krabsonsecurity.com"
+    homepage: https://krabsonsecurity.com/
+    feeds: []
+    status: dead
+    wayback_domain: krabsonsecurity.com
+    wayback_before: 20240101
+    notes: "domain appears hijacked/spam ('Sbobet')"
+  - id: brycx
+    name: "brycx.github.io"
+    homepage: https://brycx.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: brycx.github.io
+    notes: "redirected cross-domain to hybridkey.me; HTTP 500"
+  - id: teamhydra
+    name: "Team Hydra"
+    homepage: https://teamhydra.blog/
+    feeds:
+      - https://teamhydra.blog/feed/
+    status: dormant
+  - id: mac4n6
+    name: "mac4n6.com"
+    homepage: https://www.mac4n6.com/
+    feeds:
+      - https://www.mac4n6.com/blog?format=rss
+    status: slowing
+  - id: gosecure
+    name: "24/7 managed detection, response, and expert cybersecurity services - GoSecure"
+    homepage: https://www.gosecure.net/blog/
+    feeds:
+      - https://gosecure.ai/blog/feed/
+    status: active
+    notes: "redirected cross-domain to gosecure.ai"
+  - id: synacktiv-en-publications-html
+    name: "Publications"
+    homepage: https://www.synacktiv.com/en/publications.html
+    feeds: []
+    status: unknown
+  - id: bytecode77
+    name: "bytecode77"
+    homepage: https://bytecode77.com/
+    feeds: []
+    status: slowing
+  - id: confused
+    name: "confused.ai"
+    homepage: https://confused.ai/
+    feeds:
+      - https://confused.ai/atom.xml
+    status: dormant
+  - id: srcincite-exploits
+    name: "Source Incite"
+    homepage: https://srcincite.io/exploits/
+    feeds:
+      - https://srcincite.io/feed.xml
+    status: unknown
+  - id: byte-how
+    name: "byte.how"
+    homepage: https://byte.how/
+    feeds:
+      - https://byte.how/index.xml
+    status: dormant
+  - id: s3cur3th1ssh1t
+    name: "S3cur3Th1sSh1t"
+    homepage: https://s3cur3th1ssh1t.github.io/
+    feeds:
+      - https://s3cur3th1ssh1t.github.io/feed.xml
+    status: active
+  - id: secjuice
+    name: "Secjuice"
+    homepage: https://www.secjuice.com/
+    feeds:
+      - https://secjuice.com/rss/
+    status: active
+  - id: slaeryan
+    name: "slaeryan.github.io"
+    homepage: https://slaeryan.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: slaeryan.github.io
+    notes: "HTTP 404"
+  - id: blog-orange-tw
+    name: "Orange Tsai"
+    homepage: https://blog.orange.tw/
+    feeds:
+      - https://blog.orange.tw/atom.xml
+    status: active
+  - id: winternl
+    name: "winternl"
+    homepage: https://winternl.com/
+    feeds:
+      - https://winternl.com/feed/
+    status: slowing
+  - id: dozer-nz
+    name: "dozer.nz"
+    homepage: https://dozer.nz/
+    feeds:
+      - https://dozer.nz/feed.xml
+    status: dormant
+  - id: truneski
+    name: "Sic Parvis Magna."
+    homepage: https://truneski.github.io/
+    feeds:
+      - https://truneski.github.io/index.xml
+    status: dormant
+  - id: medium-graphx
+    name: "Stories by Graph-X on Medium"
+    homepage: https://medium.com/@_graphx
+    feeds:
+      - https://medium.com/feed/@_graphx
+    status: dormant
+  - id: blog-zsec
+    name: "ZephrSec - Adventures In Information Security"
+    homepage: https://blog.zsec.uk/
+    feeds:
+      - https://blog.zsec.uk/rss/
+    status: active
+  - id: goichot
+    name: "Posts on Antoine Goichot"
+    homepage: https://www.goichot.fr/posts/
+    feeds:
+      - https://www.goichot.fr/posts/index.xml
+    status: slowing
+  - id: malware-pizza
+    name: "Yet Another Security Blog"
+    homepage: https://malware.pizza/
+    feeds:
+      - https://malware.pizza/feed/
+    status: dormant
+  - id: digeex
+    name: "digeex.de"
+    homepage: https://www.digeex.de/blog/
+    feeds: []
+    status: dead
+    wayback_domain: digeex.de
+    notes: "fetch error: ClientConnectorError: Cannot connect to host www.digeex.de:443; DNS(dns.google): resolves to 46.224.226.202; DNS resolves but server not reachable "
+  - id: blackhillsinfosec
+    name: "Black Hills Information Security"
+    homepage: https://www.blackhillsinfosec.com/blog/
+    feeds:
+      - https://www.blackhillsinfosec.com/feed
+    status: active
+  - id: medium-securityshenaningans
+    name: "Security Shenanigans"
+    homepage: https://medium.com/@securityshenaningans
+    feeds:
+      - https://medium.com/feed/@securityshenaningans
+    status: blocked
+  - id: pwnshift
+    name: "pwnshift"
+    homepage: https://pwnshift.github.io/
+    feeds:
+      - https://pwnshift.github.io/feed.xml
+    status: dormant
+  - id: dumpco
+    name: "dumpco.re"
+    homepage: https://dumpco.re/blog/
+    feeds: []
+    status: unknown
+  - id: riccardoancarani
+    name: "Riccardo Ancarani"
+    homepage: https://riccardoancarani.github.io/
+    feeds:
+      - https://riccardoancarani.github.io/index.xml
+    status: slowing
+  - id: chadduffey
+    name: "Chad Duffey"
+    homepage: https://chadduffey.com/
+    feeds:
+      - https://www.chadduffey.com/feed.xml
+    status: active
+  - id: nickbloor
+    name: "Blog – NickstaDB"
+    homepage: https://nickbloor.co.uk/blog/
+    feeds:
+      - https://nickbloor.co.uk/blog/feed/
+    status: dormant
+  - id: mksben-l0-cm
+    name: "MKSB(en)"
+    homepage: https://mksben.l0.cm/
+    feeds:
+      - https://mksben.l0.cm/feeds/posts/default
+    status: dormant
+  - id: sevrosecurity
+    name: "Stories by Faust on Medium"
+    homepage: https://sevrosecurity.com/
+    feeds:
+      - https://sevrosecurity.com/feed?gi=80fae2b733d0
+    status: dormant
+  - id: scannell
+    name: "Simon Scannell"
+    homepage: https://scannell.me/
+    feeds: []
+    status: unknown
+  - id: hausec
+    name: "hausec"
+    homepage: https://hausec.com/
+    feeds:
+      - https://hausec.com/feed/
+    status: active
+  - id: console-feed
+    name: "Console by CodeSee.io"
+    homepage: https://console.substack.com/feed
+    feeds:
+      - https://console.substack.com/feed
+    status: slowing
+  - id: james-clee-blog-2
+    name: "James Clee"
+    homepage: https://james-clee.com/blog-2/
+    feeds:
+      - https://james-clee.com/feed/
+    status: dormant
+  - id: offensivedefence
+    name: "Offensive Defence"
+    homepage: https://offensivedefence.co.uk/
+    feeds:
+      - https://offensivedefence.co.uk/index.xml
+    status: slowing
+  - id: blog-didierstevens
+    name: "Didier Stevens"
+    homepage: https://blog.didierstevens.com/
+    feeds:
+      - https://blog.didierstevens.com/feed/
+    status: active
+  - id: landave
+    name: "landave's blog"
+    homepage: https://landave.io/
+    feeds:
+      - https://landave.io/post/index.xml
+    status: dormant
+  - id: sick
+    name: "Sick Codes – Security Research, Hardware & Software Hacking, Consulting, Linux,"
+    homepage: https://sick.codes/
+    feeds:
+      - https://sick.codes/feed/
+    status: slowing
+  - id: skelsec-medium
+    name: "Stories by SkelSec on Medium"
+    homepage: https://skelsec.medium.com/
+    feeds:
+      - https://medium.com/feed/@skelsec
+    status: dormant
+  - id: offnotes-notso
+    name: "GitBook"
+    homepage: https://offnotes.notso.pro/
+    feeds: []
+    status: unknown
+    notes: "redirected cross-domain to gitbook.com; redirected to different domain (moved/rebranded/acquired?) - verify"
+  - id: blog-notso
+    name: "blog.notso.pro"
+    homepage: https://blog.notso.pro/
+    feeds: []
+    status: dead
+    wayback_domain: blog.notso.pro
+    notes: "HTTP 404"
+  - id: exploit
+    name: "eXploit"
+    homepage: https://exploit.ph/
+    feeds: []
+    status: slowing
+  - id: secbytes
+    name: "secbytes.net"
+    homepage: https://secbytes.net/
+    feeds: []
+    status: dead
+    wayback_domain: secbytes.net
+    notes: "fetch error: ClientConnectorError: Cannot connect to host secbytes.net:443; DNS(dns.google): NXDOMAIN"
+  - id: blog-nviso-eu
+    name: "NVISO Labs"
+    homepage: https://blog.nviso.eu/
+    feeds:
+      - https://blog.nviso.eu/feed/
+    status: active
+  - id: secureyourit-wp-blog
+    name: "secureyourit.co.uk"
+    homepage: https://secureyourit.co.uk/wp/blog/
+    feeds: []
+    status: dead
+    wayback_domain: secureyourit.co.uk
+    notes: "fetch error: ClientConnectorError: Cannot connect to host secureyourit.co.uk:443; DNS(dns.google): no A record"
+  - id: blackarrow-blackarrow-blog
+    name: "BlackArrow's Blog - Offensive security"
+    homepage: https://www.blackarrow.net/blackarrow-blog/
+    feeds:
+      - https://www.tarlogic.com/feed/
+    status: active
+    notes: "redirected cross-domain to tarlogic.com"
+  - id: thalpius
+    name: "Microsoft Security Blog"
+    homepage: https://thalpius.com/
+    feeds:
+      - https://thalpius.com/feed/
+    status: active
+  - id: phrozen
+    name: "Phrozen"
+    homepage: https://www.phrozen.io/
+    feeds: []
+    status: unknown
+  - id: labs-nettitude-new
+    name: "Cyber Labs |Research, Vulnerability Disclosures & More| LRQA"
+    homepage: https://labs.nettitude.com/new
+    feeds: []
+    status: unknown
+    notes: "listed path 404; site root https://labs.nettitude.com/ alive; redirected cross-domain to lrqa.com; redirected to different domain (moved/rebranded/acquired?) - "
+  - id: stygiansecurity
+    name: "stygiansecurity.com"
+    homepage: https://stygiansecurity.com/
+    feeds: []
+    status: dead
+    wayback_domain: stygiansecurity.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host stygiansecurity.com:443; DNS(dns.google): lookup failed"
+  - id: debugactiveprocess-medium
+    name: "Stories by Ialle Teixeira on Medium"
+    homepage: https://debugactiveprocess.medium.com/
+    feeds:
+      - https://medium.com/feed/@debugactiveprocess
+    status: active
+  - id: blog-raw-pm
+    name: "Rawsec"
+    homepage: https://blog.raw.pm/
+    feeds:
+      - https://blog.raw.pm/rss.xml
+    status: active
+  - id: blog-syscall
+    name: "blog.syscall.party"
+    homepage: https://blog.syscall.party/
+    feeds: []
+    status: dead
+    wayback_domain: blog.syscall.party
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.syscall.party:443; DNS(dns.google): no A record"
+  - id: fortinet-blog-threat-research
+    name: "FortiGuard Labs Threat Research"
+    homepage: https://www.fortinet.com/blog/threat-research
+    feeds:
+      - https://feeds.fortinet.com/fortinet/blog/threat-research
+    status: active
+  - id: luemmelsec
+    name: "LuemmelSec"
+    homepage: https://luemmelsec.github.io/
+    feeds:
+      - https://luemmelsec.github.io/feed.xml
+    status: slowing
+  - id: blog-cloudflare
+    name: "Cloudflare Blog"
+    homepage: https://blog.cloudflare.com/
+    feeds:
+      - https://blog.cloudflare.com/rss/
+    status: active
+  - id: bad-jubies
+    name: "Bad_Jubies"
+    homepage: https://bad-jubies.github.io/
+    feeds:
+      - https://bad-jubies.github.io/feed
+    status: active
+  - id: desi-jarvis-medium
+    name: "Stories by Madhav Bhatt on Medium"
+    homepage: https://desi-jarvis.medium.com/
+    feeds:
+      - https://medium.com/feed/@desi-jarvis
+    status: dormant
+  - id: x41-dsec-lab-advisories
+    name: "Lab | X41 D-Sec - Penetration Tests and Source Code Audits"
+    homepage: https://www.x41-dsec.de/news/lab/
+    feeds:
+      - https://x41-dsec.de/feed.xml
+    status: active
+  - id: halove23
+    name: "halove23.blogspot.com"
+    homepage: https://halove23.blogspot.com/
+    feeds: []
+    status: dead
+    wayback_domain: halove23.blogspot.com
+    notes: "HTTP 404"
+  - id: crummie5
+    name: "crummie5.club"
+    homepage: https://www.crummie5.club/
+    feeds: []
+    status: dead
+    wayback_domain: crummie5.club
+    wayback_before: 20220101
+    notes: "redirects to ww38.crummie5.club (classic domain-parking redirect)"
+  - id: msrc-blog-microsoft
+    name: "Blog MSRC | Microsoft Security Response Center"
+    homepage: https://msrc-blog.microsoft.com/
+    feeds:
+      - https://msrc.microsoft.com/blog/feed
+    status: active
+  - id: arielkoren
+    name: "Ariel Koren - Writing and research"
+    homepage: https://arielkoren.com/archive/
+    feeds:
+      - https://arielkoren.com/feed.xml
+    status: active
+  - id: blog-reigningshells
+    name: "Reigning Shells"
+    homepage: https://blog.reigningshells.com/
+    feeds:
+      - https://blog.reigningshells.com/feeds/posts/default?alt=rss
+    status: dormant
+  - id: smelly
+    name: "smelly.wtf"
+    homepage: https://smelly.wtf/
+    feeds: []
+    status: dead
+    wayback_domain: smelly.wtf
+    notes: "fetch error: TimeoutError: ; DNS(dns.google): resolves to 172.67.174.138,104.21.47.239; DNS resolves but server not reachable over HTTPS"
+  - id: therealunicornsecurity
+    name: "Unicorn Security"
+    homepage: https://therealunicornsecurity.github.io/
+    feeds:
+      - https://therealunicornsecurity.github.io/feed.xml
+    status: slowing
+  - id: rtcsec
+    name: "VoIP and WebRTC Security Articles and News on Enable Security"
+    homepage: https://www.rtcsec.com/
+    feeds:
+      - https://www.enablesecurity.com/blog/index.xml
+    status: active
+    notes: "redirected cross-domain to enablesecurity.com"
+  - id: theevilbit-posts
+    name: "theevilbit"
+    homepage: https://theevilbit.github.io/posts/
+    feeds:
+      - https://theevilbit.github.io/index.xml
+    status: active
+  - id: blog-google-threat-analysis-group
+    name: "Security"
+    homepage: https://blog.google/security/
+    feeds:
+      - https://blog.google/security/rss/
+    status: active
+  - id: schneier
+    name: "Schneier on Security"
+    homepage: https://www.schneier.com/
+    feeds:
+      - https://www.schneier.com/feed/
+    status: active
+  - id: labs-bishopfox
+    name: "labs.bishopfox.com"
+    homepage: https://labs.bishopfox.com/tech-blog
+    feeds: []
+    status: dead
+    wayback_domain: labs.bishopfox.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host labs.bishopfox.com:443; DNS(dns.google): no A record"
+  - id: raxis
+    name: "The Exploit | Raxis Penetration Testing Blog"
+    homepage: https://raxis.com/blog/
+    feeds:
+      - https://raxis.com/feed.xml
+    status: active
+  - id: blog-thecybersecuritytutor
+    name: "blog.thecybersecuritytutor.com"
+    homepage: https://blog.thecybersecuritytutor.com/
+    feeds: []
+    status: dead
+    wayback_domain: blog.thecybersecuritytutor.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.thecybersecuritytutor.com:443; DNS(dns.google): NXDOMAIN"
+  - id: igor-blue
+    name: "Igor’s Blog"
+    homepage: https://igor-blue.github.io/
+    feeds:
+      - https://igor-blue.github.io/feed.xml
+    status: dormant
+  - id: ilankalendarov
+    name: "Ilan Kalendarov"
+    homepage: https://ilankalendarov.github.io/
+    feeds:
+      - https://ilankalendarov.github.io/feed
+    status: dormant
+  - id: alephsecurity
+    name: "Aleph Research"
+    homepage: https://alephsecurity.com/
+    feeds:
+      - https://alephsecurity.com/feed.xml
+    status: slowing
+  - id: ropgadget-sections-html
+    name: "ropgadget.com"
+    homepage: https://ropgadget.com/sections.html
+    feeds: []
+    status: unknown
+  - id: csandker
+    name: "csandker.io"
+    homepage: https://csandker.io/
+    feeds:
+      - https://csandker.io/feed.xml
+    status: dormant
+  - id: suid-research-html
+    name: "setuid(0); Research Team"
+    homepage: https://suid.ch/research.html
+    feeds: []
+    status: unknown
+  - id: devilinside-categories-resources
+    name: "UNLEASH THE BEAST | THE FUTURE | H O M E"
+    homepage: https://devilinside.me/categories/resources
+    feeds: []
+    status: active
+  - id: vice-en-topic-hacking
+    name: "Hacking Archives - VICE"
+    homepage: https://www.vice.com/en/tag/hacking/
+    feeds: []
+    status: active
+  - id: securitylab-github
+    name: "Redirecting…"
+    homepage: https://securitylab.github.com/research/
+    feeds: []
+    status: active
+    category: "Tools & Releases"
+  - id: security-googleblog
+    name: "Security"
+    homepage: https://security.googleblog.com/
+    feeds:
+      - https://blog.google/security/rss/
+    status: active
+    notes: "redirected cross-domain to blog.google; near-empty page"
+  - id: theevilbit
+    name: "theevilbit"
+    homepage: https://theevilbit.github.io/
+    feeds:
+      - https://theevilbit.github.io/index.xml
+    status: active
+  - id: 0dayfans
+    name: "0day Fans"
+    homepage: https://0dayfans.com/
+    feeds:
+      - https://0dayfans.com/feed.rss
+    status: active
+  - id: godiego
+    name: "godiego.tech"
+    homepage: https://godiego.tech/
+    feeds: []
+    status: dead
+    wayback_domain: godiego.tech
+    notes: "fetch error: ClientConnectorError: Cannot connect to host godiego.tech:443; DNS(dns.google): NXDOMAIN"
+  - id: fb-p-disclosures-issues-list
+    name: "fb.security"
+    homepage: https://fb.security/p/disclosures/issues/list?can=1
+    feeds: []
+    status: dead
+    wayback_domain: fb.security
+    notes: "fetch error: ClientConnectorError: Cannot connect to host fb.security:443; DNS(dns.google): no A record"
+  - id: maxwelldulin
+    name: "Strikeout (ꓘ) Blog - Security Researcher"
+    homepage: https://maxwelldulin.com/Blog
+    feeds: []
+    status: active
+  - id: archcloudlabs
+    name: "Arch Cloud Labs"
+    homepage: https://www.archcloudlabs.com/
+    feeds:
+      - https://www.archcloudlabs.com/index.xml
+    status: active
+  - id: zeroperil
+    name: "zeroperil.co.uk"
+    homepage: https://zeroperil.co.uk/
+    feeds: []
+    status: unknown
+  - id: medium-1ndahous3
+    name: "Stories by Roman Dudin on Medium"
+    homepage: https://medium.com/@1ndahous3
+    feeds:
+      - https://medium.com/feed/@1ndahous3
+    status: dormant
+  - id: secarma
+    name: "Blog - Secarma: Penetration Testing and Cybersecurity Company"
+    homepage: https://www.secarma.com/blog/
+    feeds: []
+    status: active
+  - id: micahvandeusen
+    name: "Micah Van Deusen's Blog"
+    homepage: https://micahvandeusen.com/
+    feeds:
+      - https://micahvandeusen.com/blog/rss.xml
+    status: dormant
+  - id: malwaretech
+    name: "MalwareTech"
+    homepage: https://www.malwaretech.com/
+    feeds:
+      - https://www.malwaretech.com/feed
+    status: active
+  - id: paulosyibelo
+    name: "Paulos Yibelo - Hacking Research"
+    homepage: https://www.paulosyibelo.com/
+    feeds: []
+    status: slowing
+    notes: "redirected cross-domain to evil.blog"
+  - id: blog-grimm-co
+    name: "blog.grimm-co.com"
+    homepage: https://blog.grimm-co.com/
+    feeds: []
+    status: dead
+    wayback_domain: blog.grimm-co.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.grimm-co.com:443; DNS(dns.google): NXDOMAIN"
+  - id: doar-e
+    name: "Diary of a reverse-engineer"
+    homepage: https://doar-e.github.io/
+    feeds:
+      - https://doar-e.github.io/feeds/atom.xml
+    status: dormant
+  - id: sec-eng
+    name: "sec-eng.tech"
+    homepage: https://www.sec-eng.tech/
+    feeds: []
+    status: dead
+    wayback_domain: sec-eng.tech
+    notes: "fetch error: ClientConnectorError: Cannot connect to host www.sec-eng.tech:443; DNS(dns.google): NXDOMAIN"
+  - id: windows-internals-pages-internals-blog
+    name: "Winsider Seminars & Solutions Inc."
+    homepage: https://windows-internals.com/
+    feeds:
+      - https://windows-internals.com/feed/
+    status: active
+  - id: 0xhop-posts
+    name: "Hop Infosec"
+    homepage: https://0xhop.github.io/posts/
+    feeds:
+      - https://www.hopinfosec.com/atom.xml
+    status: dormant
+    notes: "redirected cross-domain to hopinfosec.com"
+  - id: exandroid
+    name: "Ex Android Dev"
+    homepage: https://www.exandroid.dev/
+    feeds:
+      - https://www.exandroid.dev/atom.xml
+    status: dormant
+  - id: luker983
+    name: "luker983.github.io"
+    homepage: https://luker983.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: luker983.github.io
+    notes: "redirected cross-domain to nm.us; HTTP 500"
+  - id: ctf
+    name: "Reversing Engineering for the Soul"
+    homepage: https://ctf.re/
+    feeds:
+      - https://ctf.re/feed.xml
+    status: slowing
+  - id: public-cnotools
+    name: "public.cnotools.studio"
+    homepage: https://public.cnotools.studio/
+    feeds: []
+    status: dead
+    wayback_domain: public.cnotools.studio
+    notes: "fetch error: ClientConnectorError: Cannot connect to host public.cnotools.studio:443; DNS(dns.google): NXDOMAIN"
+  - id: blog-redbluepurple
+    name: "blog.redbluepurple.io"
+    homepage: https://blog.redbluepurple.io/
+    feeds: []
+    status: dead
+    wayback_domain: blog.redbluepurple.io
+    notes: "fetch error: TimeoutError: ; DNS(dns.google): NXDOMAIN"
+  - id: voidsec-category-blog
+    name: "VoidSec"
+    homepage: https://voidsec.com/category/blog/
+    feeds:
+      - https://voidsec.com/feed/
+    status: active
+  - id: dronesec
+    name: "dronesec.pw"
+    homepage: https://dronesec.pw/
+    feeds: []
+    status: dead
+    wayback_domain: dronesec.pw
+    notes: "fetch error: ClientConnectorError: Cannot connect to host dronesec.pw:443; DNS(dns.google): no A record"
+  - id: straightblast-medium
+    name: "Stories by Johnny Yu (@straight_blast) on Medium"
+    homepage: https://straightblast.medium.com/
+    feeds:
+      - https://medium.com/feed/@straightblast
+    status: slowing
+  - id: v3ded
+    name: "root@V3dedBlog:~#"
+    homepage: https://v3ded.github.io/
+    feeds:
+      - https://v3ded.github.io/feed.xml
+    status: dormant
+  - id: passthehashbrowns
+    name: "PassTheHashBrowns"
+    homepage: https://passthehashbrowns.github.io/
+    feeds:
+      - https://passthehashbrowns.github.io/feed
+    status: dormant
+  - id: 0xsp
+    name: "0xsp Labs"
+    homepage: https://0xsp.com/
+    feeds:
+      - https://0xsp.com/feed/
+    status: active
+  - id: bitsadm-in
+    name: "Browser verification"
+    homepage: https://bitsadm.in/
+    feeds: []
+    status: blocked
+    notes: "JS/bot challenge page (Cloudflare or similar)"
+  - id: blog-oxagast
+    name: "blog.oxagast.org"
+    homepage: https://blog.oxagast.org/
+    feeds: []
+    status: dead
+    wayback_domain: blog.oxagast.org
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.oxagast.org:443; DNS(dns.google): NXDOMAIN"
+  - id: blog-ret2
+    name: "RET2 Systems Blog"
+    homepage: https://blog.ret2.io/
+    feeds:
+      - https://blog.ret2.io/feed.xml
+    status: slowing
+  - id: williamknowles
+    name: "..."
+    homepage: https://williamknowles.io/
+    feeds:
+      - https://williamknowles.io/feed/
+    status: slowing
+  - id: babligan
+    name: "babligan.github.io"
+    homepage: https://babligan.github.io/
+    feeds: []
+    status: dead
+    wayback_domain: babligan.github.io
+    notes: "HTTP 404"
+  - id: cyberstoph
+    name: "Cyberstoph's blog"
+    homepage: https://cyberstoph.org/
+    feeds:
+      - https://cyberstoph.org/index.xml
+    status: dormant
+  - id: 0xsapra-website
+    name: "Aman sapra | Blog"
+    homepage: https://0xsapra.github.io/website/
+    feeds:
+      - https://0xsapra.github.io/website/atom.xml
+    status: dormant
+  - id: geohot-blog
+    name: "the singularity is nearer"
+    homepage: https://geohot.github.io/blog/
+    feeds:
+      - https://geohot.github.io/blog/feed.xml
+    status: active
+  - id: captmeelo
+    name: "Capt. Meelo"
+    homepage: https://captmeelo.com/
+    feeds:
+      - https://captmeelo.com/feed.xml
+    status: active
+  - id: malicious-blog-html
+    name: "~/wired/"
+    homepage: https://malicious.dev/
+    feeds:
+      - https://malicious.dev/index.xml
+    status: slowing
+  - id: blog-ryotak
+    name: "RyotaK's Blog"
+    homepage: https://blog.ryotak.me/
+    feeds:
+      - https://blog.ryotak.net/index.xml
+    status: slowing
+    notes: "redirected cross-domain to ryotak.net"
+  - id: dolosgroup
+    name: "dolosgroup.io"
+    homepage: https://dolosgroup.io/blog
+    feeds: []
+    status: dead
+    wayback_domain: dolosgroup.io
+    notes: "fetch error: ClientConnectorError: Cannot connect to host dolosgroup.io:443; DNS(dns.google): resolves to 192.64.119.39; DNS resolves but server not reachable o"
+  - id: jlajara-gitlab
+    name: "Jorge Lajara Website"
+    homepage: https://jlajara.gitlab.io/
+    feeds:
+      - https://jlajara.gitlab.io/feed.xml
+    status: slowing
+  - id: tij
+    name: "Tijme Gommers"
+    homepage: https://tij.me/
+    feeds:
+      - https://tij.me/feeds/atom.xml
+    status: dormant
+  - id: blog-exodusintel
+    name: "Exodus Intelligence"
+    homepage: https://blog.exodusintel.com/
+    feeds:
+      - https://blog.exodusintel.com/feed/
+    status: active
+  - id: grimmie
+    name: "GrimmzSec"
+    homepage: https://grimmie.net/
+    feeds:
+      - https://grimmie.net/feed/
+    status: slowing
+  - id: synzack
+    name: "Red Team Blog"
+    homepage: https://synzack.github.io/
+    feeds:
+      - https://synzack.github.io/feed.xml
+    status: dormant
+  - id: arashparsa
+    name: "Arash's Blog"
+    homepage: https://www.arashparsa.com/
+    feeds:
+      - https://www.arashparsa.com/rss/
+    status: dormant
+  - id: xret2pwn
+    name: "RET2Pwn | Binary Exploitation Player Wannabe Red Team Operator"
+    homepage: https://xret2pwn.github.io/
+    feeds: []
+    status: dormant
+  - id: watchfulip
+    name: "Watchful IP - a very seldom updated blog"
+    homepage: https://watchfulip.github.io/
+    feeds:
+      - https://watchfulip.github.io/feed.xml
+    status: active
+  - id: depthsecurity
+    name: "Depth Security"
+    homepage: https://depthsecurity.com/blog
+    feeds:
+      - https://www.depthsecurity.com/feed/
+    status: active
+  - id: medium-eugenelimzw
+    name: "Stories by Eugene Lim on Medium"
+    homepage: https://medium.com/@eugenelimzw
+    feeds:
+      - https://medium.com/feed/@eugenelimzw
+    status: dormant
+  - id: 0xboku
+    name: "Boku"
+    homepage: https://0xboku.com/
+    feeds:
+      - https://0xboku.com/feed.xml
+    status: dormant
+  - id: trickster0
+    name: "trickster0's Nest"
+    homepage: https://trickster0.github.io/
+    feeds:
+      - https://trickster0.github.io/feed
+    status: slowing
+  - id: jellevergeer
+    name: "Jelle Vergeer"
+    homepage: https://jellevergeer.com/
+    feeds:
+      - https://jellevergeer.com/feed/
+    status: slowing
+  - id: ulexec
+    name: "Home on U L E X E C"
+    homepage: https://ulexec.github.io/
+    feeds:
+      - https://ulexec.github.io/index.xml
+    status: slowing
+  - id: rastamouse
+    name: "Rasta Mouse"
+    homepage: https://rastamouse.me/
+    feeds:
+      - https://rastamouse.me/rss/
+    status: active
+  - id: philkeeble
+    name: "Offensive Research"
+    homepage: https://philkeeble.com/
+    feeds:
+      - https://philkeeble.com/feed.xml
+    status: slowing
+  - id: fourcore
+    name: "Information Security Articles, Insights and Research - FourCore Blog"
+    homepage: https://www.fourcore.vision/blogs
+    feeds: []
+    status: active
+    notes: "redirected cross-domain to fourcore.io"
+  - id: jmpesp
+    name: "jmpesp.me"
+    homepage: https://jmpesp.me/
+    feeds: []
+    status: dead
+    wayback_domain: jmpesp.me
+    notes: "HTTP 504"
+  - id: stmxcsr
+    name: "/home | stmxcsr"
+    homepage: https://stmxcsr.com/
+    feeds: []
+    status: active
+  - id: aptw
+    name: "aptw.tf"
+    homepage: https://aptw.tf/
+    feeds: []
+    status: unknown
+  - id: m365internals
+    name: "m365internals.com"
+    homepage: https://m365internals.com/
+    feeds: []
+    status: dead
+    wayback_domain: m365internals.com
+    wayback_before: 20240101
+    notes: "redirected cross-domain to carlos-alexistogel.com; domain appears hijacked/spam ('togel')"
+  - id: infosec-tirol
+    name: "RedOps research"
+    homepage: https://www.infosec.tirol/
+    feeds:
+      - https://redops.at/rss.xml
+    status: active
+    notes: "redirected cross-domain to redops.at"
+  - id: n4r1b-2
+    name: "Up is Down and Black is White"
+    homepage: https://www.n4r1b.com/
+    feeds:
+      - https://n4r1b.com/index.xml
+    status: dormant
+  - id: oxis
+    name: "Blog"
+    homepage: https://oxis.github.io/
+    feeds:
+      - https://oxis.github.io/feed.xml
+    status: dormant
+  - id: positive
+    name: "Positive Security | IT Security research and happy coincidences"
+    homepage: https://positive.security/blog
+    feeds:
+      - https://content.positive.security/rss.xml
+    status: slowing
+  - id: haxx-in
+    name: "HAXX.IN"
+    homepage: https://haxx.in/
+    feeds:
+      - https://haxx.in/index.xml
+    status: slowing
+  - id: labs-detectify
+    name: "Labs Detectify"
+    homepage: https://labs.detectify.com/
+    feeds:
+      - https://labs.detectify.com/feed/
+    status: active
+  - id: sprocketsecurity
+    name: "Sprocket Security | Cybersecurity Blog"
+    homepage: https://www.sprocketsecurity.com/blog
+    feeds:
+      - https://www.sprocketsecurity.com/blog/rss.xml
+    status: active
+  - id: dazzyddos
+    name: "Dazzy Ddos"
+    homepage: https://dazzyddos.github.io/
+    feeds:
+      - https://dazzyddos.github.io/feed
+    status: slowing
+  - id: ad-995-group
+    name: "pre.empt.blog"
+    homepage: https://ad-995.group/
+    feeds:
+      - https://pre.empt.dev/rss.xml
+    status: slowing
+    notes: "redirected cross-domain to empt.dev"
+  - id: billdemirkapi
+    name: "Bill Demirkapi's Blog"
+    homepage: https://billdemirkapi.me/
+    feeds:
+      - https://billdemirkapi.me/rss/
+    status: slowing
+  - id: reversemode
+    name: "Reversemode"
+    homepage: https://www.reversemode.com/
+    feeds:
+      - https://www.reversemode.com/feeds/posts/default
+    status: active
+  - id: simondotsh
+    name: "simondotsh’s infosec blog"
+    homepage: https://simondotsh.com/
+    feeds:
+      - https://simondotsh.com/feed.xml
+    status: active
+  - id: octagon
+    name: "Security Research Blog | PWN.AI"
+    homepage: https://octagon.net/blog/
+    feeds: []
+    status: active
+    notes: "redirected cross-domain to pwn.ai"
+  - id: x86matthew
+    name: "x86matthew.com"
+    homepage: https://www.x86matthew.com/
+    feeds: []
+    status: dead
+    wayback_domain: x86matthew.com
+    notes: "fetch error: ClientConnectorSSLError: Cannot connect to host www.x86matthew.com:443"
+  - id: elastic-security-research
+    name: "elastic.github.io"
+    homepage: https://elastic.github.io/security-research/
+    feeds: []
+    status: dead
+    wayback_domain: elastic.github.io
+    notes: "HTTP 404"
+  - id: malacupa
+    name: "malacupa.com"
+    homepage: https://malacupa.com/
+    feeds:
+      - https://malacupa.com/atom.xml
+    status: active
+  - id: blog-sonarsource
+    name: "Sonar Blog"
+    homepage: https://blog.sonarsource.com/
+    feeds:
+      - https://www.sonarsource.com/rss/blog.xml
+    status: active
+  - id: blog-checkymander
+    name: "Checkymander"
+    homepage: https://blog.checkymander.com/
+    feeds:
+      - https://blog.checkymander.com/feed.xml
+    status: slowing
+  - id: blog-teddykatz
+    name: "Teddy Katz’s Blog"
+    homepage: https://blog.teddykatz.com/
+    feeds:
+      - https://blog.teddykatz.com/feed.xml
+    status: dormant
+  - id: blog-syss
+    name: "SySS Tech Blog"
+    homepage: https://blog.syss.com/
+    feeds:
+      - https://blog.syss.com/feed
+    status: active
+  - id: fhlipzero
+    name: "fhlipzero.io · GitBook"
+    homepage: https://fhlipzero.io/
+    feeds: []
+    status: slowing
+  - id: jhftss
+    name: "Mickey’s Blogs"
+    homepage: https://jhftss.github.io/
+    feeds:
+      - https://jhftss.github.io/feed.xml
+    status: active
+  - id: 5pider
+    name: "5pider"
+    homepage: https://5pider.net/blog/
+    feeds:
+      - https://5pider.net/feed.xml
+    status: slowing
+  - id: zawadidone
+    name: "zawadidone.nl"
+    homepage: https://zawadidone.nl/
+    feeds:
+      - https://zawadidone.nl/feed.xml
+    status: dormant
+  - id: offsec-almond
+    name: "All articles - Almond Offensive Security Blog"
+    homepage: https://offsec.almond.consulting/
+    feeds: []
+    status: unknown
+  - id: etenal-archives-category-blog
+    name: "ETenal"
+    homepage: https://etenal.me/archives/category/blog
+    feeds:
+      - https://etenal.me/feed
+    status: dormant
+  - id: blog-dbouman
+    name: "David's Blog"
+    homepage: https://blog.dbouman.nl/
+    feeds:
+      - https://blog.dbouman.nl/atom.xml
+    status: dormant
+  - id: medium-frycos
+    name: "Stories by frycos on Medium"
+    homepage: https://medium.com/@frycos
+    feeds:
+      - https://medium.com/feed/@frycos
+    status: dormant
+  - id: red-0xbad53c
+    name: "About This Gitbook | Navigating The Shadows"
+    homepage: https://red.0xbad53c.com/
+    feeds: []
+    status: blocked
+    notes: "JS/bot challenge page (Cloudflare or similar)"
+  - id: cedowens-medium
+    name: "Stories by Cedric Owens on Medium"
+    homepage: https://cedowens.medium.com/
+    feeds:
+      - https://medium.com/feed/@cedowens
+    status: dormant
+  - id: blog-viettelcybersecurity
+    name: "blog.viettelcybersecurity.com"
+    homepage: https://blog.viettelcybersecurity.com/
+    feeds: []
+    status: unknown
+  - id: wwws-nightwatchcybersecurity
+    name: "Nightwatch Cybersecurity"
+    homepage: https://wwws.nightwatchcybersecurity.com/blog/
+    feeds:
+      - https://wwws.nightwatchcybersecurity.com/feed/
+    status: blocked
+  - id: trendmicro-en-us-research-html
+    name: "Research, News, and Perspectives | Trend Micro (US)"
+    homepage: https://www.trendmicro.com/en_us/research.html?category=trend-micro-research%3Athreats%2Fexploits-and-vulnerabilities
+    feeds: []
+    status: active
+  - id: blog-kyleavery
+    name: "Blog - Kyle Avery"
+    homepage: https://blog.kyleavery.com/
+    feeds:
+      - https://kyleavery.com/index.xml
+    status: active
+  - id: vollragm
+    name: "VollRagm"
+    homepage: https://vollragm.github.io/
+    feeds:
+      - https://vollragm.github.io/feed
+    status: slowing
+  - id: vanmieghem
+    name: "Vincent Van Mieghem"
+    homepage: https://vanmieghem.io/blog/
+    feeds:
+      - https://vanmieghem.io/feed.xml
+    status: dormant
+  - id: securify-en-articles
+    name: "Securify blogs"
+    homepage: https://www.securify.nl/en/articles/
+    feeds:
+      - https://www.securify.nl/rss/blogs.xml
+    status: active
+  - id: icyguider
+    name: "Icyguider’s Blog"
+    homepage: https://icyguider.github.io/
+    feeds:
+      - https://icyguider.github.io/feed.xml
+    status: dormant
+  - id: pre-empt
+    name: "pre.empt.blog"
+    homepage: https://pre.empt.dev/
+    feeds:
+      - https://pre.empt.dev/rss.xml
+    status: slowing
+  - id: frycos
+    name: "Frycos Security Diary"
+    homepage: https://frycos.github.io/
+    feeds:
+      - https://frycos.github.io/feed.xml
+    status: slowing
+  - id: horizon3-red-team-blog
+    name: "Horizon3"
+    homepage: https://www.horizon3.ai/red-team-blog/
+    feeds:
+      - https://horizon3.ai/feed/
+    status: active
+  - id: macrosec-index-php-blog
+    name: "MacroSEC"
+    homepage: https://macrosec.tech/index.php/blog/
+    feeds:
+      - https://macrosec.tech/index.php/feed/
+    status: dormant
+  - id: s1ckb017
+    name: "Just Another Blog"
+    homepage: https://s1ckb017.github.io/
+    feeds:
+      - https://s1ckb017.github.io/feed.xml
+    status: dormant
+  - id: phoenix-sec
+    name: "phoenix-sec.io"
+    homepage: https://phoenix-sec.io/
+    feeds: []
+    status: dead
+    wayback_domain: phoenix-sec.io
+    notes: "fetch error: ClientConnectorError: Cannot connect to host phoenix-sec.io:443; DNS(dns.google): no A record"
+  - id: romainthomas
+    name: "Romain Thomas"
+    homepage: https://www.romainthomas.fr/
+    feeds:
+      - https://www.romainthomas.fr/index.xml
+    status: active
+  - id: blog-coffinsec
+    name: "hyprblog"
+    homepage: https://blog.coffinsec.com/
+    feeds:
+      - https://blog.coffinsec.com/feed.xml
+    status: active
+  - id: idov31
+    name: "Ido Veltzman :: Security Research"
+    homepage: https://idov31.github.io/
+    feeds:
+      - https://idov31.github.io/rss.xml
+    status: active
+  - id: accidentalrebel
+    name: "AccidentalRebel.com"
+    homepage: https://www.accidentalrebel.com/
+    feeds:
+      - https://www.accidentalrebel.com/feeds/all.atom.xml
+    status: active
+  - id: ezrabuckingham
+    name: "ezrabuckingham.com"
+    homepage: https://ezrabuckingham.com/
+    feeds: []
+    status: dead
+    wayback_domain: ezrabuckingham.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host ezrabuckingham.com:443; DNS(dns.google): NXDOMAIN"
+  - id: wiz
+    name: "Wiz Blog | RSS feed"
+    homepage: https://www.wiz.io/blog
+    feeds:
+      - https://www.wiz.io/feed/rss.xml
+    status: active
+  - id: shielder
+    name: "Blog on Shielder"
+    homepage: https://www.shielder.com/blog/
+    feeds:
+      - https://www.shielder.com/blog/index.xml
+    status: active
+  - id: naksyn
+    name: "Naksyn’s blog"
+    homepage: https://www.naksyn.com/
+    feeds:
+      - https://www.naksyn.com/atom.xml
+    status: slowing
+  - id: ihteam
+    name: "IHTeam Security Blog"
+    homepage: https://www.ihteam.net/
+    feeds:
+      - https://www.ihteam.net/feed/
+    status: slowing
+  - id: blog-assetnote
+    name: "Assetnote is now part of Searchlight Cyber"
+    homepage: https://blog.assetnote.io/
+    feeds: []
+    status: active
+    notes: "redirected cross-domain to slcyber.io; sitemap lastmod is ~today; may reflect regeneration, not a post"
+  - id: 0x64marsh
+    name: "Marsh"
+    homepage: https://0x64marsh.com/
+    feeds:
+      - https://0x64marsh.com/feed/
+    status: dormant
+  - id: pgj11
+    name: "Peter Gabaldon"
+    homepage: https://pgj11.com/
+    feeds:
+      - https://pgj11.com/feed
+    status: active
+  - id: blog-offensive-af
+    name: "Adversary Simulation Blog"
+    homepage: https://blog.offensive.af/
+    feeds:
+      - https://blog.offensive.af/rss.xml
+    status: unknown
+  - id: blog-karims-cloud
+    name: "Personal notes on Cybersecurity and Cloud"
+    homepage: https://blog.karims.cloud/
+    feeds:
+      - https://blog.karims.cloud/feed.xml
+    status: slowing
+  - id: blog-impalabs
+    name: "Impalabs Blog"
+    homepage: https://blog.impalabs.com/
+    feeds:
+      - https://blog.impalabs.com/feed.xml
+    status: dormant
+  - id: the-deniss
+    name: "the-deniss.github.io"
+    homepage: https://the-deniss.github.io/
+    feeds:
+      - https://the-deniss.github.io/feed.xml
+    status: dormant
+  - id: mayfly277
+    name: "Mayfly"
+    homepage: https://mayfly277.github.io/
+    feeds:
+      - https://mayfly277.github.io/feed
+    status: active
+  - id: iximiuz-en
+    name: "iximiuz Labs — All new posts"
+    homepage: https://iximiuz.com/en/
+    feeds:
+      - https://labs.iximiuz.com/feed.atom
+    status: active
+  - id: sethsec
+    name: "SethSec"
+    homepage: https://sethsec.blogspot.com/
+    feeds:
+      - https://sethsec.blogspot.com/feeds/posts/default
+    status: dormant
+  - id: pixiepointsecurity
+    name: "Blog on PixiePoint Security"
+    homepage: https://www.pixiepointsecurity.com/blog/
+    feeds:
+      - https://www.pixiepointsecurity.com/blog/index.xml
+    status: active
+  - id: pavel-gr
+    name: "Pavel Tsakalidis"
+    homepage: https://www.pavel.gr/
+    feeds:
+      - https://www.pavel.gr/rss.xml
+    status: active
+  - id: jub0bs
+    name: "Posts on jub0bs.com"
+    homepage: https://jub0bs.com/posts/
+    feeds:
+      - https://jub0bs.com/posts/index.xml
+    status: slowing
+  - id: skylightcyber
+    name: "Skylight Cyber Blog"
+    homepage: https://skylightcyber.com/blog/
+    feeds:
+      - https://skylightcyber.com/feed-v1.xml
+    status: active
+  - id: msrc-microsoft
+    name: "Blog MSRC | Microsoft Security Response Center"
+    homepage: https://msrc.microsoft.com/blog/
+    feeds:
+      - https://msrc.microsoft.com/blog/feed
+    status: active
+  - id: ristbs-posts
+    name: "ristbs’s blog"
+    homepage: https://ristbs.github.io/
+    feeds:
+      - https://ristbs.github.io/feed.xml
+    status: dormant
+  - id: blog-bitsadmin
+    name: "BITSADMIN Blog - Mystery guest in your IT infrastructure"
+    homepage: https://blog.bitsadmin.com/
+    feeds:
+      - https://blog.bitsadmin.com/feed.xml
+    status: dormant
+  - id: jakewnuk
+    name: "jakewnuk.com"
+    homepage: https://jakewnuk.com/
+    feeds:
+      - https://jakewnuk.com/index.xml
+    status: active
+  - id: blog-stratumsecurity
+    name: "blog.stratumsecurity.com"
+    homepage: https://blog.stratumsecurity.com/
+    feeds: []
+    status: dead
+    wayback_domain: blog.stratumsecurity.com
+    notes: "HTTP 404"
+  - id: danrevah
+    name: "Dan Revah’s Blog"
+    homepage: https://danrevah.github.io/
+    feeds:
+      - https://danrevah.github.io/feed.xml
+    status: dormant
+  - id: elttam
+    name: "elttam"
+    homepage: https://www.elttam.com/resources
+    feeds:
+      - https://www.elttam.com/blog/rss.xml
+    status: active
+  - id: dr4k0nia
+    name: "dr4k0nia"
+    homepage: https://dr4k0nia.github.io/
+    feeds:
+      - https://dr4k0nia.github.io/feed
+    status: dormant
+  - id: neodyme
+    name: "Neodyme’s Blog"
+    homepage: https://neodyme.io/en/blog/
+    feeds:
+      - https://neodyme.io/rss.xml
+    status: unknown
+  - id: summoning-team
+    name: "Blogs on Summoning Team"
+    homepage: https://summoning.team/blog/
+    feeds:
+      - https://summoning.team/blog/index.xml
+    status: slowing
+  - id: hackcompute
+    name: "hackcompute"
+    homepage: https://hackcompute.com/
+    feeds:
+      - https://hackcompute.com/rss/
+    status: dormant
+  - id: whiteknightlabs
+    name: "White Knight Labs"
+    homepage: https://whiteknightlabs.com/blog/
+    feeds:
+      - https://whiteknightlabs.com/feed/
+    status: active
+  - id: cocomelonc
+    name: "cocomelonc"
+    homepage: https://cocomelonc.github.io/
+    feeds:
+      - https://cocomelonc.github.io/feed.xml
+    status: active
+  - id: code-white
+    name: "CODE WHITE | Red Teaming & Attack Surface Management"
+    homepage: https://code-white.com/blog/
+    feeds:
+      - https://code-white.com/index.xml
+    status: active
+  - id: waawaa
+    name: "Waawaa Blog"
+    homepage: https://waawaa.github.io/
+    feeds:
+      - https://waawaa.github.io/feed.xml
+    status: dormant
+  - id: badoption-eu
+    name: "BadOption.eu"
+    homepage: https://badoption.eu/
+    feeds:
+      - https://badoption.eu/feed.xml
+    status: active
+  - id: blog-washi
+    name: "Washi"
+    homepage: https://blog.washi.dev/
+    feeds:
+      - https://blog.washi.dev/feed.xml
+    status: active
+  - id: blog-isosceles
+    name: "Isosceles Blog"
+    homepage: https://blog.isosceles.com/
+    feeds:
+      - https://blog.isosceles.com/rss/
+    status: slowing
+  - id: ph3n1x
+    name: "Thomas Marques"
+    homepage: https://ph3n1x.com/
+    feeds:
+      - https://ph3n1x.com/index.xml
+    status: slowing
+  - id: ptr0x1
+    name: "Posts on PTR"
+    homepage: https://ptr0x1.com/
+    feeds:
+      - https://ptr0x1.com/posts/index.xml
+    status: dormant
+  - id: r-tec
+    name: "Home - r-tec Cyber Security"
+    homepage: https://www.r-tec.net/home.html
+    feeds: []
+    status: active
+  - id: labs-watchtowr
+    name: "watchTowr Labs"
+    homepage: https://labs.watchtowr.com/
+    feeds:
+      - https://labs.watchtowr.com/rss/
+    status: active
+  - id: certitude-blog-en
+    name: "Certitude Blog"
+    homepage: https://certitude.consulting/blog/en/
+    feeds:
+      - https://certitude.consulting/blog/en/feed/
+    status: active
+  - id: blog-lexfo
+    name: "Lexfo's security blog - Blog posts"
+    homepage: https://blog.lexfo.fr/
+    feeds: []
+    status: active
+  - id: gergelykalman
+    name: "Gergely's hack blog"
+    homepage: https://gergelykalman.com/
+    feeds:
+      - https://gergelykalman.com/feeds/all.atom.xml
+    status: active
+  - id: vulncheck
+    name: "VulnCheck Blog"
+    homepage: https://vulncheck.com/blog
+    feeds:
+      - https://www.vulncheck.com/feed/blog/atom.xml
+    status: active
+  - id: revers-engineering
+    name: "Reverse Engineering"
+    homepage: https://revers.engineering/
+    feeds:
+      - https://revers.engineering/feed/
+    status: unknown
+  - id: hunters-en-blog-tag-research
+    name: "Hunters Blog"
+    homepage: https://www.hunters.security/en/blog/tag/security-research
+    feeds:
+      - https://www.hunters.security/en/blog/rss.xml
+    status: active
+  - id: clearbluejar
+    name: "clearbluejar"
+    homepage: https://clearbluejar.github.io/
+    feeds:
+      - https://clearbluejar.github.io/feed
+    status: active
+  - id: disrel
+    name: "guest@xxd.sh:~$ home"
+    homepage: https://disrel.com/
+    feeds: []
+    status: unknown
+    notes: "redirected cross-domain to xxd.sh; redirected to different domain (moved/rebranded/acquired?) - verify; no post dates parsed; newest year mentioned on page text"
+  - id: zolutal
+    name: "zolutal’s blog"
+    homepage: https://zolutal.github.io/
+    feeds:
+      - https://blog.zolutal.io/feed
+    status: active
+    notes: "redirected cross-domain to zolutal.io"
+  - id: blog-slowerzs
+    name: "Posts on Slowerzs' blog"
+    homepage: https://blog.slowerzs.net/
+    feeds:
+      - https://blog.slowerzs.net/posts/index.xml
+    status: slowing
+  - id: br0k3nlab
+    name: "Posts on br0k3nlab"
+    homepage: https://br0k3nlab.com/posts/
+    feeds:
+      - https://br0k3nlab.com/posts/index.xml
+    status: active
+  - id: amitschendel
+    name: "Amit Schendel"
+    homepage: https://amitschendel.github.io/
+    feeds:
+      - https://amitschendel.github.io/feed.xml
+    status: slowing
+  - id: atredis
+    name: "Blog | Atredis Partners"
+    homepage: https://www.atredis.com/blog/
+    feeds:
+      - https://www.atredis.com/blog-posts?format=rss
+    status: active
+  - id: doubleagent
+    name: "haxrob’s Blog"
+    homepage: https://doubleagent.net/
+    feeds:
+      - https://haxrob.net/rss.xml
+    status: slowing
+    notes: "redirected cross-domain to haxrob.net; near-empty page"
+  - id: eversinc33
+    name: "eversinc33"
+    homepage: https://eversinc33.com/
+    feeds:
+      - https://eversinc33.com/index.xml
+    status: active
+  - id: fin3ss3g0d
+    name: "fin3ss3g0d's Blog"
+    homepage: https://fin3ss3g0d.net/
+    feeds:
+      - https://fin3ss3g0d.net/index.php/feed/
+    status: slowing
+  - id: adnanthekhan
+    name: "Adnan Khan's Security Research Blog"
+    homepage: https://adnanthekhan.com/
+    feeds:
+      - https://adnanthekhan.com/rss.xml
+    status: active
+  - id: pwning
+    name: "Pwning Tech"
+    homepage: https://pwning.tech/
+    feeds:
+      - https://pwning.tech/rss/
+    status: slowing
+  - id: whereisk0shl-top
+    name: "Whereisk0Shl"
+    homepage: https://whereisk0shl.top/
+    feeds:
+      - https://whereisk0shl.top/feed.xml
+    status: active
+  - id: legacyy-xyz
+    name: "Legacyy"
+    homepage: https://www.legacyy.xyz/
+    feeds:
+      - https://www.legacyy.xyz/feed
+    status: slowing
+  - id: exploits-forsale
+    name: "exploits.forsale"
+    homepage: https://exploits.forsale/
+    feeds: []
+    status: slowing
+  - id: blog-2h0ng
+    name: "Zhong's Blog"
+    homepage: https://blog.2h0ng.wiki/
+    feeds: []
+    status: slowing
+  - id: embracethered
+    name: "Embrace The Red"
+    homepage: https://embracethered.com/blog/
+    feeds:
+      - https://embracethered.com/blog/index.xml
+    status: active
+  - id: khronokernel
+    name: "Mykola’s blog"
+    homepage: https://khronokernel.com/
+    feeds:
+      - https://khronokernel.com/feed.xml
+    status: slowing
+  - id: 0reg
+    name: "retr0blog"
+    homepage: https://0reg.dev/blog
+    feeds:
+      - https://retr0.blog/api/rss/feed.xml
+    status: slowing
+  - id: jprx
+    name: "JPRX"
+    homepage: https://jprx.io/
+    feeds: []
+    status: slowing
+  - id: 3nailsinfosec-knowledge
+    name: "3Nails Information Security: Offensive Security"
+    homepage: https://www.3nailsinfosec.com/
+    feeds: []
+    status: unknown
+  - id: blog-chebuya
+    name: "blog.chebuya.com"
+    homepage: https://blog.chebuya.com/posts
+    feeds: []
+    status: dead
+    wayback_domain: blog.chebuya.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host blog.chebuya.com:443; DNS(dns.google): NXDOMAIN"
+  - id: 0xv1n
+    name: "0xv1n"
+    homepage: https://0xv1n.github.io/
+    feeds:
+      - https://0xv1n.github.io/index.xml
+    status: active
+  - id: darknavy
+    name: "Blog on DARKNAVY Blog"
+    homepage: https://www.darknavy.org/blog/
+    feeds:
+      - https://www.darknavy.org/blog/index.xml
+    status: active
+  - id: edermi
+    name: "edermi's Blog"
+    homepage: https://edermi.github.io/
+    feeds:
+      - https://edermi.github.io/index.xml
+    status: slowing
+  - id: mikko-kenttala-medium
+    name: "Stories by Mikko Kenttälä on Medium"
+    homepage: https://mikko-kenttala.medium.com/
+    feeds:
+      - https://medium.com/feed/@mikko-kenttala
+    status: slowing
+  - id: blog-amberwolf
+    name: "AmberWolf Research"
+    homepage: https://blog.amberwolf.com/
+    feeds:
+      - https://blog.amberwolf.com/index.xml
+    status: active
+  - id: lyra-horse
+    name: "home on lyra's epic blog"
+    homepage: https://lyra.horse/blog/
+    feeds:
+      - https://lyra.horse/blog/index.xml
+    status: active
+  - id: blog-quarkslab
+    name: "Quarkslab's blog"
+    homepage: https://blog.quarkslab.com/
+    feeds:
+      - https://blog.quarkslab.com/feeds/all.atom.xml
+    status: active
+  - id: blog-includesecurity
+    name: "Include Security Research Blog"
+    homepage: https://blog.includesecurity.com/
+    feeds:
+      - https://blog.includesecurity.com/feed/
+    status: active
+  - id: evilsocket
+    name: "evilsocket"
+    homepage: https://www.evilsocket.net/
+    feeds:
+      - https://www.evilsocket.net/atom.xml
+    status: active
+  - id: fitretech
+    name: "Blog - FitreTech"
+    homepage: https://www.fitretech.com/blog
+    feeds:
+      - https://www.fitretech.com/blog?format=rss
+    status: active
+  - id: devco
+    name: "DEVCORE 戴夫寇爾"
+    homepage: https://devco.re/en/blog/
+    feeds:
+      - https://devco.re/rss
+    status: active
+  - id: silentwarble
+    name: "silentwarble.com"
+    homepage: https://silentwarble.com/
+    feeds: []
+    status: dead
+    wayback_domain: silentwarble.com
+    notes: "fetch error: ClientConnectorError: Cannot connect to host silentwarble.com:443; DNS(dns.google): NXDOMAIN"
+  - id: ricardojoserf
+    name: "Ricardo J. Ruiz Fernández"
+    homepage: https://ricardojoserf.github.io/
+    feeds:
+      - https://ricardojoserf.github.io/feed.xml
+    status: active
+  - id: flatt
+    name: "GMO Flatt Security Research"
+    homepage: https://flatt.tech/research/
+    feeds:
+      - https://flatt.tech/research/index.xml
+    status: active
+  - id: deepinstinct
+    name: "Deep Instinct Blog: Breaking News and Updates"
+    homepage: https://www.deepinstinct.com/blog
+    feeds:
+      - https://www.deepinstinct.com/blog/feed.xml
+    status: active
+  - id: samcurry
+    name: "Blog | Sam Curry"
+    homepage: https://samcurry.net/
+    feeds:
+      - https://samcurry.net/api/feed.atom
+    status: slowing
+  - id: hulkops-blog
+    name: "Welcome | HulkOps"
+    homepage: https://hulkops.gitbook.io/blog
+    feeds: []
+    status: blocked
+    notes: "JS/bot challenge page (Cloudflare or similar)"
+  - id: retr0
+    name: "retr0blog"
+    homepage: https://retr0.blog/blog
+    feeds:
+      - https://retr0.blog/api/rss/feed.xml
+    status: slowing
+  - id: brutecat
+    name: "Brutecat · Research"
+    homepage: https://brutecat.com/
+    feeds:
+      - https://brutecat.com/rss.xml
+    status: active
+  - id: positronsecurity
+    name: "Positron Security"
+    homepage: https://www.positronsecurity.com/blog/
+    feeds: []
+    status: slowing
+  - id: aff-wg
+    name: "Adversary Fan Fiction Writers Guild"
+    homepage: https://aff-wg.org/
+    feeds:
+      - https://aff-wg.org/feed/
+    status: active
+  - id: unsigned-sh0rt
+    name: "unsigned_sh0rt's blog"
+    homepage: https://unsigned-sh0rt.net/
+    feeds:
+      - https://unsigned-sh0rt.net/index.xml
+    status: slowing
+  - id: archie-osu
+    name: "Archie’s reversing diary"
+    homepage: https://archie-osu.github.io/
+    feeds:
+      - https://archie-osu.github.io/feed.xml
+    status: slowing
+  - id: denniskniep
+    name: "denniskniep.github.io"
+    homepage: https://denniskniep.github.io/
+    feeds:
+      - https://denniskniep.github.io/index.xml
+    status: active
+  - id: blog-felixm
+    name: "blog.felixm.pw"
+    homepage: https://blog.felixm.pw/
+    feeds: []
+    status: blocked
+    notes: "JS/bot challenge page (Cloudflare or similar)"
+  - id: snoolie-gay
+    name: "Snoolie's Blog"
+    homepage: https://snoolie.gay/blog/
+    feeds:
+      - https://snoolie.gay/blog/rss.xml
+    status: slowing
+  - id: infosecnoodle
+    name: "infosecnoodle"
+    homepage: https://www.infosecnoodle.com/
+    feeds:
+      - https://www.infosecnoodle.com/feed
+    status: slowing
+  - id: print3m
+    name: "print3m.github.io"
+    homepage: https://print3m.github.io/
+    feeds: []
+    status: slowing
+  - id: blog-es3n1n-eu
+    name: "es3n1n"
+    homepage: https://blog.es3n1n.eu/
+    feeds:
+      - https://es3n1n.eu/rss.xml
+    status: active
+  - id: mrbruh
+    name: "MrBruh's Epic Blog"
+    homepage: https://mrbruh.com/
+    feeds:
+      - https://mrbruh.com/index.xml
+    status: active
+  - id: necromancerlabs-research-papers
+    name: "Necromancer Labs — We build cyber power"
+    homepage: https://necromancerlabs.com/
+    feeds: []
+    status: unknown
+  - id: blog-fndsec
+    name: "Security Friends' Research Blog"
+    homepage: https://blog.fndsec.net/
+    feeds:
+      - https://blog.fndsec.net/feed/
+    status: active
+  - id: labs-infoguard
+    name: "InfoGuard Labs"
+    homepage: https://labs.infoguard.ch/posts/
+    feeds:
+      - https://labs.infoguard.ch/rss.xml
+    status: active
+  - id: akamai-blog-security-research
+    name: "akamai.com"
+    homepage: https://www.akamai.com/blog/security-research
+    feeds: []
+    status: blocked
+  - id: darkrelay
+    name: "darkrelay.com"
+    homepage: https://www.darkrelay.com/blog
+    feeds: []
+    status: active
+  - id: blog-deeb
+    name: "deeb blog"
+    homepage: https://blog.deeb.ch/
+    feeds:
+      - https://blog.deeb.ch/index.xml
+    status: active
+  - id: blog-cybershenanigans-space
+    name: "All Posts - Cybershenanigans Blog"
+    homepage: https://blog.cybershenanigans.space/
+    feeds:
+      - https://blog.cybershenanigans.space/posts/index.xml
+    status: slowing
+  - id: xybytes
+    name: "XYBYTES"
+    homepage: https://xybytes.com/
+    feeds:
+      - https://xybytes.com/feed.xml
+    status: active
+  - id: kr0tt
+    name: "kr0tt.github.io"
+    homepage: https://kr0tt.github.io/
+    feeds:
+      - https://kr0tt.github.io/index.xml
+    status: slowing
+  - id: willsroot
+    name: "Will's Root"
+    homepage: https://www.willsroot.io/
+    feeds:
+      - https://www.willsroot.io/feeds/posts/default?alt=rss
+    status: slowing
+  - id: blacksnufkin
+    name: "BlackSnufkin"
+    homepage: https://blacksnufkin.github.io/
+    feeds:
+      - https://blacksnufkin.github.io/feed
+    status: active
+  - id: bencteux
+    name: "Jeffrey Bencteux"
+    homepage: https://www.bencteux.fr/
+    feeds:
+      - https://www.bencteux.fr/index.xml
+    status: active
+  - id: noperator
+    name: "caleb gross"
+    homepage: https://noperator.dev/
+    feeds:
+      - https://noperator.dev/index.xml
+    status: active
+  - id: fluxsec-red
+    name: "Fluxsec.red Blog"
+    homepage: https://fluxsec.red/
+    feeds:
+      - https://fluxsec.red/rss.xml
+    status: active
+  - id: hawktrace
+    name: "Research - HawkTrace"
+    homepage: https://hawktrace.com/blog/
+    feeds:
+      - https://hawktrace.com/index.xml
+    status: active
+  - id: ryan-framinan
+    name: "Ryan Framiñán's Blog"
+    homepage: https://ryan.framinan.net/
+    feeds:
+      - https://ryan.framinan.net/index.xml
+    status: active
+  - id: oobs
+    name: "Out of Bounds — Vulnerability Research · Seoul"
+    homepage: https://www.oobs.io/
+    feeds:
+      - https://www.oobs.io/index.xml
+    status: active
+  - id: jakobfriedl
+    name: "Home"
+    homepage: https://jakobfriedl.github.io/
+    feeds:
+      - https://jakobfriedl.github.io/index.xml
+    status: active
+  - id: dfir
+    name: "Posts on dfir.ch"
+    homepage: https://dfir.ch/posts/
+    feeds:
+      - https://dfir.ch/posts/index.xml
+    status: active
+  - id: pberba-security
+    name: "pepe berba"
+    homepage: https://pberba.github.io/security/
+    feeds:
+      - https://pberba.github.io/feed.xml
+    status: active
+  - id: kiddo-pwn-blog
+    name: "Home | blog"
+    homepage: https://kiddo-pwn.github.io/blog/
+    feeds:
+      - https://kiddo-pwn.github.io/blog/index.xml
+    status: active
+  - id: p0142
+    name: "Polar's Place"
+    homepage: https://p0142.github.io/
+    feeds:
+      - https://p0142.github.io/feed
+    status: active
+  - id: sud0ru-ghost
+    name: "Sud0Ru"
+    homepage: https://sud0ru.ghost.io/
+    feeds:
+      - https://sud0ru.ghost.io/rss/
+    status: active
+  - id: kqx-post
+    name: "posts on kqx"
+    homepage: https://kqx.io/post/
+    feeds:
+      - https://kqx.io/post/index.xml
+    status: active
+  - id: mkiesel
+    name: "mkiesel.ch"
+    homepage: https://mkiesel.ch/posts/
+    feeds:
+      - https://mkiesel.ch/feed.xml
+    status: active
+  - id: sillywa
+    name: "sillywa.re"
+    homepage: https://sillywa.re/posts/
+    feeds: []
+    status: dead
+    wayback_domain: sillywa.re
+    notes: "fetch error: ClientConnectorError: Cannot connect to host sillywa.re:443; DNS(dns.google): no A record"
+  - id: brmk
+    name: "posts on brmk"
+    homepage: https://brmk.me/
+    feeds:
+      - https://brmk.me/posts/index.xml
+    status: active

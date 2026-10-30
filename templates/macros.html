@@ -1,0 +1,23 @@
+{% macro post_card(p, sources) -%}
+<article class="post" data-category="{{ p.category or '' }}" data-blog="{{ p.blog }}" data-year="{{ p.published|year }}">
+  <h2 class="post-title"><a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">{{ p.title }}</a></h2>
+  <div class="meta">
+    <a class="blog" href="{{ base }}/blog/{{ p.blog }}/">{% if sources.get(p.blog) %}{{ sources[p.blog].name }}{% else %}{{ p.blog }}{% endif %}</a>
+    {% if p.published %}<time datetime="{{ p.published }}">{{ p.published|ymd }}</time>{% endif %}
+    {% if p.author %}<span class="author">{{ p.author }}</span>{% endif %}
+    {% if p.category %}<a class="cat" href="{{ base }}/category/{{ slugify(p.category) }}/">{{ p.category }}</a>{% endif %}
+  </div>
+  {% if p.excerpt %}<p class="excerpt">{{ p.excerpt }}</p>{% endif %}
+  <div class="links">
+    <a href="{{ p.url }}" rel="noopener noreferrer" target="_blank">Original</a>
+    {% if p.archive_url %}<a href="{{ p.archive_url }}" rel="noopener noreferrer" target="_blank">Wayback</a>{% endif %}
+  </div>
+  {% if p.tags %}
+  <ul class="tags">
+    {% for t in p.tags[:12] %}
+    <li><a href="{{ base }}/tag/{{ slugify(t) }}/">{{ t }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
+{%- endmacro %}

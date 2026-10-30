@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head"><h1>{{ heading }}</h1></header>
+<ul class="tax-list">
+  {% for name, count in items %}
+  <li><a href="{{ base }}/{{ prefix }}/{{ slugify(name) }}/">{{ name }}</a> <span class="count">{{ count }}</span></li>
+  {% endfor %}
+</ul>
+{% endblock %}

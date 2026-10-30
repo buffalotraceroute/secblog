@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "macros.html" import post_card %}
+{% block content %}
+<header class="page-head">
+  <p class="eyebrow">{{ kind }}</p>
+  <h1>{{ heading }}</h1>
+  <p>{{ total if total is defined else posts|length }} post{% if (total if total is defined else posts|length) != 1 %}s{% endif %}</p>
+</header>
+<section class="post-list">
+  {% for p in posts %}{{ post_card(p, sources) }}{% endfor %}
+</section>
+{% if pages is defined and pages > 1 %}
+<nav class="pager">
+  {% if page > 1 %}
+  <a href="{% if page == 2 %}{{ list_base }}/{% else %}{{ list_base }}/page/{{ page - 1 }}/{% endif %}">← Newer</a>
+  {% endif %}
+  <span>Page {{ page }} / {{ pages }}</span>
+  {% if page < pages %}
+  <a href="{{ list_base }}/page/{{ page + 1 }}/">Older →</a>
+  {% endif %}
+</nav>
+{% endif %}
+{% endblock %}
