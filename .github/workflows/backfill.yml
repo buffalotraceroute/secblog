@@ -46,7 +46,7 @@ jobs:
           python -m secblog backfill --budget "$BUDGET" --concurrency 8 $EXTRA
 
       - name: Persist data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: backfill"
-          file_pattern: data/
+        env:
+          # GITHUB_TOKEN is provided by Actions; script pushes with rebase retries
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash tools/ci_commit_data.sh "chore: backfill"
