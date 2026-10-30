@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  # Redeploy right after the weekly (or manual) backfill finishes
+  workflow_run:
+    workflows: ["Backfill history"]
+    types: [completed]
   push:
     branches: [main]
     paths:
