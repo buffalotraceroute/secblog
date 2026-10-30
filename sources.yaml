@@ -2737,6 +2737,14 @@ sources:
       - https://www.zerosalarium.com/feeds/posts/default
     status: active
     default_category: "Red Team/Offensive"
+  - id: 0xdbgman
+    name: "DbgMan"
+    homepage: https://0xdbgman.github.io/
+    feeds:
+      - https://0xdbgman.github.io/feed.xml
+    status: active
+    default_category: "Red Team/Offensive"
+    notes: "Added by request 2026-10-30. EDR internals/evasion, shellcode loaders, persistence."
   - id: compass-security
     name: "Compass Security Blog"
     homepage: https://blog.compass-security.com/
