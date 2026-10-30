@@ -8,7 +8,7 @@
   "blog-2h0ng": "no feeds configured",
   "blog-amberwolf": "https://blog.amberwolf.com/index.xml: HTTP 403",
   "blog-assetnote": "no feeds configured",
-  "blog-cobaltstrike": "https://www.cobaltstrike.com/blog/feed: HTTP 403",
+  "blog-cobaltstrike": "https://www.cobaltstrike.com/feed: HTTP 403",
   "blog-felixm": "no feeds configured",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
@@ -61,23 +61,23 @@
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
   "suid-research-html": "no feeds configured",
-  "synacktiv-en-publications-html": "no feeds configured",
   "themittenmac": "no feeds configured",
   "thespanner": "no feeds configured",
   "trendmicro-en-us-research-html": "no feeds configured",
   "vice-en-topic-hacking": "no feeds configured",
   "watchfulip": "https://watchfulip.github.io/feed.xml: HTTP 404",
   "xanthus": "no feeds configured",
+  "xpn": "https://blog.xpnsec.com/rss.xml: HTTP 403",
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T02:19:48Z",
+ "finished": "2026-10-30T02:28:40Z",
  "summary": {
   "failed": 70,
-  "posts_new": 70,
-  "posts_seen": 1813,
+  "posts_new": 979,
+  "posts_seen": 2936,
   "skipped_dead": 51,
-  "sources": 439,
-  "succeeded": 318
+  "sources": 461,
+  "succeeded": 340
  }
 }
