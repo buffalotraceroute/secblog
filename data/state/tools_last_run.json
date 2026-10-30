@@ -1,18 +1,18 @@
 {
  "authenticated": true,
  "by_category": {
-  "Active Directory": 200,
+  "Active Directory": 203,
   "BOFs": 538,
   "C2 Frameworks & Agents": 649,
-  "Cloud": 110,
-  "Credential Access": 70,
+  "Cloud": 113,
+  "Credential Access": 78,
   "Evasion (EDR/AV/AMSI/ETW)": 150,
-  "Lateral Movement": 57,
+  "Lateral Movement": 58,
   "Loaders & Injection": 160,
-  "Other": 1703,
+  "Other": 1718,
   "Persistence": 52,
   "Privilege Escalation": 29,
-  "Recon": 109
+  "Recon & Scanning": 170
  },
  "curated_changed": 615,
  "curated_counts": {
@@ -20,12 +20,14 @@
   "cs-community-kit": 152
  },
  "discovery_changed": 32,
- "errors": [],
- "finished": "2026-10-30T03:58:31Z",
+ "errors": [
+  "/repos/outflanknl/HelpColor/releases/latest: Server disconnected without sending a response."
+ ],
+ "finished": "2026-10-30T04:25:58Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-10-30T03:52:24Z",
- "tools_total": 3200,
- "watched_accounts": 437,
- "watchlist_changed": 650
+ "started": "2026-10-30T04:18:56Z",
+ "tools_total": 3279,
+ "watched_accounts": 439,
+ "watchlist_changed": 723
 }

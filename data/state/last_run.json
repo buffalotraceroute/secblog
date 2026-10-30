@@ -1,7 +1,6 @@
 {
  "errors": {
   "3nailsinfosec-knowledge": "no feeds configured",
-  "aff-wg": "https://aff-wg.org/feed/: HTTP 429",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
   "atredis": "https://www.atredis.com/blog-posts?format=rss: HTTP 404",
@@ -66,13 +65,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T03:52:24Z",
+ "finished": "2026-10-30T04:18:56Z",
  "summary": {
-  "failed": 65,
-  "posts_new": 2,
-  "posts_seen": 2211,
+  "failed": 64,
+  "posts_new": 228,
+  "posts_seen": 2451,
   "skipped_dead": 51,
   "sources": 462,
-  "succeeded": 346
+  "succeeded": 347
  }
 }
