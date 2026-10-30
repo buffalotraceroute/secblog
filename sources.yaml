@@ -1,5 +1,6 @@
 # secblog source registry. Hand-edit freely; see README.
 # status: active|slowing|dormant|unknown|blocked|dead
+# via: auto (default; direct, Feedly-cache fallback on 403/Cloudflare) | direct | feedly (always Feedly cache)
 # dead blogs: never fetch live; use wayback_domain / wayback_before
 # default_category: used when a post has no keyword match (see config/taxonomy.yaml news_blogs)
 sources:
@@ -526,12 +527,15 @@ sources:
       - https://www.sentinelone.com/labs/feed/
     status: active
   - id: blog-cobaltstrike
-    name: "blog.cobaltstrike.com"
-    homepage: https://blog.cobaltstrike.com/
+    name: "Cobalt Strike Blog"
+    homepage: https://www.cobaltstrike.com/blog/
     feeds:
       - https://www.cobaltstrike.com/feed
-    status: blocked
-    notes: "feed URL updated 2026-10 (old /blog/feed 404s); site returns 403 to the httpx collector"
+      - https://www.cobaltstrike.com/blog/feed
+    via: feedly
+    status: active
+    default_category: "Red Team/Offensive"
+    notes: "www.cobaltstrike.com sits behind a Cloudflare JS challenge (403 to any non-browser client), so feeds are read from Feedly's public cache (via: feedly). /feed is current; the old /blog/feed id is stale (2023) on Feedly but kept for history (listed second; the first feed wins on duplicate URLs)."
   - id: optiv-feed
     name: "optiv.com"
     homepage: https://www.optiv.com/feed
@@ -2690,6 +2694,7 @@ sources:
       - https://blog.xpnsec.com/rss.xml
     status: active
     default_category: "Red Team/Offensive"
+    notes: "rss.xml returns 403 to GitHub Actions runners only; the collector's automatic Feedly fallback (via: auto, the default) covers it."
   - id: netspi-technical-blog
     name: "NetSPI Technical Blog"
     homepage: https://www.netspi.com/blog/technical-blog/

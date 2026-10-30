@@ -7,7 +7,7 @@ import time
 import xml.etree.ElementTree as ET
 from urllib.parse import quote, urljoin, urlsplit
 
-from . import store
+from . import feedly, store
 from .feeds import parse_feed
 from .http import Gate, get, make_client
 from .sources import Source, load_sources
@@ -17,6 +17,7 @@ from .util import (
     force_https,
     iso,
     make_excerpt,
+    normalize_url,
     now_utc,
     parse_date,
     title_from_url,
@@ -143,6 +144,52 @@ async def page_wordpress(client, gate, src, state, posts_map, budget) -> int:
                 break
             paged += 1
             state.setdefault(src.id, {})["feed_page"] = paged
+    return added
+
+
+async def page_feedly(client, gate, src, state, posts_map, budget) -> int:
+    """Page through Feedly's cached history (continuation tokens) for each feed.
+
+    Used for sources configured with ``via: feedly`` (sites behind Cloudflare).
+    Old feed URLs that Feedly still has cached contribute history; posts are
+    deduped by URL in store.merge_post.
+    """
+    added = 0
+    st = state.setdefault(src.id, {})
+    cursors = st.setdefault("feedly", {})
+    all_done = True
+    run_keys: set[str] = set()  # first feed listed wins when feeds overlap
+    for feed in src.feeds:
+        cur = cursors.setdefault(feed, {})
+        if cur.get("done"):
+            continue
+        pages = 0
+        while time.monotonic() < budget and pages < feedly.MAX_BACKFILL_PAGES:
+            items, cont, err = await feedly.fetch_page(
+                client, gate, feed, count=feedly.BACKFILL_COUNT, continuation=cur.get("continuation"))
+            pages += 1
+            if err:
+                cur["error"] = err
+                break
+            for p in feedly.items_to_posts(items, blog_id=src.id):
+                feedly.align_case(posts_map, p)
+                key = normalize_url(p["url"])
+                if key in run_keys:
+                    continue
+                run_keys.add(key)
+                tag_post(p, blog_default=(src.default_category or src.category))
+                if store.merge_post(posts_map, p):
+                    added += 1
+            if not cont or not items:
+                cur["done"] = True
+                cur.pop("continuation", None)
+                cur.pop("error", None)
+                break
+            cur["continuation"] = cont
+        if not cur.get("done"):
+            all_done = False
+    if all_done:
+        st["feedly_done"] = True
     return added
 
 
@@ -355,6 +402,9 @@ async def backfill_source(client, gate, src: Source, state: dict, budget: float)
         if src.is_dead:
             added += await wayback_feed_snapshot(client, gate, src, state, posts_map, budget)
             added += await from_wayback(client, gate, src, state, posts_map, budget)
+        elif src.via == "feedly":
+            # Site blocks non-browser clients; Feedly's cache is the only usable history.
+            added += await page_feedly(client, gate, src, state, posts_map, budget)
         else:
             plat = _platform(src)
             if plat == "blogspot" or any("feeds/posts" in f for f in src.feeds):
@@ -367,7 +417,7 @@ async def backfill_source(client, gate, src: Source, state: dict, budget: float)
         st = state.setdefault(src.id, {})
         if src.is_dead and st.get("cdx_done"):
             st["done"] = True
-        if not src.is_dead and (st.get("blogspot_done") or st.get("wp_done")):
+        if not src.is_dead and (st.get("blogspot_done") or st.get("wp_done") or st.get("feedly_done")):
             st["done"] = True
     finally:
         store.save_blog(src.id, posts_map)

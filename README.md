@@ -44,6 +44,7 @@ Edit `sources.yaml`:
     status: active            # active|slowing|dormant|unknown|blocked|dead
     category: "Web & AppSec"  # optional default primary category
     platform: wordpress       # optional: blogspot|wordpress|medium|github|generic
+    via: auto                 # optional: auto (default) | direct | feedly
 ```
 
 Tips:
@@ -52,6 +53,7 @@ Tips:
 - Blogspot: `https://<name>.blogspot.com/feeds/posts/default`
 - GitHub repo: `https://github.com/<org>/<repo>/commits.atom` (and/or `releases.atom`)
 - Dead blog: `status: dead`, set `wayback_domain`, optional `wayback_before: "YYYYMMDD"`, leave `feeds` empty or pointing at a historical feed URL (fetched only via Wayback)
+- Cloudflare/bot-walled feed: `via: feedly` reads the feed from Feedly's public cache (`cloud.feedly.com/v3/streams/contents`, no auth; backfill pages its history via continuation tokens). With the default `via: auto`, a direct fetch that gets a 403/Cloudflare challenge falls back to Feedly automatically; `via: direct` disables that. Excerpt-only policy still applies.
 
 ## Local development
 

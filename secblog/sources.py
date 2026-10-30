@@ -13,6 +13,7 @@ SOURCES_FILE = ROOT / "sources.yaml"
 
 # Status values used across the project (derived from the liveness check, editable by hand).
 STATUSES = ["active", "slowing", "dormant", "unknown", "blocked", "dead"]
+VIA_MODES = ["auto", "direct", "feedly"]
 STATUS_LABELS = {
     "active": "Active",
     "slowing": "Slowing",
@@ -37,6 +38,10 @@ class Source:
     wayback_before: str | None = None  # only use Wayback captures older than this (YYYYMMDD)
     wayback_domain: str | None = None  # domain/path prefix to query in the Wayback CDX
     backfill: bool = True
+    # How feeds are fetched: "auto" (direct, falling back to Feedly's public cache
+    # when blocked by a 403/Cloudflare challenge), "direct" (never use Feedly) or
+    # "feedly" (always read the feeds from Feedly's cache).
+    via: str = "auto"
     notes: str | None = None
 
     @property
@@ -87,12 +92,15 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
             wayback_before=str(item["wayback_before"]) if item.get("wayback_before") else None,
             wayback_domain=item.get("wayback_domain"),
             backfill=item.get("backfill", True),
+            via=str(item.get("via") or "auto").lower(),
             notes=item.get("notes"),
         )
         if src.id in seen:
             raise ValueError(f"duplicate source id in sources.yaml: {src.id}")
         if src.status not in STATUSES:
             raise ValueError(f"{src.id}: unknown status {src.status!r} (expected one of {STATUSES})")
+        if src.via not in VIA_MODES:
+            raise ValueError(f"{src.id}: unknown via {src.via!r} (expected one of {VIA_MODES})")
         seen.add(src.id)
         out.append(src)
     return out

@@ -69,7 +69,7 @@ def merge_post(posts: dict[str, dict], new: dict) -> bool:
         new.setdefault("id", post_id(new["url"]))
         posts[key] = new
         return True
-    quality = {"feed": 3, "wp-api": 3, "blogspot": 3, "feed-paged": 3, "wayback-feed": 2, "html-meta": 2, "sitemap": 1, "wayback-cdx": 0}
+    quality = {"feed": 3, "feedly": 2, "wp-api": 3, "blogspot": 3, "feed-paged": 3, "wayback-feed": 2, "html-meta": 2, "sitemap": 1, "wayback-cdx": 0}
     changed = False
     better = quality.get(new.get("via"), 1) >= quality.get(old.get("via"), 1)
     for k in ("title", "excerpt", "author", "published", "archive_url"):
