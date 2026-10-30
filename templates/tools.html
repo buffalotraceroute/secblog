@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="{{ base }}/pagefind/pagefind-ui.css" rel="stylesheet"/>
+{% endblock %}
+{% block content %}
+<header class="page-head">
+  <h1>Tools</h1>
+  <p>{{ total }} GitHub repositories — <strong>metadata and links only</strong>.
+     We never host or mirror tool code or binaries. Each card links to the upstream repo.</p>
+</header>
+
+<form class="tool-filters" id="tool-filters" action="#" onsubmit="return false;">
+  <label>Category
+    <select id="f-cat">
+      <option value="">All</option>
+      {% for c in categories %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Language
+    <select id="f-lang">
+      <option value="">All</option>
+      {% for l in languages %}<option value="{{ l }}">{{ l }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Source
+    <select id="f-src">
+      <option value="">All</option>
+      {% for s in sources_list %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Sort
+    <select id="f-sort">
+      <option value="newest">Newest</option>
+      <option value="stars">Stars</option>
+      <option value="pushed">Recently pushed</option>
+    </select>
+  </label>
+  <label class="grow">Filter
+    <input id="f-q" type="search" placeholder="name, owner, description…" autocomplete="off"/>
+  </label>
+</form>
+
+<p class="run-meta" id="tool-count"></p>
+
+<section class="post-list" id="tool-list">
+{% for t in tools %}
+<article class="post tool-card"
+  data-name="{{ t.name|e }}"
+  data-owner="{{ t.owner|e }}"
+  data-full="{{ t.full_name|e }}"
+  data-desc="{{ (t.description or '')|e }}"
+  data-lang="{{ t.language or '' }}"
+  data-cats="{{ (t.categories or [])|join('|') }}"
+  data-srcs="{{ (t.sources or [])|join('|') }}"
+  data-stars="{{ t.stars or 0 }}"
+  data-created="{{ t.created_at or '' }}"
+  data-pushed="{{ t.pushed_at or '' }}">
+  <h2 class="post-title"><a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">{{ t.full_name }}</a></h2>
+  <div class="meta">
+    {% if t.language %}<span class="lang">{{ t.language }}</span>{% endif %}
+    <span class="stars">★ {{ t.stars or 0 }}</span>
+    {% if t.created_at %}<time datetime="{{ t.created_at }}">created {{ t.created_at[:10] }}</time>{% endif %}
+    {% if t.pushed_at %}<time datetime="{{ t.pushed_at }}">pushed {{ t.pushed_at[:10] }}</time>{% endif %}
+    {% if t.affiliation %}<span class="aff">{{ t.affiliation }}</span>{% endif %}
+    {% for c in t.categories or [] %}<a class="cat" href="{{ base }}/tools/?cat={{ c|urlencode }}">{{ c }}</a>{% endfor %}
+  </div>
+  {% if t.description %}<p class="excerpt">{{ t.description }}</p>{% endif %}
+  <div class="links">
+    <a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">GitHub</a>
+    {% if t.latest_release and t.latest_release.url %}
+    <a href="{{ t.latest_release.url }}" rel="noopener noreferrer" target="_blank">Release {{ t.latest_release.tag }}</a>
+    {% endif %}
+    <a href="{{ base }}/tools/e/{{ t.full_name|replace('/','__') }}/">Permalink</a>
+  </div>
+  <ul class="tags">
+    {% for s in t.sources or [] %}<li><span class="src-tag">{{ s }}</span></li>{% endfor %}
+    {% for top in (t.topics or [])[:8] %}<li><span>{{ top }}</span></li>{% endfor %}
+  </ul>
+</article>
+{% else %}
+<p class="empty">No tools yet. Run <code>python -m secblog tools --seed</code>.</p>
+{% endfor %}
+</section>
+
+<div class="search-ui" style="margin-top:2rem">
+  <h2 class="eyebrow">Pagefind search</h2>
+  <div id="search"></div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ base }}/pagefind/pagefind-ui.js"></script>
+<script>
+  try { new PagefindUI({ element: "#search", showImages: false, baseUrl: "{{ base }}/" }); } catch (e) {}
+  (function () {
+    const cards = Array.from(document.querySelectorAll(".tool-card"));
+    const cat = document.getElementById("f-cat");
+    const lang = document.getElementById("f-lang");
+    const src = document.getElementById("f-src");
+    const sort = document.getElementById("f-sort");
+    const q = document.getElementById("f-q");
+    const count = document.getElementById("tool-count");
+    const list = document.getElementById("tool-list");
+    const params = new URLSearchParams(location.search);
+    if (params.get("cat")) cat.value = params.get("cat");
+    if (params.get("lang")) lang.value = params.get("lang");
+    if (params.get("src")) src.value = params.get("src");
+    if (params.get("sort")) sort.value = params.get("sort");
+    if (params.get("q")) q.value = params.get("q");
+    function apply() {
+      const cv = cat.value, lv = lang.value, sv = src.value, qv = (q.value || "").toLowerCase();
+      let shown = cards.filter(c => {
+        if (cv && !(c.dataset.cats || "").split("|").includes(cv)) return false;
+        if (lv && c.dataset.lang !== lv) return false;
+        if (sv && !(c.dataset.srcs || "").split("|").includes(sv)) return false;
+        if (qv) {
+          const blob = (c.dataset.full + " " + c.dataset.desc + " " + c.dataset.owner).toLowerCase();
+          if (!blob.includes(qv)) return false;
+        }
+        return true;
+      });
+      shown.sort((a, b) => {
+        if (sort.value === "stars") return (+b.dataset.stars) - (+a.dataset.stars);
+        if (sort.value === "pushed") return (b.dataset.pushed || "").localeCompare(a.dataset.pushed || "");
+        return (b.dataset.created || "").localeCompare(a.dataset.created || "");
+      });
+      cards.forEach(c => c.hidden = true);
+      shown.forEach(c => { c.hidden = false; list.appendChild(c); });
+      count.textContent = shown.length + " shown / " + cards.length + " total";
+      const usp = new URLSearchParams();
+      if (cv) usp.set("cat", cv); if (lv) usp.set("lang", lv); if (sv) usp.set("src", sv);
+      if (sort.value !== "newest") usp.set("sort", sort.value); if (qv) usp.set("q", q.value);
+      history.replaceState(null, "", location.pathname + (usp.toString() ? "?" + usp : ""));
+    }
+    [cat, lang, src, sort].forEach(el => el.addEventListener("change", apply));
+    q.addEventListener("input", apply);
+    apply();
+  })();
+</script>
+{% endblock %}

@@ -2842,3 +2842,14 @@ sources:
       - https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
     status: active
     default_category: "Threat Intel & DFIR"
+
+  - id: remotethreat
+    name: "RemoteThreat"
+    homepage: https://remotethreat.com/resources
+    feeds: []
+    sitemap: https://remotethreat.com/sitemap.xml
+    status: unknown
+    default_category: "Red Team/Offensive"
+    platform: generic
+    via: auto
+    notes: "Webflow site; blog posts under /blog-posts/ discovered via sitemap (no RSS/Atom feed as of 2026-10). GitHub orgs remotethreat + remotethreat-external watched for tools."

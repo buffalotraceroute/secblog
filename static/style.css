@@ -138,3 +138,28 @@ main.wrap { padding-top: 1.5rem; padding-bottom: 3rem; }
   .site-header nav { width: 100%; font-size: .85rem; }
   .post { padding: .85rem; }
 }
+
+/* Tools monitor */
+.tool-filters {
+  display: flex; flex-wrap: wrap; gap: .75rem 1rem;
+  margin: 0 0 1rem; padding: .9rem 1rem;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.tool-filters label {
+  display: flex; flex-direction: column; gap: .25rem;
+  font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+}
+.tool-filters label.grow { flex: 1; min-width: 12rem; }
+.tool-filters select, .tool-filters input {
+  font: inherit; font-size: .9rem; text-transform: none; letter-spacing: normal;
+  color: var(--fg); background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: .35rem .55rem;
+}
+.tool-card .stars { font-variant-numeric: tabular-nums; }
+.tool-card .lang { font-family: var(--mono); font-size: .78rem; }
+.tool-card .aff { color: var(--warn); }
+.tool-card .src-tag { color: var(--accent); }
+.tool-card .tags span {
+  display: inline-block; background: var(--chip); border: 1px solid var(--border);
+  border-radius: 6px; padding: .1rem .45rem; font-size: .75rem; color: var(--muted);
+}

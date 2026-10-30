@@ -1,0 +1,34 @@
+{
+ "authenticated": true,
+ "by_category": {
+  "Active Directory": 200,
+  "BOFs": 540,
+  "C2 Frameworks & Agents": 650,
+  "Cloud": 108,
+  "Credential Access": 70,
+  "Evasion (EDR/AV/AMSI/ETW)": 151,
+  "Lateral Movement": 57,
+  "Loaders & Injection": 159,
+  "Other": 1645,
+  "Persistence": 51,
+  "Privilege Escalation": 29,
+  "Recon": 107
+ },
+ "curated_changed": 615,
+ "curated_counts": {
+  "awesome-bof": 479,
+  "cs-community-kit": 152
+ },
+ "discovery_changed": 198,
+ "errors": [
+  "422 /search/repositories"
+ ],
+ "finished": "2026-10-30T03:50:19Z",
+ "new_watch_owners": 315,
+ "pruned_note": "Dropped watchlist-only Other repos with <15 stars and no offensive keyword match after seed.",
+ "seed": true,
+ "started": "2026-10-30T03:37:32Z",
+ "tools_total": 3137,
+ "watched_accounts": 437,
+ "watchlist_changed": 6162
+}

@@ -1,0 +1,497 @@
+categories:
+- BOFs
+- Loaders & Injection
+- Evasion (EDR/AV/AMSI/ETW)
+- Lateral Movement
+- Credential Access
+- Active Directory
+- C2 Frameworks & Agents
+- Persistence
+- Privilege Escalation
+- Recon
+- Cloud
+- Other
+discovery:
+  min_stars: 5
+  lookback_days: 14
+  seed_lookback_days: 270
+  max_queries_per_run: 12
+  queries:
+  - topic:bof
+  - topic:beacon-object-file
+  - cobalt-strike BOF in:name,description
+  - shellcode loader in:name,description
+  - process injection in:name,description
+  - lateral movement in:name,description
+  - edr evasion OR edr-bypass in:name,description
+  - amsi bypass OR etw bypass in:name,description
+  - topic:red-team
+  - topic:redteam
+  - topic:c2
+  - topic:post-exploitation
+  - coff-loader OR reflective-dll OR sleep-obfuscation in:name,description
+  - kerberoast OR asreproast OR nanodump in:name,description
+  - direct syscalls OR indirect syscalls in:name,description
+watchlist:
+  created_since_days: 730
+  incremental_created_since_days: 30
+  accounts:
+  - login: outflanknl
+    type: org
+    affiliation: Outflank
+    evidence: org
+    track_all: true
+    track_releases: true
+  - login: SpecterOps
+    type: org
+    affiliation: SpecterOps
+    evidence: org
+    track_all: true
+    track_releases: true
+  - login: BloodHoundAD
+    type: org
+    affiliation: SpecterOps
+    evidence: org (SpecterOps product)
+    track_all: true
+    track_releases: true
+  - login: GhostPack
+    type: org
+  - login: fortra
+    type: org
+  - login: Cobalt-Strike
+    type: org
+  - login: trustedsec
+    type: org
+  - login: mdsecactivebreach
+    type: user
+  - login: xpn
+    type: user
+  - login: rasta-mouse
+    type: user
+  - login: mgeeky
+    type: user
+  - login: Mr-Un1k0d3r
+    type: user
+  - login: boku7
+    type: user
+  - login: Flangvik
+    type: user
+  - login: S3cur3Th1sSh1t
+    type: user
+  - login: TheWover
+    type: user
+  - login: med0x2e
+    type: user
+  - login: CCob
+    type: user
+  - login: EspressoCake
+    type: user
+  - login: helpsystems
+    type: org
+  - login: Octoberfest7
+    type: user
+  - login: wavvs
+    type: user
+  - login: klezVirus
+    type: user
+  - login: codewhitesec
+    type: org
+  - login: praetorian-inc
+    type: org
+  - login: NetSPI
+    type: org
+  - login: BishopFox
+    type: org
+  - login: Pennyw0rth
+    type: org
+  - login: dirkjanm
+    type: user
+  - login: fox-it
+    type: org
+  - login: ly4k
+    type: user
+  - login: cube0x0
+    type: user
+  - login: gentilkiwi
+    type: user
+  - login: Hackplayers
+    type: org
+  - login: chvancooten
+    type: user
+  - login: matterpreter
+    type: user
+  - login: optiv
+    type: org
+  - login: Idov31
+    type: user
+  - login: janoglezcampos
+    type: user
+  - login: ZeroMemoryEx
+    type: user
+  - login: hlldz
+    type: user
+  - login: Cracked5pider
+    type: user
+  - login: HavocFramework
+    type: org
+  - login: MythicAgents
+    type: org
+  - login: nettitude
+    type: org
+  - login: RedSiege
+    type: org
+  - login: WhiteKnightLabs
+    type: org
+  - login: Maldev-Academy
+    type: org
+  - login: 0xthirteen
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: sh3d0ww01f
+    type: user
+  - login: its-a-feature
+    type: user
+  - login: byt3bl33d3r
+    type: user
+  - login: BC-SECURITY
+    type: org
+  - login: Orange-Cyberdefense
+    type: org
+  - login: synacktiv
+    type: org
+  - login: Adaptix-Framework
+    type: org
+  - login: ZeroPointSecurity
+    type: org
+  - login: Binary-Offensive
+    type: org
+  - login: sevagas
+    type: user
+  - login: hasherezade
+    type: user
+  - login: aaaddress1
+    type: user
+  - login: rad9800
+    type: user
+  - login: realoriginal
+    type: user
+  - login: stephenfewer
+    type: user
+  - login: odzhan
+    type: user
+  - login: monoxgas
+    type: user
+  - login: djhohnstein
+    type: user
+  - login: eladshamir
+    type: user
+  - login: leechristensen
+    type: user
+  - login: netero1010
+    type: user
+  - login: dtmsecurity
+    type: user
+  - login: RiccardoAncarani
+    type: user
+  - login: Ne0nd0g
+    type: user
+  - login: WithSecureLabs
+    type: org
+  - login: anthemtotheego
+    type: user
+  - login: xforcered
+    type: org
+    affiliation: IBM X-Force Red
+    evidence: org
+    track_all: true
+    track_releases: true
+  - login: remotethreat
+    type: org
+    affiliation: RemoteThreat
+    evidence: org (remotethreat.com)
+    track_all: true
+    track_releases: true
+  - login: remotethreat-external
+    type: org
+    affiliation: RemoteThreat
+    evidence: org (remotethreat.com)
+    track_all: true
+    track_releases: true
+  - login: kyleavery
+    type: user
+    affiliation: Outflank
+    evidence: GitHub org public_members + company=@outflanknl
+    track_all: true
+    track_releases: true
+  - login: MarcOverIP
+    type: user
+    affiliation: Outflank
+    evidence: GitHub org public_members + company=@outflankbv
+    track_all: true
+    track_releases: true
+  - login: DaWouw
+    type: user
+    affiliation: Outflank
+    evidence: company=@outflanknl
+    track_all: true
+    track_releases: true
+  - login: xychix
+    type: user
+    affiliation: Outflank
+    evidence: company=@outflankbv
+    track_all: true
+    track_releases: true
+  - login: chrismaddalena
+    type: user
+    affiliation: SpecterOps
+    evidence: GitHub org public_members
+    track_all: true
+    track_releases: true
+  - login: computator
+    type: user
+    affiliation: SpecterOps
+    evidence: GitHub org public_members
+    track_all: true
+    track_releases: true
+  - login: ddlees
+    type: user
+    affiliation: SpecterOps
+    evidence: GitHub org public_members
+    track_all: true
+    track_releases: true
+  - login: elreydetoda
+    type: user
+    affiliation: SpecterOps
+    evidence: GitHub org public_members + company=@SpecterOps
+    track_all: true
+    track_releases: true
+  - login: juggernot325
+    type: user
+    affiliation: SpecterOps
+    evidence: GitHub org public_members
+    track_all: true
+    track_releases: true
+  - login: Anam0x
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: HarmJ0y
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: In3x0rabl3
+    type: user
+    affiliation: SpecterOps
+    evidence: bio RTOperator @ SpecterOps
+    track_all: true
+    track_releases: true
+  - login: Mayyhem
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: MichaelGrafnetter
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: StephenHinck
+    type: user
+    affiliation: SpecterOps
+    evidence: bio Product Management BloodHound at SpecterOps
+    track_all: true
+    track_releases: true
+  - login: StranDutton
+    type: user
+    affiliation: SpecterOps
+    evidence: bio Services Engineer @SpecterOps
+    track_all: true
+    track_releases: true
+  - login: amagnosi-so
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: c0rdyc3ps
+    type: user
+    affiliation: SpecterOps
+    evidence: bio Operator - SpecterOps
+    track_all: true
+    track_releases: true
+  - login: elikmiller
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: garrettfoster13
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: grayhatkiller
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: hotnops
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: kaydaskalakis
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: kyle41111
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: logangoins
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@Specterops + bio
+    track_all: true
+    track_releases: true
+  - login: p0dalirius
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: psionicjake
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: subat0mik
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@specterops + bio
+    track_all: true
+    track_releases: true
+  - login: superlinkx
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: th3d00rman
+    type: user
+    affiliation: SpecterOps
+    evidence: bio @SpecterOps
+    track_all: true
+    track_releases: true
+  - login: westshepherd
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: winterknight1337
+    type: user
+    affiliation: SpecterOps
+    evidence: company=@SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: zyn3rgy
+    type: user
+    affiliation: SpecterOps
+    evidence: company=SpecterOps + bio
+    track_all: true
+    track_releases: true
+  - login: Cerbersec
+    type: user
+  - login: FalconForceTeam
+    type: org
+  - login: LaresLLC
+    type: org
+  - login: ajpc500
+    type: user
+  - login: Yaxser
+    type: user
+  - login: Sinndarkblade
+    type: user
+  - login: Dec0ne
+    type: user
+  - login: SecureHats
+    type: org
+  - login: RaptorX
+    type: user
+  - login: pwntester
+    type: user
+  - login: securifybv
+    type: user
+curated_lists:
+- id: awesome-bof
+  repo: chryzsh/awesome-bof
+  paths:
+  - BOF-CATALOG.md
+  - README.md
+  source_label: curated:awesome-bof
+  default_categories:
+  - BOFs
+  add_owners_to_watch: true
+  skip_sections:
+  - Not on Github
+  - Supporting Tools
+- id: cs-community-kit
+  repo: Cobalt-Strike/community_kit
+  paths:
+  - tracked_repos.txt
+  - data.json
+  format: community_kit
+  source_label: curated:cs-community-kit
+  add_owners_to_watch: true
+  category_map:
+    BOF:
+    - BOFs
+    Aggressor:
+    - C2 Frameworks & Agents
+    UDRL:
+    - Loaders & Injection
+    RDLL:
+    - Loaders & Injection
+    Malleable-C2:
+    - C2 Frameworks & Agents
+    UDC2:
+    - C2 Frameworks & Agents
+    External-C2:
+    - C2 Frameworks & Agents
+    REST API:
+    - C2 Frameworks & Agents
+    Kit:
+    - C2 Frameworks & Agents
+    Infrastructure:
+    - Other
+    Logging:
+    - Other
+    Reports:
+    - Other
+lure_patterns:
+- \bfree\s+crack\b
+- \bcheat\b
+- \bstealer\s+download\b
+- \bkeylogger\s+download\b
+- \b(hack|cheat)\s+(fortnite|valorant|roblox|warzone)\b
+- \brat\s+download\b
+- \bcracked\s+(spotify|netflix|adobe)\b
+- \bfree\s+nitro\b

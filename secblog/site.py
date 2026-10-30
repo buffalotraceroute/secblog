@@ -13,6 +13,7 @@ from xml.sax.saxutils import escape as xml_escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from . import store
+from . import tools_store
 from .sources import STATUS_LABELS, load_sources
 from .util import slugify
 
@@ -182,6 +183,39 @@ def build(pagefind: bool = True) -> dict:
     write("about/index.html", "about.html", title="About", nav="about")
     write("search/index.html", "search.html", title="Search", nav="search")
 
+    # --- Tools monitor (GitHub metadata, link-only) ---
+    tools = tools_store.load_all_tools()
+    tools_by_cat: dict[str, int] = defaultdict(int)
+    languages: set[str] = set()
+    sources_set: set[str] = set()
+    for tl in tools:
+        for c in tl.get("categories") or ["Other"]:
+            tools_by_cat[c] += 1
+        if tl.get("language"):
+            languages.add(tl["language"])
+        for s in tl.get("sources") or []:
+            sources_set.add(s)
+    write(
+        "tools/index.html", "tools.html",
+        title="Tools",
+        tools=tools,
+        total=len(tools),
+        categories=sorted(tools_by_cat.keys(), key=lambda c: (-tools_by_cat[c], c)),
+        languages=sorted(languages),
+        sources_list=sorted(sources_set),
+        nav="tools",
+    )
+    tool_entry_dir = DIST / "tools" / "e"
+    tool_entry_dir.mkdir(parents=True, exist_ok=True)
+    tool_t = env.get_template("tool_entry.html")
+    for tl in tools:
+        slug = tl["full_name"].replace("/", "__")
+        (tool_entry_dir / slug / "index.html").parent.mkdir(parents=True, exist_ok=True)
+        (tool_entry_dir / slug / "index.html").write_text(
+            tool_t.render(t=tl, title=tl["full_name"]),
+            encoding="utf-8",
+        )
+
     (DIST / "feed.xml").write_text(_atom(posts[:100]), encoding="utf-8")
 
     export = [
@@ -213,6 +247,8 @@ def build(pagefind: bool = True) -> dict:
         "tags": len(by_tag),
         "tag_pages": len(top_tags),
         "years": sorted(by_year.keys()),
+        "tools": len(tools),
+        "tool_categories": dict(sorted(tools_by_cat.items(), key=lambda x: -x[1])),
     }
     (DIST / "stats.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
 
@@ -266,11 +302,12 @@ def _atom(posts: list[dict]) -> str:
 
 
 def _run_pagefind() -> None:
+    # Index post entry cards (e/*.html) and tool permalinks (tools/e/**).
     cmd = [
         sys.executable, "-m", "pagefind",
         "--site", str(DIST),
         "--output-subdir", "pagefind",
-        "--glob", "e/**/*.html",
+        "--glob", "**/e/**/*.html",
         "--force-language", "en",
     ]
     subprocess.run(cmd, check=False, cwd=str(ROOT))

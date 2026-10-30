@@ -1,0 +1,1580 @@
+{
+ "accounts": [
+  {
+   "login": "Ap3x",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Sc4v3r",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "lineeralgebra",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mooolight",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "redroot97",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "s4wbvnny",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sebafvs",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "REDMED-X",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RayRRT",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "P0142",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "entropy-z",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "cmprmsd",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "technoherder",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "WKL-Sec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "KriyosArcane",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sliverarmory",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "Loky-rt",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "chryzsh",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "rotarydrone",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "zer0yu",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "N7WEra",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "wsummerhill",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "BOFs",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "hrtywhy",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Bhanunamikaze",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "atomiczsec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "rvrsh3ll",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mertdas",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "icyguider",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Tw1sm",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RalfHacker",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "paranoidninja",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jaytiwari05",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jsecu",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Yeeb1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "kozmer",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ZephrFish",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mlcsec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ricardojoserf",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "JamesCooteUK",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "m57",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "guervild",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "pwn1sher",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ndur0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Patrick0x41",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "crypt0p3g",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "chrispentester",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "dust-life",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "3as0n",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "matro7sh",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "r00t0v3rr1d3",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "aahmad097",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Nagomez97",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Workingdaturah",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "beune",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Drew-Alleman",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "purpleranges",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "rubyattack3r",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "he1sel",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "KolbySnider",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ScotSec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "TGJLS",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Zst0NE",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "endgamec2framework",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "grisuno",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "hrdebraj",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "onedays12",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "giovannicolonna",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xMorph3us",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "p4p1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Sh4N4C1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "100daysofredteam",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "zimnyaa",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "1mansh0w",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "NioZow",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "connormcgarr",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Steve0ro",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Cipher7",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "pard0p",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "shashinma",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "MeirV2-2",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0x2LFA",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Svinopesik",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Art-Fakt",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "y637F9QQ2x",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "n0isegat3",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "b3at1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "temp43487580",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Muz1K1zuM",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "JohnRyk",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xGunrunner",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ProcessusT",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jakobfriedl",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "wremad",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Xpatr0nX",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "DonMorpheus",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ADHDMurky",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mandiant",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "antroguy",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "An0nUD4Y",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Beautifu1Boy-Official",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ManojMsks",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "PR1N5",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Udayveer17",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Valkyrie-Security",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "Zerotracelab-offensive",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "curtishoughton",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "donnie-works",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ekichirou",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jsundin",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mrrobot1o1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sp4r1ng",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "tvgdb",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "nmht3t",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "tothi",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Paradoxis",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "nickvourd",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xHossam",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "e-fin",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "CodeXTF2",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "entropykit",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "nccgroup",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "0xedh",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "MayerDaniel",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "incursi0n",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jhalon",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "loland",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "fyxme",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "NorthwaveSecurity",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "NtDallas",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ScriptIdiot",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "TierZeroSecurity",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "mwnickerson",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "seraphimprotocol",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0x73",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "matsmi7h",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mabangde",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "SnoopJesus420",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RainbowDynamix",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "KrakenEU",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "M1ndo",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ibaiC",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xrobinso",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ohxeighty",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sakkis91",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mannyfred",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "slemire",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0x3rhy",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "SlimeOnSecurity",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "KingOfTheNOPs",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "m4rvxpn",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "elephacking",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "le-jordon",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "tehstoni",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ostrichgolf",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "CUHKJason",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "buldansec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mendacus",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ColeHouston",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Fauzan-Aldi",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "rookuu",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "trainr3kt",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "lintstar",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "cl4ym0re",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xTriboulet",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "EricEsquivel",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "The-Z-Labs",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "7uckzero",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "blakefle",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xRedpoll",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "BKLockly",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "SavSanta",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "nickzer0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "strozfriedberg",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "williamknows",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "deh00ni",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "apkc",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ph3n1x007",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sudonoodle",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "wotwot563",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "carlnykvist",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "fortalice",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "wumb0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "iilegacyyii",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xEr3bus",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ewby",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "tijme",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "rkbennett",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "seventeenman",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Like0x",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "baiyies",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "MrAle98",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Hypnoze57",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "N4kedTurtle",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "AgeloVito",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Hagrid29",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "BronzeTicket",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Henkru",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Libraggbond",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "S4ntiagoP",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Crypt0s",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "rsmudge",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "redteam88",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "apokryptein",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "alfarom256",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ausec-it",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "thesnoom",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "EncodeGroup",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "tomcarver16",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "j0urney1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "dhn",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "NVISOsecurity",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "Meckazin",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "qwqdanchun",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "G0ldenGunSec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mez-0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "lengjibo",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "snovvcrash",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "pyroxenites",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "c3r3br4t3",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "topotam",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RobertDiep",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "nick-frischkorn",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "stufus",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "VirtualSamuraii",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "D4rkCorp",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "Und3rf10w",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "MaorSabag",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "yinsel",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "carlisleet",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mr-r3bot",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ro0tmylove",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ASkyeye",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xflagplz",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "BambiZombie",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "gatariee",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xSH4RKS",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "freefallerr",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RobotOperator",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "HaydoW",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "9bie",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "gmh5225",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "parzel",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "VoldeSec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "funnybananas",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "fenalik",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "GeorgePatsias",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "erberkan",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "timwhitez",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "epichoxha",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "js0ncheng",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "dru1d-foofus",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "l00sy4",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "sec-consult",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "dmcxblue",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "bitBossBBQ",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "qigpig",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "theomilan3",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "steve-embling",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "vaq130",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "219adlab",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "thatwinterquiet",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Nomad0x7",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "werdhaihai",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xsh3llf1r3",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "VirtualAlllocEx",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "9Insomnie",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "toneillcodes",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jm33-m0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "justJackiee",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "robhughes72",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "damaidec",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "dazzyddos",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "TailoredSecOps",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "brmkit",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ChoiSG",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "MWR-CyberSec",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "avantguard-cyber-security-ag",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "Y3X1L2",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Mewski",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xbngs",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "AlexLinov",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "incendiary",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xSV1",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "mynksh",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "loosehose",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "kingcarey",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Jamjim01",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "JssNGC",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "vestjoe",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "bluscreenofjeff",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "FortyNorthSecurity",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "threatexpress",
+   "type": "org",
+   "via_curated": true
+  },
+  {
+   "login": "vysecurity",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "killswitch-GUI",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "darkoperator",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "capt-meelo",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "bashexplode",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "harleyQu1nn",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "RCStep",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Tylous",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "001SPARTaN",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "ceramicskate0",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "exfiltrata",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "jordanpotti",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "xx0hcd",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Sh0ckFR",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Patrick-DE",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Peco602",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "m3rcer",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "0xbad53c",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "x-stp",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "leftp",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "shellkraft",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "D00Movenok",
+   "type": "user",
+   "via_curated": true
+  }
+ ],
+ "updated": "2026-10-30T03:41:23Z"
+}

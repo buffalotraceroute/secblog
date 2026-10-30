@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ t.full_name }} · secblog tools</title>
+  <link rel="stylesheet" href="{{ base }}/assets/style.css"/>
+</head>
+<body>
+  <main class="wrap" style="padding:1.5rem 1.1rem 3rem">
+    <p class="eyebrow"><a href="{{ base }}/">secblog</a> · <a href="{{ base }}/tools/">tools</a></p>
+    <article class="post" data-pagefind-body>
+      <h1 class="post-title">{{ t.full_name }}</h1>
+      <div class="meta">
+        {% if t.language %}<span>{{ t.language }}</span>{% endif %}
+        <span>★ {{ t.stars or 0 }}</span>
+        {% if t.created_at %}<time datetime="{{ t.created_at }}">{{ t.created_at[:10] }}</time>{% endif %}
+        {% for c in t.categories or [] %}<span class="cat">{{ c }}</span>{% endfor %}
+        {% if t.affiliation %}<span>{{ t.affiliation }}</span>{% endif %}
+      </div>
+      {% if t.description %}<p class="excerpt">{{ t.description }}</p>{% endif %}
+      <div class="links">
+        <a href="{{ t.url }}" rel="noopener noreferrer" target="_blank">GitHub</a>
+      </div>
+      <ul class="tags">
+        {% for s in t.sources or [] %}<li>{{ s }}</li>{% endfor %}
+        {% for top in t.topics or [] %}<li>{{ top }}</li>{% endfor %}
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

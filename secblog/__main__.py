@@ -1,4 +1,4 @@
-"""CLI: python -m secblog {collect,backfill,build,serve,all}"""
+"""CLI: python -m secblog {collect,backfill,tools,build,serve,all}"""
 from __future__ import annotations
 
 import argparse
@@ -24,15 +24,21 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--only", nargs="*", help="Limit to these source ids")
     b.add_argument("--prefer-dead", action="store_true", help="Prioritize Wayback backfill for dead blogs")
 
+    t = sub.add_parser("tools", help="Collect GitHub red-team tool metadata (link-only)")
+    t.add_argument("--seed", action="store_true", help="Wider lookback for initial population")
+    t.add_argument("--skip-discovery", action="store_true")
+    t.add_argument("--skip-curated", action="store_true")
+
     s = sub.add_parser("build", help="Build the static site into dist/")
     s.add_argument("--no-pagefind", action="store_true")
 
     sv = sub.add_parser("serve", help="Serve dist/ locally under /secblog/")
     sv.add_argument("--port", type=int, default=8080)
 
-    a = sub.add_parser("all", help="collect + backfill + build")
+    a = sub.add_parser("all", help="collect + tools + backfill + build")
     a.add_argument("--budget", type=int, default=35 * 60)
     a.add_argument("--concurrency", type=int, default=16)
+    a.add_argument("--seed-tools", action="store_true", help="Wider tools lookback")
 
     args = p.parse_args(argv)
 
@@ -47,6 +53,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "backfill":
         from .backfill import run
         result = asyncio.run(run(budget_s=args.budget, concurrency=args.concurrency, only=args.only, prefer_dead=args.prefer_dead))
+        print(result)
+        return 0
+
+    if args.cmd == "tools":
+        from .tools_monitor import run as tools_run
+        result = asyncio.run(tools_run(seed=args.seed, skip_discovery=args.skip_discovery, skip_curated=args.skip_curated))
         print(result)
         return 0
 
@@ -80,9 +92,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "all":
         from .collect import run as collect_run
         from .backfill import run as backfill_run
+        from .tools_monitor import run as tools_run
         from .site import build
         print("== collect ==")
         print(asyncio.run(collect_run(concurrency=args.concurrency))["summary"])
+        print("== tools ==")
+        print(asyncio.run(tools_run(seed=args.seed_tools)))
         print("== backfill ==")
         print(asyncio.run(backfill_run(budget_s=args.budget, concurrency=max(6, args.concurrency // 2))))
         print("== build ==")

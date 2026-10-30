@@ -18,8 +18,13 @@ Blog list seeded from [Bad Sector Labs' security blog list](https://github.com/B
    WordPress `?paged=` / REST API, sitemaps, and the Wayback CDX API for **dead** blogs.
 4. **Tagging** — deterministic rules in `config/taxonomy.yaml` (categories, CVEs, ATT&CK, tools…).
    Optional LLM hook behind `SECBLOG_LLM_TAGGER=1` (off by default).
-5. **Site** — Jinja2 static generator + [Pagefind](https://pagefind.app/) client-side search.
-6. **GitHub Actions** — collect every 6 hours + deploy Pages; weekly resumable backfill.
+5. **Tools monitor** (`python -m secblog tools`) — watches curated GitHub orgs/users
+   (`config/github_watch.yaml`), re-parses curated lists (awesome-bof, Cobalt Strike
+   Community Kit, …), and runs modest discovery searches. Stores **repo metadata only**
+   under `data/tools/` (link-only policy — never mirrors code/binaries).
+6. **Site** — Jinja2 static generator + [Pagefind](https://pagefind.app/) client-side search
+   (blog posts + Tools).
+7. **GitHub Actions** — collect + tools every 6 hours + deploy Pages; weekly resumable backfill.
 
 Dead / hijacked domains (parking, spam redirects) are **never fetched or linked live**; only
 Wayback snapshots are ingested. Set `wayback_before` on a source to ignore captures after a
@@ -64,6 +69,11 @@ pip install -r requirements.txt
 # Poll all live feeds (incremental)
 python -m secblog collect
 
+# GitHub red-team tools metadata (watchlist + curated lists + discovery)
+python -m secblog tools
+# Initial seed (wider lookback):
+python -m secblog tools --seed
+
 # Historical backfill (~35 min budget by default)
 python -m secblog backfill --budget 2100
 
@@ -78,7 +88,23 @@ python -m secblog serve --port 8080
 Or all three: `python -m secblog all --budget 2100`.
 
 Data layout: one JSONL file per blog under `data/posts/<id>.jsonl` (git-friendly, scales to
-tens of thousands of posts). State/cursors live in `data/state/`.
+tens of thousands of posts). Tool metadata: `data/tools/<owner>.jsonl`. State/cursors live
+in `data/state/`.
+
+### Tools watchlist & curated lists
+
+Edit `config/github_watch.yaml`:
+
+- `watchlist.accounts` — orgs/users whose new non-fork repos are tracked (`track_all: true`
+  keeps historical repos too; used for company-affiliated accounts).
+- `curated_lists` — generic list of GitHub repos whose markdown/data files are re-parsed
+  each run (e.g. [awesome-bof](https://github.com/chryzsh/awesome-bof) catalog,
+  [Cobalt Strike Community Kit](https://github.com/Cobalt-Strike/community_kit)
+  `tracked_repos.txt`). Linked repos are always included (no star threshold); owners are
+  verified and added to a dynamic watch extension.
+- `discovery` — GitHub search queries with a configurable star floor (default ≥5).
+
+Quality filters skip forks, archived empty junk, and basic lure/spam description patterns.
 
 ## Enabling GitHub Pages
 
@@ -101,6 +127,8 @@ The workflow builds `dist/` and deploys with `actions/upload-pages-artifact` +
 - Every card links to the **original URL** and a **Wayback** snapshot.
 - Full article bodies are never stored in this repository or published on the site.
 - Dead / spam-hijacked domains are archived via Wayback only.
+- The Tools section stores GitHub **metadata + permalinks only**; tool code/binaries are
+  never downloaded, hosted, or mirrored.
 - Excerpts and titles remain copyright of their authors; this is a discovery index.
 
 ## License

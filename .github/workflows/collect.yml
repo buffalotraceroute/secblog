@@ -48,6 +48,13 @@ jobs:
       - name: Collect feeds
         run: python -m secblog collect --concurrency 16
 
+      - name: Collect GitHub tools metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m secblog tools
+        continue-on-error: true
+
       - name: Persist data
         env:
           # GITHUB_TOKEN is provided by Actions; script pushes with rebase retries
