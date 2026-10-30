@@ -1464,7 +1464,7 @@ sources:
       - https://blog.ret2.io/feed.xml
     status: slowing
   - id: williamknowles
-    name: "..."
+    name: "William Knowles"
     homepage: https://williamknowles.io/
     feeds:
       - https://williamknowles.io/feed/
