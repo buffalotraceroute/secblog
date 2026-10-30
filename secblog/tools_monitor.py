@@ -46,7 +46,12 @@ CATEGORY_RULES: list[tuple[str, re.Pattern[str]]] = [
         r"malleable|implant|teamserver)\b", re.I)),
     ("Persistence", re.compile(r"\b(persistence|scheduled.?task|startup|autostart|wmi.?event|com.?hijack)\b", re.I)),
     ("Privilege Escalation", re.compile(r"\b(privesc|privilege.?escalat|uac.?bypass|lpe|token.?impersonat)\b", re.I)),
-    ("Recon", re.compile(r"\b(recon|situational.?awareness|enum|enumeration|port.?scan|fingerprint)\b", re.I)),
+    ("Recon & Scanning", re.compile(
+        r"\b(recon|situational.?awareness|enum|enumeration|port.?scan|fingerprint|"
+        r"subdomain|crawler|spider|vuln.?scan|vulnerability.?scan|nuclei|httpx|naabu|"
+        r"katana|dnsx|subfinder|uncover|bbot|asnmap|cdncheck|shuffledns|tlsx|mapcidr|"
+        r"chaos.?client|cloudlist|interactsh|proxify|urlfinder|tldfinder|alterx|"
+        r"open.?source.?intel|osint|asset.?discover|port.?scanner)\b", re.I)),
     ("Cloud", re.compile(r"\b(aws|azure|gcp|entra|kubernetes|k8s|cloud.?security|iam.?abuse)\b", re.I)),
 ]
 
@@ -61,6 +66,96 @@ CS_KIT_TAG_MAP = {
     "REST API": ["C2 Frameworks & Agents"],
     "Kit": ["C2 Frameworks & Agents"],
 }
+
+# Exact / prefix repo-name → categories (applied when keyword rules under-match).
+NAME_CATEGORY_HINTS: dict[str, list[str]] = {
+    # ProjectDiscovery
+    "nuclei": ["Recon & Scanning"],
+    "nuclei-templates": ["Recon & Scanning"],
+    "nuclei-templates-ai": ["Recon & Scanning"],
+    "nuclei-templates-labs": ["Recon & Scanning"],
+    "nuclei-burp-plugin": ["Recon & Scanning"],
+    "nuclei-ai-extension": ["Recon & Scanning"],
+    "subfinder": ["Recon & Scanning"],
+    "httpx": ["Recon & Scanning"],
+    "naabu": ["Recon & Scanning"],
+    "katana": ["Recon & Scanning"],
+    "dnsx": ["Recon & Scanning"],
+    "dnsprobe": ["Recon & Scanning"],
+    "interactsh": ["Recon & Scanning"],
+    "interactsh-web": ["Recon & Scanning"],
+    "uncover": ["Recon & Scanning"],
+    "proxify": ["Recon & Scanning"],
+    "shuffledns": ["Recon & Scanning"],
+    "tlsx": ["Recon & Scanning"],
+    "mapcidr": ["Recon & Scanning"],
+    "asnmap": ["Recon & Scanning"],
+    "cdncheck": ["Recon & Scanning"],
+    "alterx": ["Recon & Scanning"],
+    "chaos-client": ["Recon & Scanning"],
+    "cloudlist": ["Cloud", "Recon & Scanning"],
+    "urlfinder": ["Recon & Scanning"],
+    "tldfinder": ["Recon & Scanning"],
+    "openrisk": ["Recon & Scanning"],
+    "vulnx": ["Recon & Scanning"],
+    "wappalyzergo": ["Recon & Scanning"],
+    "network-fingerprint": ["Recon & Scanning"],
+    "fuzzing-templates": ["Recon & Scanning"],
+    "awesome-search-queries": ["Recon & Scanning"],
+    "public-bugbounty-programs": ["Recon & Scanning"],
+    "collaborator": ["Recon & Scanning"],
+    "notify": ["Recon & Scanning"],
+    "pdtm": ["Other"],
+    "simplehttpserver": ["Recon & Scanning"],
+    "tinydns": ["Recon & Scanning"],
+    "depx": ["Recon & Scanning"],
+    "aix": ["Other"],
+    # Black Lantern / BBOT
+    "bbot": ["Recon & Scanning"],
+    "bbot-server": ["Recon & Scanning"],
+    "bbot-module-playground": ["Recon & Scanning"],
+    "bbot-vivagraphjs": ["Recon & Scanning"],
+    "baddns": ["Recon & Scanning"],
+    "badsecrets": ["Credential Access", "Recon & Scanning"],
+    "cloudcheck": ["Cloud", "Recon & Scanning"],
+    "manspider": ["Recon & Scanning", "Credential Access"],
+    "nmappalyzer": ["Recon & Scanning"],
+    "public-dns-servers": ["Recon & Scanning"],
+    "webspray": ["Recon & Scanning"],
+    "webcap": ["Recon & Scanning"],
+    "zmap-asset-inventory": ["Recon & Scanning"],
+    "spiderfoot-neo4j": ["Recon & Scanning"],
+    "blastdns": ["Recon & Scanning"],
+    "blasthttp": ["Recon & Scanning"],
+    "radixtarget": ["Recon & Scanning"],
+    "trevorspray": ["Credential Access"],
+    "trevorproxy": ["Other"],
+    "writehat": ["Other"],
+    "blockbuster": ["Other"],
+    "dp_cryptomg": ["Other"],
+    "fulcrom": ["Lateral Movement"],
+    "offensive-azure": ["Cloud"],
+    "convert-invoke-kerberoast": ["Credential Access", "Active Directory"],
+    "kcmticketformatter": ["Credential Access", "Active Directory"],
+    "red-run": ["Other"],
+    "kali-setup-script": ["Other"],
+    "evilginx-setup-script": ["Other"],
+    "sigma-rules": ["Other"],
+    "credshed": ["Credential Access"],
+    "credshed-api": ["Credential Access"],
+    "credshed-gui": ["Credential Access"],
+}
+
+
+def categories_for_repo(name: str, description: str, topics: list[str] | None = None,
+                        extra: list[str] | None = None) -> list[str]:
+    hinted = NAME_CATEGORY_HINTS.get((name or "").lower())
+    kw = categorize(f"{name} {description}", topics, extra)
+    if hinted:
+        merged = set(hinted) | (set(kw) - {"Other"})
+        return normalize_categories(sorted(merged))
+    return normalize_categories(kw)
+
 
 
 def _load_config() -> dict:
@@ -83,6 +178,58 @@ def categorize(text: str, topics: list[str] | None = None, extra: list[str] | No
     blob = " ".join([text or "", " ".join(topics or []), " ".join(extra or [])])
     cats = [name for name, rx in CATEGORY_RULES if rx.search(blob)]
     return cats or ["Other"]
+
+
+def normalize_categories(cats: list[str] | None) -> list[str]:
+    out = []
+    for c in cats or []:
+        if c == "Recon":
+            c = "Recon & Scanning"
+        if c not in out:
+            out.append(c)
+    return out
+
+
+
+_TRIVIAL_REPO_NAMES = re.compile(
+    r"^(?:\.github|docs|documentation|homebrew-.+|\.github-config|eslint-config|"
+    r"tailwindcss|cla|release-sandbox|release-workflows|oss-bounty-program|"
+    r".+-action$|js-proto-docs|templates-stats|research|defcon\d+|php-app-race-condition|"
+    r"nuclei-templates-test|nuclei-docs|actions|pd-actions|wallpapers|yamldoc-go|sqlc-go-builder|"
+    r"asm_bbot_training|blspyutils|jsdiagrammer|agentsee|bbot-bee|bbot-swarm-common|"
+    r"crowsnest|wordpredictor|webapplabs|pocs|blue-resources)$",
+    re.I,
+)
+_TRIVIAL_DESC = re.compile(
+    r"\b(homebrew tap|moved at https://github\.com/projectdiscovery/utils|"
+    r"community health files|organization-wide github|contributor license|"
+    r"throwaway rehearsal|reusable ci)\b",
+    re.I,
+)
+# Internal helper libs archived/moved — skip unless notable stars
+_HELPER_LIB = re.compile(
+    r"^(?:fileutil|folderutil|iputil|mapsutil|sliceutil|stringsutil|urlutil|"
+    r"httputil|reflectutil|executil|expirablelru|filekv|cryptoutil|"
+    r"resolvercache-go|utils|goflags|gologger|goconfig|gostruct|gozero|"
+    r"clistats|fastdialer|fdmax|freeport|hmap|ipranger|networkpolicy|"
+    r"ratelimit|rawhttp|retryabledns|retryablehttp-go|roundrobin|sarif|"
+    r"sslcert|dsl|cleanhttp|blackrock|useragent|pd-agent|tunnelx)$",
+    re.I,
+)
+
+
+def is_trivial_repo(name: str, description: str | None, *, stars: int = 0, archived: bool = False) -> bool:
+    """Skip org boilerplate / docs / CI taps / moved helper stubs (not user-facing tools)."""
+    if _TRIVIAL_REPO_NAMES.match(name or ""):
+        return True
+    if _TRIVIAL_DESC.search(description or ""):
+        return True
+    if _HELPER_LIB.match(name or "") and (archived or stars < 500):
+        return True
+    # GitHub Actions wrappers named *-action
+    if (name or "").lower().endswith("-action") and stars < 100:
+        return True
+    return False
 
 
 def is_lure(cfg: dict, name: str, description: str | None) -> bool:
@@ -292,7 +439,14 @@ def repo_to_tool(
     owner = repo["owner"]["login"] if isinstance(repo.get("owner"), dict) else full.split("/")[0]
     desc = repo.get("description") or ""
     topics = list(repo.get("topics") or [])
-    cats = list(categories or []) or categorize(f"{repo.get('name','')} {desc}", topics)
+    if categories:
+        cats = normalize_categories(list(categories))
+        # still merge keyword/name hints
+        hinted = categories_for_repo(repo.get("name") or "", desc, topics)
+        if hinted != ["Other"]:
+            cats = normalize_categories(sorted(set(cats) | set(hinted) - ({"Other"} if set(cats)|set(hinted)-{"Other"} else set())))
+    else:
+        cats = categories_for_repo(repo.get("name") or "", desc, topics)
     return {
         "full_name": full,
         "name": repo.get("name") or full.split("/")[-1],
@@ -356,6 +510,14 @@ async def collect_watchlist(gh: GitHubClient, cfg: dict, *, seed: bool) -> tuple
         bucket = buckets[login.lower()]
         for repo in repos:
             if repo.get("fork"):
+                skipped += 1
+                continue
+            if is_trivial_repo(
+                repo.get("name") or "",
+                repo.get("description"),
+                stars=int(repo.get("stargazers_count") or 0),
+                archived=bool(repo.get("archived")),
+            ):
                 skipped += 1
                 continue
             created = (repo.get("created_at") or "")[:10]

@@ -8,7 +8,7 @@ categories:
 - C2 Frameworks & Agents
 - Persistence
 - Privilege Escalation
-- Recon
+- Recon & Scanning
 - Cloud
 - Other
 discovery:
@@ -440,6 +440,18 @@ watchlist:
     type: user
   - login: securifybv
     type: user
+  - login: projectdiscovery
+    type: org
+    affiliation: ProjectDiscovery
+    evidence: 'org (requested tool suite: nuclei, subfinder, httpx, …)'
+    track_all: true
+    track_releases: true
+  - login: blacklanternsecurity
+    type: org
+    affiliation: Black Lantern Security
+    evidence: org (BBOT and related tools)
+    track_all: true
+    track_releases: true
 curated_lists:
 - id: awesome-bof
   repo: chryzsh/awesome-bof
@@ -495,3 +507,22 @@ lure_patterns:
 - \brat\s+download\b
 - \bcracked\s+(spotify|netflix|adobe)\b
 - \bfree\s+nitro\b
+skip_trivial:
+  name_patterns:
+  - ^\.github$
+  - ^docs$
+  - ^documentation$
+  - ^homebrew-.+
+  - .+-action$
+  - ^eslint-config$
+  - ^tailwindcss$
+  - ^cla$
+  - ^release-sandbox$
+  - ^release-workflows$
+  - ^oss-bounty-program$
+  - ^actions$
+  - ^pd-actions$
+  - ^wallpapers$
+  - ^nuclei-docs$
+  - ^nuclei-templates-test$
+  notes: Applied in tools_monitor.is_trivial_repo; boilerplate/docs/CI taps skipped.
