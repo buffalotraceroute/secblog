@@ -1,6 +1,7 @@
 {
  "errors": {
   "3nailsinfosec-knowledge": "no feeds configured",
+  "aff-wg": "https://aff-wg.org/feed/: HTTP 429",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
   "atredis": "https://www.atredis.com/blog-posts?format=rss: HTTP 404",
@@ -47,6 +48,7 @@
   "r-tec": "no feeds configured",
   "rack911labs": "no feeds configured",
   "red-0xbad53c": "no feeds configured",
+  "remotethreat": "no feeds configured",
   "research-securitum": "no feeds configured",
   "ropgadget-sections-html": "no feeds configured",
   "ryan-framinan": "https://ryan.framinan.net/index.xml: HTTP 404",
@@ -64,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T03:23:03Z",
+ "finished": "2026-10-30T03:52:24Z",
  "summary": {
-  "failed": 63,
-  "posts_new": 62,
-  "posts_seen": 2140,
+  "failed": 65,
+  "posts_new": 2,
+  "posts_seen": 2211,
   "skipped_dead": 51,
-  "sources": 461,
-  "succeeded": 347
+  "sources": 462,
+  "succeeded": 346
  }
 }
