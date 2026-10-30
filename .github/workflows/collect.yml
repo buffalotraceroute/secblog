@@ -48,7 +48,7 @@ jobs:
         env:
           # GITHUB_TOKEN is provided by Actions; script pushes with rebase retries
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash tools/ci_commit_data.sh "chore: collect feeds"
+        run: 'bash tools/ci_commit_data.sh "chore: collect feeds"'
 
       - name: Build site
         run: python -m secblog build
