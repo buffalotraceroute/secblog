@@ -164,3 +164,66 @@ def title_from_url(url: str) -> str:
     if not words:
         return url
     return " ".join(w if w.isupper() or any(c.isdigit() for c in w) else w.capitalize() for w in words)
+
+
+# --- Fixing URLs that point at a dev server or have no host -----------------
+# Some static-site sitemaps are generated with relative <loc>s ("/posts/x/") or
+# with the dev server's address ("http://0.0.0.0:4000/..."). Such URLs are
+# rebased onto the source's real public host, keeping the path.
+_PROJECT_PAGE_HOSTS = (".github.io", ".gitlab.io", ".codeberg.page")
+
+
+def is_bad_host(host: str | None) -> bool:
+    """True for a missing host, localhost, loopback/private/unspecified IPs or a
+    dot-less name (anything that is not a real public web host)."""
+    import ipaddress
+
+    h = (host or "").strip().lower().strip("[]").rstrip(".")
+    if not h or "." not in h and ":" not in h:
+        return True
+    if h == "localhost" or h.endswith((".localhost", ".local", ".internal", ".test", ".invalid")):
+        return True
+    try:
+        ip = ipaddress.ip_address(h)
+    except ValueError:
+        return False
+    return not ip.is_global
+
+
+def site_base(homepage: str) -> str:
+    """Public base URL of a site, with a trailing slash.
+
+    Normally scheme://host/. For project pages hosted under a subpath
+    (user.github.io/<repo>/) the first path segment is part of the base. Other
+    homepage paths (e.g. https://x.com/blog/) are sections, not a base path:
+    sitemaps of such sites list root-relative paths that already include them.
+    """
+    parts = urlsplit(force_https(homepage or ""))
+    host = (parts.hostname or "").lower()
+    base_path = "/"
+    seg = [s for s in (parts.path or "").split("/") if s]
+    if host.endswith(_PROJECT_PAGE_HOSTS) and seg and "." not in seg[0]:
+        base_path = f"/{seg[0]}/"
+    return f"https://{host}{base_path}"
+
+
+def rehost_url(url: str, base: str) -> str:
+    """If `url` is relative or has a bad host, move it onto `base` (keeping the
+    path, query; prefixing base's path unless the path already includes it).
+    Otherwise return `url` unchanged."""
+    raw = (url or "").strip()
+    if not raw:
+        return raw
+    parts = urlsplit(raw if "://" in raw or raw.startswith("//") else "rel:" + raw)
+    if parts.scheme not in ("rel",) and not is_bad_host(parts.hostname):
+        return url
+    b = urlsplit(base)
+    if is_bad_host(b.hostname):
+        return url
+    base_path = b.path if b.path.endswith("/") else (b.path.rsplit("/", 1)[0] + "/")
+    path = parts.path or "/"
+    if not path.startswith("/"):
+        path = base_path + path
+    elif base_path != "/" and not (path + "/").startswith(base_path):
+        path = base_path.rstrip("/") + path
+    return urlunsplit(("https", b.netloc, path, parts.query, ""))

@@ -36,6 +36,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # A push-triggered run can sit queued behind another run (concurrency
+          # group); start from the latest main, not the triggering commit.
+          ref: main
 
       - uses: actions/setup-python@v5
         with:

@@ -1121,6 +1121,10 @@ sources:
     feeds:
       - https://x41-dsec.de/feed.xml
     status: active
+    exclude_patterns:
+      - "^/(services|partner|questionnaire|references)(/|$)"
+      - "^/news/(lab/)?(\\d+/?)?$"
+      - "^/news/order-a-pentest"
   - id: halove23
     name: "halove23.blogspot.com"
     homepage: https://halove23.blogspot.com/

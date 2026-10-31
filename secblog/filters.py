@@ -221,6 +221,39 @@ def _source_rules() -> dict[str, tuple[str, tuple[str, ...]]]:
         return {}
 
 
+@lru_cache(maxsize=1)
+def _source_bases() -> dict[str, str]:
+    from .sources import load_sources
+    from .util import site_base
+    try:
+        return {s.id: site_base(s.homepage) for s in load_sources()}
+    except Exception:
+        return {}
+
+
+def fix_post_urls(post: dict, blog_id: str | None = None, base: str | None = None) -> bool:
+    """Rebase a post's url / archive_url when they point at a dev server
+    (0.0.0.0, localhost, 127.x...) or have no host. Returns True if changed."""
+    from .util import rehost_url
+    base = base or _source_bases().get(blog_id or post.get("blog") or "")
+    if not base:
+        return False
+    changed = False
+    url = post.get("url") or ""
+    new = rehost_url(url, base)
+    if new != url:
+        post["url"] = new
+        changed = True
+    arch = post.get("archive_url") or ""
+    m = re.match(r"^(https?://(?:web\.)?archive\.org/web/(?:\d+[a-z_]*/)?)(.*)$", arch)
+    if m and m.group(2):
+        inner = rehost_url(m.group(2), base)
+        if inner != m.group(2):
+            post["archive_url"] = m.group(1) + inner
+            changed = True
+    return changed
+
+
 def post_reject_reason(post: dict, blog_id: str | None = None) -> str | None:
     """reject_reason for a post dict, using its source's name / exclude_patterns."""
     name, exclude = _source_rules().get(blog_id or post.get("blog") or "", (None, ()))

@@ -5,6 +5,11 @@ MSG=${1:-"chore: update data"}
 
 git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+# Record-level merge driver for data/ (see .gitattributes, tools/merge_data.py) so a
+# rebase onto a concurrent run's data commit merges posts/tools/state instead of
+# failing on line conflicts.
+git config merge.secblog-data.name "secblog data merge"
+git config merge.secblog-data.driver "python tools/merge_data.py %O %A %B %P"
 
 git add data/
 if git diff --staged --quiet; then

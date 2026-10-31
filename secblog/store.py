@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .filters import post_reject_reason
+from .filters import fix_post_urls, post_reject_reason
 from .sources import ROOT
 from .util import EXCERPT_MAX, normalize_url, post_id
 
@@ -71,6 +71,7 @@ def merge_post(posts: dict[str, dict], new: dict) -> bool:
     First-seen `fetched` timestamp is preserved; feed data (title/excerpt/date)
     wins over lower-quality sources such as sitemap- or URL-derived titles.
     """
+    fix_post_urls(new)  # relative / dev-server (0.0.0.0, localhost) URLs -> real host
     if post_reject_reason(new) is not None:
         return False  # tag/category/author/listing/static page, feed or asset
     key = normalize_url(new["url"])

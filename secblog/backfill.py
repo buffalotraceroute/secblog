@@ -20,6 +20,8 @@ from .util import (
     make_excerpt,
     normalize_url,
     now_utc,
+    rehost_url,
+    site_base,
     parse_date,
     title_from_url,
     wayback_url,
@@ -205,6 +207,17 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
                                               "post-sitemap.xml", "sitemap-posts.xml", "sitemap/sitemap.xml")]
     seen_maps: set[str] = set()
     urls: list[tuple[str, str | None]] = []
+    home_base = site_base(src.homepage)
+
+    def map_base(map_url: str) -> str:
+        mp = urlsplit(force_https(map_url))
+        hb = urlsplit(home_base)
+        d = mp.path.rsplit("/", 1)[0] + "/"
+        # Only trust the sitemap's directory as a base for the homepage's host
+        # (sitemap/sitemap.xml style nesting is not a site subpath).
+        if (mp.hostname or "") == hb.hostname and d.startswith(hb.path) and not d.rstrip("/").endswith("sitemap"):
+            return f"https://{mp.netloc}{d}"
+        return home_base
 
     async def fetch_map(url: str, depth: int = 0):
         if url in seen_maps or depth > 2 or time.monotonic() >= budget:
@@ -220,8 +233,13 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
         except ET.ParseError:
             return
         ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        # Static-site generators sometimes emit relative <loc>s or the dev
+        # server's address (http://0.0.0.0:4000/...): rebase those onto the
+        # public site. The sitemap's own directory is the base when the site
+        # lives under a subpath (user.github.io/<repo>/sitemap.xml).
+        base = map_base(url)
         for loc in root_el.findall(".//s:sitemap/s:loc", ns) + root_el.findall(".//{*}sitemap/{*}loc"):
-            await fetch_map(loc.text.strip(), depth + 1)
+            await fetch_map(rehost_url(loc.text.strip(), base), depth + 1)
         for url_el in root_el.findall("s:url", ns) + root_el.findall("{*}url"):
             loc = url_el.find("s:loc", ns)
             if loc is None:
@@ -230,7 +248,8 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
             if last is None:
                 last = url_el.find("{*}lastmod")
             if loc is not None and loc.text:
-                urls.append((loc.text.strip(), last.text.strip() if last is not None and last.text else None))
+                urls.append((rehost_url(loc.text.strip(), base),
+                             last.text.strip() if last is not None and last.text else None))
 
     for c in candidates:
         await fetch_map(c)
