@@ -46,6 +46,9 @@ class Source:
     # Extra regexes (re.search on the URL path, plus "?query") marking non-article
     # URLs for this source, on top of the shared rules in secblog/filters.py.
     exclude_patterns: list[str] = field(default_factory=list)
+    # Optional listing-based ingestion for sites with no RSS/Atom (see secblog/listing.py).
+    # e.g. {"type": "gatsby"} or {"type": "html", "url": "...", "post_pattern": "^/posts/[^/]+/?$"}
+    listing: dict | None = None
 
     @property
     def is_dead(self) -> bool:
@@ -109,6 +112,7 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
             via=str(item.get("via") or "auto").lower(),
             notes=item.get("notes"),
             exclude_patterns=_str_list(item.get("exclude_patterns")),
+            listing=item.get("listing") if isinstance(item.get("listing"), dict) else None,
         )
         if src.id in seen:
             raise ValueError(f"duplicate source id in sources.yaml: {src.id}")

@@ -1002,6 +1002,11 @@
   "feed_page": 3,
   "sitemap_urls": 0
  },
+ "maldev-lol": {
+  "done": true,
+  "listing_done": true,
+  "listing_urls": 3
+ },
  "malicious-blog-html": {
   "feed_page": 4,
   "sitemap_urls": 10
@@ -1084,6 +1089,11 @@
  "mrbruh": {
   "feed_page": 3,
   "sitemap_urls": 0
+ },
+ "mrd0x": {
+  "done": true,
+  "listing_done": true,
+  "listing_urls": 33
  },
  "msrc-blog-microsoft": {
   "sitemap_urls": 0

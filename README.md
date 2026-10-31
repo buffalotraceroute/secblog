@@ -58,6 +58,7 @@ Tips:
 - Blogspot: `https://<name>.blogspot.com/feeds/posts/default`
 - GitHub repo: `https://github.com/<org>/<repo>/commits.atom` (and/or `releases.atom`)
 - Dead blog: `status: dead`, set `wayback_domain`, optional `wayback_before: "YYYYMMDD"`, leave `feeds` empty or pointing at a historical feed URL (fetched only via Wayback)
+- No feed (Gatsby / HTML listing): set `listing: {type: gatsby}` (reads `/page-data/index/page-data.json` and `/page-data/N/...`, follows `pageCount`) or `listing: {type: html, url: "https://x/posts/", post_pattern: "^/posts/[^/]+/?$"}`. Used by both `collect` and `backfill`; only metadata + short excerpt are stored.
 - Non-article pages: tag/category/author/series listings, blog indexes, pagination, about/contact/privacy-type pages, feeds and sitemap-found assets are never stored (shared filter in `secblog/filters.py`, applied to every ingestion path and on save). Add per-source regexes with `exclude_patterns: ["^/en/about/"]` (matched against the URL path). `python tools/clean_non_articles.py` re-applies the filter to existing `data/posts/`.
 - Cloudflare/bot-walled feed: `via: feedly` reads the feed from Feedly's public cache (`cloud.feedly.com/v3/streams/contents`, no auth; backfill pages its history via continuation tokens). With the default `via: auto`, a direct fetch that gets a 403/Cloudflare challenge falls back to Feedly automatically; `via: direct` disables that. Excerpt-only policy still applies.
 

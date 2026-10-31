@@ -5,7 +5,7 @@ import asyncio
 import traceback
 from urllib.parse import urlsplit
 
-from . import feedly, store
+from . import feedly, listing, store
 from .feeds import parse_feed
 from .http import Gate, get, make_client
 from .sources import Source, load_sources
@@ -67,10 +67,43 @@ async def fetch_feed(client, gate: Gate, src: Source, feed_url: str, state: dict
     return posts, new, None
 
 
+async def collect_listing_source(client, gate, src: Source, state: dict, errors: dict) -> tuple[int, int]:
+    """Poll a listing-based source (Gatsby page-data / HTML index)."""
+    posts_map = store.load_blog(src.id)
+    known = set(posts_map)
+    try:
+        posts, err = await listing.collect_listing(client, gate, src, backfill=False)
+    except Exception as e:
+        errors[src.id] = f"listing: {type(e).__name__}: {e}"
+        return 0, 0
+    if err and not posts:
+        errors[src.id] = err
+        return 0, 0
+    # Enrich only brand-new posts that still lack a title/excerpt (HTML mode).
+    added = seen = 0
+    for p in posts:
+        seen += 1
+        tag_post(p, blog_default=(src.default_category or src.category))
+        if store.merge_post(posts_map, p):
+            added += 1
+    store.save_blog(src.id, posts_map)
+    state[f"listing:{src.id}"] = {
+        "last_checked": iso(now_utc()),
+        "status": 200 if not err else err,
+        "entries": seen,
+        "via": (src.listing or {}).get("type") or "listing",
+    }
+    if err:
+        errors[src.id] = "partial: " + err
+    return added, seen
+
+
 async def collect_source(client, gate, src: Source, state: dict, errors: dict) -> tuple[int, int]:
     """Poll all feeds for one source. Returns (new_or_updated, total_seen)."""
     if src.is_dead:
         return 0, 0
+    if src.listing:
+        return await collect_listing_source(client, gate, src, state, errors)
     if not src.feeds:
         errors[src.id] = "no feeds configured"
         return 0, 0

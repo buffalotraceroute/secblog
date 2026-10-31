@@ -7,7 +7,7 @@ import time
 import xml.etree.ElementTree as ET
 from urllib.parse import quote, urljoin, urlsplit
 
-from . import feedly, store
+from . import feedly, listing, store
 from .filters import reject_reason
 from .feeds import parse_feed
 from .http import Gate, get, make_client
@@ -203,8 +203,9 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
         candidates.append(src.sitemap)
     host = urlsplit(src.homepage)
     root = f"{host.scheme}://{host.hostname}/"
-    candidates += [urljoin(root, p) for p in ("sitemap.xml", "sitemap_index.xml", "wp-sitemap.xml",
-                                              "post-sitemap.xml", "sitemap-posts.xml", "sitemap/sitemap.xml")]
+    candidates += [urljoin(root, p) for p in ("sitemap.xml", "sitemap_index.xml", "sitemap-index.xml", "sitemap-0.xml",
+                                              "wp-sitemap.xml", "post-sitemap.xml", "sitemap-posts.xml",
+                                              "sitemap/sitemap.xml")]
     seen_maps: set[str] = set()
     urls: list[tuple[str, str | None]] = []
     home_base = site_base(src.homepage)
@@ -424,6 +425,18 @@ async def backfill_source(client, gate, src: Source, state: dict, budget: float)
         if src.is_dead:
             added += await wayback_feed_snapshot(client, gate, src, state, posts_map, budget)
             added += await from_wayback(client, gate, src, state, posts_map, budget)
+        elif src.listing:
+            posts, err = await listing.collect_listing(client, gate, src, backfill=True)
+            if err:
+                state.setdefault(src.id, {})["listing_error"] = err
+            for p in posts:
+                if time.monotonic() >= budget:
+                    break
+                tag_post(p, blog_default=(src.default_category or src.category))
+                if store.merge_post(posts_map, p):
+                    added += 1
+            state.setdefault(src.id, {})["listing_done"] = True
+            state.setdefault(src.id, {})["listing_urls"] = len(posts)
         elif src.via == "feedly":
             # Site blocks non-browser clients; Feedly's cache is the only usable history.
             added += await page_feedly(client, gate, src, state, posts_map, budget)
@@ -439,7 +452,7 @@ async def backfill_source(client, gate, src: Source, state: dict, budget: float)
         st = state.setdefault(src.id, {})
         if src.is_dead and st.get("cdx_done"):
             st["done"] = True
-        if not src.is_dead and (st.get("blogspot_done") or st.get("wp_done") or st.get("feedly_done")):
+        if not src.is_dead and (st.get("blogspot_done") or st.get("wp_done") or st.get("feedly_done") or st.get("listing_done")):
             st["done"] = True
     finally:
         store.save_blog(src.id, posts_map)
