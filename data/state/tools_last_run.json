@@ -2,14 +2,14 @@
  "authenticated": true,
  "by_category": {
   "Active Directory": 203,
-  "BOFs": 538,
+  "BOFs": 539,
   "C2 Frameworks & Agents": 649,
   "Cloud": 113,
   "Credential Access": 78,
   "Evasion (EDR/AV/AMSI/ETW)": 150,
   "Lateral Movement": 58,
   "Loaders & Injection": 160,
-  "Other": 1722,
+  "Other": 1723,
   "Persistence": 52,
   "Privilege Escalation": 29,
   "Recon & Scanning": 170
@@ -21,11 +21,11 @@
  },
  "discovery_changed": 33,
  "errors": [],
- "finished": "2026-10-31T17:11:09Z",
+ "finished": "2026-10-31T21:22:52Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-10-31T17:00:30Z",
- "tools_total": 3283,
+ "started": "2026-10-31T21:12:46Z",
+ "tools_total": 3285,
  "watched_accounts": 439,
- "watchlist_changed": 721
+ "watchlist_changed": 723
 }
