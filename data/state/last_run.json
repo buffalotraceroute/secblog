@@ -13,7 +13,6 @@
   "blog-lexfo": "no feeds configured",
   "blog-qsecure-com": "no feeds configured",
   "blog-viettelcybersecurity": "no feeds configured",
-  "bohops": "https://bohops.com/feed/: HTTP 429",
   "bytecode77": "no feeds configured",
   "contextis-us-blog": "no feeds configured",
   "darkrelay": "no feeds configured",
@@ -28,7 +27,6 @@
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
-  "ijustwannared-team": "https://ijustwannared.team/feed/: HTTP 429",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -67,13 +65,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-30T22:03:50Z",
+ "finished": "2026-10-31T00:27:04Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 260,
-  "posts_seen": 2738,
+  "failed": 64,
+  "posts_new": 23,
+  "posts_seen": 2434,
   "skipped_dead": 51,
-  "sources": 462,
-  "succeeded": 345
+  "sources": 463,
+  "succeeded": 348
  }
 }
