@@ -61,18 +61,17 @@
   "trendmicro-en-us-research-html": "no feeds configured",
   "vice-en-topic-hacking": "no feeds configured",
   "watchfulip": "https://watchfulip.github.io/feed.xml: HTTP 404",
-  "whiteknightlabs": "https://whiteknightlabs.com/feed/: HTTP 522",
   "xanthus": "no feeds configured",
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-31T03:37:48Z",
+ "finished": "2026-10-31T04:43:58Z",
  "summary": {
-  "failed": 65,
-  "posts_new": 12,
-  "posts_seen": 2292,
+  "failed": 64,
+  "posts_new": 1,
+  "posts_seen": 2375,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 350
+  "succeeded": 351
  }
 }
