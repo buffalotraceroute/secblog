@@ -12,6 +12,7 @@
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
   "blog-qsecure-com": "no feeds configured",
+  "blog-sonarsource": "https://www.sonarsource.com/rss/blog.xml: network error",
   "blog-viettelcybersecurity": "no feeds configured",
   "bytecode77": "no feeds configured",
   "contextis-us-blog": "no feeds configured",
@@ -65,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-31T00:27:04Z",
+ "finished": "2026-10-31T00:49:09Z",
  "summary": {
-  "failed": 64,
-  "posts_new": 23,
-  "posts_seen": 2434,
+  "failed": 65,
+  "posts_new": 0,
+  "posts_seen": 2233,
   "skipped_dead": 51,
   "sources": 463,
-  "succeeded": 348
+  "succeeded": 347
  }
 }
