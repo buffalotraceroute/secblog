@@ -815,6 +815,13 @@
   "last_modified": "Tue, 17 Jun 2025 21:10:32 GMT",
   "status": 304
  },
+ "https://g3tsyst3m.com/feed.xml": {
+  "entries": 10,
+  "etag": "W/\"6ae50f4e-b5f4e\"",
+  "last_checked": "2026-10-31T03:35:49Z",
+  "last_modified": "Fri, 30 Oct 2026 21:42:38 GMT",
+  "status": 200
+ },
  "https://geohot.github.io/blog/feed.xml": {
   "entries": 10,
   "etag": "W/\"6acb1acc-950e\"",

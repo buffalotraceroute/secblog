@@ -2892,3 +2892,15 @@ sources:
       type: html
       url: https://maldev.lol/posts/
       post_pattern: "^/posts/[^/]+/?$"
+
+  - id: g3tsyst3m
+    name: "G3tSyst3m's Infosec Blog"
+    homepage: https://g3tsyst3m.com/
+    feeds:
+      - https://g3tsyst3m.com/feed.xml
+    sitemap: https://g3tsyst3m.com/sitemap.xml
+    status: active
+    default_category: "Red Team/Offensive"
+    exclude_patterns:
+      - "^/(_pages|aboutme|tutoring|sponsors|learningplatform|coursemodules)(/|$)"
+    notes: "Added by request 2026-10-30. Windows privesc, EDR evasion, shellcode; feed has only latest 10, sitemap for history."
