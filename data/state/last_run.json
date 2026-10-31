@@ -8,6 +8,7 @@
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
   "blog-felixm": "no feeds configured",
+  "blog-includesecurity": "https://blog.includesecurity.com/feed/: HTTP 429",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -36,6 +37,7 @@
   "necromancerlabs-research-papers": "no feeds configured",
   "nullsecurity": "no feeds configured",
   "octagon": "no feeds configured",
+  "oddvar-moe": "https://oddvar.moe/feed/: HTTP 429",
   "offnotes-notso": "no feeds configured",
   "offsec-almond": "no feeds configured",
   "oobs": "https://www.oobs.io/index.xml: HTTP 404",
@@ -56,6 +58,7 @@
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
   "suid-research-html": "no feeds configured",
+  "teamhydra": "https://teamhydra.blog/feed/: HTTP 429",
   "themittenmac": "no feeds configured",
   "thespanner": "no feeds configured",
   "trendmicro-en-us-research-html": "no feeds configured",
@@ -65,13 +68,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-10-31T11:54:05Z",
+ "finished": "2026-10-31T17:00:30Z",
  "summary": {
-  "failed": 64,
-  "posts_new": 7,
-  "posts_seen": 2450,
+  "failed": 67,
+  "posts_new": 53,
+  "posts_seen": 2371,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 351
+  "succeeded": 348
  }
 }
