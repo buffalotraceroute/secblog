@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from .filters import post_reject_reason
 from .sources import ROOT
 from .util import EXCERPT_MAX, normalize_url, post_id
 
@@ -42,7 +43,14 @@ def save_blog(blog_id: str, posts: dict[str, dict]) -> None:
         if path.exists():
             path.unlink()
         return
-    rows = sorted(posts.values(), key=_sort_key, reverse=True)
+    # Last line of defence: never persist listing/taxonomy/static pages, even if a
+    # code path forgot to filter (and so stale junk is purged on the next write).
+    rows = sorted((p for p in posts.values() if post_reject_reason(p, blog_id) is None),
+                  key=_sort_key, reverse=True)
+    if not rows:
+        if path.exists():
+            path.unlink()
+        return
     text = "".join(json.dumps(_clean(p), ensure_ascii=False, sort_keys=True) + "\n" for p in rows)
     if not path.exists() or path.read_text(encoding="utf-8") != text:
         path.write_text(text, encoding="utf-8")
@@ -63,6 +71,8 @@ def merge_post(posts: dict[str, dict], new: dict) -> bool:
     First-seen `fetched` timestamp is preserved; feed data (title/excerpt/date)
     wins over lower-quality sources such as sitemap- or URL-derived titles.
     """
+    if post_reject_reason(new) is not None:
+        return False  # tag/category/author/listing/static page, feed or asset
     key = normalize_url(new["url"])
     old = posts.get(key)
     if old is None:

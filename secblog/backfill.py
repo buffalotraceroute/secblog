@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import quote, urljoin, urlsplit
 
 from . import feedly, store
+from .filters import reject_reason
 from .feeds import parse_feed
 from .http import Gate, get, make_client
 from .sources import Source, load_sources
@@ -236,13 +237,13 @@ async def from_sitemap(client, gate, src, state, posts_map, budget) -> int:
         if urls:
             break
 
-    # Keep only likely post URLs (heuristic).
-    skip = re.compile(r"/(tag|category|categories|author|page|wp-content|attachment|feed)/", re.I)
+    # Keep only likely post URLs: drop taxonomy/listing/static pages, feeds and
+    # assets with the shared filter (secblog/filters.py), then apply a heuristic.
     keep = re.compile(r"/(20\d{2}/|/posts?/|/blog/|/research/|/article|/advisory|/write.?up|/news/)", re.I)
     filtered = []
     for u, lm in urls:
         path = urlsplit(u).path
-        if skip.search(path):
+        if reject_reason(u, title_from_url(u), site_name=src.name, exclude=src.exclude_patterns, via="sitemap"):
             continue
         if keep.search(path) or re.search(r"/20\d{2}/\d{2}/", path) or path.count("/") >= 2:
             filtered.append((u, lm))
@@ -320,6 +321,8 @@ async def from_wayback(client, gate, src, state, posts_map, budget) -> int:
         original = rec.get("original") or ""
         ts = rec.get("timestamp") or ""
         if not original or skip.search(original):
+            continue
+        if reject_reason(original, site_name=src.name, exclude=src.exclude_patterns, via="wayback-cdx"):
             continue
         # Drop likely index / home pages with no slug
         path = urlsplit(original).path.rstrip("/")

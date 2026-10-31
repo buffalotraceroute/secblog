@@ -43,6 +43,9 @@ class Source:
     # "feedly" (always read the feeds from Feedly's cache).
     via: str = "auto"
     notes: str | None = None
+    # Extra regexes (re.search on the URL path, plus "?query") marking non-article
+    # URLs for this source, on top of the shared rules in secblog/filters.py.
+    exclude_patterns: list[str] = field(default_factory=list)
 
     @property
     def is_dead(self) -> bool:
@@ -70,6 +73,17 @@ class Source:
         return "generic"
 
 
+def _str_list(v) -> list[str]:
+    if not v:
+        return []
+    if isinstance(v, str):
+        v = [v]
+    out = [str(x) for x in v if x]
+    for pat in out:
+        re.compile(pat)  # fail fast on a bad regex in sources.yaml
+    return out
+
+
 def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
     raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     items = raw.get("sources", raw) if isinstance(raw, dict) else raw
@@ -94,6 +108,7 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
             backfill=item.get("backfill", True),
             via=str(item.get("via") or "auto").lower(),
             notes=item.get("notes"),
+            exclude_patterns=_str_list(item.get("exclude_patterns")),
         )
         if src.id in seen:
             raise ValueError(f"duplicate source id in sources.yaml: {src.id}")

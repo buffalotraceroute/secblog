@@ -3,6 +3,8 @@
 # via: auto (default; direct, Feedly-cache fallback on 403/Cloudflare) | direct | feedly (always Feedly cache)
 # dead blogs: never fetch live; use wayback_domain / wayback_before
 # default_category: used when a post has no keyword match (see config/taxonomy.yaml news_blogs)
+# exclude_patterns: optional list of regexes (matched against the URL path) for non-article
+#   pages on top of the shared tag/category/author/listing/static-page rules in secblog/filters.py
 sources:
   - id: phrack
     name: "Phrack Magazine"
@@ -1844,6 +1846,8 @@ sources:
     homepage: https://www.trendmicro.com/en_us/research.html?category=trend-micro-research%3Athreats%2Fexploits-and-vulnerabilities
     feeds: []
     status: active
+    exclude_patterns:
+      - "^/en/(about|partners|what-is|business|small-business)(/|\\.html|$)"
   - id: blog-kyleavery
     name: "Blog - Kyle Avery"
     homepage: https://blog.kyleavery.com/
@@ -1954,6 +1958,8 @@ sources:
     feeds:
       - https://www.shielder.com/blog/index.xml
     status: active
+    exclude_patterns:
+      - "^/(it/)?(services|servizi|company|azienda|contatti|lavora-con-noi)(/|$)"
   - id: naksyn
     name: "Naksyn’s blog"
     homepage: https://www.naksyn.com/
