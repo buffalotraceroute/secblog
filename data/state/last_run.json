@@ -13,6 +13,7 @@
   "blog-lexfo": "no feeds configured",
   "blog-qsecure-com": "no feeds configured",
   "blog-viettelcybersecurity": "no feeds configured",
+  "byte-how": "https://byte.how/index.xml: network error",
   "bytecode77": "no feeds configured",
   "contextis-us-blog": "no feeds configured",
   "darkrelay": "no feeds configured",
@@ -65,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-01T05:05:22Z",
+ "finished": "2026-11-01T12:53:51Z",
  "summary": {
-  "failed": 64,
-  "posts_new": 42,
-  "posts_seen": 2411,
+  "failed": 65,
+  "posts_new": 2,
+  "posts_seen": 2234,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 351
+  "succeeded": 350
  }
 }
