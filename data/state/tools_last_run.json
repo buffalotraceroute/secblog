@@ -3,7 +3,7 @@
  "by_category": {
   "Active Directory": 203,
   "BOFs": 539,
-  "C2 Frameworks & Agents": 649,
+  "C2 Frameworks & Agents": 650,
   "Cloud": 113,
   "Credential Access": 78,
   "Evasion (EDR/AV/AMSI/ETW)": 150,
@@ -21,11 +21,11 @@
  },
  "discovery_changed": 25,
  "errors": [],
- "finished": "2026-11-01T13:04:44Z",
+ "finished": "2026-11-01T22:01:03Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-01T12:53:52Z",
- "tools_total": 3286,
+ "started": "2026-11-01T21:50:16Z",
+ "tools_total": 3287,
  "watched_accounts": 439,
- "watchlist_changed": 723
+ "watchlist_changed": 724
 }
