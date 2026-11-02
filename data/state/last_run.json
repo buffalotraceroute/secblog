@@ -66,11 +66,11 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-02T05:06:32Z",
+ "finished": "2026-11-02T13:24:56Z",
  "summary": {
   "failed": 65,
-  "posts_new": 25,
-  "posts_seen": 2458,
+  "posts_new": 745,
+  "posts_seen": 2600,
   "skipped_dead": 51,
   "sources": 466,
   "succeeded": 350
