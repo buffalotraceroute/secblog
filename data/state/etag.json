@@ -1033,13 +1033,6 @@
   "last_checked": "2026-11-02T13:45:49Z",
   "status": 404
  },
- "https://kitploit.com/rss.xml": {
-  "entries": 50,
-  "etag": null,
-  "last_checked": "2026-11-02T13:45:36Z",
-  "last_modified": null,
-  "status": 200
- },
  "https://kqx.io/post/index.xml": {
   "entries": 7,
   "etag": "W/\"6adcc903-af9\"",

@@ -37,13 +37,6 @@ sources:
     feeds:
       - https://blog.k3170makan.com/feeds/posts/default
     status: dormant
-  - id: kitploit
-    name: "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!"
-    homepage: https://www.kitploit.com/
-    feeds:
-      - https://kitploit.com/rss.xml
-    status: active
-    default_category: "News & Industry"
   - id: krebsonsecurity
     name: "Krebs on Security"
     homepage: https://krebsonsecurity.com/
