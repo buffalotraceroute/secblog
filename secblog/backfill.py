@@ -54,7 +54,7 @@ async def page_blogspot(client, gate, src, state, posts_map, budget) -> int:
             r = await get(client, force_https(url), browser_ua=True)
         if r is None or r.status_code != 200:
             break
-        posts = parse_feed(r.content, blog_id=src.id, via="feed-paged")
+        posts = parse_feed(r.content, blog_id=src.id, via="feed-paged", base=src.homepage)
         if not posts:
             break
         for p in posts:
@@ -134,7 +134,7 @@ async def page_wordpress(client, gate, src, state, posts_map, budget) -> int:
                 r = await get(client, force_https(url))
             if r is None or r.status_code != 200:
                 break
-            posts = parse_feed(r.content, blog_id=src.id, via="feed-paged")
+            posts = parse_feed(r.content, blog_id=src.id, via="feed-paged", base=src.homepage)
             if not posts:
                 break
             new_here = 0

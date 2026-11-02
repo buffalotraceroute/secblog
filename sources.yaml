@@ -551,6 +551,14 @@ sources:
     feeds:
       - https://blog.scrt.ch/feed/
     status: active
+    default_category: "Red Team/Offensive"
+    listing:
+      type: html
+      url: https://blog.scrt.ch/
+      post_pattern: "^/\\d{4}/\\d{2}/\\d{2}/[^/]+/?$"
+      page_pattern: "/page/\\d+/?$"
+      max_pages: 80
+    notes: "Feed ignores ?paged= and only lists 10 posts with relative links; history comes from HTML /page/N/ listing."
   - id: wietzebeukema
     name: "@Wietze - Blog"
     homepage: https://www.wietzebeukema.nl/blog/

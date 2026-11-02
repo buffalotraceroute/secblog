@@ -406,9 +406,9 @@
   "status": 304
  },
  "https://blog.scrt.ch/feed/": {
-  "entries": 0,
+  "entries": 10,
   "etag": "\"3014-65d2fc0521a4c-gzip\"",
-  "last_checked": "2026-11-02T13:24:32Z",
+  "last_checked": "2026-11-02T13:42:23Z",
   "last_modified": "Tue, 06 Oct 2026 17:58:51 GMT",
   "status": 200
  },
@@ -2468,6 +2468,12 @@
   "last_checked": "2026-11-02T13:24:28Z",
   "last_modified": "Mon, 02 Nov 2026 00:07:54 GMT",
   "status": 304
+ },
+ "listing:blog-scrt": {
+  "entries": 20,
+  "last_checked": "2026-11-02T13:44:30Z",
+  "status": 200,
+  "via": "html"
  },
  "listing:maldev-lol": {
   "entries": 3,

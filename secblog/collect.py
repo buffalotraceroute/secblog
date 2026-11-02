@@ -56,7 +56,7 @@ async def fetch_feed(client, gate: Gate, src: Source, feed_url: str, state: dict
         if src.via == "auto" and feedly.is_blocked_response(r):
             return await fetch_via_feedly(client, gate, src, feed_url, prev, reason=f"HTTP {r.status_code}")
         return [], {**prev, "last_checked": iso(now_utc()), "status": r.status_code}, f"HTTP {r.status_code}"
-    posts = parse_feed(r.content, blog_id=src.id, via="feed")
+    posts = parse_feed(r.content, blog_id=src.id, via="feed", base=src.homepage)
     new = {
         "etag": r.headers.get("etag"),
         "last_modified": r.headers.get("last-modified"),

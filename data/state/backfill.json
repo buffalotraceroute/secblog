@@ -358,7 +358,9 @@
   "sitemap_urls": 40
  },
  "blog-scrt": {
-  "sitemap_urls": 0
+  "done": true,
+  "listing_done": true,
+  "listing_urls": 183
  },
  "blog-slowerzs": {
   "feed_page": 3,

@@ -6,7 +6,7 @@ import feedparser
 from .util import clean_url, iso, make_excerpt, now_utc, parse_date, wayback_url
 
 
-def entry_url(entry) -> str | None:
+def entry_url(entry, base: str | None = None) -> str | None:
     for key in ("link", "id", "guid"):
         v = entry.get(key)
         if isinstance(v, str) and v.startswith("http"):
@@ -16,6 +16,13 @@ def entry_url(entry) -> str | None:
     for l in entry.get("links") or []:
         if l.get("rel") in (None, "alternate") and l.get("href", "").startswith("http"):
             return clean_url(l["href"])
+    # Some feeds (e.g. blog.scrt.ch) emit root-relative links; resolve them
+    # against the blog's homepage.
+    if base:
+        v = entry.get("link")
+        if isinstance(v, str) and v.startswith("/") and not v.startswith("//") and v != "/":
+            from .util import rehost_url
+            return clean_url(rehost_url(v, base))
     return None
 
 
@@ -46,12 +53,13 @@ def entry_tags(entry) -> list[str]:
     return tags
 
 
-def parse_feed(content: bytes | str, *, blog_id: str, via: str = "feed", archive: bool = False) -> list[dict]:
+def parse_feed(content: bytes | str, *, blog_id: str, via: str = "feed", archive: bool = False,
+               base: str | None = None) -> list[dict]:
     d = feedparser.parse(content)
     posts = []
     fetched = iso(now_utc())
     for e in d.entries:
-        url = entry_url(e)
+        url = entry_url(e, base)
         if not url:
             continue
         published = parse_date(e.get("published") or e.get("updated") or e.get("created")
