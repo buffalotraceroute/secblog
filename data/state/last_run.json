@@ -8,7 +8,6 @@
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
   "blog-felixm": "no feeds configured",
-  "blog-fndsec": "https://blog.fndsec.net/feed/: HTTP 429",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -67,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-01T21:50:16Z",
+ "finished": "2026-11-02T05:06:32Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 53,
-  "posts_seen": 2404,
+  "failed": 65,
+  "posts_new": 25,
+  "posts_seen": 2458,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 349
+  "succeeded": 350
  }
 }
