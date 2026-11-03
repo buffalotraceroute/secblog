@@ -1,19 +1,19 @@
 {
  "authenticated": true,
  "by_category": {
-  "Active Directory": 204,
+  "Active Directory": 205,
   "BOFs": 543,
   "C2 Frameworks & Agents": 653,
   "Cloud": 114,
-  "Credential Access": 78,
+  "Credential Access": 79,
   "Evasion (EDR/AV/AMSI/ETW)": 151,
-  "Lateral Movement": 58,
+  "Lateral Movement": 59,
   "Loaders & Injection": 160,
-  "Other": 1708,
+  "Other": 1714,
   "Persistence": 52,
-  "Phishing & Initial Access": 34,
+  "Phishing & Initial Access": 38,
   "Privilege Escalation": 29,
-  "Recon & Scanning": 170
+  "Recon & Scanning": 172
  },
  "curated_changed": 615,
  "curated_counts": {
@@ -21,12 +21,14 @@
   "cs-community-kit": 152
  },
  "discovery_changed": 23,
- "errors": [],
- "finished": "2026-11-03T15:29:51Z",
+ "errors": [
+  "500 /repos/chrismaddalena/UsefulScripts/releases/latest"
+ ],
+ "finished": "2026-11-03T15:40:56Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-03T15:18:59Z",
- "tools_total": 3300,
- "watched_accounts": 440,
- "watchlist_changed": 727
+ "started": "2026-11-03T15:32:15Z",
+ "tools_total": 3312,
+ "watched_accounts": 441,
+ "watchlist_changed": 739
 }
