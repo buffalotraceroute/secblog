@@ -117,6 +117,10 @@ watchlist:
     type: org
   - login: Pennyw0rth
     type: org
+    affiliation: Pennyw0rth (NetExec)
+    evidence: org (NetExec; track_all by request 2026-11-03)
+    track_all: true
+    track_releases: true
   - login: dirkjanm
     type: user
   - login: fox-it

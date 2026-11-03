@@ -113,6 +113,8 @@ NAME_CATEGORY_HINTS: dict[str, list[str]] = {
     "tinydns": ["Recon & Scanning"],
     "depx": ["Recon & Scanning"],
     "aix": ["Other"],
+    # Pennyw0rth
+    "netexec": ["Active Directory", "Lateral Movement", "Credential Access", "Recon & Scanning"],
     # Black Lantern / BBOT
     "bbot": ["Recon & Scanning"],
     "bbot-server": ["Recon & Scanning"],
