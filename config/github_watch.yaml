@@ -9,6 +9,7 @@ categories:
 - Persistence
 - Privilege Escalation
 - Recon & Scanning
+- Phishing & Initial Access
 - Cloud
 - Other
 discovery:
@@ -36,6 +37,12 @@ watchlist:
   created_since_days: 730
   incremental_created_since_days: 30
   accounts:
+  - login: phishingclub
+    type: org
+    affiliation: Phishing Club
+    evidence: org (added by request 2026-11-03)
+    track_all: true
+    track_releases: true
   - login: outflanknl
     type: org
     affiliation: Outflank

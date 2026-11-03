@@ -46,6 +46,9 @@ CATEGORY_RULES: list[tuple[str, re.Pattern[str]]] = [
         r"malleable|implant|teamserver)\b", re.I)),
     ("Persistence", re.compile(r"\b(persistence|scheduled.?task|startup|autostart|wmi.?event|com.?hijack)\b", re.I)),
     ("Privilege Escalation", re.compile(r"\b(privesc|privilege.?escalat|uac.?bypass|lpe|token.?impersonat)\b", re.I)),
+    ("Phishing & Initial Access", re.compile(
+        r"\b(phish\w*|aitm|adversary.?in.?the.?middle|evilginx\w*|gophish|modlishka|muraena|"
+        r"clickfix|initial.?access|html.?smuggl\w*|device.?code.?phish\w*)", re.I)),
     ("Recon & Scanning", re.compile(
         r"\b(recon|situational.?awareness|enum|enumeration|port.?scan|fingerprint|"
         r"subdomain|crawler|spider|vuln.?scan|vulnerability.?scan|nuclei|httpx|naabu|"

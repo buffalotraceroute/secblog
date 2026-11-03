@@ -1235,6 +1235,11 @@
   "feed_page": 3,
   "sitemap_urls": 52
  },
+ "phishing-club": {
+  "done": true,
+  "listing_done": true,
+  "listing_urls": 5
+ },
  "phoenix-sec": {
   "cdx_error": "HTTP 404"
  },

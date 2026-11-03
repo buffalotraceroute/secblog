@@ -2905,3 +2905,15 @@ sources:
     exclude_patterns:
       - "^/(_pages|aboutme|tutoring|sponsors|learningplatform|coursemodules)(/|$)"
     notes: "Added by request 2026-10-30. Windows privesc, EDR evasion, shellcode; feed has only latest 10, sitemap for history."
+  - id: phishing-club
+    name: "Phishing Club Blog"
+    homepage: https://phishing.club/blog/
+    feeds: []
+    status: active
+    default_category: "Red Team/Offensive"
+    sitemap: https://phishing.club/sitemap.xml
+    listing:
+      type: html
+      url: https://phishing.club/blog/
+      post_pattern: "^/blog/[^/]+/?$"
+    notes: "Added by request 2026-11-03. No RSS feed; collected from the HTML blog index. Companion tool: github.com/phishingclub/phishingclub (Tools page)."

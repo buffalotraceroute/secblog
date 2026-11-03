@@ -2479,5 +2479,11 @@
   "last_checked": "2026-11-03T13:51:59Z",
   "status": 200,
   "via": "gatsby"
+ },
+ "listing:phishing-club": {
+  "entries": 5,
+  "last_checked": "2026-11-03T15:16:41Z",
+  "status": 200,
+  "via": "html"
  }
 }
