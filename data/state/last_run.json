@@ -48,7 +48,6 @@
   "r-tec": "no feeds configured",
   "rack911labs": "no feeds configured",
   "red-0xbad53c": "no feeds configured",
-  "redteaming": "https://redteaming.co.uk/feed/: HTTP 429",
   "remotethreat": "no feeds configured",
   "research-securitum": "no feeds configured",
   "ropgadget-sections-html": "no feeds configured",
@@ -67,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-03T15:32:15Z",
+ "finished": "2026-11-03T23:01:11Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 10,
-  "posts_seen": 2380,
+  "failed": 65,
+  "posts_new": 23,
+  "posts_seen": 2726,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 349
+  "succeeded": 350
  }
 }
