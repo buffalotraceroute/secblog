@@ -8,7 +8,6 @@
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
   "blog-felixm": "no feeds configured",
-  "blog-includesecurity": "https://blog.includesecurity.com/feed/: HTTP 429",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -65,16 +64,15 @@
   "watchfulip": "https://watchfulip.github.io/feed.xml: HTTP 404",
   "xanthus": "no feeds configured",
   "xret2pwn": "no feeds configured",
-  "zerodayinitiative": "https://www.zerodayinitiative.com/blog?format=rss: network error",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-02T15:07:32Z",
+ "finished": "2026-11-03T00:45:01Z",
  "summary": {
-  "failed": 67,
-  "posts_new": 48,
-  "posts_seen": 2517,
+  "failed": 65,
+  "posts_new": 112,
+  "posts_seen": 2499,
   "skipped_dead": 51,
   "sources": 465,
-  "succeeded": 347
+  "succeeded": 349
  }
 }
