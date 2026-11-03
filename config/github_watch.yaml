@@ -37,6 +37,12 @@ watchlist:
   created_since_days: 730
   incremental_created_since_days: 30
   accounts:
+  - login: kgretzky
+    type: user
+    affiliation: Kuba Gretzky (Evilginx)
+    evidence: author of evilginx2 (added by request 2026-11-03)
+    track_all: true
+    track_releases: true
   - login: phishingclub
     type: org
     affiliation: Phishing Club
