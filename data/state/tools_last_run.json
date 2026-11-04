@@ -9,10 +9,10 @@
   "Evasion (EDR/AV/AMSI/ETW)": 151,
   "Lateral Movement": 59,
   "Loaders & Injection": 160,
-  "Other": 1715,
+  "Other": 1716,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
-  "Privilege Escalation": 29,
+  "Privilege Escalation": 30,
   "Recon & Scanning": 172
  },
  "curated_changed": 615,
@@ -20,16 +20,13 @@
   "awesome-bof": 479,
   "cs-community-kit": 152
  },
- "discovery_changed": 23,
- "errors": [
-  "500 /repos/p0dalirius/Shift-Happens-Uncovering-to-builtin-command-injection-in-Windows-context-menus/releases/latest",
-  "503 /users/theomilan3/repos"
- ],
- "finished": "2026-11-03T23:13:30Z",
+ "discovery_changed": 28,
+ "errors": [],
+ "finished": "2026-11-04T05:40:34Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-03T23:01:11Z",
- "tools_total": 3314,
+ "started": "2026-11-04T05:28:47Z",
+ "tools_total": 3316,
  "watched_accounts": 441,
- "watchlist_changed": 741
+ "watchlist_changed": 738
 }
