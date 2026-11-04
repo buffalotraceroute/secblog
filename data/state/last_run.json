@@ -8,8 +8,6 @@
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
   "blog-felixm": "no feeds configured",
-  "blog-fndsec": "https://blog.fndsec.net/feed/: HTTP 429",
-  "blog-includesecurity": "https://blog.includesecurity.com/feed/: HTTP 429",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -43,7 +41,6 @@
   "offsec-almond": "no feeds configured",
   "oobs": "https://www.oobs.io/index.xml: HTTP 404",
   "paulosyibelo": "no feeds configured",
-  "pentestlab": "https://pentestlab.blog/feed/: HTTP 429",
   "phrack": "no feeds configured",
   "phrozen": "no feeds configured",
   "positronsecurity": "no feeds configured",
@@ -69,13 +66,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-04T13:59:11Z",
+ "finished": "2026-11-04T23:25:03Z",
  "summary": {
-  "failed": 68,
-  "posts_new": 2,
-  "posts_seen": 2439,
+  "failed": 65,
+  "posts_new": 21,
+  "posts_seen": 2828,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 347
+  "succeeded": 350
  }
 }
