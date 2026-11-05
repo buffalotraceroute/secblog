@@ -1574,7 +1574,22 @@
    "login": "D00Movenok",
    "type": "user",
    "via_curated": true
+  },
+  {
+   "login": "an0x03e8",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "retimax",
+   "type": "user",
+   "via_curated": true
+  },
+  {
+   "login": "Hackcraft-Labs",
+   "type": "org",
+   "via_curated": true
   }
  ],
- "updated": "2026-10-30T03:41:23Z"
+ "updated": "2026-11-05T14:33:56Z"
 }
