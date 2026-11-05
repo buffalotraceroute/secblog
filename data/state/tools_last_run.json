@@ -2,7 +2,7 @@
  "authenticated": true,
  "by_category": {
   "Active Directory": 205,
-  "BOFs": 544,
+  "BOFs": 546,
   "C2 Frameworks & Agents": 653,
   "Cloud": 114,
   "Credential Access": 79,
@@ -20,13 +20,13 @@
   "awesome-bof": 479,
   "cs-community-kit": 152
  },
- "discovery_changed": 27,
+ "discovery_changed": 11,
  "errors": [],
- "finished": "2026-11-04T23:37:55Z",
+ "finished": "2026-11-05T06:00:50Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-04T23:25:03Z",
- "tools_total": 3320,
+ "started": "2026-11-05T05:48:56Z",
+ "tools_total": 3322,
  "watched_accounts": 441,
- "watchlist_changed": 741
+ "watchlist_changed": 736
 }
