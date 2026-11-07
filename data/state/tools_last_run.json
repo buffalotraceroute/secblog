@@ -1,7 +1,7 @@
 {
  "authenticated": true,
  "by_category": {
-  "Active Directory": 205,
+  "Active Directory": 206,
   "BOFs": 552,
   "C2 Frameworks & Agents": 654,
   "Cloud": 114,
@@ -22,11 +22,11 @@
  },
  "discovery_changed": 5,
  "errors": [],
- "finished": "2026-11-07T12:53:41Z",
+ "finished": "2026-11-07T21:48:28Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-07T12:41:06Z",
- "tools_total": 3334,
+ "started": "2026-11-07T21:37:29Z",
+ "tools_total": 3335,
  "watched_accounts": 444,
- "watchlist_changed": 739
+ "watchlist_changed": 740
 }
