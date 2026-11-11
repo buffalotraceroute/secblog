@@ -1,32 +1,32 @@
 {
  "authenticated": true,
  "by_category": {
-  "Active Directory": 208,
+  "Active Directory": 209,
   "BOFs": 552,
   "C2 Frameworks & Agents": 655,
   "Cloud": 115,
-  "Credential Access": 79,
+  "Credential Access": 80,
   "Evasion (EDR/AV/AMSI/ETW)": 152,
   "Lateral Movement": 60,
   "Loaders & Injection": 161,
-  "Other": 1740,
+  "Other": 1742,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
   "Privilege Escalation": 30,
   "Recon & Scanning": 176
  },
- "curated_changed": 622,
+ "curated_changed": 621,
  "curated_counts": {
   "awesome-bof": 486,
   "cs-community-kit": 152
  },
- "discovery_changed": 33,
+ "discovery_changed": 35,
  "errors": [],
- "finished": "2026-11-11T05:35:12Z",
+ "finished": "2026-11-11T14:03:29Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-11T05:22:04Z",
- "tools_total": 3356,
+ "started": "2026-11-11T13:48:39Z",
+ "tools_total": 3359,
  "watched_accounts": 444,
- "watchlist_changed": 735
+ "watchlist_changed": 736
 }
