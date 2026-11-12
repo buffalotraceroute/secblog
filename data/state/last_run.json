@@ -28,7 +28,6 @@
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
-  "hunters-en-blog-tag-research": "https://www.hunters.security/en/blog/rss.xml: network error",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -68,13 +67,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-12T00:15:42Z",
+ "finished": "2026-11-12T14:51:25Z",
  "summary": {
-  "failed": 67,
-  "posts_new": 30,
-  "posts_seen": 2432,
+  "failed": 66,
+  "posts_new": 184,
+  "posts_seen": 2688,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 348
+  "succeeded": 349
  }
 }
