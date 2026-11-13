@@ -63,17 +63,18 @@
   "trendmicro-en-us-research-html": "no feeds configured",
   "vice-en-topic-hacking": "no feeds configured",
   "watchfulip": "https://watchfulip.github.io/feed.xml: HTTP 404",
+  "x41-dsec-lab-advisories": "https://x41-dsec.de/feed.xml: network error",
   "xanthus": "no feeds configured",
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-13T05:45:28Z",
+ "finished": "2026-11-13T14:13:18Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 12,
-  "posts_seen": 2270,
+  "failed": 67,
+  "posts_new": 10,
+  "posts_seen": 2304,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 349
+  "succeeded": 348
  }
 }
