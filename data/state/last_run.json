@@ -1,5 +1,6 @@
 {
  "errors": {
+  "0xsp": "https://0xsp.com/feed/: network error",
   "3nailsinfosec-knowledge": "no feeds configured",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
@@ -7,6 +8,7 @@
   "bitsadm-in": "no feeds configured",
   "blog-2h0ng": "no feeds configured",
   "blog-assetnote": "no feeds configured",
+  "blog-dbouman": "https://blog.dbouman.nl/atom.xml: HTTP 503",
   "blog-felixm": "no feeds configured",
   "blog-fox-it": "https://blog.fox-it.com/feed/: HTTP 404",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
@@ -67,13 +69,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-13T23:24:01Z",
+ "finished": "2026-11-14T05:36:06Z",
  "summary": {
-  "failed": 66,
-  "posts_new": 11,
-  "posts_seen": 2729,
+  "failed": 68,
+  "posts_new": 1,
+  "posts_seen": 2216,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 349
+  "succeeded": 347
  }
 }
