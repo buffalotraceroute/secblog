@@ -1,6 +1,5 @@
 {
  "errors": {
-  "0dayfans": "https://0dayfans.com/feed.rss: network error",
   "3nailsinfosec-knowledge": "no feeds configured",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
@@ -17,6 +16,7 @@
   "blog-viettelcybersecurity": "no feeds configured",
   "bytecode77": "no feeds configured",
   "contextis-us-blog": "no feeds configured",
+  "cyberstoph": "https://cyberstoph.org/index.xml: network error",
   "darkrelay": "no feeds configured",
   "devilinside-categories-resources": "no feeds configured",
   "disrel": "no feeds configured",
@@ -28,7 +28,6 @@
   "fourcore": "no feeds configured",
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
-  "hexacorn": "https://www.hexacorn.com/blog/feed/: network error",
   "hulkops-blog": "no feeds configured",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
@@ -60,7 +59,6 @@
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
   "suid-research-html": "no feeds configured",
-  "symbolcrash": "https://www.symbolcrash.com/feed/: network error",
   "themittenmac": "no feeds configured",
   "thespanner": "no feeds configured",
   "trendmicro-en-us-research-html": "no feeds configured",
@@ -70,13 +68,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-14T22:08:11Z",
+ "finished": "2026-11-15T05:33:21Z",
  "summary": {
-  "failed": 69,
-  "posts_new": 60,
-  "posts_seen": 2286,
+  "failed": 67,
+  "posts_new": 1,
+  "posts_seen": 2338,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 346
+  "succeeded": 348
  }
 }
