@@ -9,7 +9,7 @@
   "Evasion (EDR/AV/AMSI/ETW)": 152,
   "Lateral Movement": 61,
   "Loaders & Injection": 162,
-  "Other": 1752,
+  "Other": 1754,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
   "Privilege Escalation": 31,
@@ -17,16 +17,18 @@
  },
  "curated_changed": 621,
  "curated_counts": {
-  "awesome-bof": 486,
+  "awesome-bof": 485,
   "cs-community-kit": 152
  },
- "discovery_changed": 25,
- "errors": [],
- "finished": "2026-11-16T05:48:13Z",
+ "discovery_changed": 27,
+ "errors": [
+  "/users/RobotOperator/repos: Server disconnected without sending a response."
+ ],
+ "finished": "2026-11-16T13:58:08Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-16T05:33:04Z",
- "tools_total": 3372,
+ "started": "2026-11-16T13:40:45Z",
+ "tools_total": 3374,
  "watched_accounts": 444,
  "watchlist_changed": 734
 }
