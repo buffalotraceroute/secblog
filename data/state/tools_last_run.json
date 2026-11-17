@@ -3,12 +3,12 @@
  "by_category": {
   "Active Directory": 209,
   "BOFs": 553,
-  "C2 Frameworks & Agents": 655,
+  "C2 Frameworks & Agents": 657,
   "Cloud": 115,
   "Credential Access": 80,
   "Evasion (EDR/AV/AMSI/ETW)": 152,
   "Lateral Movement": 61,
-  "Loaders & Injection": 162,
+  "Loaders & Injection": 163,
   "Other": 1754,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
@@ -20,13 +20,13 @@
   "awesome-bof": 485,
   "cs-community-kit": 152
  },
- "discovery_changed": 27,
+ "discovery_changed": 25,
  "errors": [],
- "finished": "2026-11-16T15:31:45Z",
+ "finished": "2026-11-17T01:58:37Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-16T15:13:10Z",
- "tools_total": 3374,
+ "started": "2026-11-17T01:44:41Z",
+ "tools_total": 3377,
  "watched_accounts": 444,
  "watchlist_changed": 734
 }

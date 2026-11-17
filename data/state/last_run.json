@@ -34,7 +34,7 @@
   "labs-f-secure": "no feeds configured",
   "labs-nettitude-new": "no feeds configured",
   "maxwelldulin": "no feeds configured",
-  "mdsec": "https://www.mdsec.co.uk/feed/: HTTP 522",
+  "mdsec": "https://www.mdsec.co.uk/feed/: network error",
   "medium-securityshenaningans": "https://medium.com/feed/@securityshenaningans: HTTP 404",
   "necromancerlabs-research-papers": "no feeds configured",
   "nullsecurity": "no feeds configured",
@@ -68,11 +68,11 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-16T15:13:09Z",
+ "finished": "2026-11-17T01:44:40Z",
  "summary": {
   "failed": 67,
-  "posts_new": 102,
-  "posts_seen": 2262,
+  "posts_new": 243,
+  "posts_seen": 2727,
   "skipped_dead": 51,
   "sources": 466,
   "succeeded": 348
