@@ -47,6 +47,7 @@
   "phrozen": "no feeds configured",
   "positronsecurity": "no feeds configured",
   "print3m": "no feeds configured",
+  "pwning": "https://pwning.tech/rss/: network error",
   "r-tec": "no feeds configured",
   "rack911labs": "no feeds configured",
   "red-0xbad53c": "no feeds configured",
@@ -68,13 +69,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-18T15:21:36Z",
+ "finished": "2026-11-19T00:02:29Z",
  "summary": {
-  "failed": 67,
-  "posts_new": 93,
-  "posts_seen": 2582,
+  "failed": 68,
+  "posts_new": 41,
+  "posts_seen": 2589,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 348
+  "succeeded": 347
  }
 }
