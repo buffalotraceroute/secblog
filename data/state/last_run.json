@@ -17,7 +17,6 @@
   "blog-viettelcybersecurity": "no feeds configured",
   "bytecode77": "no feeds configured",
   "contextis-us-blog": "no feeds configured",
-  "cyberstoph": "https://cyberstoph.org/index.xml: network error",
   "darkrelay": "no feeds configured",
   "devilinside-categories-resources": "no feeds configured",
   "disrel": "no feeds configured",
@@ -35,7 +34,7 @@
   "labs-f-secure": "no feeds configured",
   "labs-nettitude-new": "no feeds configured",
   "maxwelldulin": "no feeds configured",
-  "mdsec": "https://www.mdsec.co.uk/feed/: network error",
+  "mdsec": "https://www.mdsec.co.uk/feed/: HTTP 522",
   "medium-securityshenaningans": "https://medium.com/feed/@securityshenaningans: HTTP 404",
   "necromancerlabs-research-papers": "no feeds configured",
   "nullsecurity": "no feeds configured",
@@ -70,13 +69,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-20T00:25:27Z",
+ "finished": "2026-11-20T15:04:37Z",
  "summary": {
-  "failed": 69,
-  "posts_new": 27,
-  "posts_seen": 2313,
+  "failed": 68,
+  "posts_new": 59,
+  "posts_seen": 2419,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 346
+  "succeeded": 347
  }
 }
