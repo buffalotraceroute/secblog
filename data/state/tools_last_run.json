@@ -3,13 +3,13 @@
  "by_category": {
   "Active Directory": 209,
   "BOFs": 553,
-  "C2 Frameworks & Agents": 660,
+  "C2 Frameworks & Agents": 661,
   "Cloud": 115,
   "Credential Access": 81,
   "Evasion (EDR/AV/AMSI/ETW)": 154,
   "Lateral Movement": 61,
   "Loaders & Injection": 165,
-  "Other": 1776,
+  "Other": 1778,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
   "Privilege Escalation": 32,
@@ -20,15 +20,13 @@
   "awesome-bof": 485,
   "cs-community-kit": 152
  },
- "discovery_changed": 5,
- "errors": [
-  "502 /users/bashexplode/repos"
- ],
- "finished": "2026-11-22T14:30:18Z",
+ "discovery_changed": 6,
+ "errors": [],
+ "finished": "2026-11-22T23:36:35Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-22T14:18:36Z",
- "tools_total": 3408,
+ "started": "2026-11-22T23:24:45Z",
+ "tools_total": 3410,
  "watched_accounts": 444,
- "watchlist_changed": 743
+ "watchlist_changed": 744
 }
