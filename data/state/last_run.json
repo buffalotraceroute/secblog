@@ -26,6 +26,7 @@
   "fhlipzero": "no feeds configured",
   "fourcore": "no feeds configured",
   "fuzzysecurity": "no feeds configured",
+  "hackingarticles": "https://www.hackingarticles.in/feed/: network error",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
   "jprx": "no feeds configured",
@@ -68,13 +69,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-23T15:47:42Z",
+ "finished": "2026-11-23T23:36:06Z",
  "summary": {
-  "failed": 67,
-  "posts_new": 524,
-  "posts_seen": 2217,
+  "failed": 68,
+  "posts_new": 135,
+  "posts_seen": 2236,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 348
+  "succeeded": 347
  }
 }
