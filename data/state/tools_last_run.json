@@ -6,10 +6,10 @@
   "C2 Frameworks & Agents": 662,
   "Cloud": 116,
   "Credential Access": 81,
-  "Evasion (EDR/AV/AMSI/ETW)": 154,
+  "Evasion (EDR/AV/AMSI/ETW)": 155,
   "Lateral Movement": 61,
   "Loaders & Injection": 165,
-  "Other": 1788,
+  "Other": 1792,
   "Persistence": 52,
   "Phishing & Initial Access": 38,
   "Privilege Escalation": 32,
@@ -20,13 +20,13 @@
   "awesome-bof": 484,
   "cs-community-kit": 152
  },
- "discovery_changed": 29,
+ "discovery_changed": 37,
  "errors": [],
- "finished": "2026-11-24T22:19:46Z",
+ "finished": "2026-11-25T07:55:13Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-24T22:05:50Z",
- "tools_total": 3422,
+ "started": "2026-11-25T07:40:51Z",
+ "tools_total": 3427,
  "watched_accounts": 444,
- "watchlist_changed": 744
+ "watchlist_changed": 741
 }

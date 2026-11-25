@@ -1,6 +1,5 @@
 {
  "errors": {
-  "0dayfans": "https://0dayfans.com/feed.rss: network error",
   "3nailsinfosec-knowledge": "no feeds configured",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
@@ -28,7 +27,6 @@
   "fourcore": "no feeds configured",
   "fuzzysecurity": "no feeds configured",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
-  "hexacorn": "https://www.hexacorn.com/blog/feed/: network error",
   "hulkops-blog": "no feeds configured",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
@@ -61,7 +59,6 @@
   "securitylab-github": "no feeds configured",
   "stmxcsr": "no feeds configured",
   "suid-research-html": "no feeds configured",
-  "symbolcrash": "https://www.symbolcrash.com/feed/: network error",
   "themittenmac": "no feeds configured",
   "thespanner": "no feeds configured",
   "trendmicro-en-us-research-html": "no feeds configured",
@@ -71,13 +68,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-24T22:05:49Z",
+ "finished": "2026-11-25T07:40:51Z",
  "summary": {
-  "failed": 70,
-  "posts_new": 146,
-  "posts_seen": 2625,
+  "failed": 67,
+  "posts_new": 3,
+  "posts_seen": 2318,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 345
+  "succeeded": 348
  }
 }
