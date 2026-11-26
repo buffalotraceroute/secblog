@@ -9,7 +9,7 @@
   "Evasion (EDR/AV/AMSI/ETW)": 155,
   "Lateral Movement": 61,
   "Loaders & Injection": 165,
-  "Other": 1796,
+  "Other": 1797,
   "Persistence": 52,
   "Phishing & Initial Access": 39,
   "Privilege Escalation": 32,
@@ -20,13 +20,13 @@
   "awesome-bof": 484,
   "cs-community-kit": 152
  },
- "discovery_changed": 37,
+ "discovery_changed": 38,
  "errors": [],
- "finished": "2026-11-26T07:43:21Z",
+ "finished": "2026-11-26T21:20:49Z",
  "new_watch_owners": 0,
  "seed": false,
- "started": "2026-11-26T07:30:12Z",
- "tools_total": 3432,
+ "started": "2026-11-26T21:08:14Z",
+ "tools_total": 3433,
  "watched_accounts": 444,
- "watchlist_changed": 739
+ "watchlist_changed": 740
 }

@@ -9,6 +9,7 @@
   "blog-assetnote": "no feeds configured",
   "blog-felixm": "no feeds configured",
   "blog-fox-it": "https://blog.fox-it.com/feed/: HTTP 404",
+  "blog-harmj0y": "https://blog.harmj0y.net/feed/: HTTP 415",
   "blog-k3170makan": "https://blog.k3170makan.com/feeds/posts/default: network error",
   "blog-kyleavery": "https://kyleavery.com/index.xml: HTTP 404",
   "blog-lexfo": "no feeds configured",
@@ -26,8 +27,10 @@
   "fhlipzero": "no feeds configured",
   "fourcore": "no feeds configured",
   "fuzzysecurity": "no feeds configured",
+  "hackingarticles": "https://www.hackingarticles.in/feed/: HTTP 415",
   "hawktrace": "https://hawktrace.com/index.xml: HTTP 404",
   "hulkops-blog": "no feeds configured",
+  "jellevergeer": "https://jellevergeer.com/feed/: HTTP 415",
   "jprx": "no feeds configured",
   "kiddo-pwn-blog": "https://kiddo-pwn.github.io/blog/index.xml: HTTP 404",
   "labs-f-secure": "no feeds configured",
@@ -52,6 +55,7 @@
   "red-0xbad53c": "no feeds configured",
   "remotethreat": "no feeds configured",
   "research-securitum": "no feeds configured",
+  "revers-engineering": "https://revers.engineering/feed/: HTTP 415",
   "ropgadget-sections-html": "no feeds configured",
   "ryan-framinan": "https://ryan.framinan.net/index.xml: HTTP 404",
   "scannell": "no feeds configured",
@@ -68,13 +72,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-26T07:30:12Z",
+ "finished": "2026-11-26T21:08:14Z",
  "summary": {
-  "failed": 67,
-  "posts_new": 6,
-  "posts_seen": 2567,
+  "failed": 71,
+  "posts_new": 15,
+  "posts_seen": 2173,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 348
+  "succeeded": 344
  }
 }
