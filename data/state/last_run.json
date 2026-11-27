@@ -3,6 +3,7 @@
   "3nailsinfosec-knowledge": "no feeds configured",
   "akamai-blog-security-research": "no feeds configured",
   "aptw": "no feeds configured",
+  "arielkoren": "https://arielkoren.com/feed.xml: network error",
   "atredis": "https://www.atredis.com/blog-posts?format=rss: HTTP 404",
   "bitsadm-in": "no feeds configured",
   "blog-2h0ng": "no feeds configured",
@@ -72,13 +73,13 @@
   "xret2pwn": "no feeds configured",
   "zeroperil": "no feeds configured"
  },
- "finished": "2026-11-26T21:08:14Z",
+ "finished": "2026-11-27T07:27:51Z",
  "summary": {
-  "failed": 71,
-  "posts_new": 15,
-  "posts_seen": 2173,
+  "failed": 72,
+  "posts_new": 5,
+  "posts_seen": 1918,
   "skipped_dead": 51,
   "sources": 466,
-  "succeeded": 344
+  "succeeded": 343
  }
 }
